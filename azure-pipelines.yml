@@ -17,7 +17,7 @@ steps:
 
 - script: |
     npm install -g create-react-app
-    npm install --only=prod
+    npm install
     npm run build
   displayName: 'npm install create reate app'
 
