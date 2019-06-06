@@ -16,6 +16,18 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install
+    npm install -g create-react-app
+    npm install --only=prod
     npm run build
-  displayName: 'npm install and build'
+  displayName: 'npm install create reate app'
+
+- script: |
+    npm install webpack webpack-cli --save-dev
+    npx webpack --config webpack.config.js    
+  displayName: 'configure compiler options'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+   PathtoPublish: prod
+   ArtifactName: prod
+  displayName: 'publish Artifacts:prod'
