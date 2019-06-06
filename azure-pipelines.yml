@@ -18,7 +18,7 @@ steps:
 - script: |
     npm install -g create-react-app
     npm install
-    npm run build
+    ng build --prod --configuration=production --output-path=prod --base-href ./
   displayName: 'npm install create reate app'
 
 - task: PublishBuildArtifacts@1
