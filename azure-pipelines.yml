@@ -21,11 +21,6 @@ steps:
     npm run build
   displayName: 'npm install create reate app'
 
-- script: |
-    npm install webpack webpack-cli --save-dev
-    npx webpack 
-  displayName: 'configure compiler options'
-
 - task: PublishBuildArtifacts@1
   inputs:
    PathtoPublish: prod
