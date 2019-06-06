@@ -23,7 +23,7 @@ steps:
 
 - script: |
     npm install webpack webpack-cli --save-dev
-    npx webpack --config webpack.config.js    
+    npx webpack 
   displayName: 'configure compiler options'
 
 - task: PublishBuildArtifacts@1
