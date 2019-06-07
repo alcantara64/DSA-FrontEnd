@@ -12,17 +12,11 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '10.x'
+    versionSpec: '8.11.4'
   displayName: 'Install Node.js'
 
 - script: |
     npm install -g create-react-app
     npm install
-    npm run build --prod --configuration=production --output-path=prod --base-href ./
+    npm run build
   displayName: 'npm install create reate app'
-
-- task: PublishBuildArtifacts@1
-  inputs:
-   PathtoPublish: prod
-   ArtifactName: prod
-  displayName: 'publish Artifacts:prod'
