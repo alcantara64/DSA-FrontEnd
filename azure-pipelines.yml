@@ -20,3 +20,9 @@ steps:
     npm install
     npm run build
   displayName: 'npm install create reate app'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+   PathtoPublish: build
+   ArtifactName: build
+  displayName: 'publish Artifacts:build'
