@@ -1,13 +1,15 @@
 import React from 'react';
 import Auxi from '../../hoc/Auxi';
+import Header from '../app-header/header';
+import Footer from '../app-footer/footer';
 
-const layout = () => (
+const layout = (props: any) => (
 <Auxi>
-    <div>Header</div>
+    <Header />
     <main>
-        Components
+        {props.children}
     </main>
-    <div>footer</div>
+    <Footer />
 </Auxi>
 )
 
