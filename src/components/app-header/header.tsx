@@ -31,7 +31,7 @@ const header = () => {
           <ul className="em-c-primary-nav__list">
 
             <li className="em-c-primary-nav__item ">
-              <a href="/src/container/Dashboard/dashboard.tsx" className=" em-c-primary-nav__link custom-text-color-black em-c-primary-nav__link--has-children em-js-nav-dropdown-trigger">
+              <a href="/src/container/Dashboard/dashboard.tsx" className="custom-paragraph em-c-primary-nav__link custom-text-color-black em-c-primary-nav__link--has-children em-js-nav-dropdown-trigger">
 				
 								Quick Links
 				
@@ -57,15 +57,15 @@ const header = () => {
             </li>
 
 
-            <li className=" em-c-primary-nav__item ">
-              <a href="/src/container/Dashboard/dashboard.tsx" className="custom-paragraph custom-link em-c-primary-nav__link custom-text-color-black em-is-current ">
+            <li className="custom-paragraph em-c-primary-nav__item ">
+              <a href="/src/container/Dashboard/dashboard.tsx" className=" em-c-primary-nav__link custom-text-color-black em-is-current ">
 				
 								a.Community
             </a>
             </li>
 
             <li className="custom-paragraph em-c-primary-nav__item ">
-              <a href="/src/container/Dashboard/dashboard.tsx" className="custom-link em-c-primary-nav__link custom-text-color-black em-is-current ">
+              <a href="/src/container/Dashboard/dashboard.tsx" className=" em-c-primary-nav__link custom-text-color-black em-is-current ">
 				
 								Services
             </a>

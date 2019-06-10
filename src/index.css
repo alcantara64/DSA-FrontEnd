@@ -67,6 +67,18 @@ code {
   margin-left: 2px;
 }
 
+.footer-link-bottom-spacing{
+  margin-bottom: 8px;
+}
+
+.footer-link-left-spacing{
+  margin-left: 35px;
+}
+
+.footer-link-top-spacing{
+  margin-top: -12px;
+}
+
 
 
 

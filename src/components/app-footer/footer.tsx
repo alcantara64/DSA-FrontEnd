@@ -40,34 +40,68 @@ const footer = () => {
         <div className="row">
         <div className="column">
           
-<div className="custom-heading-5">Downstream</div>
+<div className="footer-link-bottom-spacing custom-heading-5">Downstream</div>
 <ul>
-    <ol>
-        <a href="/src/container/Dashboard/dashboard.tsx">a</a>
+    <ol className="footer-link-bottom-spacing custom-paragraph">
+        <a href="/src/container/Dashboard/dashboard.tsx">Controllers BCOE</a>
     </ol>
-    <ol>
-        <a href="/src/container/Dashboard/dashboard.tsx">a</a>
+    <ol className="footer-link-bottom-spacing custom-paragraph">
+        <a href="/src/container/Dashboard/dashboard.tsx">TDT Analytics COE</a>
+    </ol>
+    <ol className="footer-link-bottom-spacing custom-paragraph">
+        <a href="/src/container/Dashboard/dashboard.tsx">BAR Analytics</a>
+    </ol>
+    <ol className="footer-link-bottom-spacing custom-paragraph">
+        <a href="/src/container/Dashboard/dashboard.tsx">Downstream Data, Analytics, & Systems</a>
+    </ol>
+</ul>
+            </div>
+
+            <div className="footer-link-bottom-spacing custom-heading-5 column">
+            <p>Upstream</p>
+            <ul>
+    <ol className="footer-link-top-spacing custom-paragraph">
+        <a href="/src/container/Dashboard/dashboard.tsx">Business Systems Support Team BCOE</a>
+    </ol>
+    <ol className="footer-link-top-spacing custom-paragraph">
+        <a href="/src/container/Dashboard/dashboard.tsx">Upload Technical Data Support</a>
+    </ol>
+    </ul>
+            </div>
+            
+
+            <div className="footer-link-left-spacing custom-heading-5 column">
+            <p>GSC</p>
+            <ul>
+    <ol className="footer-link-bottom-spacing custom-paragraph">
+        <a href="/src/container/Dashboard/dashboard.tsx">EMIT ITOE</a>
+    </ol>
+    <ol className="footer-link-bottom-spacing custom-paragraph">
+        <a href="/src/container/Dashboard/dashboard.tsx">GSC BCOE</a>
+    </ol>
+    <ol className="footer-link-bottom-spacing custom-paragraph">
+        <a href="/src/container/Dashboard/dashboard.tsx">Procurement Analytics Toolbox</a>
+    </ol>
+    <ol className="footer-link-bottom-spacing custom-paragraph">
+        <a href="/src/container/Dashboard/dashboard.tsx">GREF Analytics</a>
     </ol>
 </ul>
             </div>
 
             <div className="custom-heading-5 column">
-            <p>Upstream</p>
-            </div>
-
-            <div className="custom-heading-5 column">
-            <p>GSC</p>
-            </div>
-
-            <div className="custom-heading-5 column">
             <p>Chemical</p>
+            <ul>
+    <ol className="footer-link-bottom-spacing custom-paragraph">
+        <a href="/src/container/Dashboard/dashboard.tsx">Data, Analytics, and Systems</a>
+        </ol>
+        </ul>
             </div>
 
-            <div className="custom-heading-5 column">
+            <div className="footer-link-left-spacing custom-heading-5 column">
             <p>EMRE</p>
             </div>
 
-            <div className="custom-heading-5 column">
+            <div className="footer-link-left-spacing custom-heading-5 column">
             <p>Corporate</p>
 
             </div>
