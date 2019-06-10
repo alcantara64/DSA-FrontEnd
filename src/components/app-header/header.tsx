@@ -10,7 +10,7 @@ const header = () => {
             <div className="em-c-header__body">
             <div className="em-c-header__title-container">
         <h2 className="em-c-header__title">
-            <a href="/src/container/Dashboard/dashboard.tsx" rel="home" className="em-c-header__title-link custom-text-color-black">Data</a></h2>
+            <a href="/src/container/Dashboard/dashboard.tsx" rel="home" className="custom-heading-5 em-c-header__title-link custom-text-color-black">Data</a></h2>
       </div>
 
       <button className="em-c-btn em-c-btn--small em-c-btn--inverted em-c-header__nav-btn em-js-nav-trigger">
@@ -25,13 +25,13 @@ const header = () => {
         </div>
       </button>
       
-      <div className="em-c-header__nav-container em-js-nav-panel">
+      <div className="custom-header em-c-header__nav-container em-js-nav-panel">
         <nav id="nav" className="em-c-primary-nav" role="navigation">
             
           <ul className="em-c-primary-nav__list">
 
             <li className="em-c-primary-nav__item ">
-              <a href="/src/container/Dashboard/dashboard.tsx" className="em-c-primary-nav__link custom-text-color-black em-c-primary-nav__link--has-children em-js-nav-dropdown-trigger">
+              <a href="/src/container/Dashboard/dashboard.tsx" className=" em-c-primary-nav__link custom-text-color-black em-c-primary-nav__link--has-children em-js-nav-dropdown-trigger">
 				
 								Quick Links
 				
@@ -57,35 +57,35 @@ const header = () => {
             </li>
 
 
-            <li className="em-c-primary-nav__item ">
-              <a href="/src/container/Dashboard/dashboard.tsx" className="em-c-primary-nav__link custom-text-color-black em-is-current ">
+            <li className=" em-c-primary-nav__item ">
+              <a href="/src/container/Dashboard/dashboard.tsx" className="custom-paragraph custom-link em-c-primary-nav__link custom-text-color-black em-is-current ">
 				
 								a.Community
             </a>
             </li>
 
-            <li className="em-c-primary-nav__item ">
-              <a href="/src/container/Dashboard/dashboard.tsx" className="em-c-primary-nav__link custom-text-color-black em-is-current ">
+            <li className="custom-paragraph em-c-primary-nav__item ">
+              <a href="/src/container/Dashboard/dashboard.tsx" className="custom-link em-c-primary-nav__link custom-text-color-black em-is-current ">
 				
 								Services
             </a>
             </li>
 
-            <li className="em-c-primary-nav__item ">
+            <li className="custom-paragraph em-c-primary-nav__item ">
               <a href="/src/container/Dashboard/dashboard.tsx" className="em-c-primary-nav__link custom-text-color-black em-is-current ">
 				
 								Blog
             </a>
             </li>
 
-            <li className="em-c-primary-nav__item ">
+            <li className="custom-paragraph em-c-primary-nav__item ">
               <a href="/src/container/Dashboard/dashboard.tsx" className="em-c-primary-nav__link custom-text-color-black em-is-current ">
 				
 								About
             </a>
             </li>
 
-            <li className="em-c-primary-nav__item ">
+            <li className="custom-paragraph em-c-primary-nav__item ">
               <a href="/src/container/Dashboard/dashboard.tsx" className="em-c-primary-nav__link custom-text-color-black em-is-current ">
 				
 								Hi, Jennifer

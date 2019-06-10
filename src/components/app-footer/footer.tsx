@@ -11,7 +11,16 @@ const footer = () => {
     <div className="em-c-footer__inner">
       <ul className="em-c-multicolumn-nav " role="navigation">
         <li className="em-c-multicolumn-nav__item em-u-text-align-left customm-auto-width">
-        <p>Question about the site? Contact the webmaster</p>
+          <div >
+            <div className="about-site custom-paragraph">
+            Question about the site?
+            </div>
+            <div className="about-site custom-link">
+              Contact the webmaster
+            </div >
+            
+          </div>
+        
         </li>
       </ul>
       <svg className="em-c-logo" xmlns="http://www.w3.org/2000/svg" viewBox="63 150.1 234 59.8" enableBackground="new 63 150.1 234 59.8">
@@ -22,7 +31,7 @@ const footer = () => {
 
     <div className="em-l-grid em-l-grid--1-2-1 em-l-grid--break-fast em-u-text-align-left">
         <div className="em-l-grid__item em-u-padding-none">
-            <div className="fpo-block">Analytics Business COE's</div>
+            <div className="custom-heading-3 fpo-block">Analytics Business COE's</div>
         </div>
         <div className="em-l-grid__item em-u-padding-none">
            
@@ -30,7 +39,8 @@ const footer = () => {
 
         <div className="row">
         <div className="column">
-<p>Downstream</p>
+          
+<div className="custom-heading-5">Downstream</div>
 <ul>
     <ol>
         <a href="/src/container/Dashboard/dashboard.tsx">a</a>
@@ -41,28 +51,28 @@ const footer = () => {
 </ul>
             </div>
 
-            <div className="column">
+            <div className="custom-heading-5 column">
             <p>Upstream</p>
             </div>
 
-            <div className="column">
+            <div className="custom-heading-5 column">
             <p>GSC</p>
             </div>
 
-            <div className="column">
+            <div className="custom-heading-5 column">
             <p>Chemical</p>
             </div>
 
-            <div className="column">
+            <div className="custom-heading-5 column">
             <p>EMRE</p>
             </div>
 
-            <div className="column">
+            <div className="custom-heading-5 column">
             <p>Corporate</p>
 
             </div>
 
-            <div className="column">
+            <div className="custom-heading-5 column">
             <p>URC</p>
             </div>
         </div>

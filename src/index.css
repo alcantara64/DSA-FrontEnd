@@ -11,3 +11,68 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.custom-heading-1 {
+  font-family: 'emprintsemibold';
+  font-size: 46px;
+  line-height: 58px;
+  color: #0A3039;
+}
+
+.custom-heading-2 {
+  font-family: 'emprintsemibold';
+  font-size: 30.4px;
+  line-height: 38px;
+  color: #0A3039;
+}
+
+.custom-heading-3 {
+  font-family: 'emprintsemibold';
+  font-size: 22.4px;
+  line-height: 30px;
+  color: #0A3039; 
+}
+
+.custom-heading-4 {
+  font-family: 'emprintsemibold';
+  font-size: 16px;
+  line-height: 22px;
+  color: #0A3039;
+  text-transform: uppercase;
+}
+
+.custom-heading-5 {
+  font-family: "emprintsemibold";
+  font-size: 16px;
+  line-height: 22px;
+  color: #0A3039;
+}
+
+.custom-paragraph {
+  font-family: 'emprintregular';
+  font-size: 16px;
+  line-height: 22px;
+  color: #0A3039;
+}
+
+.custom-link {
+  font-family: 'emprintregular';
+  font-size: 16px;
+  line-height: 22px;
+   color: #D73872 ;
+}
+
+.about-site{
+  display: inline-block;
+  margin-left: 2px;
+}
+
+
+
+
+
+
+
+
+
+
