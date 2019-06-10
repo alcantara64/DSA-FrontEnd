@@ -19,8 +19,7 @@ const home = () => {
                                 </a>
                             </div>
                             <div className="write-up-container">
-                            <div className="learning-header">Learning</div>
-                            <div className="learning-header-one"></div>
+                            <div className="learning-header underline-learn">Learning</div>
                             <div className="learning-content">Find the tutorials, and walkthroughs that you need to power your workflow</div>
                             </div>
                             </div>
@@ -38,9 +37,8 @@ const home = () => {
                                 </a>
                             </div>
                             <div className="write-up-container">
-                            <div className="learning-header">a.Community</div>
-                            <div className="learning-header-border"></div>
-                            <div className="learning-content">Find the tutorials, and walkthroughs that you need to power your workflow</div>
+                            <div className="learning-header underline-community">a.Community</div>
+                            <div className="learning-content">Connect with the ExxonMobil data community. Find meetups, training, and other global and related communities.</div>
                             </div>
                             </div>
                         </div>
@@ -62,9 +60,8 @@ const home = () => {
                                 </a>
                             </div>
                             <div className="write-up-container">
-                            <div className="learning-header">Find Solutions</div>
-                            <div className="learning-header-border"></div>
-                            <div className="learning-content">Find the tutorials, and walkthroughs that you need to power your workflow</div>
+                            <div className="learning-header underline-solution">Find Solutions</div>
+                            <div className="learning-content">Lets's direct you to the tool, tutorial, or person that will get you what you need through our services portal.</div>
                             </div>
                             </div>
                         </div>
