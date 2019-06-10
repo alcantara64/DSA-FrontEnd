@@ -8,7 +8,8 @@ class App extends Component {
     return (
       <div className="App">
         <Layout >
-          <Dashboard></Dashboard>
+          {/* Send App state to layout for navidation purposes only*/}
+          <Dashboard ></Dashboard>
         </Layout>
       </div>
     );
