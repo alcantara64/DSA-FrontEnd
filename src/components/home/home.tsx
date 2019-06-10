@@ -18,6 +18,11 @@ const home = () => {
                                     <img src={Learn_Illustration} alt="learn"/>
                                 </a>
                             </div>
+                            <div className="write-up-container">
+                            <div className="learning-header">Learning</div>
+                            <div className="learning-header-one"></div>
+                            <div className="learning-content">Find the tutorials, and walkthroughs that you need to power your workflow</div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -31,6 +36,11 @@ const home = () => {
                                 <a href="">
                                     <img src={Community_Illustration} alt="learn"/>
                                 </a>
+                            </div>
+                            <div className="write-up-container">
+                            <div className="learning-header">a.Community</div>
+                            <div className="learning-header-border"></div>
+                            <div className="learning-content">Find the tutorials, and walkthroughs that you need to power your workflow</div>
                             </div>
                             </div>
                         </div>
@@ -51,7 +61,11 @@ const home = () => {
                                     <img src={Find_Solutions_Illustration} alt="learn"/>
                                 </a>
                             </div>
-                                
+                            <div className="write-up-container">
+                            <div className="learning-header">Find Solutions</div>
+                            <div className="learning-header-border"></div>
+                            <div className="learning-content">Find the tutorials, and walkthroughs that you need to power your workflow</div>
+                            </div>
                             </div>
                         </div>
                     </div>
