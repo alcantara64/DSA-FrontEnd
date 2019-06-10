@@ -8,8 +8,7 @@
     color: black !important;
 }
 .em-c-header{
-    margin-left: 3%;
-    margin-right: 3%;
+    max-width: 94%;
 }
 .em-c-header__body{
     padding: 0.5em 34px;

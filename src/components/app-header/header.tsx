@@ -4,9 +4,9 @@ import './header.css';
 
 const header = () => {
     return (
-        <Auxi>
-            <header className="em-c-header em-c-header--condensed customHeaderWhiteBackground" role="banner">
-            <div className="em-l-container em-c-header__inner">
+        <Auxi >
+            <header className=" em-l-container em-c-header em-c-header--condensed customHeaderWhiteBackground" role="banner">
+            <div className=" em-c-header__inner">
             <div className="em-c-header__body">
             <div className="em-c-header__title-container">
         <h2 className="em-c-header__title">
