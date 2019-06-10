@@ -97,8 +97,8 @@ const footer = () => {
         </ul>
             </div>
 
-            <div className="footer-link-left-spacing custom-heading-5 column">
-            <p>EMRE</p>
+            <div className="footer-link-left-spacing  custom-heading-5 column">
+            <p>EMRE</p> 
             </div>
 
             <div className="footer-link-left-spacing custom-heading-5 column">
