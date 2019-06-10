@@ -12,7 +12,7 @@ const home = () => {
                     <div className="em-l-grid__item">
                         <div className="fpo-block">
                             <div className="grid-1">
-                            <div className="body-header">Data at ExxonMobil</div>
+                            <div className="custom-H1 body-header">Data at ExxonMobil</div>
                             <div className="comming-soon">
                                 <a href="">
                                     <img src={Learn_Illustration} alt="learn"/>
@@ -68,6 +68,17 @@ const home = () => {
                     </div>
 
                 </div>
+                
+                <div className="em-l-container middle-section">
+                    <div className="custom-H2 ">Want to see what we've done for others?</div>
+                    <div className="custom-paragraph success-stories">Check out the sucess stories from our teams and teams we've worked with in the past</div>
+                    <div>
+                    <button className="em-c-btn em-c-btn--large custom-btn ">
+                        <span className="em-c-btn__text">See other Success Stories</span>
+                    </button>
+                    </div>
+                </div>
+
         </Auxi>
     )
 }

@@ -12,6 +12,28 @@ code {
     monospace;
 }
 
+.custom-paragraph{
+  font-family: 'EMprintRegular' !important;
+  font-size: 16px !important;
+  line-height: 22px !important;
+  color: #0a3039 !important;
+}
+
+.custom-H2{
+  font-family: 'EMprintSemibold';
+  font-size: 30.4px !important;
+  line-height: 38px !important;
+  color: #0a3039 !important;
+}
+
+.custom-H1{
+  font-family: 'EMprintSemibold';
+  font-size: 46px !important;
+  line-height: 58px !important;
+  color: #0a3039 !important;
+}
+
+
 
 
 
