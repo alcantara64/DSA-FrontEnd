@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
+import Auxi from '../../hoc/Auxi';
+import Home from '../../components/home/home';
 
 class dashboard extends Component {
 
     render(){
         return(
-            <div> dashboard </div>
+          <Auxi>
+              <Home></Home>
+          </Auxi>
         );
     }
 }

@@ -76,3 +76,36 @@ code {
 
 
 
+.em-l-grid--1-to-3up{
+  width: 100%;
+  height: 120px;
+}
+.body-header{
+  text-align: left;
+  height: 58px;
+  width: 401px;
+  font-family: 'emprintsemibold';
+  font-size: 46px;
+  color: rgba(10, 48, 57, 1);
+}
+.body-header-data{
+  height: 44px;
+  width: 353px;
+  font-family: 'emprintregular';
+  font-size: 16px;
+  color: rgba(10, 48, 57, 1);
+  text-align: left;
+  line-height: 22px;
+  margin-left: 5%;
+  position: relative;
+  bottom: 46px;
+}
+.body-header-data__container{
+  display: inline-block;
+  margin-left: 19%;
+}
+.body-header-data__marker{
+  height: 49px;
+  border: 2px solid rgba(12, 71, 157, 1);
+  width: 0px;
+}
