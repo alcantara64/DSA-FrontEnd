@@ -86,7 +86,7 @@ class header extends Component<any>  {
           <li className="custom-paragraph em-c-primary-nav__item ">
             
              {/* eslint-disable-next-line */}
-            <a onClick={() => this.props.clicked('home')} className=" em-c-primary-nav__link custom-text-color-black em-is-current ">
+            <a onClick={() => this.props.clicked('home')} className="custom-paragraph em-u-clickable em-c-primary-nav__link custom-text-color-black ">
       
               a.Community
           </a>
@@ -94,7 +94,7 @@ class header extends Component<any>  {
 
           <li className="custom-paragraph em-c-primary-nav__item ">
              {/* eslint-disable-next-line */}
-            <a onClick={() => this.props.clicked('home')} className=" em-c-primary-nav__link custom-text-color-black em-is-current ">
+            <a onClick={() => this.props.clicked('home')} className=" custom-paragraph em-u-clickable em-c-primary-nav__link custom-text-color-black ">
       
               Services
           </a>
@@ -103,7 +103,7 @@ class header extends Component<any>  {
           <li className="custom-paragraph em-c-primary-nav__item ">
             
              {/* eslint-disable-next-line */}
-            <a onClick={() => this.props.clicked('home')} className="em-c-primary-nav__link custom-text-color-black em-is-current ">
+            <a onClick={() => this.props.clicked('home')} className="custom-paragraph em-u-clickable em-c-primary-nav__link custom-text-color-black ">
       
               Blog
           </a>
@@ -111,17 +111,18 @@ class header extends Component<any>  {
 
           <li className="custom-paragraph em-c-primary-nav__item ">
              {/* eslint-disable-next-line */}
-            <a onClick={() => this.props.clicked('about')} className="em-c-primary-nav__link custom-text-color-black em-is-current ">
+            <a onClick={() => this.props.clicked('about')} className="custom-paragraph em-u-clickable em-c-primary-nav__link custom-text-color-black  ">
       
               About
           </a>
           </li>
 
           <li className="custom-paragraph em-c-primary-nav__item ">
-            <a href="/src/container/Dashboard/dashboard.tsx" className="em-c-primary-nav__link custom-text-color-black em-is-current ">
-      
-              Hi, Jennifer
-          </a>
+             {/* eslint-disable-next-line */}
+          <a onClick={() => this.props.clicked('home')} className="custom-paragraph em-u-clickable em-c-primary-nav__link custom-text-color-black ">
+                <img src="https://emunity.blob.core.windows.net/unity/fpo_avatar.png" alt="Alt Text" className="em-c-avatar em-c-avatar" /> Hi, Jennifer
+
+              </a>
           </li>
 
 
