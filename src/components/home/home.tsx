@@ -18,7 +18,7 @@ import './home.css';
 
 const home = () => {
     return (
-        <Auxi>
+        <Auxi className="">
                 <div className="em-l-grid em-l-grid--1-to-3up ">
                     <div className="em-l-grid__item">
                         <div className="fpo-block">
@@ -82,7 +82,7 @@ const home = () => {
                 
                 <div className="em-l-container middle-section">
                     <div className="custom-H2 ">Want to see what we've done for others?</div>
-                    <div className="custom-paragraph success-stories">Check out the sucess stories from our teams and teams we've worked with in the past</div>
+                    <div className="custom-paragraph success-stories">Check out the success stories from our teams and teams we've worked with in the past</div>
                     <div>
                     <button className="em-c-btn em-c-btn--large custom-btn ">
                         <span className="em-c-btn__text">See other Success Stories</span>

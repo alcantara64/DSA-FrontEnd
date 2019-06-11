@@ -53,7 +53,7 @@ class header extends Component<any>  {
           <li className="em-c-primary-nav__item ">
                            
              {/* eslint-disable-next-line */}
-            <a onClick={() => this.props.clicked('home')} className="custom-paragraph em-c-primary-nav__link custom-text-color-black em-c-primary-nav__link--has-children em-js-nav-dropdown-trigger">
+            <a onClick={() => this.props.clicked('home')} className="custom-paragraph em-u-clickable em-c-primary-nav__link custom-text-color-black em-c-primary-nav__link--has-children em-js-nav-dropdown-trigger">
       
               Quick Links
       
@@ -65,19 +65,19 @@ class header extends Component<any>  {
             <ul className="em-c-primary-nav__sublist em-js-nav-dropdown ">
               <li className="em-c-primary-nav__subitem">                
              {/* eslint-disable-next-line */}
-                <a onClick={() => this.props.clicked('home')}  className="em-c-primary-nav__sublink">Subnav item</a>
+                <a onClick={() => this.props.clicked('home')}  className="em-c-primary-nav__sublink em-u-clickable">Subnav item</a>
               </li>
               <li className="em-c-primary-nav__subitem">                
              {/* eslint-disable-next-line */}
-                <a onClick={() => this.props.clicked('home')}  className="em-c-primary-nav__sublink">Subnav item</a>
+                <a onClick={() => this.props.clicked('home')}  className="em-c-primary-nav__sublink em-u-clickable">Subnav item</a>
               </li>
               <li className="em-c-primary-nav__subitem">                
              {/* eslint-disable-next-line */}
-                <a onClick={() => this.props.clicked('home')}  className="em-c-primary-nav__sublink">Subnav item</a>
+                <a onClick={() => this.props.clicked('home')}  className="em-c-primary-nav__sublink em-u-clickable">Subnav item</a>
               </li>
               <li className="em-c-primary-nav__subitem">
              {/* eslint-disable-next-line */}
-                <a onClick={() => this.props.clicked('home')}  className="em-c-primary-nav__sublink">Subnav item</a>
+                <a onClick={() => this.props.clicked('home')}  className="em-c-primary-nav__sublink em-u-clickable">Subnav item</a>
               </li>
             </ul>
           </li>
