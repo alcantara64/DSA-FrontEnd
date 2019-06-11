@@ -5,7 +5,10 @@
     clear: both;
    }
 
-   
+   .footer-l-container{
+     max-width: 90rem;
+     padding: 0 2rem;
+   }
   .column {
     float: left;
     top: 1455px;
@@ -24,11 +27,11 @@
    }
 
    .footer-container{
-    max-width: 90rem;
     background-color: rgba(255, 255, 255, 1);
     margin-top: -32px;
-    margin-left: 15rem;
+    width: 90rem;
     padding-top: 60px;
+    margin-left: 12.5%;
    }
 
   .em-c-logo{
