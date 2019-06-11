@@ -40,7 +40,7 @@
   }
 
   .em-l-grid--4up{
-    width: 78%;
+    width: 92%;
   }
 
   .custom-about-site-margin{
@@ -70,5 +70,21 @@
     .footer-container{
       margin-left: 3%;
      }
+  }
+
+  .footer-text-padding{
+    padding-bottom: 10px;
+  }
+
+  .footer-highlighted-emre-padding{
+    padding-bottom: 45px;
+  }
+
+  .footer-highlighted-coperate-padding{
+    padding-bottom: 107px;
+  }
+
+  .footer-highlighted-urc-padding{
+    padding-bottom: 42px;
   }
  
