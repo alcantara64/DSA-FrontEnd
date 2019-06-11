@@ -5,10 +5,7 @@
     clear: both;
    }
 
-   .footer-l-container{
-     max-width: 90rem;
-     padding: 0 2rem;
-   }
+   
   .column {
     float: left;
     top: 1455px;
@@ -27,11 +24,11 @@
    }
 
    .footer-container{
+    max-width: 90rem;
     background-color: rgba(255, 255, 255, 1);
     margin-top: -32px;
-    width: 90rem;
+    margin-left: 3%;
     padding-top: 60px;
-    margin-left: 12.5%;
    }
 
   .em-c-logo{
@@ -43,7 +40,7 @@
   }
 
   .em-l-grid--4up{
-    width: 78%;
+    width: 92%;
   }
 
   .custom-about-site-margin{
@@ -73,5 +70,21 @@
     .footer-container{
       margin-left: 3%;
      }
+  }
+
+  .footer-text-padding{
+    padding-bottom: 10px;
+  }
+
+  .footer-highlighted-emre-padding{
+    padding-bottom: 45px;
+  }
+
+  .footer-highlighted-coperate-padding{
+    padding-bottom: 107px;
+  }
+
+  .footer-highlighted-urc-padding{
+    padding-bottom: 42px;
   }
  

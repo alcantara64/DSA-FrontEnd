@@ -6,8 +6,8 @@ const footer = () => {
     return (
         <Auxi>
             
-<footer  className=" footer-l-container footer-container" role="contentinfo">
-
+<footer   role="contentinfo">
+<div className=" footer-l-container footer-container">
 <div className="em-l-grid em-l-grid--halves">
   <div className="em-l-grid__item">
     <div className="fpo-block">
@@ -20,7 +20,7 @@ const footer = () => {
             </div >
             <div className=" custom-analytics-margin em-l-grid em-l-grid--1-2-1 em-l-grid--break-fast em-u-text-align-left">
         <div className="custom-analytics em-l-grid__item em-u-padding-none">
-            <div className="custom-H3 fpo-block">Analytics Business COE's</div>
+            <div className="custom-H3 fpo-block">Analytics Business COEs</div>
         </div>
         <div className="em-l-grid__item em-u-padding-none">
             </div>
@@ -43,34 +43,50 @@ const footer = () => {
 <div className="em-l-grid em-l-grid--4up ">
   <div className="em-l-grid__item">
     <div className="custom-downstream-text fpo-block">
-    <div className="footer-link-bottom-spacing custom-H5">Downstream</div>
-    <div className="footer-link-bottom-spacing custom-paragraph">Controllers BCOE</div>
-    <div className="footer-link-bottom-spacing custom-paragraph">TDT Analytics</div>
-    <div className="footer-link-bottom-spacing custom-paragraph">BAR Analytics</div>
-    <div className="footer-link-bottom-spacing custom-paragraph">Downstream Data, Analytics, & Systems</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-H5">Downstream</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">Controllers BCOE</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">TDT Analytics</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">BAR Analytics</div>
+    <div className="footer-highlighted-emre-padding footer-link-bottom-spacing custom-paragraph">Downstream Data, Analytics, & Systems</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-H5">EMRE</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">Process Eng & Optimization</div>
+    <div className="footer-link-bottom-spacing custom-paragraph">Corperate Stragetic Reseaerch</div>
+
+
+
     </div>
   </div>
   <div className="em-l-grid__item">
     <   div className="fpo-block fpo-block--dark"> <div className="custom-downstream-text fpo-block">
-    <div className="footer-link-bottom-spacing custom-H5">Upstream</div>
-    <div className="footer-link-bottom-spacing custom-paragraph">Business Systems Support Team</div>
-    <div className="footer-link-bottom-spacing custom-paragraph">Upstream Technical Data Support</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-H5">Upstream</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">Business Systems Support Team</div>
+    <div className="footer-highlighted-coperate-padding footer-link-bottom-spacing custom-paragraph">Upstream Technical Data Support</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-H5">Corperate</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">Central SSHE</div>
+    <div className="footer-link-bottom-spacing custom-paragraph">Finance Transformation Pragram</div>
+
+
+
     </div>
   </div>
   </div>
   <div className="em-l-grid__item">
     <div className="fpo-block"> <div className="custom-downstream-text fpo-block">
-    <div className="footer-link-bottom-spacing custom-H5">GSC</div>
-    <div className="footer-link-bottom-spacing custom-paragraph">EMIT ITOE</div>
-    <div className="footer-link-bottom-spacing custom-paragraph">GSC BCOE</div>
-    <div className="footer-link-bottom-spacing custom-paragraph">Procurement Analytics Toolbox</div>
-    <div className="footer-link-bottom-spacing custom-paragraph">GREF Analytics</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-H5">GSC</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">EMIT ITOE</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">GSC BCOE</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">Procurement Analytics Toolbox</div>
+    <div className="footer-highlighted-urc-padding footer-link-bottom-spacing custom-paragraph">GREF Analytics</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-H5">URC</div>
+    <div className="footer-link-bottom-spacing custom-paragraph">Upstream Computational Sciences</div>
+
+
     </div>
     </div>
   </div>
   <div className="em-l-grid__item">
     <div className="fpo-block fpo-block--dark">
-    <div className="footer-link-bottom-spacing custom-H5">Chemical</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-H5">Chemical</div>
     <div className="footer-link-bottom-spacing custom-paragraph">Data, Analytics, & Systems</div>
     </div>
   </div>
@@ -184,6 +200,7 @@ const footer = () => {
         </div>
     </div>
   </div> */}
+  </div>
 </footer>
         </Auxi>
     )
