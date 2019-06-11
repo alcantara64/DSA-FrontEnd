@@ -119,12 +119,14 @@ const home = () => {
                             <img src={path_2} alt="" className="path-2"/>
                             <img src={rectangle} alt="" className="rectangle"/>
                             <img src={nasa} alt="" className="nasa"/>
-                            {/* <img src={linkedin} alt="" className="linkedin"/>
-                            <img src={oval} alt="" className="oval"/> */}
+                           
+                            <img src={oval} alt="" className="oval"/> 
                             <img src={oval_1} alt="" className="oval-1"/>
-                            {/* <img src={ian_espinosa} alt="" className="ian-espinosa"/> */}
-                            {/* <img src={combined_shape} alt="" className="combined_shape"/>
-                            <img src={fill_219} alt="" className="fill_219"/> */}
+                            <img src={fill_219} alt="" className="fill_219"/>
+                            <img src={ian_espinosa} alt="" className="ian-espinosa"/>
+                            <img src={linkedin} alt="" className="linkedin"/> 
+                            <img src={combined_shape} alt="" className="combined_shape"/>
+                           
                         </div>
                     </div>
                 </div>
