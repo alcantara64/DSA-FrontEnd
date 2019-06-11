@@ -25,7 +25,7 @@ const home = () => {
                             <div className="grid-1">
                             <div className="custom-H1 body-header">Data at ExxonMobil</div>
                             <div className="comming-soon">
-                                <a href="">
+                                <a href="../../container/Dashboard/dashboard.tsx">
                                     <img src={Learn_Illustration} alt="learn"/>
                                 </a>
                             </div>
@@ -43,7 +43,7 @@ const home = () => {
                             <div className="grid-2">
                             <div className="body-header"></div>
                             <div className="comming-soon">
-                                <a href="">
+                                <a href="../../container/Dashboard/dashboard.tsx">
                                     <img src={Community_Illustration} alt="learn"/>
                                 </a>
                             </div>
@@ -66,7 +66,7 @@ const home = () => {
                                 </div>
                                 </div>
                                 <div className="comming-soon">
-                                <a href="">
+                                <a href="../../container/Dashboard/dashboard.tsx">
                                     <img src={Find_Solutions_Illustration} alt="learn"/>
                                 </a>
                             </div>
