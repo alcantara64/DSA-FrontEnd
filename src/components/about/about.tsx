@@ -48,6 +48,25 @@ return (
 
             </div>
             <div className="column">
+                <div className="custom-paragraph">
+                    This design thinking workshop with data makes alot of progress and is an impressive team.
+            </div>
+            <div className="custom-paragraph custom-line-spacing">
+                <span className="custom-paragraph text-underline">Nick Smith, MS-BMR</span>
+            </div>
+            </div>
+            
+            <div className="column">
+                <div className="custom-paragraph">
+We can save alot of time just making a few small changes 
+            </div>
+            <div className="custom-paragraph custom-line-spacing">
+                <span className="custom-paragraph text-underline">Nick Smith, MS-BMR</span>
+            </div>
+
+
+            </div>
+            <div className="column">
 </div>
 <div className="column">
 3
