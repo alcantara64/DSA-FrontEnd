@@ -29,6 +29,7 @@
     margin-top: -32px;
     margin-left: 12.5%;
     padding-top: 60px;
+    padding-bottom: 50px;
    }
 
   .em-c-logo{
@@ -69,8 +70,13 @@
 
   @media only screen and (max-width: 1370px){
     .footer-container{
+      margin-left: 0%;
+    
+     }
+  }
+  @media only screen and (max-width: 1200px){
+    .footer-container{
       margin-left: 3%;
-      padding-bottom: 50px;
      }
   }
 

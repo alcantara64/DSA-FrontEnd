@@ -30,7 +30,7 @@ class header extends Component<any>  {
           <div className="em-c-header__title-container">
       <h2 className="em-c-header__title">
        {/* eslint-disable-next-line */}
-          <a  onClick={() => this.props.clicked('home')} rel="home" className="custom-heading-5 em-c-header__title-link custom-text-color-black">Data</a></h2>
+          <a  onClick={() => this.props.clicked('home')} rel="home" className=" em-u-clickable custom-heading-5 em-c-header__title-link custom-text-color-black">Data</a></h2>
     </div>
 
     <button className="em-c-btn em-c-btn--small em-c-btn--inverted em-c-header__nav-btn em-js-nav-trigger">
@@ -86,7 +86,7 @@ class header extends Component<any>  {
           <li className="custom-paragraph em-c-primary-nav__item ">
             
              {/* eslint-disable-next-line */}
-            <a onClick={() => this.props.clicked('home')} className=" em-c-primary-nav__link custom-text-color-black em-is-current ">
+            <a onClick={() => this.props.clicked('home')} className=" em-u-clickable em-c-primary-nav__link custom-text-color-black em-is-current ">
       
               a.Community
           </a>
@@ -94,7 +94,7 @@ class header extends Component<any>  {
 
           <li className="custom-paragraph em-c-primary-nav__item ">
              {/* eslint-disable-next-line */}
-            <a onClick={() => this.props.clicked('home')} className=" em-c-primary-nav__link custom-text-color-black em-is-current ">
+            <a onClick={() => this.props.clicked('home')} className=" em-u-clickable em-c-primary-nav__link custom-text-color-black em-is-current ">
       
               Services
           </a>
@@ -103,7 +103,7 @@ class header extends Component<any>  {
           <li className="custom-paragraph em-c-primary-nav__item ">
             
              {/* eslint-disable-next-line */}
-            <a onClick={() => this.props.clicked('home')} className="em-c-primary-nav__link custom-text-color-black em-is-current ">
+            <a onClick={() => this.props.clicked('home')} className=" em-u-clickable em-c-primary-nav__link custom-text-color-black em-is-current ">
       
               Blog
           </a>
@@ -111,14 +111,14 @@ class header extends Component<any>  {
 
           <li className="custom-paragraph em-c-primary-nav__item ">
              {/* eslint-disable-next-line */}
-            <a onClick={() => this.props.clicked('about')} className="em-c-primary-nav__link custom-text-color-black em-is-current ">
+            <a onClick={() => this.props.clicked('about')} className=" em-u-clickable em-c-primary-nav__link custom-text-color-black em-is-current ">
       
               About
           </a>
           </li>
 
           <li className="custom-paragraph em-c-primary-nav__item ">
-            <a href="/src/container/Dashboard/dashboard.tsx" className="em-c-primary-nav__link custom-text-color-black em-is-current ">
+            <a onClick={() => this.props.clicked('home')}  className=" em-u-clickable em-c-primary-nav__link custom-text-color-black em-is-current ">
       
               Hi, Jennifer
           </a>
