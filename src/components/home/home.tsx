@@ -8,11 +8,11 @@ import arif_wahid from './../../asset/images/arif-wahid.png';
 import path_2 from './../../asset/images/Path_2.png';
 import rectangle from './../../asset/images/Rectangle.png';
 import nasa from './../../asset/images/nasa.png';
-// import linkedin from './../../asset/images/linkedin.png';
-// import oval from './../../asset/images/Oval.png';
-// import combined_shape from './../../asset/images/Combined_Shape.png';
-// import ian_espinosa from './../../asset/images/ian-espinosa.png';
-// import fill_219 from './../../asset/images/Fill_291.png';
+import linkedin from './../../asset/images/linkedin.png';
+import oval from './../../asset/images/Oval.png';
+import combined_shape from './../../asset/images/Combined_Shape.png';
+import ian_espinosa from './../../asset/images/ian-espinosa.png';
+import fill_219 from './../../asset/images/Fill_291.png';
 import oval_1 from './../../asset/images/Oval_1.png';
 import './home.css';
 

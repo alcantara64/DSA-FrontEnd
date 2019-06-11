@@ -3,9 +3,40 @@
 }
 
 .custom-header-margin-left{
-margin-left: 2.5% !important;
+margin-left: 5.5% !important;
 }
 
 .custom-paragraph-width{
     max-width: 50% !important;
 }
+
+.custom-paragraph-margin{
+    margin-left: 7% !important;
+}
+
+.custom-line-spacing{
+    margin-top: 2% !important;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    top: 442px;
+    left: 140px;
+    height: 181px;
+    width: 274px;
+    margin: 21px !important;
+   }
+
+
+   .text-underline{
+       text-decoration-line: underline !important;
+       text-underline-position: below !important;
+       text-decoration-color: rgba(215, 56, 114, 1) !important;
+
+   }
