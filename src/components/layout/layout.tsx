@@ -6,7 +6,7 @@ import './layout.css';
 
 const layout = (props: any) => (
 <Auxi >
-    <Header />
+    <Header clicked={props.navClicked} {...props}></Header>
     <main className="em-l-container">
         {props.children}
     </main>
