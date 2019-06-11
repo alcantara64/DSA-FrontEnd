@@ -29,6 +29,7 @@
   }
   .body-header-data__container{
     display: inline-block;
+    margin-right: 111px;
   }
   .body-header-data__marker{
     height: 49px;
@@ -196,3 +197,8 @@
   .about-img-container{
     margin-top: -35px;
   }
+  @media screen and (max-width: 1367px){
+    .body-header{
+            margin-left: 31% !important;
+    }
+}
