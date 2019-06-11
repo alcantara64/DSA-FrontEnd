@@ -66,5 +66,9 @@
     width: 113%
   }
 
-  
+  @media only screen and (max-width: 1200px){
+    .footer-container{
+      margin-left: 3%;
+     }
+  }
  
