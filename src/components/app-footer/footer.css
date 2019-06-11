@@ -67,18 +67,18 @@
     margin-left: 112px;
     width: 113%
   }
-
+  @media only screen and (max-width: 1921px){
+    .footer-container{
+      margin-left: 12.2%;
+     }
+  }
   @media only screen and (max-width: 1370px){
     .footer-container{
       margin-left: 0%;
     
      }
   }
-  @media only screen and (max-width: 1200px){
-    .footer-container{
-      margin-left: 3%;
-     }
-  }
+  
 
   .footer-text-padding{
     padding-bottom: 10px;
