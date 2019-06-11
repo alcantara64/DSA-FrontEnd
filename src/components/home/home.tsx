@@ -2,7 +2,18 @@ import React from 'react';
 import Auxi from '../../hoc/Auxi';
 import Learn_Illustration from './../../asset/images/Learn_Illustration.png';
 import Community_Illustration from './../../asset/images/a.Community_Illustration.png';
-import Find_Solutions_Illustration from './../../asset/images/Find_Solutions_Illustration.png'
+import Find_Solutions_Illustration from './../../asset/images/Find_Solutions_Illustration.png';
+import lady_circle from './../../asset/images/lady_circle.png';
+import arif_wahid from './../../asset/images/arif-wahid.png';
+import path_2 from './../../asset/images/Path_2.png';
+import rectangle from './../../asset/images/Rectangle.png';
+import nasa from './../../asset/images/nasa.png';
+import linkedin from './../../asset/images/linkedin.png';
+import oval from './../../asset/images/Oval.png';
+import combined_shape from './../../asset/images/Combined_Shape.png';
+import ian_espinosa from './../../asset/images/ian-espinosa.png';
+import fill_219 from './../../asset/images/Fill_291.png';
+import oval_1 from './../../asset/images/Oval_1.png';
 import './home.css';
 
 const home = () => {
@@ -78,6 +89,47 @@ const home = () => {
                     </button>
                     </div>
                 </div>
+
+            <div className=" about-dsa">
+                
+                
+                <div className="em-l-grid em-l-grid--2up ">
+                <div className="em-l-grid__item first">
+                    <div className="fpo-block">
+                        <div >
+                            <div className="about-header custom-H2">
+                                DS&A is the data hub of ExxonMobil.
+                            </div>
+                            <div className="about-body custom-paragraph">
+                                Learn more about is here.
+                            </div>
+                        </div>
+                        <div className="about-container">
+                        <button className="em-c-btn em-c-btn--large large">
+                        <span className="em-c-btn__text custom-H2 btn-text">About DS&A</span>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div className="em-l-grid__item second">
+                    <div className="fpo-block fpo-block--dark">
+                        <div className="about-img-container">
+                            <img src={arif_wahid} alt="" className="arif-waheed"/>
+                            <img src={lady_circle} alt="" className="lady-circle"/>
+                            <img src={path_2} alt="" className="path-2"/>
+                            <img src={rectangle} alt="" className="rectangle"/>
+                            <img src={nasa} alt="" className="nasa"/>
+                            {/* <img src={linkedin} alt="" className="linkedin"/>
+                            <img src={oval} alt="" className="oval"/> */}
+                            <img src={oval_1} alt="" className="oval-1"/>
+                            {/* <img src={ian_espinosa} alt="" className="ian-espinosa"/> */}
+                            {/* <img src={combined_shape} alt="" className="combined_shape"/>
+                            <img src={fill_219} alt="" className="fill_219"/> */}
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
 
         </Auxi>
     )

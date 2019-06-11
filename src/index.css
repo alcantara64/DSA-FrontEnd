@@ -13,25 +13,55 @@ code {
 }
 
 .custom-paragraph{
-  font-family: 'EMprintRegular' !important;
+  font-family: 'emprintRegular' !important;
   font-size: 16px !important;
   line-height: 22px !important;
-  color: #0a3039 !important;
+  color: #0A3039 !important;
+}
+
+.custom-link{
+  font-family: 'emprintRegular' !important;
+  font-size: 16px !important;
+  line-height: 22px !important;
+  color: #D73872 !important;
 }
 
 .custom-H2{
-  font-family: 'EMprintSemibold';
+  font-family: 'emprintSemibold';
   font-size: 30.4px !important;
   line-height: 38px !important;
-  color: #0a3039 !important;
+  color: #0A3039 !important;
 }
 
 .custom-H1{
-  font-family: 'EMprintSemibold';
+  font-family: 'emprintSemibold';
   font-size: 46px !important;
   line-height: 58px !important;
-  color: #0a3039 !important;
+  color: #0A3039 !important;
 }
+
+.custom-H3{
+  font-family: 'emprintSemibold';
+  font-size: 24.4px !important;
+  line-height: 30px !important;
+  color: #0A3039 !important;
+}
+
+.custom-H4{
+  font-family: 'emprintSemibold';
+  font-size: 16px !important;
+  line-height: 22px !important;
+  color: #0A3039 !important;
+  text-transform: uppercase;
+}
+
+.custom-H5{
+  font-family: 'emprintSemibold';
+  font-size: 16px !important;
+  line-height: 22px !important;
+  color: #0A3039 !important;
+}
+
 
 
 
