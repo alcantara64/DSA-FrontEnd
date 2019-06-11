@@ -27,16 +27,44 @@
     max-width: 90rem;
     background-color: rgba(255, 255, 255, 1);
     margin-top: -32px;
-    margin-left: 12%;
+    margin-left: 3%;
     padding-top: 60px;
-}
+   }
+
   .em-c-logo{
-    width: 23%;
+    width: 16%;
   }
+
   .em-l-grid-halves{
     padding-bottom: 31px;
   }
+
   .em-l-grid--4up{
     width: 78%;
   }
+
+  .custom-about-site-margin{
+    margin-left: -22%;
+  }
+
+  .custom-logo-margin{
+    margin-right: -50%;
+  }
+  
+  .custom-analytics{
+    margin-left: 112px;
+    margin-top: 42px;
+  }
+
+  .custom-analytics-margin{
+    margin-bottom: -23px;
+  }
+
+  .custom-downstream-text{
+    text-align: -webkit-auto;
+    margin-left: 112px;
+    width: 113%
+  }
+
+  
  
