@@ -27,7 +27,7 @@
     max-width: 90rem;
     background-color: rgba(255, 255, 255, 1);
     margin-top: -32px;
-    margin-left: 12.2%;
+    margin-left: 12.5%;
     padding-top: 60px;
     padding-bottom: 50px;
    }
@@ -67,8 +67,11 @@
     margin-left: 112px;
     width: 113%
   }
- 
-
+  @media only screen and (max-width: 1880px){
+    .footer-container{
+      margin-left: 12.2%;
+     }
+  }
   @media only screen and (max-width: 1370px){
     .footer-container{
       margin-left: 0%;
