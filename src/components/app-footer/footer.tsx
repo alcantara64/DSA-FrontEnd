@@ -6,7 +6,7 @@ const footer = () => {
     return (
         <Auxi>
             
-<footer  className="footer-container" role="contentinfo">
+<footer  className=" footer-l-container footer-container" role="contentinfo">
 
 <div className="em-l-grid em-l-grid--halves">
   <div className="em-l-grid__item">
