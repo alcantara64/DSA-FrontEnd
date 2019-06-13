@@ -65,7 +65,7 @@ const home = () => {
                                     Find data standards, collaborate with influencers, and drive change through our community
                                 </div>
                                 </div>
-                                <div className="comming-soon">
+                                <div className="coming-soon">
                                 <a href="../../container/Dashboard/dashboard.tsx">
                                     <img src={Find_Solutions_Illustration} alt="learn"/>
                                 </a>
