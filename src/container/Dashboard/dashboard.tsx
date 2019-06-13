@@ -1,7 +1,9 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Layout from '../../components/layout/layout';
 import Home from '../../components/home/home';
 import About from '../../components/about/about';
+import { Switch, Route } from 'react-router';
+import Auxi from '../../hoc/Auxi'
 
 
 class dashboard extends Component {
@@ -9,48 +11,21 @@ class dashboard extends Component {
     //class should container method reference for header routing and footer visiblity
     //state sould only change in component
 
-    state = {
-        headerProperty: {
-            home: true, 
-            service: false,
-            blogs: false,
-            about: false,
-            resources: false,
-            comminuty: false
-        }
-    };
+    render() {
 
-    onHeaderClicked = (page: string) => {
-        const currentNavProp: any = {...this.state.headerProperty};
-        
-        for (var pages in currentNavProp) {
-            if(pages.toString() === page){
-                currentNavProp[pages] = true;
-            }else{
-                currentNavProp[pages] = false;
-            }
-        }
+        return (
+            <Auxi>
+                <Layout>
 
-        this.setState({
-            headerProperty: currentNavProp
-        })
-    }
+                    <Switch>
+                        <Route exact path='/' component={Home} />
+                        <Route path='/about' component={About} />
+                    </Switch>
 
-    render(){
+                </Layout>
+            </Auxi>
 
-        let page = null;
 
-        if(this.state.headerProperty.home){
-            page = <Home></Home>
-        }else if(this.state.headerProperty.about){
-            page = <About></About>
-        }
-
-        return(
-            <Layout navClicked={this.onHeaderClicked} navProperty={this.state.headerProperty}>
-                {/* hide show components*/}
-                {page}
-            </Layout>
         );
     }
 }
