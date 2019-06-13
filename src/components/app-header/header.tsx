@@ -79,7 +79,7 @@ class header extends Component<any>  {
                     </li>
 
                     <li className="custom-paragraph em-c-primary-nav__item ">
-                      <Link to="/" className="custom-paragraph em-u-clickable em-c-primary-nav__link custom-text-color-black ">
+                      <Link to="/blog" className="custom-paragraph em-u-clickable em-c-primary-nav__link custom-text-color-black ">
 
                         Blog
           </Link>
