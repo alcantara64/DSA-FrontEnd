@@ -1,26 +1,11 @@
 import React, { Component } from 'react';
 import Auxi from '../../hoc/Auxi';
 import './header.css';
+//import { Link } from 'react-router-dom';
 
 class header extends Component<any>  {
 
-  componentWillReceiveProps(nextProp: any){
-
-  }
-
-  shouldComponentUpdate = (nextProp: any, nextstate: any) => {
-    if(nextProp.navProperty.home === this.props.navProperty.home && nextProp.navProperty.service === this.props.navProperty.service
-      && nextProp.navProperty.blogs === this.props.navProperty.blogs && nextProp.navProperty.about === this.props.navProperty.about &&
-      nextProp.navProperty.resources === this.props.navProperty.resources && nextProp.navProperty.comminuty === this.props.navProperty.comminuty){
-      console.log('Header not Changed');
-      return false;
-    }else{
-      console.log('Header Changed');
-      return true;
-    }
-  }
-
-  render(){
+  render() {
 
     return (
       <Auxi >
@@ -132,9 +117,9 @@ class header extends Component<any>  {
     
           </div>
           </div>
-          </header>
+        </header>
       </Auxi>
-  )
+    )
   }
 
 }

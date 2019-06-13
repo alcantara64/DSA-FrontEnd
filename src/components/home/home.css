@@ -12,7 +12,7 @@
     font-family: 'emprintsemibold';
     font-size: 46px;
     color: rgba(10, 48, 57, 1);
-    margin-left: 22%;
+    margin-left: 32%;
     margin-bottom: 5%;
   }
   .body-header-data{
@@ -212,7 +212,7 @@
     color: rgba(255, 255, 255, 1) !important;
     width: 400    px;
     background-color: rgba(215, 56, 114, 0.8);
-    left: 81px;
+    left: 185px;
     margin-bottom: -82px;
   }
   
