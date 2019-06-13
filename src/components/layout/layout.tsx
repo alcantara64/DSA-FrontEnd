@@ -6,8 +6,8 @@ import './layout.css';
 
 const layout = (props: any) => (
 <Auxi >
-    <Header clicked={props.navClicked} {...props}></Header>
-    <main className=" page-background">
+    <Header></Header>
+    <main className="page-background">
         {props.children}
     </main>
     <Footer />
