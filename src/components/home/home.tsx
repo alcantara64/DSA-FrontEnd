@@ -25,11 +25,12 @@ const home = () => {
                         <div className="fpo-block">
                             <div className="grid-1">
                             <div className="custom-H1 body-header">Data at ExxonMobil</div>
-                            <div className="comming-soon">
+                            <div >
                                 <a href="../../container/Dashboard/dashboard.tsx">
-                                    <img src={Learn_Illustration} alt="learn"/>
+                                    <img className="" src={Learn_Illustration} alt="learn"/>
                                 </a>
                             </div>
+                            <div className=" custom-H2 coming-soon">Coming Soon</div>
                             <div className="write-up-container">
                             <div className="learning-header underline-learn">Learning</div>
                             <div className="learning-content">Find the tutorials, and walkthroughs that you need to power your workflow</div>
@@ -43,7 +44,7 @@ const home = () => {
                         <div className="fpo-block fpo-block--dark">
                             <div className="grid-2">
                             <div className="body-header"></div>
-                            <div className="comming-soon">
+                            <div >
                                 <a href="../../container/Dashboard/dashboard.tsx">
                                     <img src={Community_Illustration} alt="learn"/>
                                 </a>
@@ -66,9 +67,9 @@ const home = () => {
                                     Find data standards, collaborate with influencers, and drive change through our community
                                 </div>
                                 </div>
-                                <div className="comming-soon">
+                                <div >
                                 <a href="../../container/Dashboard/dashboard.tsx">
-                                    <img src={Find_Solutions_Illustration} alt="learn"/>
+                                    <img className="find-solutions"src={Find_Solutions_Illustration} alt="learn"/>
                                 </a>
                             </div>
                             <div className="write-up-container">
