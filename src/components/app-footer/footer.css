@@ -27,11 +27,14 @@
     /* max-width: 90rem; */
     background-color: rgba(255, 255, 255, 1);
     margin-top: -32px;
-    margin-left: 0%;
+    margin-left: 1%;
     padding-top: 60px;
     padding-bottom: 50px;
+    padding-left: 20px;
    }
-
+   .footer-description{
+    margin-right: 25%;
+   }
   .em-c-logo{
     width: 16%;
   }
