@@ -6,7 +6,7 @@ import './layout.css';
 const layout = (props: any) => (
 <Auxi >
     <Header></Header>
-    <main className="em-l-container page-background">
+    <main className="page-background">
         {props.children}
     </main>
 </Auxi>
