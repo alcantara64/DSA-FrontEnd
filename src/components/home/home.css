@@ -256,6 +256,9 @@
     .solution{
       margin-right: 20%;
     }
+    .about-container{
+      right: 1%;
+    }
   }
   @media screen and (max-width: 1367px){
     .body-header{
