@@ -7,11 +7,28 @@ margin-left: 5.5% !important;
 }
 
 .custom-paragraph-width{
-    max-width: 50% !important;
+    max-width: 48% !important;
 }
 
 .custom-paragraph-margin{
     margin-left: 7% !important;
+}
+
+.custom-mid-section-area{
+    margin-top: 2% !important;
+    height: 898px;
+}
+
+.custom-main-area{
+    max-width: 865px !important;
+    margin-left: 68px !important;
+
+}
+
+.custom-secondary-area{
+    background-color: rgba(215, 56, 114, 0.1);
+    height: 898px;
+    max-width: 273px !important;
 }
 
 .custom-line-spacing{
@@ -24,19 +41,122 @@ margin-left: 5.5% !important;
     clear: both;
 }
 
+.custom-left-tile-margin{
+    margin-left: 10.5px !important;
+
+}
+
+.custom-right-tile-margin{
+    margin-right: 10.5px !important;
+
+}
+
+.custom-small-tile-underline{
+    height: 3px;
+    background-color: rgba(215, 56, 114, 1) !important;
+}
+
 .column {
     float: left;
     top: 442px;
     left: 140px;
     height: 181px;
-    width: 280px;
-    margin: 1px !important;
+    width: 274px;
    }
 
+   .custom-button-color{
+       background-color: rgba(122, 65, 131, 1) !important;
+       background-image: none !important
+   }
 
-   .text-underline{
-       text-decoration-line: underline !important;
-       text-underline-position: below !important;
-       text-decoration-color: rgba(215, 56, 114, 1) !important;
+   .custom-secondary-tile-detail-area{
+    height: 182px !important;
+   }
+
+   .custom-search-button-margin{
+       margin-top: 64px !important;
+   }
+
+   .custom-factory-img{
+    height: 64px;
+    width: 64px;
+    background-image: -webkit-linear-gradient(-227deg, rgba(215, 56, 114, 1) 0%, rgba(215, 56, 114, 1) 12%, rgba(189, 47, 127, 1) 52%, rgba(122, 65, 131, 1) 82%, rgba(122, 65, 131, 1) 100%);
+    background-image: -moz-linear-gradient(-227deg, rgba(215, 56, 114, 1) 0%, rgba(215, 56, 114, 1) 12%, rgba(189, 47, 127, 1) 52%, rgba(122, 65, 131, 1) 82%, rgba(122, 65, 131, 1) 100%);
+    background-image: -o-linear-gradient(-227deg, rgba(215, 56, 114, 1) 0%, rgba(215, 56, 114, 1) 12%, rgba(189, 47, 127, 1) 52%, rgba(122, 65, 131, 1) 82%, rgba(122, 65, 131, 1) 100%);
+    background-image: linear-gradient(-227deg, rgba(215, 56, 114, 1) 0%, rgba(215, 56, 114, 1) 12%, rgba(189, 47, 127, 1) 52%, rgba(122, 65, 131, 1) 82%, rgba(122, 65, 131, 1) 100%);
+    
+   }
+
+   .custom-mid-page-slider-photo-column{
+    padding-top: 80px !important;
+    margin-right: 32px;
+    float: left;
+    top: 442px;
+    left: 140px;
+    height: 181px;
+    width: 161px;
+   }
+
+   .purple-text-color{
+       color: rgba(122, 65, 131, 1) !important;
+   }
+
+   .custom-mid-page-slider-details-column{
+    padding-right: 20% !important;
+    width: 1051px !important;
+    left: 140px !important;
+    top: 442px !important;
+    float: left;
+    text-align: left !important;
+   }
+
+   .custom-mid-photo-area{
+    height: 160px;
+    width: 160px;
+   }
+
+   .no-text-transform{
+       text-transform: none !important;
+   }
+
+   .custom-mid-background-area{
+       padding-top: 32px !important;
+       margin-top: 32px !important;
+    height: 344px;
+    background-color: rgba(122, 65, 131, 0.1) ;
+   }
+
+   .custom-margin{
+       margin-top: 32px !important;
+   }
+
+   .custom-about-regular-h3{
+       
+  font-family: 'emprintRegular';
+  font-size: 24.4px !important;
+  line-height: 30px !important;
+   }
+
+   .custom-mid-page-header-margin{
+    margin-top: 13px;
 
    }
+
+   .custom-mid-page-card-column{
+    top: 442px;
+    left: 140px;
+    height: 262px;
+    width: 216px;
+    background-color: rgba(245, 245, 245, 1);
+    border-bottom: 8px solid rgba(215, 56, 114, 1);
+   }
+
+   .dot {
+       margin: 4px !important;
+height: 20px;
+width: 20px;
+    background-color:rgba(122, 65, 131, 1);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
