@@ -10,6 +10,8 @@
 
 .em-c-header__body{
     padding: 0.5em 34px;
+    margin-left: 61px !important;
+    width: 94% !important;
 }
 .em-c-header__title{
     padding-left: 77px;
