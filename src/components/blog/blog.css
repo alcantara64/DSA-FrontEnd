@@ -61,4 +61,33 @@
     height: 168px;
 }
 
+.custom-blog-area-small{
+    height: 168px;
+    border-bottom: 2px solid rgba(216, 216, 216, 1);
+    margin-top: 20px !important;
+}
+
+.custom-blog-number-margin{
+    margin-top: 7% !important;
+}
+
+.custom-tile-background{
+    height: 40px !important;
+    background-color: rgba(245, 245, 245, 1) !important;
+}
+
+.custom-link-bold{
+    font-family: 'emprintSemibold' !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    color: #D73872 !important;
+  }
+
+  .custom-editor-blog-area{
+      height: 325px !important;
+  }
+
+  .custom-blog-text-margin{
+      margin-top: 16px !important;
+  }
 
