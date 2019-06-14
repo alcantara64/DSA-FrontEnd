@@ -64,7 +64,7 @@ const blog = () => {
                         </div>
 
 
-                        <div className="em-l-linelength-container em-u-text-align-left custom-link-margin">
+                        <div className="custom-full-archive em-l-linelength-container em-u-text-align-left custom-link-margin">
                             <Link to="/blog" className="custom-link ">
                                 See Full Archive of Article
                             </Link>
@@ -79,10 +79,10 @@ const blog = () => {
 
                             <div className=" em-l em-l--two-column ">
                                 <div className="em-l__main custom-blog-number-margin">
-                                    <div className="custom-H1">1</div>
+                                    <div className="custom-number-digit">1</div>
                                 </div>
                                 <div className="em-l__secondary em-u-text-align-left">
-                                    <div className="">
+                                    <div  className="custom-margin-success-stories">
                                         <Link to="/blog" className="custom-font-success-stories ">
                                             Success Stories
             </Link>
@@ -111,22 +111,22 @@ const blog = () => {
 
                             <div className=" em-l em-l--two-column ">
                                 <div className="em-l__main custom-blog-number-margin">
-                                    <div className="custom-H1">2</div>
+                                    <div className="custom-number-digit">2</div>
                                 </div>
                                 <div className="em-l__secondary em-u-text-align-left">
-                                    <div>
-                                        <Link to="/blog" className="custom-link ">
+                                    <div  className="custom-margin-success-stories">
+                                        <Link to="/blog" className="custom-font-success-stories ">
                                             Success Stories
             </Link>
                                     </div>
 
-                                    <div className="custom-H3 ">Data Governance in Action</div>
+                                    <div className="custom-font-data-governance ">FTP Success Story</div>
 
                                     <div className="custom-paragraph ">
-                                        Key data governance roles were redefined to make responsibilities in Upstream.
+                                       This would be an article about a success story of data at ExxonMobil.
     </div>
 
-                                    <div className="custom-paragraph">Vanessa Surber
+                                    <div className="custom-paragraph">Johnny Swim
 </div>
 
 
@@ -143,22 +143,22 @@ const blog = () => {
 
                             <div className=" em-l em-l--two-column ">
                                 <div className="em-l__main custom-blog-number-margin">
-                                    <div className="custom-H1">3</div>
+                                    <div className="custom-number-digit">3</div>
                                 </div>
                                 <div className="em-l__secondary em-u-text-align-left">
-                                    <div>
-                                        <Link to="/blog" className="custom-link ">
+                                    <div  className="custom-margin-success-stories">
+                                        <Link to="/blog" className="custom-font-success-stories ">
                                             Success Stories
             </Link>
                                     </div>
 
-                                    <div className="custom-H3 ">Data Governance in Action</div>
+                                    <div className="custom-font-data-governance ">How Does Data Work?</div>
 
                                     <div className="custom-paragraph ">
-                                        Key data governance roles were redefined to make responsibilities in Upstream.
+                                        Learn how to leverage data for your workflow.
     </div>
 
-                                    <div className="custom-paragraph">Vanessa Surber
+                                    <div className="custom-paragraph">Ali Wilkin
 </div>
 
 
@@ -175,22 +175,22 @@ const blog = () => {
 
                             <div className=" em-l em-l--two-column ">
                                 <div className="em-l__main custom-blog-number-margin">
-                                    <div className="custom-H1">4</div>
+                                    <div className="custom-number-digit">4</div>
                                 </div>
                                 <div className="em-l__secondary em-u-text-align-left">
-                                    <div>
+                                    <div  className="custom-margin-success-stories">
                                         <Link to="/blog" className="custom-link ">
                                             Success Stories
             </Link>
                                     </div>
 
-                                    <div className="custom-H3 ">Data Governance in Action</div>
+                                    <div className="custom-font-data-governance ">The Best Answers</div>
 
                                     <div className="custom-paragraph ">
-                                        Key data governance roles were redefined to make responsibilities in Upstream.
+                                        Learn best practices of data and analytics at ExxonMobil.
     </div>
 
-                                    <div className="custom-paragraph">Vanessa Surber
+                                    <div className="custom-paragraph">Emily Cookson
 </div>
 
 
@@ -207,22 +207,22 @@ const blog = () => {
 
                             <div className=" em-l em-l--two-column ">
                                 <div className="em-l__main custom-blog-number-margin">
-                                    <div className="custom-H1">5</div>
+                                    <div className="custom-number-digit">5</div>
                                 </div>
                                 <div className="em-l__secondary em-u-text-align-left">
-                                    <div>
+                                    <div className="custom-margin-success-stories">
                                         <Link to="/blog" className="custom-link ">
                                             Success Stories
             </Link>
                                     </div>
 
-                                    <div className="custom-H3 ">Data Governance in Action</div>
+                                    <div className="custom-font-data-governance ">Linux Or Windows?</div>
 
                                     <div className="custom-paragraph ">
-                                        Key data governance roles were redefined to make responsibilities in Upstream.
+                                        The age old question, with a new twist.
     </div>
 
-                                    <div className="custom-paragraph">Vanessa Surber
+                                    <div className="custom-paragraph">Frank Ocean
 </div>
 
 

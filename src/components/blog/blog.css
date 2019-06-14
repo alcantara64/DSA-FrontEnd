@@ -93,13 +93,18 @@
 
   @media screen and (max-width: 1921px){
       .custom-page-margin{
-          margin-left: 8.5% !important;
+          margin-left: 6.5% !important;
       }
+      .custom-recent-blog-area{
+        height: 995px !important;
+        max-width: 1230px !important;
+    }
   }
 
   .custom-font-data-governance{
     font-size: 22px !important;
     font-family: emprintsemibold;
+    margin-bottom: 8px;
 }
 
 .custom-font-success-stories{
@@ -109,4 +114,25 @@
     text-transform: uppercase;
 }
 
+.custom-full-archive{
+    
+        font-size: 16px !important;
+        font-family: emprintregular;
+        color: #D73872 !important;
+        text-transform: uppercase;
+    
+}
+
+.custom-number-digit{
+    font-family: 'emprintSemibold';
+    margin-left: -43px;
+
+    font-size: 74px !important;
+    line-height: 58px !important;
+    color: #0A3039 !important;
+}
+
+.custom-margin-success-stories{
+    margin-bottom: 12px;
+}
 
