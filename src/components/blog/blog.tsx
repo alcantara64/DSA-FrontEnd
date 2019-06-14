@@ -94,7 +94,7 @@ const blog = () => {
                                         Key data governance roles were redefined to make responsibilities in Upstream.
     </div>
 
-                                    <div className="custom-paragraph">Vanessa Surber
+                                    <div className="custom-vanessa-padding custom-paragraph">Vanessa Surber
 </div>
 
 
@@ -126,7 +126,7 @@ const blog = () => {
                                        This would be an article about a success story of data at ExxonMobil.
     </div>
 
-                                    <div className="custom-paragraph">Johnny Swim
+                                    <div className="custom-vanessa-padding custom-paragraph">Johnny Swim
 </div>
 
 
@@ -158,7 +158,7 @@ const blog = () => {
                                         Learn how to leverage data for your workflow.
     </div>
 
-                                    <div className="custom-paragraph">Ali Wilkin
+                                    <div className="custom-vanessa-padding custom-paragraph">Ali Wilkin
 </div>
 
 
@@ -190,7 +190,7 @@ const blog = () => {
                                         Learn best practices of data and analytics at ExxonMobil.
     </div>
 
-                                    <div className="custom-paragraph">Emily Cookson
+                                    <div className="custom-vanessa-padding custom-paragraph">Emily Cookson
 </div>
 
 
@@ -222,7 +222,7 @@ const blog = () => {
                                         The age old question, with a new twist.
     </div>
 
-                                    <div className="custom-paragraph">Frank Ocean
+                                    <div className="custom-vanessa-padding custom-paragraph">Frank Ocean
 </div>
 
 
@@ -236,7 +236,7 @@ const blog = () => {
                 </div>
 
 
-                <div className="custom-tile-background em-u-padding-top-half custom-link-bold">
+                <div className="custom-editor-blog-margin custom-tile-background em-u-padding-top-half custom-link-bold">
                     Editor's Pick
                 </div>
 
