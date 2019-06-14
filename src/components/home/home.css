@@ -43,7 +43,7 @@
   }
   .body-header-data__container{
     display: inline-block;
-    margin-right: 87px;
+    margin-right: 28%;
     /* margin-left: 13px; */
   }
   .body-header-data__marker{
@@ -60,7 +60,7 @@
     margin-left: 18%;
     font-family: 'emprintregular';
     height: 66px;
-    width: 81%;
+    width: 95%;
     font-size: 16px;
     color: rgba(10, 48, 57, 1);
     text-align: left;
@@ -73,20 +73,20 @@
     font-size: 30px;
     color: rgba(10, 48, 57, 1);
     text-align: center;
-    margin-left: 41%;
-    
+    margin-left: 35%;
+
   }
   .underline-learn{
     border-bottom: 8px solid rgba(215, 56, 114, 1);
-    width: 21%
+    width: 26%;
   }
   .underline-community{
     border-bottom: 8px solid rgba(215, 56, 114, 1);
-    width: 28%;
+    width: 35%;
   }
   .underline-solution{
     border-bottom: 8px solid rgba(215, 56, 114, 1);
-    width: 38%;
+    width: 49%;
   }
   .middle-section{
     height: 14.25rem;
@@ -117,16 +117,16 @@
     height: 27rem;
     background-color: rgba(122, 65, 131, 1);
     margin-bottom: 33px;
-    
+
   }
   .first{
     margin-top: 7%;
     width: 37% !important;
   }
   .second{
-    width: 41% !important;
+    width: 52% !important;
     margin-top: 5%;
-    margin-left: 19%;
+    margin-left: 11%;
   }
   .about-header{
     color: #eeeeee !important;
@@ -149,7 +149,7 @@
   }
   .about-container{
     margin-top: 34px;
-    margin-right: 172px;
+    /* margin-right: 172px; */
   }
   .btn-text{
     padding-right: 11px;
@@ -233,11 +233,11 @@
     left: 69px;
     margin-bottom: -82px;
   }
-  
+
   @media screen and (max-width: 1367px){
     .body-header{
             margin-left: 31% !important;
     }
 
-    
+
 }
