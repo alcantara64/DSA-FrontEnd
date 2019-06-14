@@ -39,11 +39,11 @@
     bottom: 46px;
   }
   .solution{
-    margin-right: 20%;
+    margin-right: 15%;
   }
   .body-header-data__container{
     display: inline-block;
-    margin-right: 28%;
+    margin-right: 13%;
     /* margin-left: 13px; */
   }
   .body-header-data__marker{
@@ -60,7 +60,7 @@
     margin-left: 18%;
     font-family: 'emprintregular';
     height: 66px;
-    width: 95%;
+    width: 85%;
     font-size: 16px;
     color: rgba(10, 48, 57, 1);
     text-align: left;
@@ -73,20 +73,20 @@
     font-size: 30px;
     color: rgba(10, 48, 57, 1);
     text-align: center;
-    margin-left: 35%;
+    margin-left: 39%;
 
   }
   .underline-learn{
     border-bottom: 8px solid rgba(215, 56, 114, 1);
-    width: 26%;
+    width: 21%;
   }
   .underline-community{
     border-bottom: 8px solid rgba(215, 56, 114, 1);
-    width: 35%;
+    width: 28%;
   }
   .underline-solution{
     border-bottom: 8px solid rgba(215, 56, 114, 1);
-    width: 49%;
+    width: 38%;
   }
   .middle-section{
     height: 14.25rem;
@@ -124,9 +124,9 @@
     width: 37% !important;
   }
   .second{
-    width: 52% !important;
+    width: 41% !important;
     margin-top: 5%;
-    margin-left: 11%;
+    margin-left: 19%;
   }
   .about-header{
     color: #eeeeee !important;
@@ -149,6 +149,8 @@
   }
   .about-container{
     margin-top: 34px;
+    position: relative;
+    right: 7%;
     /* margin-right: 172px; */
   }
   .btn-text{
@@ -218,6 +220,7 @@
 
   .find-solutions{
     height: 242px ;
+    margin-right: 10%
   }
 
   .coming-soon{
@@ -233,7 +236,27 @@
     left: 69px;
     margin-bottom: -82px;
   }
-
+  @media screen and (max-width: 1880px){
+    .body-header-data__container{
+      margin-right: 28%;
+    }
+    .second{
+      margin-left: 11%;
+      width: 52% !important;
+    }
+    .underline-learn{
+      width: 25%;
+    }
+    .underline-community{
+      width: 35%;
+    }
+    .underline-solution{
+      width: 49%;
+    }
+    .solution{
+      margin-right: 20%;
+    }
+  }
   @media screen and (max-width: 1367px){
     .body-header{
             margin-left: 31% !important;
