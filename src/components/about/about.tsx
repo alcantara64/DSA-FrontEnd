@@ -90,6 +90,12 @@ We can save alot of time just making a few small changes
         <div className = "custom-paragraph">
             Access market for new and emerging technologies and evaluate for suitability for near-term use cases (SAP VORA) 
         </div>
+        <div>
+            Technical Expertise
+        </div>
+        <div>
+            Maintain and support a diverse platform of interconnected data and analytics technologies
+        </div>
     </div>
   </div>
 </div>

@@ -88,7 +88,7 @@ const blog = () => {
             </Link>
                                     </div>
 
-                                    <div className="custom-H3 ">Data Governance in Action</div>
+                                    <div className="custom-font-data-governance ">Data Governance in Action</div>
 
                                     <div className="custom-paragraph ">
                                         Key data governance roles were redefined to make responsibilities in Upstream.
