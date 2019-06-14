@@ -1,8 +1,6 @@
 .em-l-grid--1-to-3up{
-    width: 111.5%;
     background-color: rgba(255, 255, 255, 1);
     margin-top: -32px;
-    margin-left: -74px;
     padding-top: 60px;
   }
   .body-header{
@@ -75,7 +73,7 @@
   }
   .middle-section{
     height: 13.25rem;
-    margin-top: 20px;
+    margin-top: 32px;
   }
   .success-stories{
     margin-bottom: 38px;
