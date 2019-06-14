@@ -80,7 +80,17 @@ We can save alot of time just making a few small changes
 
   </div>
   <div className="em-l__secondary">
-    <div className="fpo-block">Secondary</div>
+    <div className="fpo-block">
+        <div className="custom-H3">
+            Our Core Values
+        </div>
+        <div className="custom-H5">
+            Enterprise Platform
+        </div>
+        <div className = "custom-paragraph">
+            Access market for new and emerging technologies and evaluate for suitability for near-term use cases (SAP VORA) 
+        </div>
+    </div>
   </div>
 </div>
 
