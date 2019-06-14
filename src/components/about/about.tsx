@@ -1,6 +1,7 @@
 import React from 'react';
 import Auxi from '../../hoc/Auxi';
 import './about.css';
+import Footer from '../app-footer/footer';
 
 const about = () => {
 return (
@@ -85,6 +86,8 @@ We can save alot of time just making a few small changes
 
         </div>
 
+
+        <Footer />
     </Auxi>
 )
 }

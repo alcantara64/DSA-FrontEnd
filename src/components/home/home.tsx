@@ -15,6 +15,7 @@ import ian_espinosa from './../../asset/images/ian-espinosa.png';
 import fill_219 from './../../asset/images/Fill_291.png';
 import oval_1 from './../../asset/images/Oval_1.png';
 import './home.css';
+import Footer from '../app-footer/footer';
 
 const home = () => {
     return (
@@ -133,6 +134,8 @@ const home = () => {
                 </div>
             </div>
 
+
+        <Footer />
         </Auxi>
     )
 }
