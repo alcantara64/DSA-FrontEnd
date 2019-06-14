@@ -82,8 +82,8 @@ const blog = () => {
                                     <div className="custom-H1">1</div>
                                 </div>
                                 <div className="em-l__secondary em-u-text-align-left">
-                                    <div>
-                                        <Link to="/blog" className="custom-link ">
+                                    <div className="">
+                                        <Link to="/blog" className="custom-font-success-stories ">
                                             Success Stories
             </Link>
                                     </div>

@@ -91,7 +91,7 @@
       margin-top: 16px !important;
   }
 
-  @media only screen and (max-width: 1921px){
+  @media screen and (max-width: 1921px){
       .custom-page-margin{
           margin-left: 8.5% !important;
       }
@@ -99,6 +99,14 @@
 
   .custom-font-data-governance{
     font-size: 22px !important;
-    font-family: emprintbold;
+    font-family: emprintsemibold;
 }
+
+.custom-font-success-stories{
+    font-size: 12px !important;
+    font-family: emprintregular;
+    color: #D73872 !important;
+    text-transform: uppercase;
+}
+
 
