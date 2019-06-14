@@ -19,7 +19,7 @@ class dashboard extends Component {
                 <Layout>
 
                     <Switch>
-                        <Route exact path='/dsa' component={Home} />
+                        <Route exact path='/' component={Home} />
                         <Route path='/about' component={About} />
                         <Route path='/blog' component={Blog} />                        
                     </Switch>
