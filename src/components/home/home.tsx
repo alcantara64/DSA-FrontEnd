@@ -72,7 +72,7 @@ const home = () => {
                                     <img className="find-solutions"src={Find_Solutions_Illustration} alt="learn"/>
                                 </a>
                             </div>
-                            <div className="write-up-container">
+                            <div className="write-up-container solution">
                             <div className="learning-header underline-solution">Find Solutions</div>
                             <div className="learning-content">Lets's direct you to the tool, tutorial, or person that will get you what you need through our services portal.</div>
                             </div>
@@ -82,12 +82,12 @@ const home = () => {
 
                 </div>
                 
-                <div className="em-l-container middle-section">
+                <div className=" middle-section">
                     <div className="custom-H2 ">Want to see what we've done for others?</div>
                     <div className="custom-paragraph success-stories">Check out the success stories from our teams and teams we've worked with in the past</div>
                     <div>
                     <button className="em-c-btn em-c-btn--large custom-btn ">
-                        <span className="em-c-btn__text">See other Success Stories</span>
+                        <span className="em-c-btn__text custom-paragraph">See other Success Stories</span>
                     </button>
                     </div>
                 </div>

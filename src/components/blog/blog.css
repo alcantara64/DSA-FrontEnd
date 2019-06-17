@@ -46,6 +46,7 @@
 
 .custom-small-area-post{
     height: 362px !important;
+  
 }
 
 .custom-rec-blog-detail-small-area{
@@ -62,13 +63,13 @@
 }
 
 .custom-blog-area-small{
-    height: 168px;
+    height: 182px;
     border-bottom: 2px solid rgba(216, 216, 216, 1);
-    margin-top: 20px !important;
+    margin-top: 13px !important;
 }
 
 .custom-blog-number-margin{
-    margin-top: 7% !important;
+    margin-top: 10% !important;
 }
 
 .custom-tile-background{
@@ -81,6 +82,7 @@
     font-size: 16px !important;
     line-height: 22px !important;
     color: #D73872 !important;
+    text-transform: uppercase;
   }
 
   .custom-editor-blog-area{
@@ -91,3 +93,77 @@
       margin-top: 16px !important;
   }
 
+  @media screen and (max-width: 1921px){
+      .custom-page-margin{
+          margin-left: 6.5% !important;
+      }
+      .custom-recent-blog-area{
+        height: 995px !important;
+        max-width: 1230px !important;
+    }
+  }
+
+  @media screen and (max-width: 1370px){
+    .custom-page-margin{
+        margin-left: 8.5% !important;
+        margin-right: 8.5% !important
+  }
+}
+
+  .custom-font-data-governance{
+    font-size: 22px !important;
+    font-family: emprintsemibold;
+    margin-bottom: 8px;
+}
+
+.custom-font-success-stories{
+    font-size: 12px !important;
+    font-family: emprintregular;
+    color: #D73872 !important;
+    text-transform: uppercase;
+}
+
+.custom-full-archive{
+    
+        font-size: 16px !important;
+        font-family: emprintregular;
+        color: #D73872 !important;
+        text-transform: uppercase;
+    
+}
+
+.custom-number-digit{
+    font-family: 'emprintSemibold';
+    margin-left: -43px;
+
+    font-size: 74px !important;
+    line-height: 58px !important;
+    color: #0A3039 !important;
+}
+
+.custom-margin-success-stories{
+    margin-bottom: 12px;
+}
+
+.custom-vanessa-padding{
+    padding-top: 15px;
+}
+
+.custom-editor-blog-margin{
+    margin-top: 70px;
+}
+
+.custom-blog-editor-pick{
+    font-size: 16px !important;
+    font-family: emprintsemibold;
+    color: #D73872 !important;
+    text-transform: uppercase;
+}
+
+.custom-line-border-bottom{
+    border-bottom: 8px solid rgba(215, 56, 114, 1);
+}
+
+.custom-bottom-margin{
+    width: 30.4%;
+}

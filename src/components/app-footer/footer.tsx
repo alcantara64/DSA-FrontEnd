@@ -11,7 +11,7 @@ const footer = () => {
 <div className="em-l-grid em-l-grid--halves">
   <div className="em-l-grid__item">
     <div className="fpo-block">
-    <div >
+    <div className = "footer-description">
             <div className="about-site custom-about-site-margin custom-paragraph">
             Question about the site?
             </div>
