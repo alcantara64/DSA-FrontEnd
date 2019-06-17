@@ -212,15 +212,54 @@ return (
   </div>
 </div>
 
-<div className="em-l-grid__item em-u-padding-top">
+<div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left">
                 
-                <div className="custom-H3">Who are we?</div>
+                <div className="custom-H3">Data Science</div>
                 
-                <div className="custom-paragraph">This website is sponsored by Data Science and Analytics within EMIT. We work to define and maintain data stadards,
-                collaborate with other influencers in the data and analytics space, and drive change for the better in your day-to-day work.
-                </div>
+                <div className="custom-paragraph">
+                    
+                We enable and assist with exploratory analysis, research, productization and support, and various data science platforms.
+                                    </div>
         
                     </div>
+
+                    
+                <div className="em-l-grid em-l-grid--2up  em-u-padding-none custom-medium-tile-area em-u-text-align-left">
+                <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double">
+                    
+                <div className="custom-H4 no-text-transform">Exploratory Analysis</div>
+      <div className="custom-paragraph">Conduct exploratory analysis on data using advanced analytics resulting in new opportunity identification.</div>
+
+                </div>
+                <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double">
+                    
+                <div className="custom-H4 no-text-transform">Applied Research</div>
+      <div className="custom-paragraph">Build custom machine learning models to augment the business decision-making process using Natural Language Process & Computer Vision techniques.</div>
+
+
+                </div>
+                <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double">
+                    
+                <div className="custom-H4 no-text-transform">Model Productization & Support</div>
+      <div className="custom-paragraph">Operationalize data science solutions (models) and integrate into business workflows.</div>
+
+
+                </div>
+                <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double">
+                    
+                <div className="custom-H4 no-text-transform">Technology Platforms</div>
+      <div className="custom-paragraph">AI/ML enablement platforms for developing, training and deploying models from individual data scientists to large collaborative teams.</div>
+
+
+                </div>
+                <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double">
+                    
+                <div className="custom-H4 no-text-transform">Citizen Data Scientist Enablement</div>
+      <div className="custom-paragraph">Cultivate data science skills among business analysts with strong domain knowledge and interest to learn and experiment.</div>
+
+
+                </div>
+                </div>
 
         </div>
 
