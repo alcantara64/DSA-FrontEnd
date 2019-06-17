@@ -1,9 +1,24 @@
 .em-l-grid--1-to-3up{
-    width: 111.5%;
     background-color: rgba(255, 255, 255, 1);
     margin-top: -32px;
-    margin-left: -74px;
     padding-top: 60px;
+  }
+ 
+  .learn_illustration{
+    padding-left: 18%;
+  }
+  .grid-1{
+    margin-left: 10%;
+  }
+  .em-l-grid__item{
+    width: 31.9%;
+  }
+  .em-l-grid--2up{
+    margin-left: 10px;
+  }
+  .em-c-btn__text{
+    color: rgba(255, 255, 255, 1) !important;
+    font-size: 21px !important;
   }
   .body-header{
     text-align: left;
@@ -27,9 +42,13 @@
     position: relative;
     bottom: 46px;
   }
+  .solution{
+    margin-right: 15%;
+  }
   .body-header-data__container{
     display: inline-block;
-    margin-right: 111px;
+    margin-right: 13%;
+    /* margin-left: 13px; */
   }
   .body-header-data__marker{
     height: 49px;
@@ -42,10 +61,10 @@
   }
   .learning-content{
     padding-top:  11px;
-    margin-left: 22%;
+    margin-left: 18%;
     font-family: 'emprintregular';
     height: 66px;
-    width: 67%;
+    width: 85%;
     font-size: 16px;
     color: rgba(10, 48, 57, 1);
     text-align: left;
@@ -58,24 +77,26 @@
     font-size: 30px;
     color: rgba(10, 48, 57, 1);
     text-align: center;
-    margin-left: 31%;
-    
+    margin-left: 39%;
+
   }
   .underline-learn{
     border-bottom: 8px solid rgba(215, 56, 114, 1);
-    width: 26%
+    width: 21%;
   }
   .underline-community{
     border-bottom: 8px solid rgba(215, 56, 114, 1);
-    width: 40%;
+    width: 28%;
   }
   .underline-solution{
     border-bottom: 8px solid rgba(215, 56, 114, 1);
-    width: 42%;
+    width: 38%;
   }
   .middle-section{
-    height: 13.25rem;
-    margin-top: 20px;
+    height: 14.25rem;
+    margin-top: 32px;
+    background-color: #eeeeee;
+    padding-top: 32px;
   }
   .success-stories{
     margin-bottom: 38px;
@@ -100,16 +121,16 @@
     height: 27rem;
     background-color: rgba(122, 65, 131, 1);
     margin-bottom: 33px;
-    
+
   }
   .first{
     margin-top: 7%;
     width: 37% !important;
   }
   .second{
-    width: 54% !important;
+    width: 41% !important;
     margin-top: 5%;
-    margin-left: 99px;
+    margin-left: 19%;
   }
   .about-header{
     color: #eeeeee !important;
@@ -132,6 +153,9 @@
   }
   .about-container{
     margin-top: 34px;
+    position: relative;
+    right: 7%;
+    /* margin-right: 172px; */
   }
   .btn-text{
     padding-right: 11px;
@@ -200,6 +224,7 @@
 
   .find-solutions{
     height: 242px ;
+    margin-right: 21%
   }
 
   .coming-soon{
@@ -215,11 +240,50 @@
     left: 185px;
     margin-bottom: -82px;
   }
-  
+  @media screen and (max-width: 1537px){
+    .body-header-data__container{
+      margin-right: 28%;
+    }
+    .body-header{
+      margin-left: 19%;
+    }
+    .second{
+      margin-left: 11%;
+      width: 52% !important;
+    }
+    .underline-learn{
+      width: 26%;
+    }
+    .underline-community{
+      width: 35%;
+    }
+    .underline-solution{
+      width: 49%;
+    }
+    .solution{
+      margin-right: 20%;
+    }
+    .about-container{
+      right: 1%;
+    }
+    .learning-header{
+      margin-left: 40%;
+    }
+    .learn{
+      margin-left: 44%;
+    }
+    .solution-header{
+      margin-left: 27%
+    }
+    .coming-soon{
+      left: 90px;
+      padding-right: 68px;
+    }
+  }
   @media screen and (max-width: 1367px){
     .body-header{
             margin-left: 31% !important;
     }
 
-    
+
 }
