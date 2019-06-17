@@ -175,23 +175,52 @@ return (
 
 
 
-            <div className="em-l-grid em-l-grid--5up ">
-  <div className="em-l-grid__item custom-mid-page-card-column">
-    <div className="fpo-block">1</div>
+            <div className="em-l-grid em-l-grid--5up custom-medium-tile-area">
+  <div className="em-l-grid__item custom-mid-page-card-column custom-margin-right-20">
+  <div className="custom-factory-img em-u-text-align-center custom-tile-margin-center"></div>
+      <div className="custom-H4 no-text-transform ">Enterprise Platforms</div>
+      <div className="custom-paragraph">We identify and evaluate new technologies, develop a platform and vendor strategy, and maintain and support technologies.</div>
+
+  </div>
+  <div className="em-l-grid__item custom-mid-page-card-column custom-margin-right-20">
+  <div className="custom-factory-img em-u-text-align-center custom-tile-margin-center"></div>
+      <div className="custom-H4 no-text-transform">Data & Analytics Solutions</div>
+      <div className="custom-paragraph">We guide customers through the entire data and analytics process, including design, consultation, acquisition, integration, modeling, analysis, and visualization.</div>
+
+  </div>
+  <div className="em-l-grid__item custom-mid-page-card-column custom-margin-right-20">
+      
+  <div className="custom-factory-img em-u-text-align-center custom-tile-margin-center"></div>
+      <div className="custom-H4 no-text-transform">Data Science</div>
+      <div className="custom-paragraph">We enable and assist with exploratory analysis, research, productization and support, and various data science platforms.</div>
+
+  </div>
+  <div className="em-l-grid__item custom-mid-page-card-column custom-margin-right-20">
+      
+  <div className="custom-factory-img em-u-text-align-center custom-tile-margin-center"></div>
+      <div className="custom-H4 no-text-transform">Strategy & Practices</div>
+      <div className="custom-paragraph">We manage the Enterprise Data Roadmap, strengthen career development and talent, and provide tools and guidance for data at ExxonMobil.</div>
+
   </div>
   <div className="em-l-grid__item custom-mid-page-card-column">
-    <div className="fpo-block fpo-block--dark">2</div>
-  </div>
-  <div className="em-l-grid__item custom-mid-page-card-column">
-    <div className="fpo-block">3</div>
-  </div>
-  <div className="em-l-grid__item custom-mid-page-card-column">
-    <div className="fpo-block fpo-block--dark">4</div>
-  </div>
-  <div className="em-l-grid__item custom-mid-page-card-column">
-    <div className="fpo-block">5</div>
+      
+  <div className="custom-factory-img em-u-text-align-center custom-tile-margin-center"></div>
+      <div className="custom-H4 no-text-transform">Customer Outreach</div>
+      <div className="custom-paragraph">We encourage and enable community leadership and data and analytics education. We also provide experts to answer a broad range of questions.</div>
+
+
   </div>
 </div>
+
+<div className="em-l-grid__item em-u-padding-top">
+                
+                <div className="custom-H3">Who are we?</div>
+                
+                <div className="custom-paragraph">This website is sponsored by Data Science and Analytics within EMIT. We work to define and maintain data stadards,
+                collaborate with other influencers in the data and analytics space, and drive change for the better in your day-to-day work.
+                </div>
+        
+                    </div>
 
         </div>
 

@@ -141,14 +141,30 @@ margin-left: 5.5% !important;
     margin-top: 13px;
 
    }
+   
+   .custom-medium-tile-area{
+    max-width: 1159px !important;
+    margin-left: 5.5% !important;
+    margin-top: 64px !important;
+   }
 
    .custom-mid-page-card-column{
     top: 442px;
     left: 140px;
     height: 262px;
-    width: 216px;
+    padding-top: 2% !important;
+    width: 216px !important;
     background-color: rgba(245, 245, 245, 1);
     border-bottom: 8px solid rgba(215, 56, 114, 1);
+   }
+
+   .custom-tile-margin-center{
+       margin-left: 35% !important;
+       margin-bottom: 5% !important;
+   }
+
+   .custom-margin-right-20{
+       margin-right: 19px !important;
    }
 
    .dot {
