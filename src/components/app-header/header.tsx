@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Auxi from '../../hoc/Auxi';
 import './header.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 class header extends Component<any>  {
 

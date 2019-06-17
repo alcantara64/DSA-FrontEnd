@@ -27,12 +27,12 @@ const home = () => {
                             <div className="custom-H1 body-header">Data at ExxonMobil</div>
                             <div >
                                 <a href="../../container/Dashboard/dashboard.tsx">
-                                    <img className="" src={Learn_Illustration} alt="learn"/>
+                                    <img className="learn_illustration" src={Learn_Illustration} alt="learn"/>
                                 </a>
                             </div>
                             <div className=" custom-H2 coming-soon">Coming Soon</div>
                             <div className="write-up-container">
-                            <div className="learning-header underline-learn">Learning</div>
+                            <div className="learning-header underline-learn learn">Learning</div>
                             <div className="learning-content">Find the tutorials, and walkthroughs that you need to power your workflow</div>
                             </div>
                             </div>
@@ -73,7 +73,7 @@ const home = () => {
                                 </a>
                             </div>
                             <div className="write-up-container solution">
-                            <div className="learning-header underline-solution">Find Solutions</div>
+                            <div className="learning-header underline-solution solution-header">Find Solutions</div>
                             <div className="learning-content">Lets's direct you to the tool, tutorial, or person that will get you what you need through our services portal.</div>
                             </div>
                             </div>
