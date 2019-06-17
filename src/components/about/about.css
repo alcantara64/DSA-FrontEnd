@@ -176,3 +176,8 @@ width: 20px;
     display: inline-block;
   }
 
+  .about-site{
+    display: inline-block;
+    margin-left: 2px;
+  }
+

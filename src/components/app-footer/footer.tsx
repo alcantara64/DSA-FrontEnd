@@ -12,7 +12,7 @@ const footer = () => {
   <div className="em-l-grid__item">
     <div className="fpo-block">
     <div className = "footer-description">
-            <div className="about-site custom-about-site-margin custom-paragraph">
+            <div className="about-site custom-paragraph">
             Question about the site?
             </div>
             <div className="about-site custom-link">
