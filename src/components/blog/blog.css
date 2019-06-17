@@ -101,11 +101,16 @@
         height: 995px !important;
         max-width: 1230px !important;
     }
+    .custom-editor-blog-area{
+        height: 325px !important;
+        margin-right: 116px;
+    }
+    
   }
 
   @media screen and (max-width: 1370px){
     .custom-page-margin{
-        margin-left: 8.5% !important;
+        margin-left: 7.5% !important;
         margin-right: 8.5% !important
   }
 }
@@ -164,6 +169,3 @@
     border-bottom: 8px solid rgba(215, 56, 114, 1);
 }
 
-.custom-bottom-margin{
-    width: 30.4%;
-}

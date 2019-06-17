@@ -25,7 +25,7 @@ const blog = () => {
                                 <div className="custom-H3">FTP Success Story</div>
                                 <div className="custom-paragraph ">This would be an article about a success story of data at ExxonMobil</div>
 
-                                <div className="custom-paragraph custom-rich-text-color em-u-margin-top em-u-margin-bottom-double">Johnny Swimm</div>
+                                <div className="custom-paragraph custom-rich-text-color em-u-margin-top em-u-margin-bottom-double">Johnny Swim</div>
 
                             </div>
                         </div>
@@ -40,7 +40,7 @@ const blog = () => {
                                         <div className="custom-H3 ">FTP Success Story</div>
                                         <div className="custom-paragraph ">This would be an article about a success story of data at ExxonMobil</div>
 
-                                        <div className="custom-paragraph custom-rich-text-color em-u-margin-top ">Johnny Swimm</div>
+                                        <div className="custom-paragraph custom-rich-text-color em-u-margin-top ">Johnny Swim</div>
 
                                     </div>
                                 </div>
@@ -54,7 +54,7 @@ const blog = () => {
                                         <div className="custom-H3 ">FTP Success Story</div>
                                         <div className="custom-paragraph ">This would be an article about a success story of data at ExxonMobil</div>
 
-                                        <div className="custom-paragraph custom-rich-text-color em-u-margin-top">Johnny Swimm</div>
+                                        <div className="custom-paragraph custom-rich-text-color em-u-margin-top">Johnny Swim</div>
 
                                     </div>
                                 </div>
@@ -236,7 +236,7 @@ const blog = () => {
                 </div>
 
 
-                <div className="custom-editor-blog-margin custom-tile-background em-u-padding-top-half custom-link-bold">
+                <div className="custom-tile-background em-u-padding-top-half custom-link-bold">
                     Editor's Pick
                 </div>
 
@@ -250,7 +250,7 @@ const blog = () => {
                                         <div className="custom-H3 ">FTP Success Story</div>
                                         <div className="custom-paragraph ">This would be an article about a success story of data at ExxonMobil</div>
 
-                                        <div className="custom-paragraph custom-rich-text-color em-u-margin-top ">Johnny Swimm</div>
+                                        <div className="custom-paragraph custom-rich-text-color em-u-margin-top ">Johnny Swim</div>
 
                                     </div>
                                 </div>
@@ -265,13 +265,13 @@ const blog = () => {
                                         <div className="custom-H3 ">FTP Success Story</div>
                                         <div className="custom-paragraph ">This would be an article about a success story of data at ExxonMobil</div>
 
-                                        <div className="custom-paragraph custom-rich-text-color em-u-margin-top ">Johnny Swimm</div>
+                                        <div className="custom-paragraph custom-rich-text-color em-u-margin-top ">Johnny Swim</div>
 
                                     </div>
                                 </div>
 
                     </div>
-                    <div className="em-l-grid__item">
+                    <div className="custom-bottom-margin em-l-grid__item">
                         
                     <div className="em-u-margin-top-double">
                                     <img src={Find_Solutions_Illustration} alt="" className="custom-line-border-bottom custom-rec-blog-detail-small-area em-u-width-100" />

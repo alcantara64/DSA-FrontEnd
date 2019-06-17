@@ -44,26 +44,46 @@ const footer = () => {
   <div className="em-l-grid__item">
     <div className="custom-downstream-text fpo-block">
     <div className="footer-text-padding footer-link-bottom-spacing custom-H5">Downstream</div>
-    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">Controllers BCOE</div>
-    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">TDT Analytics</div>
-    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">BAR Analytics</div>
-    <div className="footer-highlighted-emre-padding footer-link-bottom-spacing custom-paragraph">Downstream Data, Analytics, & Systems</div>
+    <div  className="footer-text-padding footer-link-bottom-spacing custom-paragraph">
+     <a href="https://ishareteam3.na.xom.com/sites/DSBCOE/BR/default.aspx">Controllers BCOE</a> 
+      </div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">
+      <a href="http://goto/TDT">TDT Analytics</a>    
+      </div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">
+      <a href="http://goto/baranalytics">BAR Analytics</a>
+    </div>
+    <div className="footer-highlighted-emre-padding footer-link-bottom-spacing custom-paragraph">
+      <a href="https://fuelslubricants.na.xom.com/Transformation/Data-analytics-and-systems">Downstream Data, Analytics, & Systems</a>
+    </div>
     <div className="footer-text-padding footer-link-bottom-spacing custom-H5">EMRE</div>
-    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">Process Eng & Optimization</div>
-    <div className="footer-link-bottom-spacing custom-paragraph">Corperate Stragetic Reseaerch</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">
+      <a href="https://mysite.na.xom.com/Person.aspx?accountname=NA%5CJLGRESL">Process Eng & Optimization</a>
+    </div>
+    <div className="footer-link-bottom-spacing custom-paragraph">
+      <a href="https://ishareteam5.na.xom.com/sites/TKMCSR062/Index.html#/home">Corperate Stragetic Reseaerch</a>
+    </div>
 
 
 
     </div>
   </div>
   <div className="em-l-grid__item">
-    <   div className="fpo-block fpo-block--dark"> <div className="custom-downstream-text fpo-block">
+    <div className="fpo-block fpo-block--dark"> <div className="custom-downstream-text fpo-block">
     <div className="footer-text-padding footer-link-bottom-spacing custom-H5">Upstream</div>
-    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">Business Systems Support Team</div>
-    <div className="footer-highlighted-coperate-padding footer-link-bottom-spacing custom-paragraph">Upstream Technical Data Support</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">
+      <a href="https://ishareteam1.na.xom.com/sites/upstsap/default.aspx">Business Systems Support Team</a>
+    </div>
+    <div className="footer-highlighted-coperate-padding footer-link-bottom-spacing custom-paragraph">
+      <a href="https://ishareteam4.na.xom.com/sites/UTDS/HTML/home.html">Upstream Technical Data Support</a>
+    </div>
     <div className="footer-text-padding footer-link-bottom-spacing custom-H5">Corperate</div>
-    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">Central SSHE</div>
-    <div className="footer-link-bottom-spacing custom-paragraph">Finance Transformation Pragram</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">
+      <a href="http://goto/dod">Central SSHE</a>
+    </div>
+    <div className="footer-link-bottom-spacing custom-paragraph">
+      <a href="http://goto/FTP">Finance Transformation Pragram</a>
+    </div>
 
 
 
@@ -73,12 +93,22 @@ const footer = () => {
   <div className="em-l-grid__item">
     <div className="fpo-block"> <div className="custom-downstream-text fpo-block">
     <div className="footer-text-padding footer-link-bottom-spacing custom-H5">GSC</div>
-    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">EMIT ITOE</div>
-    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">GSC BCOE</div>
-    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">Procurement Analytics Toolbox</div>
-    <div className="footer-highlighted-urc-padding footer-link-bottom-spacing custom-paragraph">GREF Analytics</div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">
+      <a href="https://ishareteam4.na.xom.com/sites/itoe/ITServiceOperations/analytics/default.aspx">EMIT ITOE</a>
+    </div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">
+      <a href="https://ishareteam1.na.xom.com/sites/GSCDW/default.aspx">GSC BCOE</a>
+    </div>
+    <div className="footer-text-padding footer-link-bottom-spacing custom-paragraph">
+      <a href="https://ishareteam4.na.xom.com/sites/PROCTOOL/ProcurementAnalyticsTool/ps-tool.html">Procurement Analytics Toolbox</a>
+    </div>
+    <div className="footer-highlighted-urc-padding footer-link-bottom-spacing custom-paragraph">
+      <a href="http://goto/grefanalytics">GREF Analytics</a>
+    </div>
     <div className="footer-text-padding footer-link-bottom-spacing custom-H5">URC</div>
-    <div className="footer-link-bottom-spacing custom-paragraph">Upstream Computational Sciences</div>
+    <div className="footer-link-bottom-spacing custom-paragraph">
+      <a href="https://mysite.na.xom.com/Person.aspx?accountname=UPSTREAMACCTS\kcfurma">Upstream Computational Sciences</a>
+    </div>
 
 
     </div>
@@ -87,7 +117,9 @@ const footer = () => {
   <div className="em-l-grid__item">
     <div className="fpo-block fpo-block--dark">
     <div className="footer-text-padding footer-link-bottom-spacing custom-H5">Chemical</div>
-    <div className="footer-link-bottom-spacing custom-paragraph">Data, Analytics, & Systems</div>
+    <div className="footer-link-bottom-spacing custom-paragraph">
+      <a href="https://mysite.na.xom.com/Person.aspx?accountname=UPSTREAMACCTS\kcfurma">Data, Analytics, & Systems</a>
+    </div>
     </div>
   </div>
 </div>
