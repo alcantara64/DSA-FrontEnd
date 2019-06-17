@@ -46,6 +46,7 @@
 
 .custom-small-area-post{
     height: 362px !important;
+  
 }
 
 .custom-rec-blog-detail-small-area{
@@ -62,13 +63,13 @@
 }
 
 .custom-blog-area-small{
-    height: 200px;
+    height: 182px;
     border-bottom: 2px solid rgba(216, 216, 216, 1);
-    margin-top: 20px !important;
+    margin-top: 13px !important;
 }
 
 .custom-blog-number-margin{
-    margin-top: 7% !important;
+    margin-top: 10% !important;
 }
 
 .custom-tile-background{
@@ -142,7 +143,7 @@
 }
 
 .custom-editor-blog-margin{
-    margin-top: 200px;
+    margin-top: 70px;
 }
 
 .custom-blog-editor-pick{
@@ -150,4 +151,12 @@
     font-family: emprintsemibold;
     color: #D73872 !important;
     text-transform: uppercase;
+}
+
+.custom-line-border-bottom{
+    border-bottom: 8px solid rgba(215, 56, 114, 1);
+}
+
+.custom-bottom-margin{
+    width: 30.4%;
 }
