@@ -103,7 +103,7 @@ const home = () => {
                                 DS&A is the data hub of ExxonMobil.
                             </div>
                             <div className="about-body custom-paragraph">
-                                Learn more about is here.
+                                Learn more about us here.
                             </div>
                         </div>
                         <div className="about-container">
