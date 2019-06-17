@@ -103,6 +103,13 @@
     }
   }
 
+  @media screen and (max-width: 1360px){
+    .custom-page-margin{
+        margin-left: 8.5% !important;
+        margin-right: 8.5% !important
+  }
+}
+
   .custom-font-data-governance{
     font-size: 22px !important;
     font-family: emprintsemibold;
