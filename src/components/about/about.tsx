@@ -8,7 +8,7 @@ import Find_Solutions_Illustration from './../../asset/images/Find_Solutions_Ill
 const about = () => {
 return (
     <Auxi>
-        <div className="custom-about-height">
+        <div className="custom-page-margin-left custom-about-height">
             
         <div className="em-u-text-align-left custom-header-margin-left custom-line-spacing">
         <div className="custom-H1">Data powers everything we do.</div>
@@ -113,7 +113,7 @@ return (
             </div>
   </div>
   <div className="em-l__secondary em-u-text-align-left custom-secondary-area em-u-padding">
-  <div className="custom-H3 ">Our core value</div>
+  <div className="custom-H3 ">Our Core Values</div>
   <div className="custom-secondary-tile-detail-area em-u-margin-top">
       <div className="custom-factory-img"></div>
       <div className="custom-H4 no-text-transform">Enterprise Platform</div>
@@ -144,9 +144,9 @@ return (
   </div>
 </div>
 
-            <div className="custom-mid-background-area">
+            <div className="custom-mid-background-area custom-mid-background">
 
-                    <div className="row custom-header-margin-left">
+                    <div className="row custom-testimonial-margin">
                         <div className="custom-mid-page-slider-photo-column">
                         <img src={Find_Solutions_Illustration} alt="" className="custom-mid-photo-area" />
 

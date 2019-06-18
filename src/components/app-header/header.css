@@ -23,3 +23,13 @@
 .em-l-container{
     max-width: 95em;
 }
+
+.custom-header-margin{
+    margin-top: -7px;
+    margin-bottom: -7px;
+}
+
+.custom-photo-icon{
+    height: 30px !important;
+    width: 30px !important;
+}

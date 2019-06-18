@@ -3,7 +3,7 @@
 }
 
 .custom-page-margin {
-  margin-left: 3.5% !important;
+  margin-left: 7% !important;
 }
 
 .custom-recent-background-area {
@@ -87,6 +87,7 @@
 
 .custom-editor-blog-area {
   height: 325px !important;
+  width: 101% !important;
 }
 
 .custom-blog-text-margin {
@@ -122,11 +123,17 @@
 }
 @media screen and (max-width: 1370px) {
   .custom-page-margin {
-    margin-left: 8.5% !important;
+    margin-left: 8.5% !important; 
   }
   .em-l-container {
     max-width: 103em;
 
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .custom-page-margin {
+    margin-left: 7% !important; 
   }
 }
 
@@ -176,10 +183,6 @@
   font-family: emprintsemibold;
   color: #d73872 !important;
   text-transform: uppercase;
-}
-
-.custom-line-border-bottom {
-  border-bottom: 8px solid rgba(215, 56, 114, 1);
 }
 
 .custom-bottom-margin {

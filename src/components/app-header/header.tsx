@@ -24,7 +24,7 @@ class header extends Component<any>  {
                 </div>
               </button>
 
-              <div className="custom-header em-c-header__nav-container em-js-nav-panel">
+              <div className="custom-header custom-header-margin em-c-header__nav-container em-js-nav-panel">
                 <nav id="nav" className="em-c-primary-nav" role="navigation">
 
                   <ul className="em-c-primary-nav__list">
@@ -93,7 +93,7 @@ class header extends Component<any>  {
 
                     <li className="custom-paragraph em-c-primary-nav__item ">
                       <Link to="/" className="custom-paragraph em-u-clickable em-c-primary-nav__link custom-text-color-black ">
-                        <img src="https://emunity.blob.core.windows.net/unity/fpo_avatar.png" alt="Alt Text" className="em-c-avatar em-c-avatar" /> Hi, Jennifer
+                        <img src="https://emunity.blob.core.windows.net/unity/fpo_avatar.png" alt="Alt Text" className="custom-photo-icon em-c-avatar em-c-avatar" /> Hi, Jennifer
         
               </Link>
                     </li>
