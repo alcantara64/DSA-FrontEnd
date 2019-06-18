@@ -1,6 +1,7 @@
 import React from 'react';
 import Auxi from '../../hoc/Auxi';
 import Find_Solutions_Illustration from './../../asset/images/Find_Solutions_Illustration.png';
+import blog_image from './../../asset/images/blog_image.png';
 import './blog.css';
 import { Link } from 'react-router-dom';
 
@@ -20,12 +21,12 @@ const blog = () => {
                         <div className="custom-recent-background-area custom-H4 ">Recent Stories</div>
 
                         <div className="em-u-margin-top-double em-u-margin-bottom-double">
-                            <img src={Find_Solutions_Illustration} alt="" className="custom-line-border-bottom custom-rec-blog-detail-area em-u-width-100" />
+                            <img src={blog_image} alt="" className="custom-rec-blog-detail-area em-u-width-100" />
                             <div className="em-u-text-align-left custom-blog-text-margin">
                                 <div className="custom-H3">FTP Success Story</div>
                                 <div className="custom-paragraph ">This would be an article about a success story of data at ExxonMobil</div>
 
-                                <div className="custom-paragraph custom-rich-text-color em-u-margin-top em-u-margin-bottom-double">Johnny Swimm</div>
+                                <div className="custom-paragraph custom-rich-text-color em-u-margin-top em-u-margin-bottom-double">Johnny Swim</div>
 
                             </div>
                         </div>
@@ -35,12 +36,12 @@ const blog = () => {
                             <div className="em-l-grid__item ">
 
                                 <div className="em-u-margin-top-double">
-                                    <img src={Find_Solutions_Illustration} alt="" className="custom-line-border-bottom custom-rec-blog-detail-small-area em-u-width-100" />
+                                    <img src={blog_image} alt="" className="custom-rec-blog-detail-small-area em-u-width-100" />
                                     <div className="em-u-text-align-left custom-blog-text-margin">
                                         <div className="custom-H3 ">FTP Success Story</div>
                                         <div className="custom-paragraph ">This would be an article about a success story of data at ExxonMobil</div>
 
-                                        <div className="custom-paragraph custom-rich-text-color em-u-margin-top ">Johnny Swimm</div>
+                                        <div className="custom-paragraph custom-rich-text-color em-u-margin-top ">Johnny Swim</div>
 
                                     </div>
                                 </div>
@@ -49,12 +50,12 @@ const blog = () => {
                             <div className="em-l-grid__item ">
 
                                 <div className="em-u-margin-top-double">
-                                    <img src={Find_Solutions_Illustration} alt="" className="custom-line-border-bottom custom-rec-blog-detail-small-area em-u-width-100" />
+                                    <img src={blog_image} alt="" className="custom-rec-blog-detail-small-area em-u-width-100" />
                                     <div className="em-u-text-align-left custom-blog-text-margin">
                                         <div className="custom-H3 ">FTP Success Story</div>
                                         <div className="custom-paragraph ">This would be an article about a success story of data at ExxonMobil</div>
 
-                                        <div className="custom-paragraph custom-rich-text-color em-u-margin-top">Johnny Swimm</div>
+                                        <div className="custom-paragraph custom-rich-text-color em-u-margin-top">Johnny Swim</div>
 
                                     </div>
                                 </div>
@@ -236,7 +237,7 @@ const blog = () => {
                 </div>
 
 
-                <div className="custom-editor-blog-margin custom-tile-background em-u-padding-top-half custom-link-bold">
+                <div className="custom-tile-background em-u-padding-top-half custom-link-bold">
                     Editor's Pick
                 </div>
 
@@ -245,12 +246,12 @@ const blog = () => {
                     <div className="em-l-grid__item">
                         
                     <div className="em-u-margin-top-double">
-                                    <img src={Find_Solutions_Illustration} alt="" className="custom-line-border-bottom custom-rec-blog-detail-small-area em-u-width-100" />
+                                    <img src={blog_image} alt="" className="custom-rec-blog-detail-small-area em-u-width-100" />
                                     <div className="em-u-text-align-left custom-blog-text-margin ">
                                         <div className="custom-H3 ">FTP Success Story</div>
                                         <div className="custom-paragraph ">This would be an article about a success story of data at ExxonMobil</div>
 
-                                        <div className="custom-paragraph custom-rich-text-color em-u-margin-top ">Johnny Swimm</div>
+                                        <div className="custom-paragraph custom-rich-text-color em-u-margin-top ">Johnny Swim</div>
 
                                     </div>
                                 </div>
@@ -260,21 +261,21 @@ const blog = () => {
                         
 
                     <div className="em-u-margin-top-double">
-                                    <img src={Find_Solutions_Illustration} alt="" className="custom-line-border-bottom custom-rec-blog-detail-small-area em-u-width-100" />
+                                    <img src={blog_image} alt="" className="custom-rec-blog-detail-small-area em-u-width-100" />
                                     <div className="em-u-text-align-left custom-blog-text-margin">
                                         <div className="custom-H3 ">FTP Success Story</div>
                                         <div className="custom-paragraph ">This would be an article about a success story of data at ExxonMobil</div>
 
-                                        <div className="custom-paragraph custom-rich-text-color em-u-margin-top ">Johnny Swimm</div>
+                                        <div className="custom-paragraph custom-rich-text-color em-u-margin-top ">Johnny Swim</div>
 
                                     </div>
                                 </div>
 
                     </div>
-                    <div className="em-l-grid__item">
+                    <div className="custom-bottom-margin em-l-grid__item">
                         
                     <div className="em-u-margin-top-double">
-                                    <img src={Find_Solutions_Illustration} alt="" className="custom-line-border-bottom custom-rec-blog-detail-small-area em-u-width-100" />
+                                    <img src={blog_image} alt="" className="custom-rec-blog-detail-small-area em-u-width-100" />
                                     <div className="em-u-text-align-left custom-blog-text-margin">
                                         <div className="custom-H3 ">FTP Success Story</div>
                                         <div className="custom-paragraph ">This would be an article about a success story of data at ExxonMobil</div>

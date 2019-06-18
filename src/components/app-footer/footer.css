@@ -24,7 +24,6 @@
    }
 
    .footer-container{
-    /* max-width: 90rem; */
     background-color: rgba(255, 255, 255, 1);
     margin-top: -32px;
     margin-left: 1%;
@@ -49,7 +48,13 @@
   }
 
   .custom-about-site-margin{
-    margin-left: -22%;
+    margin-left: -26%;
+  }
+
+  @media only screen and (max-width: 1540px){
+    .custom-about-site-margin{
+      margin-left: -21%;
+    }
   }
 
   .custom-logo-margin{
