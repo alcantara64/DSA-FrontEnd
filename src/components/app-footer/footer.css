@@ -50,12 +50,25 @@
   .custom-about-site-margin{
     margin-left: -26%;
   }
-
-  @media only screen and (max-width: 1540px){
-    .custom-about-site-margin{
-      margin-left: -21%;
-    }
+  .footer-text-padding{
+    padding-bottom: 10px;
   }
+
+  .footer-highlighted-emre-padding{
+    padding-bottom: 45px;
+  }
+
+  .footer-highlighted-coperate-padding{
+    padding-bottom: 107px;
+  }
+
+  .footer-highlighted-urc-padding{
+    padding-bottom: 42px;
+  }
+ 
+    
+  
+
 
   .custom-logo-margin{
     margin-right: -50%;
@@ -75,7 +88,13 @@
     margin-left: 112px;
     width: 113%
   }
-  @media only screen and (max-width: 1880px){
+
+  
+  @media only screen and (max-width: 1540px){
+    .custom-about-site-margin{
+      margin-left: -21%;
+    }
+
     .footer-container{
       margin-left: 0%;
      }
@@ -83,28 +102,18 @@
        margin-right: 5%
      }
   }
+
   @media only screen and (max-width: 1370px){
     .footer-container{
       margin-left: 0%;
     
      }
+     .custom-about-site-margin{
+      margin-left: -11%;
+    }
   }
 
   
 
-  .footer-text-padding{
-    padding-bottom: 10px;
-  }
 
-  .footer-highlighted-emre-padding{
-    padding-bottom: 45px;
-  }
-
-  .footer-highlighted-coperate-padding{
-    padding-bottom: 107px;
-  }
-
-  .footer-highlighted-urc-padding{
-    padding-bottom: 42px;
-  }
  

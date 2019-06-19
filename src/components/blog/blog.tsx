@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const blog = () => {
     return (
         <Auxi>
-            <div className="em-l-container custom-blog-area custom-page-margin">
+            <div className="custom-blog-area custom-page-margin">
                 <div className="em-l-linelength-container em-u-text-align-left em-u-margin-top-double em-u-margin-bottom-double">
 
                     <div className="custom-H1">The Blog</div>
