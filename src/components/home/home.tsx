@@ -33,7 +33,7 @@ const home = () => {
                             <div className=" custom-H2 coming-soon">Coming Soon</div>
                             <div className="write-up-container">
                             <div className="learning-header underline-learn learn">Learning</div>
-                            <div className="learning-content">Find the tutorials, and walkthroughs that you need to power your workflow</div>
+                            <div className="learning-content">Find the tutorials, classes and walkthroughs that you need to power your workflow</div>
                             </div>
                             </div>
                         </div>
