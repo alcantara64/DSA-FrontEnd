@@ -1,6 +1,5 @@
 import React from 'react';
 import Auxi from '../../hoc/Auxi';
-import Find_Solutions_Illustration from './../../asset/images/Find_Solutions_Illustration.png';
 import blog_image from './../../asset/images/blog_image.png';
 import './blog.css';
 import { Link } from 'react-router-dom';

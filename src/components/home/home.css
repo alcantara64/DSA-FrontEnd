@@ -284,6 +284,8 @@
     .body-header{
             margin-left: 31% !important;
     }
-
+    .body-header-data__container{
+      margin-right: 9%;
+    }
 
 }
