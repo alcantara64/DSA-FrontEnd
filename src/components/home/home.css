@@ -282,20 +282,33 @@
     .find-solutions{
       margin-right: 4%;
     }
+    .learn_illustration{
+      width: 114%;
+      max-width: 103%;
+    }
   }
   @media screen and (max-width: 1367px){
+    .body-header-data__container{
+      margin-right: 28%;
+      margin-left: -5%
+    }
+
+    .about-img-container{
+      padding-left: 29px;
+    }
+
     .body-header{
-        margin-left: 19% !important;
+        margin-left: 22% !important;
     }
     .coming-soon{
       left: 53px;
       padding-right: 0%;
     }
     .learn_illustration{
-      padding-left: 12px;
+      padding-left: 37px;
     }
     .find-solutions{
-      margin-right: 4%;
+      margin-right: 19%;
     }
     .solution-header {
       margin-left: 29%;
@@ -334,7 +347,7 @@
   }
   .second{
     margin-left: 4%;
-    width: 56% !important;
+    width: 59% !important;
   }
 
 }
