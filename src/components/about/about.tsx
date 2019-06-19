@@ -214,7 +214,7 @@ return (
 
 <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left">
                 
-                <div className="custom-H3">Data Science</div>
+                <div className="custom-H2">Data Science</div>
                 
                 <div className="custom-paragraph">
                     
@@ -224,7 +224,7 @@ return (
                     </div>
 
                     
-                <div className="em-l-grid em-l-grid--2up  em-u-padding-none custom-medium-tile-area em-u-text-align-left">
+                <div className="em-l-grid em-l-grid--2up  em-u-padding-none custom-main-margin custom-medium-tile-area em-u-text-align-left">
                 <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double">
                     
                 <div className="custom-H4 no-text-transform">Exploratory Analysis</div>
