@@ -46,7 +46,7 @@ const home = () => {
                             <div className="body-header"></div>
                             <div >
                                 <a href="../../container/Dashboard/dashboard.tsx">
-                                    <img src={Community_Illustration} alt="learn"/>
+                                    <img src={Community_Illustration} alt="learn" className="community-illustration"/>
                                 </a>
                             </div>
                             <div className="write-up-container">
