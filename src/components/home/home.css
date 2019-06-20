@@ -3,9 +3,7 @@
   margin-top: -32px;
   padding-top: 60px;
 }
-.solution-header {
-  margin-left: 26% !important;
-}
+
 .learn_illustration {
   padding-left: 11%;
 }
@@ -312,6 +310,9 @@
     width: 95%;
     margin-left: 10%;
   }
+  .solution-header {
+    margin-left: 26% !important;
+  }
 }
 
 @media screen and (max-width: 1537px) {
@@ -322,7 +323,7 @@
     margin-left: 19% !important;
   }
   .learning-content {
-    width: 86%;
+    width: 92%;
     margin-left: 17%;
   }
   .second {
@@ -330,13 +331,13 @@
     width: 52% !important;
   }
   .underline-learn {
-    width: 26%;
+    width: 27%;
   }
   .underline-community {
-    width: 35%;
+    width: 37%;
   }
   .underline-solution {
-    width: 49%;
+    width: 52%;
   }
   .solution {
     margin-right: 20%;
@@ -351,18 +352,21 @@
     margin-left: 44%;
   }
   .solution-header {
-    margin-left: 38%;
+    margin-left: 33% !important;
+  }
+  .community-illustration{
+    margin-left: 20%;
   }
   .coming-soon {
     left: 90px;
     padding-right: 68px;
   }
   .find-solutions {
-    margin-right: 4%;
+    margin-right: 11%;
   }
   .learn_illustration {
     width: 114%;
-    max-width: 103%;
+    max-width: 101%;
   }
   .about-container {
     right: 3%;
@@ -371,7 +375,7 @@
 @media screen and (max-width: 1367px) {
   .body-header-data__container {
     margin-right: 28%;
-    margin-left: -5%;
+    margin-left: -17%;
   }
 
   .about-img-container {
@@ -379,7 +383,7 @@
   }
 
   .body-header {
-    margin-left: 22% !important;
+    margin-left: 19% !important;
   }
   .coming-soon {
     left: 53px;
@@ -387,6 +391,7 @@
   }
   .learn_illustration {
     padding-left: 37px;
+    max-width: 95%;
   }
   .find-solutions {
     margin-right: 19%;
