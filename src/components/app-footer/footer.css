@@ -26,10 +26,10 @@
    .footer-container{
     background-color: rgba(255, 255, 255, 1);
     margin-top: -32px;
-    margin-left: 1%;
+    
     padding-top: 60px;
     padding-bottom: 50px;
-    padding-left: 20px;
+    
    }
    .footer-description{
     margin-right: 22%;
@@ -91,7 +91,7 @@
 
   @media only screen and (max-width: 1921px){
     .custom-about-site-margin{
-      margin-left: -23%;
+      margin-left: -1%;
     }
   }
 
@@ -99,12 +99,16 @@
     .custom-about-site-margin{
       margin-left: -21%;
     }
+    .second{
+      margin-left: 9%;
+    width: 54% !important;
+    }
 
     .footer-container{
-      margin-left: 0%;
+      margin-left: 1%;
      }
      .footer-description{
-       margin-right: 5%
+       margin-right: 1%
      }
   }
 
@@ -115,6 +119,13 @@
      }
      .custom-about-site-margin{
       margin-left: -11%;
+    }
+    .second{
+      margin-left: 7%;
+      width: 54% !important;
+    }
+    .footer-description{
+      margin-right: 13%
     }
   }
 
