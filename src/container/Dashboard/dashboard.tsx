@@ -4,20 +4,42 @@ import Home from '../../components/home/home';
 import About from '../../components/about/about';
 import Blog from '../../components/blog/blog';
 import { Switch, Route } from 'react-router';
-import Auxi from '../../hoc/Auxi'
+import Auxi from '../../hoc/Auxi';
 import axios from 'axios';
+import Page from '../../core/Models/Page';
 
 
 class dashboard extends Component {
 
-    componentDidMount() {
-        return axios.get('http://localhost:52770/archive?id=d078727c-6943-4c62-8943-3fdd3f3acdf0').then(
-            (rsp) => console.log(rsp)
-        );
+    pageData: Page;
+
+    constructor(props: any){
+        super(props);
+        this.pageData = {} as Page;        
+        //this.fetchPageData();
     }
 
-    //class should container method reference for header routing and footer visiblity
-    //state sould only change in component
+    state = {
+        pageData: {} as Page,
+        render: (blog: any) => console.log(blog)
+    }
+
+    fetchPageData(): Promise<any>{
+        return axios.get<any, any>('http://bis.southcentralus.cloudapp.azure.com:8090/xom-dsa-backend').then(
+            (res) => {
+                this.pageData = res.data;
+                if(this.pageData){
+                    this.setState({
+                        pageData: this.pageData
+                    });
+                    console.log(this.state);
+                    console.log(this.state.pageData.archive.posts);
+                }
+            }
+        ).catch(err => {
+            console.log(err);
+        });
+    }
 
     render() {
 
