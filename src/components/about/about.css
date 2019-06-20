@@ -229,4 +229,13 @@ margin-left: 5.5% !important;
         width: 170% !important;
         max-width: 892px !important;
     }
+    .custom-mid-section-area{
+        width: 92%;
+    } 
+    .custom-secondary-area{
+        margin-left: 10px !important;
+    }
+    .custom-engage-services{
+        margin-left: -28px;
+    }
 }
