@@ -21,9 +21,9 @@ return (
             <div className="custom-page-align em-l-grid em-u-text-align-left em-l-grid--1-2-1 em-l-grid--break-fast">
             <div className=" em-l-grid__item em-u-padding-top">
                 
-        <div className="custom-H3">Who are we?</div>
+        <div className="custom-padding-bottom custom-H3">Who are we?</div>
         
-        <div className="custom-paragraph">This website is sponsored by Data Science and Analytics within EMIT. We work to define and maintain data stadards,
+        <div className="custom-paragraph">This website is sponsored by <b>Data Science and Analytics</b> within EMIT. We work to define and maintain data stadards,
         collaborate with other influencers in the data and analytics space, and drive change for the better in your day-to-day work.
         </div>
 
@@ -31,7 +31,7 @@ return (
             <div className="em-l-grid__item em-u-padding-right-none">
                 
 
-            <div className="custom-H3">Who can we do for you?</div>
+            <div className="custom-padding-bottom custom-H3">What can we do for you?</div>
         
         <div className="custom-paragraph">We accelerate high-value, actionable insights through the delivery of scalable, enterprise data platforms, data science and analytics solutions.
         </div>
@@ -89,7 +89,7 @@ return (
 
             <div className="custom-engage-services em-l-grid__item em-u-text-align-left em-u-width-100">
                 
-                <div className="custom-H3">How should you engage our services?</div>
+                <div className="custom-padding-bottom custom-H3">How should you engage our services?</div>
                 
                 <div className="custom-paragraph">Use the Services page to find the contact, resources, or external link you’re looking for. We know you’d rather deal with a person than a form, so we’ve tried our best to provide the contacts that will be most helpful.                </div>
         
@@ -214,9 +214,9 @@ return (
 
 <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left">
                 
-                <div className="custom-H2">Data Science</div>
+                <div className="custom-padding-bottom custom-H2">Data Science</div>
                 
-                <div className="custom-paragraph">
+                <div className="custom-data-science-width custom-paragraph">
                     
                 We enable and assist with exploratory analysis, research, productization and support, and various data science platforms.
                                     </div>

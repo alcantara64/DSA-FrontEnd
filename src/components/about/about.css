@@ -1,6 +1,12 @@
 .custom-about-height{
     height: 2211px !important;
 }
+.custom-padding-bottom{
+    padding-bottom: 9px;
+}
+.custom-data-science-width{
+    width: 828px;
+}
 
 .custom-header-margin-left{
 margin-left: 5.5% !important;
