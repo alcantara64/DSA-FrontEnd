@@ -219,3 +219,14 @@ margin-left: 5.5% !important;
   
 
 }
+
+@media screen and (max-width: 1537px){
+    .custom-page-margin-left {
+        margin-left: 66px !important;
+    }
+    .custom-page-align{
+        margin-left: -27px !important;
+        width: 170% !important;
+        max-width: 892px !important;
+    }
+}
