@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  width: 1440px;
 }
 
 .App-logo {
@@ -23,8 +24,10 @@
   color: #61dafb;
 }
 .page-background{
+
   background-color: #eeeeee;
 }
+
 
 @keyframes App-logo-spin {
   from {

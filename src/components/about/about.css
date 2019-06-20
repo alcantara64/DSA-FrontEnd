@@ -25,7 +25,7 @@ margin-left: 5.5% !important;
 }
 
 .custom-main-area{
-    max-width: 865px !important;
+    max-width: 923px !important;
     margin-left: 68px !important;
 
 }
@@ -191,4 +191,23 @@ width: 20px;
     position: relative;
     left: -3%;
     width: 104%;
+  }
+
+  @media screen and (max-width: 1536px) {
+    .custom-page-margin-left {
+        margin-left: 59px !important;
+    }
+    .custom-mid-section-area {
+        width: 87% !important;
+    }
+    .custom-mid-background{
+        left: -5%;
+        width: 111%;
+    }
+    .custom-mid-page-card-column{
+        width: 210px !important;
+    }
+    .custom-medium-tile-area {
+        max-width: 1130px !important;
+    }
   }

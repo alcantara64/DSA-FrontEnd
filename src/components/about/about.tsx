@@ -15,8 +15,8 @@ return (
         <div className="custom-paragraph custom-paragraph-width">We accelerate high-value, actionable insights through the delivery of scalable, enterprise data platforms, data science and analytics solutions.</div>
         </div>
 
-        <div className="em-l em-l--two-column-wide custom-mid-section-area">
-  <div className="em-l__main custom-main-area">
+        <div className="em-l em-l--two-column custom-mid-section-area">
+  <div className="em-l__main custom-main-area em-u-padding-right-none">
 
             <div className="em-l-grid em-u-text-align-left em-l-grid--1-2-1 em-l-grid--break-fast">
             <div className="em-l-grid__item em-u-padding-top">
