@@ -94,71 +94,6 @@
   margin-top: 16px !important;
 }
 
-
-
-
-
-
-
-@media screen and (max-width: 1921px) {
-  .custom-page-margin {
-    margin-left: 8% !important;
-  }
-    .custom-editor-blog-area{
-        height: 325px !important;
-        margin-right: 116px;
-    }
-
-    .custom-recent-blog-area {
-      max-width: 89% !important;
-    }
-    .custom-editor-blog-area {
-      width: 90% !important;
-    }
-    
-  }
-
-  
-@media screen and (max-width: 1537px) {
-  .custom-recent-blog-area {
-    max-width: 90% !important;
-    margin-bottom: 6%;
-
-  }
-  .em-l-grid--3up .em-l-grid__item {
-    width: 30.33333%;
-  }
-  .custom-editor-blog-margin {
-    width: 91.2%;
-  }
-  .custom-link-bold{
-      width: 91%;
-  }
-  .custom-page-margin {
-    margin-left: 9% !important; 
-  }
-  .custom-editor-blog-area {
-    width: 101% !important;
-  }
-}
-
-@media screen and (max-width: 1370px) {
-  .custom-page-margin {
-    margin-left: 10% !important; 
-  }
-  .em-l-container {
-    max-width: 103em;
-
-  }
-  .custom-editor-blog-area {
-    width: 101.4% !important;
-  }
-  .custom-recent-blog-area{
-    max-width: 91% !important;
-  }
-}
-
-
 .custom-font-data-governance {
   font-size: 22px !important;
   font-family: emprintsemibold;
@@ -209,4 +144,73 @@
 
 .custom-bottom-margin {
   width: 30.4%;
+}
+
+@media screen and (max-width: 1921px) {
+  .custom-page-margin {
+    margin-left: 9.3% !important;
+    width: 92.8%;
+  }
+    .custom-editor-blog-area{
+        height: 325px !important;
+        margin-right: 116px;
+    }
+
+    .custom-recent-blog-area {
+      max-width: 89% !important;
+      margin-bottom: 6%;
+    }
+    .custom-editor-blog-area {
+      width: 90% !important;
+    }
+    .custom-link-bold{
+      width: 89%;
+    }
+    
+  }
+
+  
+@media screen and (max-width: 1537px) {
+  .custom-recent-blog-area {
+    max-width: 90% !important;
+    margin-bottom: 6%;
+
+  }
+  .em-l-grid--3up .em-l-grid__item {
+    width: 30.33333%;
+  }
+  .custom-editor-blog-margin {
+    width: 91.2%;
+  }
+  .custom-link-bold{
+      width: 91%;
+  }
+  .custom-page-margin {
+    margin-left: 9% !important; 
+  }
+  .custom-editor-blog-area {
+    width: 101% !important;
+  }
+  .custom-popular-area{
+    margin-right: -12px;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .custom-page-margin {
+    margin-left: 9% !important; 
+  }
+  .em-l-container {
+    max-width: 103em;
+
+  }
+  .custom-editor-blog-area {
+    width: 101.4% !important;
+  }
+  .custom-recent-blog-area{
+    max-width: 83% !important;
+  }
+  .custom-popular-area{
+    margin-right: -46px;
+  }
 }
