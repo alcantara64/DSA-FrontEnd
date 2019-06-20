@@ -95,7 +95,7 @@ return (
         
                     </div>
 
-            <div className="em-l-grid__item em-u-width-100 custom-search-button-margin em-u-text-align-left">
+            <div className="custom-have em-l-grid__item em-u-width-100 custom-search-button-margin em-u-text-align-left">
             <div className="custom-paragraph em-u-margin-bottom">Have another question you don’t see here? Send it our way.
         </div>
 
