@@ -176,8 +176,8 @@ margin-left: 5.5% !important;
 
    .dot {
        margin: 4px !important;
-height: 20px;
-width: 20px;
+    height: 20px;
+    width: 20px;
     background-color:rgba(122, 65, 131, 1);
     border-radius: 50%;
     display: inline-block;
@@ -185,6 +185,7 @@ width: 20px;
 
   .custom-page-margin-left{
     margin-left: 54px !important;
+    margin-bottom: 125px !important;
   }
 
   .custom-mid-background{
@@ -192,3 +193,29 @@ width: 20px;
     left: -3%;
     width: 104%;
   }
+  
+  @media screen and (max-width: 1921px){
+    .custom-header-margin-left {
+        margin-left: 4.8% !important;
+    }
+    .custom-main-area{
+        margin-left: 84px !important;
+    }
+    .custom-secondary-area{
+        margin-left: 376px !important;
+        max-width: 289px !important;
+    }
+    .custom-about-regular-h3 {
+        width: 118%;
+    }
+    .custom-mid-page-card-column {
+        width: 294px !important;
+    }
+    .custom-medium-tile-area {
+        max-width: 1547px !important;
+    }
+    
+    
+  
+
+}
