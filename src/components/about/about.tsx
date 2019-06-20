@@ -18,7 +18,7 @@ return (
         <div className="em-l em-l--two-column custom-mid-section-area">
   <div className="em-l__main custom-main-area em-u-padding-right-none">
 
-            <div className=" custom-engage-services custom-page-align em-l-grid em-u-text-align-left em-l-grid--1-2-1 em-l-grid--break-fast">
+            <div className="custom-page-align em-l-grid em-u-text-align-left em-l-grid--1-2-1 em-l-grid--break-fast">
             <div className=" em-l-grid__item em-u-padding-top">
                 
         <div className="custom-H3">Who are we?</div>
@@ -87,7 +87,7 @@ return (
             </div>
             </div>
 
-            <div className="em-l-grid__item em-u-text-align-left em-u-width-100">
+            <div className="custom-engage-services em-l-grid__item em-u-text-align-left em-u-width-100">
                 
                 <div className="custom-H3">How should you engage our services?</div>
                 
@@ -224,7 +224,7 @@ return (
                     </div>
 
                     
-                <div className="em-l-grid em-l-grid--2up  em-u-padding-none custom-main-margin custom-medium-tile-area em-u-text-align-left">
+                <div className="custom-exploratory em-l-grid em-l-grid--2up  em-u-padding-none custom-main-margin custom-medium-tile-area em-u-text-align-left">
                 <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double">
                     
                 <div className="custom-H4 no-text-transform">Exploratory Analysis</div>

@@ -238,4 +238,17 @@ margin-left: 5.5% !important;
     .custom-engage-services{
         margin-left: -28px;
     }
+    .custom-have{
+        margin-left: -32px;
+    }
+    .custom-mid-page-card-column {
+        width: 222px !important;
+       }
+       .custom-exploratory{
+        margin-right: 157px;
+       }
+       .custom-mid-background{
+        left: -8%;
+        width: 111%;
+       }
 }
