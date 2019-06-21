@@ -1,0 +1,36 @@
+
+.custom-recent-area {
+    width: 764px !important;
+    margin-right: 21px !important;
+  }
+
+  .custom-recent-background-area {
+    height: 32px;
+    background-color: rgba(215, 56, 114, 1);
+    color: white !important;
+    text-align: center;
+    padding: 0.5% !important;
+  }
+
+  .custom-link-margin {
+    margin-top: 121px !important;
+  }
+
+  .custom-full-archive {
+    font-size: 16px !important;
+    font-family: emprintregular;
+    color: #d73872 !important;
+    text-transform: uppercase;
+  }
+
+  .custom-rec-blog-detail-area {
+    height: 265px;
+  }
+
+  .custom-blog-text-margin {
+    margin-top: 16px !important;
+  }
+
+  .custom-small-area-post {
+    height: 362px !important;
+  }
