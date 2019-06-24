@@ -103,6 +103,12 @@
     .custom-logo-margin{
       margin-right: -21%;
     }
+    .custom-analytics{
+      margin-left: 321px !important;
+    }
+    .footer-description {
+      margin-right: -21%;
+    }
   }
 
   @media only screen and (max-width: 1537px){

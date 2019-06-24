@@ -204,7 +204,25 @@ margin-left: 5.5% !important;
     left: -3%;
     width: 104%;
   }
-  
+
+  @media screen and (max-width: 1921px){
+  .custom-mid-section-area {
+    margin-left: 10% !important;
+    }
+    .custom-header-margin-left {
+        margin-left: 14% !important;
+    }
+    .custom-secondary-area{
+        margin-left: 111px !important;
+    }
+    .custom-medium-tile-area{
+        margin-left: 14% !important;
+        max-width: 1400px !important;
+    }
+    .custom-mid-page-card-column{
+        width: 244px !important;
+    }
+  }
   /* @media screen and (max-width: 1921px){
     .custom-header-margin-left {
         margin-left: 4.8% !important;
