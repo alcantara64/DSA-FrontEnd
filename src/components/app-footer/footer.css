@@ -91,25 +91,40 @@
 
   @media only screen and (max-width: 1921px){
     .custom-about-site-margin{
-      margin-left: -1%;
+      margin-left: -15%;
+    }
+    .em-l-grid--halves{
+      margin-left: 10.1%;
+    }
+    .em-l-grid--4up{
+      margin-left: 10%;
+      width: 74%;
+    }
+    .custom-logo-margin{
+      margin-right: -21%;
     }
   }
 
   @media only screen and (max-width: 1537px){
     .custom-about-site-margin{
-      margin-left: -20%;
+      margin-left: -25%;
     }
-    .second{
-      margin-left: 9%;
-    width: 54% !important;
-    }
-
+    .em-l-grid--4up {
+      margin-left: 0%;
+      width: 82%;
+  }
     .footer-container{
       margin-left: 1%;
      }
      .footer-description{
        margin-right: 1%
      }
+     .em-l-grid--halves {
+      margin-left: 0.1%;
+  }
+  .custom-logo-margin {
+    margin-right: -36%;
+}
  
   }
 

@@ -9,7 +9,7 @@ class header extends Component<any>  {
 
     return (
       <Auxi >
-        <header className="  em-c-header em-c-header--condensed customHeaderWhiteBackground" role="banner">
+        <header className="header-width em-c-header em-c-header--condensed customHeaderWhiteBackground" role="banner">
           <div className=" em-c-header__inner">
             <div className="em-c-header__body">
               <div className="em-c-header__title-container">

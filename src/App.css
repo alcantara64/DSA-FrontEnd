@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  width: 1440px;
-  margin-left: 11.5%;
+  width: 100% !important;
+  overflow-x: hidden;
 
 }
 
@@ -27,9 +27,8 @@
 }
 .page-background{
   background-color: #eeeeee;
- 
-
 }
+
 
 @keyframes App-logo-spin {
   from {
@@ -40,14 +39,8 @@
   }
 }
 
-@media screen and (max-width: 1537px){
-  .App{
-  margin-left: 2.7%;
-  }
-}
-
 @media screen and (max-width: 1367px){
   .App{
-    margin-left: 4%;
+    width: 113% !important;
   }
 }

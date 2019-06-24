@@ -15,23 +15,23 @@ return (
         <div className="custom-paragraph custom-paragraph-width">We accelerate high-value, actionable insights through the delivery of scalable, enterprise data platforms, data science and analytics solutions.</div>
         </div>
 
-        <div className="em-l em-l--two-column-wide custom-mid-section-area">
-  <div className="em-l__main custom-main-area">
+        <div className="em-l em-l--two-column custom-mid-section-area">
+  <div className="em-l__main custom-main-area em-u-padding-right-none">
 
-            <div className="em-l-grid em-u-text-align-left em-l-grid--1-2-1 em-l-grid--break-fast">
-            <div className="em-l-grid__item em-u-padding-top">
+            <div className="custom-page-align em-l-grid em-u-text-align-left em-l-grid--1-2-1 em-l-grid--break-fast">
+            <div className=" em-l-grid__item em-u-padding-top">
                 
-        <div className="custom-H3">Who are we?</div>
+        <div className="custom-padding-bottom custom-H3">Who are we?</div>
         
-        <div className="custom-paragraph">This website is sponsored by Data Science and Analytics within EMIT. We work to define and maintain data stadards,
+        <div className="custom-paragraph">This website is sponsored by <b>Data Science and Analytics</b> within EMIT. We work to define and maintain data stadards,
         collaborate with other influencers in the data and analytics space, and drive change for the better in your day-to-day work.
         </div>
 
             </div>
-            <div className="em-l-grid__item em-u-padding-right-none">
+            <div className="custom-what em-l-grid__item em-u-padding-right-none">
                 
 
-            <div className="custom-H3">Who can we do for you?</div>
+            <div className="custom-padding-bottom custom-H3">What can we do for you?</div>
         
         <div className="custom-paragraph">We accelerate high-value, actionable insights through the delivery of scalable, enterprise data platforms, data science and analytics solutions.
         </div>
@@ -87,15 +87,15 @@ return (
             </div>
             </div>
 
-            <div className="em-l-grid__item em-u-text-align-left em-u-width-100">
+            <div className="custom-how-should custom-engage-services em-l-grid__item em-u-text-align-left em-u-width-100">
                 
-                <div className="custom-H3">How should you engage our services?</div>
+                <div className="custom-padding-bottom custom-H3">How should you engage our services?</div>
                 
                 <div className="custom-paragraph">Use the Services page to find the contact, resources, or external link you’re looking for. We know you’d rather deal with a person than a form, so we’ve tried our best to provide the contacts that will be most helpful.                </div>
         
                     </div>
 
-            <div className="em-l-grid__item em-u-width-100 custom-search-button-margin em-u-text-align-left">
+            <div className="custom-input custom-have em-l-grid__item em-u-width-100 custom-search-button-margin em-u-text-align-left">
             <div className="custom-paragraph em-u-margin-bottom">Have another question you don’t see here? Send it our way.
         </div>
 
@@ -214,9 +214,9 @@ return (
 
 <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left">
                 
-                <div className="custom-H2">Data Science</div>
+                <div className="custom-padding-bottom custom-H2">Data Science</div>
                 
-                <div className="custom-paragraph">
+                <div className="custom-data-science-width custom-paragraph">
                     
                 We enable and assist with exploratory analysis, research, productization and support, and various data science platforms.
                                     </div>
@@ -224,7 +224,7 @@ return (
                     </div>
 
                     
-                <div className="em-l-grid em-l-grid--2up  em-u-padding-none custom-main-margin custom-medium-tile-area em-u-text-align-left">
+                <div className="custom-exploratory em-l-grid em-l-grid--2up  em-u-padding-none custom-main-margin custom-medium-tile-area em-u-text-align-left">
                 <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double">
                     
                 <div className="custom-H4 no-text-transform">Exploratory Analysis</div>
@@ -257,12 +257,12 @@ return (
                 <div className="custom-H4 no-text-transform">Citizen Data Scientist Enablement</div>
       <div className="custom-paragraph">Cultivate data science skills among business analysts with strong domain knowledge and interest to learn and experiment.</div>
 
-
+      <div className="footer-divider"></div>
                 </div>
                 </div>
 
         </div>
-
+        
 
         <Footer />
     </Auxi>
