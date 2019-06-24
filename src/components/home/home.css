@@ -1,7 +1,5 @@
 .em-l-grid--1-to-3up {
   background-color: rgba(255, 255, 255, 1);
-  margin-top: -32px;
-  padding-top: 60px;
   width: 1440px !important;
 }
 
@@ -299,6 +297,9 @@
   margin-bottom: -82px;
 }
 @media screen and (max-width: 1921px) {
+  .em-l-grid--1-to-3up{
+    margin-left: 9.9%;
+  }
   .body-header {
     margin-left: 18% !important;
   }
@@ -309,14 +310,33 @@
     margin-right: 22%;
   }
   .learning-header {
-    margin-left: 37%;
+    margin-left: 43%;
   }
   .learning-content {
-    width: 95%;
-    margin-left: 10%;
+    width: 123%;
+    margin-left: 8%;
   }
   .solution-header {
-    margin-left: 26% !important;
+    margin-left: 28% !important;
+    width: 63%;
+  }
+  .solution-block-container{
+    padding-left: 22%;
+  }
+  .first{
+    margin-left: 10.2%;
+  }
+  .about-container{
+    right: 9%;
+  }
+  .second{
+    width: 40% !important;
+    margin-left: 3.2%;
+  }
+  .underline-community{
+    width: 48%;
+    margin-left: 32%;
+    margin-top: 11px;
   }
 }
 
@@ -376,6 +396,7 @@
   .about-container {
     right: 3%;
   }
+ 
 }
 @media screen and (max-width: 1367px) {
   .body-header-data__container {

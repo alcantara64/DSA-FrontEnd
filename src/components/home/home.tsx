@@ -41,7 +41,7 @@ const home = () => {
 
                     <div className="em-l-grid__item">
 
-                        <div className="fpo-block fpo-block--dark">
+                        <div className="fpo-block fpo-block--dark solution-block-container">
                             <div className="grid-2">
                             <div className="body-header"></div>
                             <div >
@@ -59,7 +59,7 @@ const home = () => {
 
                     <div className="em-l-grid__item">
 
-                        <div className="fpo-block">
+                        <div className="fpo-block solution-block-container">
                             <div className="grid-3">
                                 <div className="body-header-data__container">
                                     <div className="body-header-data__marker"></div>

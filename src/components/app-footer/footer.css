@@ -91,7 +91,17 @@
 
   @media only screen and (max-width: 1921px){
     .custom-about-site-margin{
-      margin-left: -1%;
+      margin-left: -15%;
+    }
+    .em-l-grid--halves{
+      margin-left: 10.1%;
+    }
+    .em-l-grid--4up{
+      margin-left: 10%;
+      width: 74%;
+    }
+    .custom-logo-margin{
+      margin-right: -21%;
     }
   }
 

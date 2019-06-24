@@ -36,7 +36,11 @@
 }
 
 
-
+@media screen and (max-width: 1920px){
+    .em-c-header__body{
+        margin-left: 15.5% !important;
+    }
+}
 
 @media screen and (max-width: 1537px){
     .custom-header{
