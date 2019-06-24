@@ -345,22 +345,27 @@
     margin-right: -13%;
   }
   .body-header {
-    margin-left: 19% !important;
+    margin-left: 20% !important;
   }
-  
+  .em-l-grid--1-to-3up {
+    margin-left: -1%;
+}
   .learning-content {
     width: 92%;
     margin-left: 17%;
   }
   .second {
-    margin-left: 11%;
-    width: 52% !important;
+    margin-left: 8%;
+    width: 51% !important;
+  }
+  .first{
+    margin-left: 0%;
   }
   .underline-learn {
     width: 27%;
   }
   .underline-community {
-    width: 37%;
+    width: 42%;
   }
   .underline-solution {
     width: 52%;
@@ -384,11 +389,11 @@
     margin-left: 20%;
   }
   .coming-soon {
-    left: 90px;
-    padding-right: 68px;
+    left: 70px;
+    padding-right: 17px;
   }
   .find-solutions {
-    margin-right: 11%;
+    margin-right: 0%;
   }
   .learn_illustration {
     width: 114%;
@@ -397,7 +402,9 @@
   .about-container {
     right: 3%;
   }
- 
+  .solution-block-container {
+    padding-left: 13%;
+  }
 }
 @media screen and (max-width: 1367px) {
   .body-header-data__container {
