@@ -18,10 +18,10 @@ export default class PopularBlogs extends Component<BlogListProps> {
                         <div className="custom-margin-success-stories">
                             <Link to="/blog" className="custom-font-success-stories ">
                                 Success Stories
-</Link>
+                            </Link>
                         </div>
 
-                    <BlogDetail blogPost={blog} type={'popular'}/>
+                    <BlogDetail key={blog.id} blogPost={blog} type={'popular'}/>
 
 
                     </div>

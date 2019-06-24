@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './recentBlogs.css';
 import BlogDetail from '../blogDetail/blogDetail';
 
-export default class  RecentBlogs extends Component<BlogListProps>{
+export default class RecentBlogs extends Component<BlogListProps>{
     
  render(){
      if(this.props.blogList.length > 0){
@@ -20,14 +20,14 @@ export default class  RecentBlogs extends Component<BlogListProps>{
             <div className="em-l-grid__item ">
 
                 <div className="em-u-margin-top-double">
-                <BlogDetail key={this.props.blogList[2].id} blogPost={this.props.blogList[1]} type={'recent'}/>
+                <BlogDetail key={this.props.blogList[1].id} blogPost={this.props.blogList[1]} type={'recent'}/>
                 </div>
 
             </div>
             <div className="em-l-grid__item ">
 
                 <div className="em-u-margin-top-double">
-                <BlogDetail key={this.props.blogList[2].id} blogPost={this.props.blogList[0]} type={'recent'}/>
+                <BlogDetail key={this.props.blogList[0].id} blogPost={this.props.blogList[0]} type={'recent'}/>
                 </div>
 
             </div>

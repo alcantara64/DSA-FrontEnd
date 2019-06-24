@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Auxi from '../../hoc/Auxi';
 import './blog.css';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Page from '../../core/Models/Page';
 import PageDTO from '../../core/DTO/PageDTO';
@@ -17,14 +16,12 @@ class blog extends Component {
     }
 
     componentDidMount() {
-
-
-
-        axios.get('http://bis.southcentralus.cloudapp.azure.com:8090/xom-dsa-backend').then(
+        axios.get('http://localhost:52770/').then(
             (res: PageDTO) => {
                 this.setState({
+                    ...this.state,
                     pageDate: res.data,
-                    blogList: res.data.archive.posts
+                    blogList: res.data
                 })
                 console.log(this.state, "blog page");
             }
@@ -48,7 +45,7 @@ class blog extends Component {
                     <RecentBlogs blogList={this.state.blogList} type={'recent'}/>
                     <PopularBlogs blogList={this.state.blogList} type={'popular'} />
                     </div>
-                    <EditorPick blogList={this.state.blogList} type={'EditorPick'}/>
+                     <EditorPick blogList={this.state.blogList} type={'EditorPick'}/> 
                 </div>
             </Auxi>
         )
