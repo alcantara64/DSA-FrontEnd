@@ -161,7 +161,7 @@ margin-left: 5.5% !important;
    }
    
    .custom-medium-tile-area{
-    max-width: 1159px !important;
+    max-width: 1285px !important;
     margin-left: 5.5% !important;
     margin-top: 64px !important;
    }
@@ -171,7 +171,7 @@ margin-left: 5.5% !important;
     left: 140px;
     height: 262px;
     padding-top: 2% !important;
-    width: 216px !important;
+    width: 222px !important;
     background-color: rgba(245, 245, 245, 1);
     border-bottom: 8px solid rgba(215, 56, 114, 1);
    }
@@ -250,7 +250,7 @@ margin-left: 5.5% !important;
         margin-left: 66px !important;
     }
     .custom-page-align{
-        margin-left: -27px !important;
+        margin-left: -21px !important;
         width: 170% !important;
         max-width: 892px !important;
     }
@@ -267,15 +267,22 @@ margin-left: 5.5% !important;
         margin-left: -32px;
     }
     .custom-mid-page-card-column {
-        width: 222px !important;
-       }
+        width: 241px !important;
+    }
        .custom-exploratory{
         margin-right: 157px;
-       }
+    }
        .custom-mid-background{
         left: -8%;
         width: 111%;
-       }
+    }
+    .custom-header-margin-left {
+        margin-left: 4% !important;
+    }
+    .custom-medium-tile-area{
+        margin-left: 3.5% !important;
+    }
+
 }
 
 @media screen and (max-width: 1367px){
