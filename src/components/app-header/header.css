@@ -11,7 +11,7 @@
 
 .em-c-header__body{
     padding: 0.5em 34px;
-    margin-left: 105px !important;
+    margin-left: 7% !important;
     width: 1440px !important;
 }
 .em-c-header__title{
@@ -50,6 +50,10 @@
     .em-c-header__title {
         padding-left: 42%;
     }
+    .em-c-header__body{
+        margin-left: 6.5% !important
+    }
+   
  }
 
  @media screen and (max-width: 1367px){

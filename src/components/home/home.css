@@ -342,11 +342,12 @@
 
 @media screen and (max-width: 1537px) {
   .body-header-data__container {
-    margin-right: 28%;
+    margin-right: -13%;
   }
   .body-header {
     margin-left: 19% !important;
   }
+  
   .learning-content {
     width: 92%;
     margin-left: 17%;
@@ -365,7 +366,7 @@
     width: 52%;
   }
   .solution {
-    margin-right: 20%;
+    margin-right: 7%;
   }
   .about-container {
     right: 1%;
