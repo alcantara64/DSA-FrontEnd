@@ -6,7 +6,7 @@ class App extends Component {
   render(){
     return (
       <div className="App page-background">
-          <Dashboard ></Dashboard>
+          <Dashboard  ></Dashboard>
       </div>
     );
   }

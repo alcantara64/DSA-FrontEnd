@@ -257,12 +257,12 @@ return (
                 <div className="custom-H4 no-text-transform">Citizen Data Scientist Enablement</div>
       <div className="custom-paragraph">Cultivate data science skills among business analysts with strong domain knowledge and interest to learn and experiment.</div>
 
-
+      <div className="footer-divider"></div>
                 </div>
                 </div>
 
         </div>
-
+        
 
         <Footer />
     </Auxi>

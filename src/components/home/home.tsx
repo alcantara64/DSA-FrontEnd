@@ -80,8 +80,8 @@ const home = () => {
                         </div>
                     </div>
 
-                </div>
-                
+                </div >
+                <div className="middle-section-container">
                 <div className=" middle-section">
                     <div className="custom-H2 ">Want to see what we've done for others?</div>
                     <div className="custom-paragraph success-stories">Check out the success stories from our teams and teams we've worked with in the past</div>
@@ -93,8 +93,6 @@ const home = () => {
                 </div>
 
             <div className=" about-dsa">
-                
-                
                 <div className="em-l-grid em-l-grid--2up ">
                 <div className="em-l-grid__item first">
                     <div className="fpo-block">
@@ -135,7 +133,7 @@ const home = () => {
                 </div>
             </div>
 
-
+            </div>
         <Footer />
         </Auxi>
     )

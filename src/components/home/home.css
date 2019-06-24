@@ -2,6 +2,7 @@
   background-color: rgba(255, 255, 255, 1);
   margin-top: -32px;
   padding-top: 60px;
+  width: 1440px !important;
 }
 
 .learn_illustration {
@@ -96,6 +97,10 @@
   margin-top: 32px;
   background-color: #eeeeee;
   padding-top: 32px;
+  
+}
+.middle-section-container{
+  width: 101%;
 }
 .success-stories {
   margin-bottom: 38px;
@@ -412,10 +417,7 @@
     margin-top: 11px;
     margin-left: 41%;
   }
-  .middle-section {
-    width: 104%;
-    margin-left: 2px;
-  }
+  
   .about-dsa {
     width: 103%;
   }

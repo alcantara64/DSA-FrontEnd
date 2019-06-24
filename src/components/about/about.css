@@ -4,6 +4,11 @@
 .custom-padding-bottom{
     padding-bottom: 9px;
 }
+.footer-divider{
+    height: 5px;
+    width: 100%;
+    border: 1px solid #eee;
+}
 .custom-data-science-width{
     width: 828px;
 }
