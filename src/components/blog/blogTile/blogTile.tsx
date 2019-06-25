@@ -15,16 +15,16 @@ class blogTile extends Component<BlogTileProps>{
            let showImage = (this.props.type && this.props.type !== 'popular') ? 
            <img src={imageSRC} alt="" className="custom-rec-blog-detail-small-area em-u-width-100" /> : ''
            return (
-            <Link className="em-u-margin-top-double" to={`/blog/${this.props.blogPost.id}`}>
+            <div className="em-u-margin-top-double" >
                 {showImage}
             <div className="em-u-text-align-left custom-blog-text-margin">
-                <div className="custom-H3 ">{this.props.blogPost.title}</div>
+                <Link className="custom-H3 " to={`/blog/${this.props.blogPost.id}`}>{this.props.blogPost.title}</Link>
                 <div className="custom-paragraph ">{this.props.blogPost.postDetail.value}</div>
     
                 <div className="custom-paragraph custom-rich-text-color em-u-margin-top ">{this.props.blogPost.author.value}</div>
     
             </div>
-        </Link>
+        </div>
         );
        }else{
            return (
