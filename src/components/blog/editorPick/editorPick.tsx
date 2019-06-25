@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Auxi from '../../../hoc/Auxi';
-import BlogDetail from '../blogDetail/blogDetail'
+import BlogTile from '../blogTile/blogTile'
 import BlogListProps from '../../../core/Props/blogListProps';
 
 export default class EditorPick extends Component<BlogListProps>{
@@ -12,7 +12,7 @@ export default class EditorPick extends Component<BlogListProps>{
             list = this.props.blogList.map(blog => {
                 return (
                     <div className="em-l-grid__item">
-                    <BlogDetail key={blog.id} blogPost={blog} type={'editorPick'}/>
+                    <BlogTile key={blog.id} blogPost={blog} type={'editorPick'}/>
                     </div>
                 )
             })

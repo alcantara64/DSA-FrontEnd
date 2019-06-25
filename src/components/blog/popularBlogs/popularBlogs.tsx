@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import BlogDetail from '../blogDetail/blogDetail'
+import BlogTile from '../blogTile/blogTile'
 import BlogListProps from '../../../core/Props/blogListProps';
 
 export default class PopularBlogs extends Component<BlogListProps> {
@@ -21,7 +21,7 @@ export default class PopularBlogs extends Component<BlogListProps> {
                             </Link>
                         </div>
 
-                    <BlogDetail key={blog.id} blogPost={blog} type={'popular'}/>
+                    <BlogTile key={blog.id} blogPost={blog} type={'popular'}/>
 
 
                     </div>

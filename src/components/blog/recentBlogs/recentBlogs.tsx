@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import BlogListProps from '../../../core/Props/blogListProps';
 import { Link } from 'react-router-dom';
 import './recentBlogs.css';
-import BlogDetail from '../blogDetail/blogDetail';
+import BlogTile from '../blogTile/blogTile';
 
 export default class RecentBlogs extends Component<BlogListProps>{
     
@@ -12,7 +12,7 @@ export default class RecentBlogs extends Component<BlogListProps>{
         <div className="custom-recent-background-area custom-H4 ">Recent Stories</div>
 
         <div className="em-u-margin-top-double em-u-margin-bottom-double">
-        <BlogDetail key={this.props.blogList[2].id} blogPost={this.props.blogList[2]} type={'recent'}/>
+        <BlogTile key={this.props.blogList[2].id} blogPost={this.props.blogList[2]} type={'recent'}/>
         </div>
 
 
@@ -20,14 +20,14 @@ export default class RecentBlogs extends Component<BlogListProps>{
             <div className="em-l-grid__item ">
 
                 <div className="em-u-margin-top-double">
-                <BlogDetail key={this.props.blogList[1].id} blogPost={this.props.blogList[1]} type={'recent'}/>
+                <BlogTile key={this.props.blogList[1].id} blogPost={this.props.blogList[1]} type={'recent'}/>
                 </div>
 
             </div>
             <div className="em-l-grid__item ">
 
                 <div className="em-u-margin-top-double">
-                <BlogDetail key={this.props.blogList[0].id} blogPost={this.props.blogList[0]} type={'recent'}/>
+                <BlogTile key={this.props.blogList[0].id} blogPost={this.props.blogList[0]} type={'recent'}/>
                 </div>
 
             </div>
