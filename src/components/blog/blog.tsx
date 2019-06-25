@@ -16,7 +16,7 @@ class blog extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:52770/').then(
+        axios.get('http://bis.southcentralus.cloudapp.azure.com:8090/xom-dsa-backend/').then(
             (res: PageDTO) => {
                 this.setState({
                     ...this.state,
