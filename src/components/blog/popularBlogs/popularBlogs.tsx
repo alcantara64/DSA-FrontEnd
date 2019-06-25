@@ -16,9 +16,9 @@ export default class PopularBlogs extends Component<BlogListProps> {
                     </div>
                     <div className="em-l__secondary em-u-text-align-left">
                         <div className="custom-margin-success-stories">
-                            <Link to="/blog" className="custom-font-success-stories ">
+                            <div className="custom-font-success-stories ">
                                 {blog.category}
-                            </Link>
+                            </div>
                         </div>
 
                     <BlogTile key={blog.id} blogPost={blog} type={'popular'}/>
