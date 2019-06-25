@@ -222,6 +222,9 @@ margin-left: 5.5% !important;
     .custom-mid-page-card-column{
         width: 244px !important;
     }
+    .custom-exploratory{
+        margin-right: 277px !important;
+    }
   }
   /* @media screen and (max-width: 1921px){
     .custom-header-margin-left {
@@ -267,16 +270,19 @@ margin-left: 5.5% !important;
     .custom-page-margin-left {
         margin-left: 66px !important;
     }
+
+
+
     .custom-page-align{
         margin-left: -21px !important;
         width: 170% !important;
         max-width: 892px !important;
     }
     .custom-mid-section-area{
-        width: 92%;
+        width: 100%;
     } 
     .custom-secondary-area{
-        margin-left: 10px !important;
+        margin-left: 90px !important;
     }
     .custom-engage-services{
         margin-left: -28px;
@@ -285,10 +291,10 @@ margin-left: 5.5% !important;
         margin-left: -32px;
     }
     .custom-mid-page-card-column {
-        width: 241px !important;
+        width: 242px !important;
     }
        .custom-exploratory{
-        margin-right: 157px;
+        margin-right: 65px !important;
     }
        .custom-mid-background{
         left: -8%;
@@ -298,9 +304,12 @@ margin-left: 5.5% !important;
         margin-left: 4% !important;
     }
     .custom-medium-tile-area{
-        margin-left: 3.5% !important;
+        margin-left: 5% !important;
     }
+    .custom-mid-section-area {
+        margin-left: 0% !important;
 
+}
 }
 
 @media screen and (max-width: 1367px){
