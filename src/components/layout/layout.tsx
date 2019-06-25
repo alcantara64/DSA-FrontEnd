@@ -1,5 +1,4 @@
 import React from 'react';
-import Auxi from '../../hoc/Auxi';
 import Header from '../app-header/header';
 import './layout.css';
 

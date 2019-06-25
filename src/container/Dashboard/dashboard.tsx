@@ -7,6 +7,7 @@ import { Switch, Route } from 'react-router';
 import Auxi from '../../hoc/Auxi';
 import axios from 'axios';
 import Page from '../../core/Models/Page';
+import BlogDetail from '../../components/blog/blogDetail/blogDetail';
 
 
 class dashboard extends Component {
@@ -50,7 +51,8 @@ class dashboard extends Component {
                     <Switch>
                         <Route exact path='/' component={Home} />
                         <Route path='/about' component={About} />
-                        <Route path='/blog' component={Blog} />                        
+                        <Route exact path='/blog' component={Blog} /> 
+                        <Route exact path='/blog/:id' component={BlogDetail} />                       
                     </Switch>
 
                 </Layout>
