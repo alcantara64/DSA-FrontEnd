@@ -18,7 +18,7 @@ margin-left: 5.5% !important;
 }
 
 .custom-testimonial-margin{
-    margin-left: 8% !important;
+    margin-left: 12% !important;
 }
 
 .custom-paragraph-width{
@@ -98,6 +98,8 @@ margin-left: 5.5% !important;
    .custom-factory-img{
     height: 64px;
     width: 64px;
+    margin-top: 20px;
+    margin-bottom: 8px;
     background-image: -webkit-linear-gradient(-227deg, rgba(215, 56, 114, 1) 0%, rgba(215, 56, 114, 1) 12%, rgba(189, 47, 127, 1) 52%, rgba(122, 65, 131, 1) 82%, rgba(122, 65, 131, 1) 100%);
     background-image: -moz-linear-gradient(-227deg, rgba(215, 56, 114, 1) 0%, rgba(215, 56, 114, 1) 12%, rgba(189, 47, 127, 1) 52%, rgba(122, 65, 131, 1) 82%, rgba(122, 65, 131, 1) 100%);
     background-image: -o-linear-gradient(-227deg, rgba(215, 56, 114, 1) 0%, rgba(215, 56, 114, 1) 12%, rgba(189, 47, 127, 1) 52%, rgba(122, 65, 131, 1) 82%, rgba(122, 65, 131, 1) 100%);

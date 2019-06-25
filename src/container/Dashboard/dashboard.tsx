@@ -52,7 +52,7 @@ class dashboard extends Component {
                         <Route exact path='/' component={Home} />
                         <Route path='/about' component={About} />
                         <Route exact path='/blog' component={Blog} /> 
-                        <Route exact path='/blog/:id' component={BlogDetail} />                       
+                        <Route exact path='/details' component={BlogDetail} />                       
                     </Switch>
 
                 </Layout>
