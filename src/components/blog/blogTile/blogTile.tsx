@@ -6,7 +6,7 @@ class blogTile extends Component<BlogTileProps>{
     render(){
         var imageSRC = '';
         if(this.props.blogPost.postImageUrl){
-            imageSRC = this.props.blogPost.postImageUrl.replace("~", "http://localhost:52770")
+            imageSRC = this.props.blogPost.postImageUrl.replace("~", "http://bis.southcentralus.cloudapp.azure.com:8090/xom-dsa-backend/")
         }
        if(this.props.blogPost){
 
