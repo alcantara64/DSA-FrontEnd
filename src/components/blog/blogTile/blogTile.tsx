@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import BlogTileProps from '../../../core/Props/blogTileProps';
+import { Link } from 'react-router-dom';
 
 class blogTile extends Component<BlogTileProps>{
 
@@ -14,7 +15,7 @@ class blogTile extends Component<BlogTileProps>{
            let showImage = (this.props.type && this.props.type !== 'popular') ? 
            <img src={imageSRC} alt="" className="custom-rec-blog-detail-small-area em-u-width-100" /> : ''
            return (
-            <div className="em-u-margin-top-double">
+            <Link className="em-u-margin-top-double" to={`/blog/${this.props.blogPost.id}`}>
                 {showImage}
             <div className="em-u-text-align-left custom-blog-text-margin">
                 <div className="custom-H3 ">{this.props.blogPost.title}</div>
@@ -23,7 +24,7 @@ class blogTile extends Component<BlogTileProps>{
                 <div className="custom-paragraph custom-rich-text-color em-u-margin-top ">{this.props.blogPost.author.value}</div>
     
             </div>
-        </div>
+        </Link>
         );
        }else{
            return (
