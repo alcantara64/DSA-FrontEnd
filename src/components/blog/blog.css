@@ -144,8 +144,8 @@
 
 @media screen and (max-width: 1921px) {
   .custom-page-margin {
-    margin-left: 9.3% !important;
-    width: 92.8%;
+    margin-left: 17% !important;
+    width: 74% !important;
   }
     .custom-editor-blog-area{
         height: 325px !important;
@@ -153,14 +153,20 @@
     }
 
     .custom-recent-blog-area {
-      max-width: 89% !important;
+      max-width: 92% !important;
       margin-bottom: 6%;
     }
     .custom-editor-blog-area {
-      width: 90% !important;
+      width: 93% !important;
     }
     .custom-link-bold{
-      width: 89%;
+      width: 92% !important;
+    }
+    .custom-recent-area{
+      margin-right: 49px !important;
+    }
+    .em-l-grid--halves {
+      margin-left: -0.9%;
     }
     
   }
