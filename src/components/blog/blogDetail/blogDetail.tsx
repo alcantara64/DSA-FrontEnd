@@ -4,7 +4,8 @@ import RouteComponentProps from 'react-router-dom';
 import blog_image from './../../../asset/images/blog_image.png';
 import './blogDetail.css';
 
-export default class BlogDetail extends Component {
+export default class BlogDetail extends Component< BlogDetail> {
+
     
     render(){
         return (

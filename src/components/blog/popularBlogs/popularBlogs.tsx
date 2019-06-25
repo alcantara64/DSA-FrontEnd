@@ -17,7 +17,7 @@ export default class PopularBlogs extends Component<BlogListProps> {
                     <div className="em-l__secondary em-u-text-align-left">
                         <div className="custom-margin-success-stories">
                             <Link to="/blog" className="custom-font-success-stories ">
-                                Success Stories
+                                {blog.category}
                             </Link>
                         </div>
 
