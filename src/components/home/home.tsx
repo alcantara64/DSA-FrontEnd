@@ -14,6 +14,7 @@ import combined_shape from './../../asset/images/Combined_Shape.png';
 import ian_espinosa from './../../asset/images/ian-espinosa.png';
 import fill_219 from './../../asset/images/Fill_291.png';
 import oval_1 from './../../asset/images/Oval_1.png';
+import group from './../../asset/images/Group-9.png';
 import './home.css';
 import Footer from '../app-footer/footer';
 
@@ -114,7 +115,8 @@ const home = () => {
                 <div className="em-l-grid__item second">
                     <div className="fpo-block fpo-block--dark">
                         <div className="about-img-container">
-                            <img src={arif_wahid} alt="" className="arif-waheed"/>
+                            <img src={group} alt=""/>
+                            {/* <img src={arif_wahid} alt="" className="arif-waheed"/>
                             <img src={lady_circle} alt="" className="lady-circle"/>
                             <img src={path_2} alt="" className="path-2"/>
                             <img src={rectangle} alt="" className="rectangle"/>
@@ -126,7 +128,7 @@ const home = () => {
                             <img src={ian_espinosa} alt="" className="ian-espinosa"/>
                             <img src={linkedin} alt="" className="linkedin"/> 
                             <img src={combined_shape} alt="" className="combined_shape"/>
-                           
+                            */}
                         </div>
                     </div>
                 </div>

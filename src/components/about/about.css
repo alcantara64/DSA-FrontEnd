@@ -5,9 +5,12 @@
     padding-bottom: 9px;
 }
 .footer-divider{
-    height: 5px;
-    width: 100%;
-    border: 1px solid #eee;
+    height: 3px;
+    width: 103%;
+    margin-left: -52px;
+    margin-top: 64px;
+    background-color: #eee;
+  
 }
 .custom-data-science-width{
     width: 828px;
@@ -138,6 +141,8 @@ margin-left: 5.5% !important;
 
    .no-text-transform{
        text-transform: none !important;
+       padding-top: 7px;
+       padding-bottom: 7px; 
    }
 
    .custom-mid-background-area{
@@ -180,10 +185,12 @@ margin-left: 5.5% !important;
    }
 
    .custom-tile-margin-center{
-       margin-left: 35% !important;
-       margin-bottom: 5% !important;
+       margin-left: 0% !important;
+       margin-bottom: 0% !important;
    }
-
+   .mark-image{
+       width: 16px;
+   }
    .custom-margin-right-20{
        margin-right: 19px !important;
    }
@@ -199,7 +206,7 @@ margin-left: 5.5% !important;
 
   .custom-page-margin-left{
     margin-left: 54px !important;
-    margin-bottom: 125px !important;
+    margin-bottom: 16% !important;
   }
 
   .custom-mid-background{
@@ -217,7 +224,7 @@ margin-left: 5.5% !important;
     border :2px solid #7A4183 !important;
 }
 .custom-button-width{
-    width: 17px !important;
+    width: 32px !important;
 }
 
   @media screen and (max-width: 1921px){
@@ -242,6 +249,15 @@ margin-left: 5.5% !important;
     }
     .custom-testimonial-margin{
         margin-left: 16% !important;
+    }
+    .data-science-items{
+        margin-left: 32px !important;
+        width: 40% !important;
+    }
+    .mark-image{
+        position: relative;
+        right: 30px;
+        top: 31px;
     }
   }
   
