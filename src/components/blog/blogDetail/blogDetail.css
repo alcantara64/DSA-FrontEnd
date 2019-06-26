@@ -52,3 +52,27 @@
     display: inline-block;
     margin-right: 35px;
 }
+.custom-author-font{
+    font-size: 12px !important;
+  }
+.custom-author-padding{
+    padding-bottom: 6px !important;
+}  
+.inline{
+    display: inline-block !important;
+}
+.img-size{
+    height: 20px;
+    margin-bottom: -5px;
+    margin-right: 10px;
+}
+.back-button-margin{
+    margin-right: 94.8%;
+    margin-bottom: 2%;
+}
+
+/* @media screen and (max-width: 1537px) {
+    .custom-page-margin{
+    margin-right: 8.5% !important;
+    }
+}  */

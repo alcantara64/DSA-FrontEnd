@@ -3,6 +3,7 @@ import Auxi from '../../../hoc/Auxi';
 import blog_image from './../../../asset/images/blog_image.png';
 import blog_details from './../../../asset/images/blog_details.png';
 import profile_pic from './../../../asset/images/profile_pic.png';
+import arrow_icon from './../../../asset/images/arrow_icon.png';
 import {RouteComponentProps} from 'react-router-dom';
 import axios from 'axios';
 import './blogDetail.css';
@@ -39,8 +40,11 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
         if(Object.entries(this.state.postDetail).length >= 1 && this.state.postDetail.constructor === Object){
             return (
                 <Auxi>
-                    <div className="blog-details-container  ">
-                   
+                    <div className="custom-page-margin blog-details-container  ">
+                   <div className="back-button-margin" >
+                       <div className="inline"><img className="img-size" src={arrow_icon} alt=""/></div>
+                       <div className="inline custom-link">BACK</div>
+                   </div>
                     <div className="success-story">
                     <div className="custom-success-image">
                         <img className="success-img" src={this.state.postImageSrc} alt="" />
@@ -82,9 +86,9 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
                       <div>
                           <div className="custom-profile-pic"><img src={profile_pic} alt=""/></div>
                           <div className="custom-profile-pic">
-                              <div className="custom-link">AUTHOR</div>
-                              <div>Johnny Swim</div>
-                              <div>Productivity Solutions Advisor, GSC EMIT CES PROD SOL FULI&C PS</div>
+                              <div className="custom-link custom-author-font">AUTHOR</div>
+                              <div className="custom-author-padding custom-H3">Johnny Swim</div>
+                              <div className="custom-paragraph">Productivity Solutions Advisor, GSC EMIT CES PROD SOL FULI&C PS</div>
                           </div>
                       </div>
                       </div>
