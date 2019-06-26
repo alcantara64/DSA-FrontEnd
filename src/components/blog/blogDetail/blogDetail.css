@@ -69,10 +69,8 @@
 .back-button-margin{
     margin-right: 94.8%;
     margin-bottom: 2%;
+    cursor: pointer;
 }
 
-/* @media screen and (max-width: 1537px) {
-    .custom-page-margin{
-    margin-right: 8.5% !important;
-    }
-}  */
+
+

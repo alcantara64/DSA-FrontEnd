@@ -3,6 +3,8 @@ import Auxi from '../../hoc/Auxi';
 import './about.css';
 import Footer from '../app-footer/footer';
 import Find_Solutions_Illustration from './../../asset/images/Find_Solutions_Illustration.png';
+import skycraper from './../../asset/images/skycraper.png';
+import quote_img from './../../asset/images/quote_img.png';
 import about_profile_pic from './../../asset/images/about_profile_pic.png';
 
 const about = () => {
@@ -33,13 +35,16 @@ return (
 
             <div className="custom-padding-bottom custom-H3">What can we do for you?</div>
         
-        <div className="custom-paragraph">We accelerate high-value, actionable insights through the delivery of scalable, enterprise data platforms, data science and analytics solutions.
+        <div className="custom-paragraph">We accelerate high-value, actionable insights through the delivery of scalable, enterprise data platforms, data science and analytics solutions. <br/><br/>
         </div>
+<div className="custom-quote-width custom-quote-width">
+</div>
 
         
         
         <div className="row custom-line-spacing">
             <div className="column custom-right-tile-margin em-u-margin-left-none">
+                <div><img className="custom-quote-width" src={quote_img} alt=""/></div>
                 <div className="custom-paragraph">
                     We were able to level set from across the business and technical folks, and then walk out of a day and a half engagement
                     with a working prototype of a visualization with mock data
@@ -54,6 +59,10 @@ return (
 
             </div>
             <div className="column custom-right-tile-margin custom-left-tile-margin">
+                <div>
+                <img className="custom-quote-width" src={quote_img} alt=""/>
+
+                </div>
                 <div className="custom-paragraph">
                     This design thinking workshop with data makes alot of progress and is an impressive team.
             </div>
@@ -69,6 +78,10 @@ return (
             </div>
             
             <div className="column">
+                <div>
+                <img className="custom-quote-width" src={quote_img} alt=""/>
+
+                </div>
                 <div className="custom-paragraph">We can save a lot of time just making a few small changes through data and analytics in this process.
             </div>
             <div className="custom-link custom-line-spacing em-u-margin-top">
@@ -102,9 +115,9 @@ return (
 
         <form method="post" action="#" role="search" className="em-c-search-form em-js-header-search">
   <div className="em-c-search__body">
-    <input type="search" id="search" className="em-c-search__input" />
+    <input type="search" id="search" className="em-c-search__input custom-input-border" />
     <button className="em-c-btn custom-button-color em-c-btn--primary" aria-label="Search">
-      <div className="em-c-btn__inner">
+      <div className="em-c-btn__inner custom-button-width">
       </div>
     </button>
   </div>
@@ -115,6 +128,9 @@ return (
   <div className="em-l__secondary em-u-text-align-left custom-secondary-area em-u-padding">
   <div className="custom-H3 ">Our Core Values</div>
   <div className="custom-secondary-tile-detail-area em-u-margin-top">
+      <div>
+          <img src={skycraper} alt=""/>
+      </div>
       <div className="custom-factory-img"></div>
       <div className="custom-H4 no-text-transform">Enterprise Platform</div>
       <div className="custom-paragraph">Assess market for new and emerging technologies and evaluate for suitability for near-term use cases (SAP VORA).</div>
@@ -122,6 +138,9 @@ return (
 
   
   <div className="custom-secondary-tile-detail-area em-u-margin-top">
+      <div>
+          <img src="" alt=""/>
+      </div>
       <div className="custom-factory-img"></div>
       <div className="custom-H4 no-text-transform">Technical Expertise</div>
       <div className="custom-paragraph">Maintain and support a diverse platform of interconnected data and analytics technolgies.</div>
