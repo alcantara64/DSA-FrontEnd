@@ -3,7 +3,7 @@ import Auxi from '../../hoc/Auxi';
 import './about.css';
 import Footer from '../app-footer/footer';
 import Find_Solutions_Illustration from './../../asset/images/Find_Solutions_Illustration.png';
-
+import about_profile_pic from './../../asset/images/about_profile_pic.png';
 
 const about = () => {
 return (
@@ -148,7 +148,7 @@ return (
 
                     <div className="row custom-testimonial-margin">
                         <div className="custom-mid-page-slider-photo-column">
-                        <img src={Find_Solutions_Illustration} alt="" className="custom-mid-photo-area" />
+                        <img src={about_profile_pic} alt="" className="custom-mid-photo-area" />
 
                         </div>
 

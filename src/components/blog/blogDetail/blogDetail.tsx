@@ -77,12 +77,12 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
                        Shankle andouille buffalo, aute hamburger cillum cupidatat magna commodo enim qui pork belly proident.
                         Sausage officia consequat elit, chuck kevin ex lorem adipisicing drumstick sunt fugiat in swine excepteur.
                          Leberkas beef cillum, ea sint tail kevin salami buffalo jowl rump. 
-                         Tenderloin pork incididunt, sed occaecat cillum in tempor chicken ball tip culpa irure.
+                         Tenderloin pork incididunt, sed occaecat cillum in tempor chicken ball tip culpa irure. <br/><br/>
                       </div>
                       <div>
                           <div className="custom-profile-pic"><img src={profile_pic} alt=""/></div>
                           <div className="custom-profile-pic">
-                              <div>AUTHOR</div>
+                              <div className="custom-link">AUTHOR</div>
                               <div>Johnny Swim</div>
                               <div>Productivity Solutions Advisor, GSC EMIT CES PROD SOL FULI&C PS</div>
                           </div>

@@ -227,6 +227,9 @@ margin-left: 5.5% !important;
     .custom-exploratory{
         margin-right: 277px !important;
     }
+    .custom-testimonial-margin{
+        margin-left: 16% !important;
+    }
   }
   /* @media screen and (max-width: 1921px){
     .custom-header-margin-left {
@@ -311,6 +314,9 @@ margin-left: 5.5% !important;
     .custom-mid-section-area {
         margin-left: 0% !important;
 
+}
+.custom-testimonial-margin{
+    margin-left: 9% !important;
 }
 }
 
