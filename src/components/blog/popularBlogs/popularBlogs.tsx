@@ -6,6 +6,16 @@ export default class PopularBlogs extends Component<BlogListProps> {
     render(){
         let blogList = null;
         if(this.props.blogList.length > 0){
+            this.props.blogList.sort((a, b) => {
+                if (Number(a.clickedOnCount.value) < Number(b.clickedOnCount.value)) {
+                    return 1;
+                  }
+                  if (Number(a.clickedOnCount.value) > Number(b.clickedOnCount.value)) {
+                    return -1;
+                  }
+                  return 0;
+
+            })
             blogList = this.props.blogList.map((blog, index) => {
                 return (
                     <div className="em-l-linelength-container custom-blog-area-small">
