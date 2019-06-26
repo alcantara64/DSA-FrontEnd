@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Auxi from '../../../hoc/Auxi';
-import blog_image from './../../../asset/images/blog_image.png';
 import blog_details from './../../../asset/images/blog_details.png';
 import profile_pic from './../../../asset/images/profile_pic.png';
 import {RouteComponentProps} from 'react-router-dom';
