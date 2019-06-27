@@ -207,7 +207,7 @@ margin-left: 5.5% !important;
 
   .custom-page-margin-left{
     margin-left: 54px !important;
-    margin-bottom: 16% !important;
+    margin-bottom: 7% !important;
   }
 
   .custom-mid-background{
@@ -269,7 +269,11 @@ margin-left: 5.5% !important;
     }
 
 
-
+    .footer-divider{
+        margin-top: 45px;
+        width: 105%;
+        margin-left: -65px;
+    }
     .custom-page-align{
         margin-left: -21px !important;
         width: 170% !important;
