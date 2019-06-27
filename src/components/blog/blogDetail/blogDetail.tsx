@@ -8,6 +8,7 @@ import axios from 'axios';
 import './blogDetail.css';
 import Post from '../../../core/Models/Post';
 import PostDTO from '../../../core/DTO/PostDTO';
+import {Config} from '../../../Config';
 
 export default class BlogDetail extends Component< IBlogDetails, IBlogDetailState> {
 
@@ -20,13 +21,13 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
     }
 
     componentDidMount(){
-        axios.get(`http://bis.southcentralus.cloudapp.azure.com:8090/xom-dsa-backend/post?id=${this.props.match.params.id}`).then(
+        axios.get(`${Config.baseUrl}/post?id=${this.props.match.params.id}`).then(
             (res: PostDTO) => {
                 if(res.data){
                     this.setState({
                         ...this.state,
                         postDetail: res.data,
-                        postImageSrc: res.data.postImageUrl ? res.data.postImageUrl.replace('~', 'http://bis.southcentralus.cloudapp.azure.com:8090/xom-dsa-backend'): '',
+                        postImageSrc: res.data.postImageUrl ? res.data.postImageUrl.replace('~', `${Config.baseUrl}`): '',
                     })
                 }                
             },

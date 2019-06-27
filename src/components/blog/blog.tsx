@@ -7,6 +7,7 @@ import PageDTO from '../../core/DTO/PageDTO';
 import EditorPick from './editorPick/editorPick';
 import RecentBlogs from './recentBlogs/recentBlogs';
 import PopularBlogs from './popularBlogs/popularBlogs';
+import {Config} from '../../Config';
 
 class blog extends Component {
 
@@ -16,7 +17,7 @@ class blog extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://bis.southcentralus.cloudapp.azure.com:8090/xom-dsa-backend/').then(
+        axios.get(`${Config.baseUrl}`).then(
             (res: PageDTO) => {
                 this.setState({
                     ...this.state,
