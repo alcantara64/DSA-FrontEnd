@@ -1,6 +1,4 @@
-import  Regions from "./Regions";
 import  Category  from "./Category";
-import  Block  from "./Block";
 import Value from "./Value";
 
 export default interface Post {
@@ -10,9 +8,14 @@ export default interface Post {
     title?:           string;
     postImageUrl?: string;
     clickedOnCount: Value;
-    author: Value;
-    postDetail: Value;
-    introText: Value;
+    author: string;
+    postDetail: string;
+    introText: string;
     archiveId: string;
-
+    authorImageUrl: string;
+    authorDepartment: string;
+    timeRead: string;
+    topPost: string;
+    bottomPost:string
+    blogImageUrl: string
 }
