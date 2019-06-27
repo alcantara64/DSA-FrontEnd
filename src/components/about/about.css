@@ -182,9 +182,11 @@ margin-left: 5.5% !important;
     padding-top: 2% !important;
     width: 222px !important;
     background-color: rgba(245, 245, 245, 1);
+    border-bottom: 8px solid rgba(215, 56, 114, 0.5);
+   }
+   .active-card{
     border-bottom: 8px solid rgba(215, 56, 114, 1);
    }
-
    .custom-tile-margin-center{
        margin-left: 0% !important;
        margin-bottom: 0% !important;

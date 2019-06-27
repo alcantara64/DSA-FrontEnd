@@ -19,6 +19,11 @@ import skycraper2 from './../../asset/images/skycraper2.png';
 
 class about extends Component<{},IAboutProps> {
 
+    isEnterpriseClicked: boolean = false;
+    isAnalyticsClicked: boolean = false;
+    isScienceClicked: boolean = false;
+    isStrategyClicked: boolean = false;
+    isCustomerClicked: boolean = false;
 
     constructor(props: any) {
         super(props)
@@ -32,9 +37,15 @@ class about extends Component<{},IAboutProps> {
     }
 
     private onTileClickHandler = (type: string) => {
+        this.isEnterpriseClicked = false;
+        this.isAnalyticsClicked = false;
+        this.isScienceClicked = false;
+        this. isStrategyClicked = false;
+        this.isCustomerClicked = false;
         let currentState = {...this.state};
         switch (type) {
             case 'Enterprise Platforms':
+                this.isEnterpriseClicked = true;
                 currentState.card = (
                     <div>
                                 
@@ -93,6 +104,7 @@ class about extends Component<{},IAboutProps> {
                 })
                 break
             case 'Data & Analytics Solutions':
+                    this.isAnalyticsClicked = true;
                     currentState.card = (
                         <div>
                                 
@@ -151,6 +163,7 @@ class about extends Component<{},IAboutProps> {
                 })
                 break
             case 'Data Science':
+                    this.isScienceClicked = true;
                     currentState.card = (
                         <div>
                                 
@@ -220,6 +233,7 @@ class about extends Component<{},IAboutProps> {
                 })
                 break
             case 'Strategy & Practices':
+                    this.isStrategyClicked = true;
                     currentState.card = (
                         <div>
                                 
@@ -269,6 +283,7 @@ class about extends Component<{},IAboutProps> {
                 })
                 break
             case 'Customer Outreach':
+                    this.isCustomerClicked = true;
                     currentState.card = (
                         <div>
                                 
@@ -518,7 +533,7 @@ class about extends Component<{},IAboutProps> {
 
 
                 <div className="em-l-grid em-l-grid--5up custom-medium-tile-area">
-                    <div className="em-l-grid__item custom-mid-page-card-column custom-margin-right-20" onClick={() => this.onTileClickHandler('Enterprise Platforms')}>
+            <div className={`em-l-grid__item  custom-mid-page-card-column ${this.isEnterpriseClicked? 'active-card':'custom-mid-page-card-column'} custom-margin-right-20`} onClick={() => this.onTileClickHandler('Enterprise Platforms')}>
                         <div className="custom-factory-img em-u-text-align-center custom-tile-margin-center">
                             <img src={skycraper2} alt="" />
                         </div>
@@ -526,7 +541,7 @@ class about extends Component<{},IAboutProps> {
                         <div className="custom-paragraph">We identify and evaluate new technologies, develop a platform and vendor strategy, and maintain and support technologies.</div>
 
                     </div>
-                    <div className="em-l-grid__item custom-mid-page-card-column custom-margin-right-20" onClick={() => this.onTileClickHandler('Data & Analytics Solutions')}>
+                    <div className={`em-l-grid__item  custom-mid-page-card-column ${this.isAnalyticsClicked? 'active-card':'custom-mid-page-card-column'} custom-margin-right-20`} onClick={() => this.onTileClickHandler('Data & Analytics Solutions')}>
                         <div className="custom-factory-img em-u-text-align-center custom-tile-margin-center">
                             <img src={planning} alt="" />
                         </div>
@@ -534,7 +549,7 @@ class about extends Component<{},IAboutProps> {
                         <div className="custom-paragraph">We guide customers through the entire data and analytics process, including design, consultation, acquisition, integration, modeling, analysis, and visualization.</div>
 
                     </div>
-                    <div className="em-l-grid__item custom-mid-page-card-column custom-margin-right-20" onClick={() => this.onTileClickHandler('Data Science')}>
+                    <div className={`em-l-grid__item  custom-mid-page-card-column ${this.isScienceClicked? 'active-card':'custom-mid-page-card-column'} custom-margin-right-20`} onClick={() => this.onTileClickHandler('Data Science')}>
 
                         <div className="custom-factory-img em-u-text-align-center custom-tile-margin-center">
                             <img src={data_science} alt="" />
@@ -543,7 +558,7 @@ class about extends Component<{},IAboutProps> {
                         <div className="custom-paragraph">We enable and assist with exploratory analysis, research, productization and support, and various data science platforms.</div>
 
                     </div>
-                    <div className="em-l-grid__item custom-mid-page-card-column custom-margin-right-20" onClick={() => this.onTileClickHandler('Strategy & Practices')}>
+                    <div className={`em-l-grid__item  custom-mid-page-card-column ${this.isStrategyClicked? 'active-card':'custom-mid-page-card-column'} custom-margin-right-20`} onClick={() => this.onTileClickHandler('Strategy & Practices')}>
 
                         <div className="custom-factory-img em-u-text-align-center custom-tile-margin-center">
                             <img src={chess} alt="" />
@@ -552,7 +567,7 @@ class about extends Component<{},IAboutProps> {
                         <div className="custom-paragraph">We manage the Enterprise Data Roadmap, strengthen career development and talent, and provide tools and guidance for data at ExxonMobil.</div>
 
                     </div>
-                    <div className="em-l-grid__item custom-mid-page-card-column" onClick={() => this.onTileClickHandler('Customer Outreach')}>
+                    <div className={`em-l-grid__item  custom-mid-page-card-column ${this.isCustomerClicked? 'active-card':'custom-mid-page-card-column'} custom-margin-right-20`} onClick={() => this.onTileClickHandler('Customer Outreach')}>
 
                         <div className="custom-factory-img em-u-text-align-center custom-tile-margin-center">
                             <img src={customer} alt="" />

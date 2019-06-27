@@ -1,6 +1,7 @@
 import React from 'react';
 import Auxi from '../../hoc/Auxi';
 import './footer.css';
+import { Link } from 'react-router-dom';
 
 const footer = () => {
     return (
@@ -15,8 +16,9 @@ const footer = () => {
             <div className="about-site custom-about-site-margin custom-paragraph">
             Question about the site?
             </div>
-            <div className="about-site custom-link">
-              Contact the webmaster
+            <div className="about-site ">
+            <Link to="/" className="custom-link em-u-clickable">
+            Contact the webmaster</Link>
             </div >
             <div className=" custom-analytics-margin em-l-grid em-l-grid--1-2-1 em-l-grid--break-fast em-u-text-align-left">
         <div className="custom-analytics em-l-grid__item em-u-padding-none">
