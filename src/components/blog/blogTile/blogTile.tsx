@@ -8,7 +8,7 @@ class blogTile extends Component<BlogTileProps>{
     render(){
         var imageSRC = '';
         if(this.props.blogPost.postImageUrl){
-            imageSRC = this.props.blogPost.postImageUrl.replace("~", `${Config.baseUrl}`)
+            imageSRC = this.props.blogPost.blogImageUrl.replace("~", `${Config.baseUrl}`)
         }
        if(this.props.blogPost){
 
@@ -20,9 +20,9 @@ class blogTile extends Component<BlogTileProps>{
                 {showImage}
             <div className="em-u-text-align-left custom-blog-text-margin">
                 <Link className="custom-H3 " to={`/blog/${this.props.blogPost.id}`}>{this.props.blogPost.title}</Link>
-                <div className="custom-paragraph ">{this.props.blogPost.postDetail.value}</div>
+                <div className="custom-paragraph ">{this.props.blogPost.introText}</div>
     
-                <div className="custom-paragraph custom-rich-text-color em-u-margin-top ">{this.props.blogPost.author.value}</div>
+                <div className="custom-paragraph custom-rich-text-color em-u-margin-top ">{this.props.blogPost.author}</div>
     
             </div>
         </div>
