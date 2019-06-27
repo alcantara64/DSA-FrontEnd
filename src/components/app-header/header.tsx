@@ -29,7 +29,7 @@ class header extends Component<any>  {
 
                   <ul className="em-c-primary-nav__list">
 
-                    <li className="em-c-primary-nav__item ">
+                    {/* <li className="em-c-primary-nav__item ">
 
                       <Link to="/" className="custom-paragraph em-u-clickable em-c-primary-nav__link custom-text-color-black em-c-primary-nav__link--has-children em-js-nav-dropdown-trigger">
 
@@ -61,29 +61,29 @@ class header extends Component<any>  {
                             </Link>
                         </li>
                       </ul>
-                    </li>
+                    </li> */}
 
-
+{/* 
                     <li className="custom-paragraph em-c-primary-nav__item ">
                       <Link to="/" className="custom-paragraph em-u-clickable em-c-primary-nav__link custom-text-color-black ">
 
                         a.Community
           </Link>
-                    </li>
+                    </li> */}
 
-                    <li className="custom-paragraph em-c-primary-nav__item ">
+                    {/* <li className="custom-paragraph em-c-primary-nav__item ">
                       <Link to="/" className=" custom-paragraph em-u-clickable em-c-primary-nav__link custom-text-color-black ">
 
                         Services
           </Link>
-                    </li>
+                    </li> */}
 
-                    <li className="custom-paragraph em-c-primary-nav__item ">
+                    {/* <li className="custom-paragraph em-c-primary-nav__item ">
                       <Link to="/blog" className="custom-paragraph em-u-clickable em-c-primary-nav__link custom-text-color-black ">
 
                         Blog
           </Link>
-                    </li>
+                    </li> */}
 
                     <li className="custom-paragraph em-c-primary-nav__item ">
 

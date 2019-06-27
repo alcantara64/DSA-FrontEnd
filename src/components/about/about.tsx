@@ -15,6 +15,7 @@ import data_science from './../../asset/images/data-science.png';
 import chess from './../../asset/images/chess-piece.png';
 import customer from './../../asset/images/customer-outreach.png';
 import shape from './../../asset/images/Shape.png';
+import skycraper2 from './../../asset/images/skycraper2.png';
 
 const about = () => {
     return (
@@ -213,7 +214,7 @@ const about = () => {
                 <div className="em-l-grid em-l-grid--5up custom-medium-tile-area">
                     <div className="em-l-grid__item custom-mid-page-card-column custom-margin-right-20">
                         <div className="custom-factory-img em-u-text-align-center custom-tile-margin-center">
-                            <img src={planning} alt="" />
+                            <img src={skycraper2} alt="" />
                         </div>
                         <div className="custom-H4 no-text-transform ">Enterprise Platforms</div>
                         <div className="custom-paragraph">We identify and evaluate new technologies, develop a platform and vendor strategy, and maintain and support technologies.</div>
