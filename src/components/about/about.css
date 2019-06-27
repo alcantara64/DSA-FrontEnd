@@ -13,7 +13,7 @@
   
 }
 .custom-data-science-width{
-    width: 828px;
+    width: 863px;
 }
 
 .custom-header-margin-left{
@@ -288,6 +288,7 @@ margin-left: 5.5% !important;
         margin-left: -32px;
     }
     .custom-mid-page-card-column {
+        cursor: pointer;
         width: 242px !important;
     }
        .custom-exploratory{

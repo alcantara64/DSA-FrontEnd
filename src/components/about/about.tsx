@@ -26,14 +26,132 @@ class about extends Component<{},IAboutProps> {
         }
     }
 
+    componentDidMount(){
+        this.onTileClickHandler('Enterprise Platforms')
+    }
+
     private onTileClickHandler = (type: string) => {
         let currentState = {...this.state};
-        
-        console.log('after click of ssl')
         switch (type) {
             case 'Enterprise Platforms':
                 currentState.card = (
                     <div>
+                                
+                            <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left">
+
+                            <div className="custom-padding-bottom custom-H2">Enterprise Platforms</div>
+
+                            <div className="custom-data-science-width custom-paragraph">
+
+                            We identify and evaluate new technologies, develop a platform and vendor strategy, and maintain and support technologies.                                            </div>
+
+                        </div>
+
+
+<div className="custom-exploratory em-l-grid em-l-grid--2up  em-u-padding-none custom-main-margin custom-medium-tile-area em-u-text-align-left">
+                    <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double data-science-items">
+                        <div className="mark-image">
+                            <img src={shape} alt=""/>
+                        </div>
+                        <div className="custom-H4 no-text-transform">Technology Evaluations & Introductions</div>
+                        <div className="custom-paragraph">Assess market for new and emerging technologies and evaluate for suitability for near-term use cases (SAP VORA).</div>
+
+                    </div>
+                    <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double data-science-items">
+                    <div className="mark-image"> 
+                            <img src={shape} alt=""/>
+                        </div>
+                        <div className="custom-H4 no-text-transform">Vendor Management</div>
+                        <div className="custom-paragraph">Maintain strategic partnerships to understand products in the marketplace and to maximize value from existing technologies.</div>
+
+
+                    </div>
+                    <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double data-science-items">
+                    <div className="mark-image">
+                            <img src={shape} alt=""/>
+                        </div>
+                        <div className="custom-H4 no-text-transform">Platform Strategy</div>
+                        <div className="custom-paragraph">Develop data and analytics technology strategies for the corporation (Technical roadmaps, reference architecture).</div>
+
+
+                    </div >
+                    <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double data-science-items">
+                    <div className="mark-image">
+                            <img src={shape} alt=""/>
+                        </div>
+                        <div className="custom-H4 no-text-transform">Technology Support</div>
+                        <div className="custom-paragraph">Maintain and support a diverse platform of interconnected data and analytics technologies.</div>
+
+
+                    </div>
+                </div>
+                </div>
+                )
+                this.setState({
+                    card: currentState.card
+                })
+                break
+            case 'Data & Analytics Solutions':
+                    currentState.card = (
+                        <div>
+                                
+                            <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left">
+
+                            <div className="custom-padding-bottom custom-H2">Data & Analytics Solutions</div>
+
+                            <div className="custom-data-science-width custom-paragraph">
+
+                            We guide customers through the entire data and analytics process, including design, consultation, acquisition, integration, modeling, analysis, and visualization.
+                        </div>
+                        </div>
+
+
+<div className="custom-exploratory em-l-grid em-l-grid--2up  em-u-padding-none custom-main-margin custom-medium-tile-area em-u-text-align-left">
+                    <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double data-science-items">
+                        <div className="mark-image">
+                            <img src={shape} alt=""/>
+                        </div>
+                        <div className="custom-H4 no-text-transform">Solution Consultation & Design</div>
+                        <div className="custom-paragraph">Assess business needs and goals for leveraging data to get insights and then translate into tangible work activities.</div>
+
+                    </div>
+                    <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double data-science-items">
+                    <div className="mark-image"> 
+                            <img src={shape} alt=""/>
+                        </div>
+                        <div className="custom-H4 no-text-transform">Data Acquisition & Integration</div>
+                        <div className="custom-paragraph">Acquire data from multiple data sets (in many formats) and build business and technical rules to transform it into a structure that can be leveraged for analysis.</div>
+
+
+                    </div>
+                    <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double data-science-items">
+                    <div className="mark-image">
+                            <img src={shape} alt=""/>
+                        </div>
+                        <div className="custom-H4 no-text-transform">Data Modeling & Analysis</div>
+                        <div className="custom-paragraph">Build optimized data models from multiple data sources, including large data sets, under one coherent structure enabling deeper analysis.</div>
+
+
+                    </div >
+                    <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double data-science-items">
+                    <div className="mark-image">
+                            <img src={shape} alt=""/>
+                        </div>
+                        <div className="custom-H4 no-text-transform">Data Visualization</div>
+                        <div className="custom-paragraph">Leverage visualization tools to build and deliver intuitive and interactive dashboards; enable teams to develop and support their own visualization dashboards (Tableau).</div>
+
+
+                    </div>
+                </div>
+                </div>
+                    )
+                this.setState({
+                    card: currentState.card
+                })
+                break
+            case 'Data Science':
+                    currentState.card = (
+                        <div>
                                 
                             <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left">
 
@@ -94,82 +212,105 @@ class about extends Component<{},IAboutProps> {
                     </div>
                 </div>
                 </div>
-                )
-                this.setState({
-                    card: currentState.card
-                })
-                break
-            case 'Data & Analytics Solutions':
-                    currentState.card = <div>
-                    <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left">
-
-                        <div className="custom-padding-bottom custom-H2">Data Science</div>
-
-                        <div className="custom-data-science-width custom-paragraph">
-
-                            We enable and assist with exploratory analysis, research, productization and support, and various data science platforms.
-                                        </div>
-
-                    </div>
-
-
-                    <div className="custom-exploratory em-l-grid em-l-grid--2up  em-u-padding-none custom-main-margin custom-medium-tile-area em-u-text-align-left">
-                        <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double">
-
-                            <div className="custom-H4 no-text-transform">Exploratory Analysis</div>
-                            <div className="custom-paragraph">Conduct exploratory analysis on data using advanced analytics resulting in new opportunity identification.</div>
-
-                        </div>
-                        <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double">
-
-                            <div className="custom-H4 no-text-transform">Applied Research</div>
-                            <div className="custom-paragraph">Build custom machine learning models to augment the business decision-making process using Natural Language Process & Computer Vision techniques.</div>
-
-
-                        </div>
-                        <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double">
-
-                            <div className="custom-H4 no-text-transform">Model Productization & Support</div>
-                            <div className="custom-paragraph">Operationalize data science solutions (models) and integrate into business workflows.</div>
-
-
-                        </div>
-                        <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double">
-
-                            <div className="custom-H4 no-text-transform">Technology Platforms</div>
-                            <div className="custom-paragraph">AI/ML enablement platforms for developing, training and deploying models from individual data scientists to large collaborative teams.</div>
-
-
-                        </div>
-                        <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double">
-
-                            <div className="custom-H4 no-text-transform">Citizen Data Scientist Enablement</div>
-                            <div className="custom-paragraph">Cultivate data science skills among business analysts with strong domain knowledge and interest to learn and experiment.</div>
-
-                        </div>
-                    </div>
-                </div>
-                
-                this.setState({
-                    card: currentState.card
-                })
-                break
-            case 'Data Science':
-                    currentState.card = <p>2</p>
+                    )
                 
                 this.setState({
                     card: currentState.card
                 })
                 break
             case 'Strategy & Practices':
-                    currentState.card = <p>3</p>
+                    currentState.card = (
+                        <div>
+                                
+                            <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left">
+
+                            <div className="custom-padding-bottom custom-H2">Strategy & Practices</div>
+
+                            <div className="custom-data-science-width custom-paragraph">
+
+                            We manage the Enterprise Data Roadmap, strengthen career development and talent, and provide tools and guidance for data at ExxonMobil.                        </div>
+                        </div>
+
+
+<div className="custom-exploratory em-l-grid em-l-grid--2up  em-u-padding-none custom-main-margin custom-medium-tile-area em-u-text-align-left">
+                    <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double data-science-items">
+                        <div className="mark-image">
+                            <img src={shape} alt=""/>
+                        </div>
+                        <div className="custom-H4 no-text-transform">Enterprise Data Roadmap</div>
+                        <div className="custom-paragraph">Capitalize on integrated data driven opportunities by documenting tangible investment activities to enable data driven efforts.</div>
+
+                    </div>
+                    <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double data-science-items">
+                    <div className="mark-image"> 
+                            <img src={shape} alt=""/>
+                        </div>
+                        <div className="custom-H4 no-text-transform">Talent Management</div>
+                        <div className="custom-paragraph">Provide leadership, in collaboration with business partners, to strengthen career development and grow data, analytics & data science talent.</div>
+
+
+                    </div>
+                    <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double data-science-items">
+                    <div className="mark-image">
+                            <img src={shape} alt=""/>
+                        </div>
+                        <div className="custom-H4 no-text-transform">Data Practices</div>
+                        <div className="custom-paragraph">Provide guidance and tools to enable businesses to govern and share their data (best practices, standards, policies).</div>
+
+
+                    </div >
+                </div>
+                </div>
+                    )
                 
                 this.setState({
                     card: currentState.card
                 })
                 break
             case 'Customer Outreach':
-                    currentState.card = <p>4</p>
+                    currentState.card = (
+                        <div>
+                                
+                        <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left">
+
+                        <div className="custom-padding-bottom custom-H2">Customer Outreach</div>
+
+                        <div className="custom-data-science-width custom-paragraph">
+                        We encourage and enable community leadership and data and analytics education. We also provide experts to answer a broad range of questions.
+</div>
+                                            </div>
+
+
+<div className="custom-exploratory em-l-grid em-l-grid--2up  em-u-padding-none custom-main-margin custom-medium-tile-area em-u-text-align-left">
+                <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double data-science-items">
+                    <div className="mark-image">
+                        <img src={shape} alt=""/>
+                    </div>
+                    <div className="custom-H4 no-text-transform">Community Leadership</div>
+                    <div className="custom-paragraph">Develop and nurture platforms where people can ask questions, provide answers and get training on the latest concepts and tools (Analytics Community).</div>
+
+                </div>
+                <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double data-science-items">
+                <div className="mark-image"> 
+                        <img src={shape} alt=""/>
+                    </div>
+                    <div className="custom-H4 no-text-transform">End User Help</div>
+                    <div className="custom-paragraph">Bring data and analytics questions to experts who can answer a broad range of questions from which tools are the best to use for a given use case to hands-on assistance with combining or visualizing data (self-help materials, Doctor sessions).</div>
+
+
+                </div>
+                <div className="em-l-grid__item em-u-padding-left-none em-u-margin-bottom-double data-science-items">
+                <div className="mark-image">
+                        <img src={shape} alt=""/>
+                    </div>
+                    <div className="custom-H4 no-text-transform">Education</div>
+                    <div className="custom-paragraph">Offer data-specific information and courses designed to empower and increase knowledge about how to use data (Analytics Academy).</div>
+
+
+                </div >
+            </div>
+            </div>
+                    )
                 
                 this.setState({
                     card: currentState.card
@@ -181,6 +322,7 @@ class about extends Component<{},IAboutProps> {
     }
 
     render() {
+        
         return (
             <Auxi>
             <div className="custom-page-margin-left custom-about-height">
@@ -383,7 +525,7 @@ class about extends Component<{},IAboutProps> {
                         <div className="custom-paragraph">We identify and evaluate new technologies, develop a platform and vendor strategy, and maintain and support technologies.</div>
 
                     </div>
-                    <div className="em-l-grid__item custom-mid-page-card-column custom-margin-right-20" onClick={() => this.onTileClickHandler('Enterprise Platforms')}>
+                    <div className="em-l-grid__item custom-mid-page-card-column custom-margin-right-20" onClick={() => this.onTileClickHandler('Data & Analytics Solutions')}>
                         <div className="custom-factory-img em-u-text-align-center custom-tile-margin-center">
                             <img src={planning} alt="" />
                         </div>
@@ -391,7 +533,7 @@ class about extends Component<{},IAboutProps> {
                         <div className="custom-paragraph">We guide customers through the entire data and analytics process, including design, consultation, acquisition, integration, modeling, analysis, and visualization.</div>
 
                     </div>
-                    <div className="em-l-grid__item custom-mid-page-card-column custom-margin-right-20" onClick={() => this.onTileClickHandler('Enterprise Platforms')}>
+                    <div className="em-l-grid__item custom-mid-page-card-column custom-margin-right-20" onClick={() => this.onTileClickHandler('Data Science')}>
 
                         <div className="custom-factory-img em-u-text-align-center custom-tile-margin-center">
                             <img src={data_science} alt="" />
@@ -400,7 +542,7 @@ class about extends Component<{},IAboutProps> {
                         <div className="custom-paragraph">We enable and assist with exploratory analysis, research, productization and support, and various data science platforms.</div>
 
                     </div>
-                    <div className="em-l-grid__item custom-mid-page-card-column custom-margin-right-20" onClick={() => this.onTileClickHandler('Enterprise Platforms')}>
+                    <div className="em-l-grid__item custom-mid-page-card-column custom-margin-right-20" onClick={() => this.onTileClickHandler('Strategy & Practices')}>
 
                         <div className="custom-factory-img em-u-text-align-center custom-tile-margin-center">
                             <img src={chess} alt="" />
@@ -409,7 +551,7 @@ class about extends Component<{},IAboutProps> {
                         <div className="custom-paragraph">We manage the Enterprise Data Roadmap, strengthen career development and talent, and provide tools and guidance for data at ExxonMobil.</div>
 
                     </div>
-                    <div className="em-l-grid__item custom-mid-page-card-column" onClick={() => this.onTileClickHandler('Enterprise Platforms')}>
+                    <div className="em-l-grid__item custom-mid-page-card-column" onClick={() => this.onTileClickHandler('Customer Outreach')}>
 
                         <div className="custom-factory-img em-u-text-align-center custom-tile-margin-center">
                             <img src={customer} alt="" />
