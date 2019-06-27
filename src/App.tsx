@@ -10,29 +10,38 @@ class App extends Component<{}, IAppState>{
 constructor(props: any){
   super(props);
 
-  this.userAgentApplication = new UserAgentApplication({
-    auth: {
-      clientId: Config.appId
-    },
-    cache: {
-      cacheLocation: "localStorage",
-      storeAuthStateInCookie: true
-  }
-  });
 
-  var user = this.userAgentApplication.getAccount();
 
-  this.state = {
-    isAuthenticated: (user !== null),
-    user: {},
-    error: {}
-  };
-
-  if (user) {
-    // Enhance user object with data from Graph
-    this.getUserProfile();
+    this.userAgentApplication = new UserAgentApplication({
+      auth: {
+        clientId: Config.appId
+      },
+      cache: {
+        cacheLocation: "localStorage",
+        storeAuthStateInCookie: true
+    }
+    });
+    if(!Config.isProd){
+    var user = this.userAgentApplication.getAccount();
+  
+    this.state = {
+      isAuthenticated: (user !== null),
+      user: {},
+      error: {}
+    };
+  
+    if (user) {
+      // Enhance user object with data from Graph
+      this.getUserProfile();
+    }else{
+      this.login();
+    }
   }else{
-    this.login();
+    this.state = {
+      isAuthenticated: true,
+      user: {},
+      error: {}
+    };
   }
   
 }
