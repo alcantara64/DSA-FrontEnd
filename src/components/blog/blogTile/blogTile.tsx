@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import BlogTileProps from '../../../core/Props/blogTileProps';
 import { Link } from 'react-router-dom';
+import {Config} from '../../../Config';
 
 class blogTile extends Component<BlogTileProps>{
 
     render(){
         var imageSRC = '';
         if(this.props.blogPost.postImageUrl){
-            imageSRC = this.props.blogPost.postImageUrl.replace("~", "http://bis.southcentralus.cloudapp.azure.com:8090/xom-dsa-backend/")
+            imageSRC = this.props.blogPost.postImageUrl.replace("~", `${Config.baseUrl}`)
         }
        if(this.props.blogPost){
 

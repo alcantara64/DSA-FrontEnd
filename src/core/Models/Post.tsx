@@ -9,7 +9,7 @@ export default interface Post {
     published?:       Date;
     title?:           string;
     postImageUrl?: string;
-    clickedOnCount: number;
+    clickedOnCount: Value;
     author: Value;
     postDetail: Value;
     introText: Value;
