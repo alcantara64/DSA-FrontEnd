@@ -21,7 +21,7 @@ constructor(props: any){
         storeAuthStateInCookie: true
     }
     });
-    if(!Config.isProd){
+    if(Config.isProd){
     var user = this.userAgentApplication.getAccount();
   
     this.state = {
