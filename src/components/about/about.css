@@ -6,7 +6,7 @@
     padding-bottom: 9px;
 }
 .footer-divider{
-    height: 3px;
+    height: 36px;
     width: 103%;
     margin-left: -52px;
     margin-top: 64px;
@@ -220,7 +220,7 @@ margin-left: 5.5% !important;
 
   .custom-page-margin-left{
     margin-left: 54px !important;
-    margin-bottom: 41px !important;
+    margin-bottom: 99px !important;
   }
 
   .custom-mid-background{

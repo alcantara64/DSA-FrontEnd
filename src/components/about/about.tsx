@@ -49,7 +49,7 @@ class about extends Component<{}, IAboutProps> {
                 currentState.card = (
                     <div>
 
-                        <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left custom-enterprise-container">
+                        <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left custom-enterprise-container custom-medium-tile-area">
 
                             <div className="custom-padding-bottom custom-H2">Enterprise Platforms</div>
 
@@ -108,7 +108,7 @@ class about extends Component<{}, IAboutProps> {
                 currentState.card = (
                     <div>
 
-                        <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left">
+                        <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left custom-enterprise-container">
 
                             <div className="custom-padding-bottom custom-H2">Data & Analytics Solutions</div>
 
@@ -167,7 +167,7 @@ class about extends Component<{}, IAboutProps> {
                 currentState.card = (
                     <div>
 
-                        <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left">
+                        <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left custom-enterprise-container">
 
                             <div className="custom-padding-bottom custom-H2">Data Science</div>
 
@@ -237,7 +237,7 @@ class about extends Component<{}, IAboutProps> {
                 currentState.card = (
                     <div>
 
-                        <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left">
+                        <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left custom-enterprise-container">
 
                             <div className="custom-padding-bottom custom-H2">Strategy & Practices</div>
 
@@ -287,7 +287,7 @@ class about extends Component<{}, IAboutProps> {
                 currentState.card = (
                     <div>
 
-                        <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left">
+                        <div className="em-l-grid__item em-u-padding-none custom-medium-tile-area em-u-text-align-left custom-enterprise-container">
 
                             <div className="custom-padding-bottom custom-H2">Customer Outreach</div>
 
@@ -574,16 +574,11 @@ class about extends Component<{}, IAboutProps> {
                             </div>
                             <div className="custom-H4 no-text-transform">Customer Outreach</div>
                             <div className="custom-paragraph">We encourage and enable community leadership and data and analytics education. We also provide experts to answer a broad range of questions.</div>
-
-
                         </div>
                     </div>
-
                     {this.state.card}
-
-                    <div className="footer-divider"></div>
                 </div>
-
+                <div className="footer-divider"></div>
 
                 <Footer />
             </Auxi>
