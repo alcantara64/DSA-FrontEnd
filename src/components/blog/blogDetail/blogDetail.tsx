@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Auxi from '../../../hoc/Auxi';
-import arrow_icon from './../../../asset/images/arrow_icon.png';
+import arrow_icon from './../../../assets/images/arrow_icon.png';
 import {RouteComponentProps} from 'react-router-dom';
 import axios from 'axios';
 import './blogDetail.css';
