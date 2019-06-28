@@ -8,7 +8,7 @@ import analytics from './../../assets/images/analytics.png';
 import about_profile_pic from './../../assets/images/about_profile_pic.png';
 import team_work from './../../assets/images/teamwork.png';
 import process from './../../assets/images/process.png';
-import send from './../../assets/images/send-button.png';
+import send from './../../assets/images/send-button1x.png';
 import planning from './../../assets/images/planning.png';
 import data_science from './../../assets/images/data-science.png';
 import chess from './../../assets/images/chess-piece.png';
