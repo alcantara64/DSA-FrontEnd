@@ -43,7 +43,7 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
         if(Object.entries(this.state.postDetail).length >= 1 && this.state.postDetail.constructor === Object){
             return (
                 <Auxi>
-                    <div className="custom-page-margin blog-details-container  ">
+                    <div className="blog-details-container  ">
                    <div className="back-button-margin" >
                        <div className="inline"><img className="img-size" src={arrow_icon} alt=""/></div>
                        <div className="inline custom-link">BACK</div>
