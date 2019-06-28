@@ -1,0 +1,56 @@
+.serives-container{
+    width: 1440px !important;
+    margin-left: 16.5%;
+    margin-top: 9%;
+}
+
+.custom-heading{
+    text-align: left;
+    margin-left: -8.5%;
+}
+
+.custom-inline{
+    display: inline-block;
+}
+.custom-want-margin{
+    margin-left: -96.5% !important;
+    margin-top: 2%;
+}
+.custom-button-margin{
+    margin-left: 20px;
+}
+.custom-button-manage{
+    margin-left: -86.4%;
+    margin-top: 1%;
+}
+.custom-button-build{
+    margin-left: -80%;
+    margin-top: 1%;
+}
+.custom-button-sign{
+    margin-left: -77.3%;
+    margin-top: 1%;
+}
+.custom-button-learn{
+    margin-left: -76.1%;
+    margin-top: 1%;
+    margin-bottom: 12%;
+}
+.custom-margin-DSA{
+    margin-left: -90%;
+    margin-bottom: 2.5%;
+}
+.custom-button-font{
+    font-family: 'emprintSemibold' !important;
+}
+.custom-em-c-btn{
+    background: #fff !important;
+}
+.custom-footer-margin{
+    margin-left: -27%;
+    margin-right: 31px;
+}
+.custom-input-width{
+    width: 56% !important;
+}
+
