@@ -40,7 +40,7 @@ class about extends Component<{},IAboutProps> {
         this.isEnterpriseClicked = false;
         this.isAnalyticsClicked = false;
         this.isScienceClicked = false;
-        this. isStrategyClicked = false;
+        this.isStrategyClicked = false;
         this.isCustomerClicked = false;
         let currentState = {...this.state};
         switch (type) {
