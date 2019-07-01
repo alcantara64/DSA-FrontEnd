@@ -88,14 +88,17 @@
 .underline-learn {
   border-bottom: 8px solid rgba(215, 56, 114, 0.8);
   width: 28%;
+  padding-top: 2px;
 }
 .underline-community {
   border-bottom: 8px solid rgba(215, 56, 114, 0.8);
   width: 37%;
+  padding-top: 2px;
 }
 .underline-solution {
   border-bottom: 8px solid rgba(215, 56, 114, 0.8);
   width: 48%;
+  padding-top: 2px;
 }
 .middle-section {
   height: 214px;
@@ -183,9 +186,9 @@
   ) !important;
 }
 .about-dsa {
-  height: 27rem;
+  height: 27.8rem;
   background-color: rgba(122, 65, 131, 1);
-  margin-bottom: 33px;
+ 
 }
 .first {
   margin-top: 7%;
@@ -284,7 +287,7 @@
 .about-img-container {
   width: 844px;
   height: 325px;
-  margin-top: -35px;
+  margin-top: -43px;
   position: relative;
   right: 199px;
 }
@@ -292,6 +295,9 @@
 .find-solutions {
   height: 242px;
   margin-right: 21%;
+}
+.custom-block-margin{
+  margin-top: 12px !important;
 }
 
 @media screen and (max-width: 1921px) {

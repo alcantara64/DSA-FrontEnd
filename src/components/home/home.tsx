@@ -55,7 +55,7 @@ const home = () => {
                             <div className="grid-3">
                                 <div className="body-header-data__container">
                                     <div className="body-header-data__marker"></div>
-                                <div className="body-header-data">
+                                <div className=" custom-paragraph body-header-data">
                                     Find data standards, collaborate with influencers, and drive change through our community
                                 </div>
                                 </div>
@@ -89,7 +89,7 @@ const home = () => {
                 <div className="em-l-grid em-l-grid--2up ">
                 <div className="em-l-grid__item first">
                     <div className="fpo-block">
-                        <div >
+                        <div className="custom-block-margin" >
                             <div className="about-header custom-H2">
                                 DS&A is the data hub of ExxonMobil.
                             </div>
