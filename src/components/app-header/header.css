@@ -12,15 +12,15 @@
 
 .em-c-header__body{
     padding: 0.5em 34px;
-    margin-left: 7% !important;
     width: 1440px !important;
+    margin: auto !important;
 }
 .em-c-header__title{
     padding-left: 40%;
 }
-.custom-header{
+/* .custom-header{
     margin-right: 8.5%;
-}
+} */
 
 .em-l-container{
     max-width: 95em;
@@ -37,32 +37,12 @@
 }
 
 
-@media screen and (max-width: 1920px){
-    .em-c-header__body{
-        margin-left: 15.5% !important;
-    }
-}
+
 
 @media screen and (max-width: 1537px){
-    .custom-header{
-     width: 96%;
-     
-    }
+
     .em-c-header__title {
         padding-left: 42%;
     }
-    .em-c-header__body{
-        margin-left: 6.5% !important
-    }
-   
  }
 
- @media screen and (max-width: 1367px){
-    .custom-header {
-        margin-right: 10.5%;
-    }
-    .em-c-header__body{
-        margin-left: 99px !important;
-    }
-    
-}

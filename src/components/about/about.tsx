@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Auxi from '../../hoc/Auxi';
 import './about.css';
+import TestiomonialCarousel from '../testimonials-carousel/testimonials-carousel'
 import Footer from '../app-footer/footer';
 import skycraper from './../../assets/images/skycraper.png';
 import quote_img from './../../assets/images/quote_img.png';
@@ -527,6 +528,7 @@ class about extends Component<{}, IAboutProps> {
                                 <div className="custom-paragraph purple-text-color custom-margin">Nate McIntire, C&D AND FTP VIZ LEAD</div>
                             </div>
                         </div>
+                        {/* <TestiomonialCarousel/> */}
 
                     </div>
 

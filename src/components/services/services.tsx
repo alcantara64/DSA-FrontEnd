@@ -6,7 +6,7 @@ import './services.css';
 const services = () => {
     return (
         <Auxi>
-            <div className="serives-container">
+            <div className="services-container">
                 <div className="custom-heading custom-paragraph">
                     Let's get you what you need ( a tutorial to talk to) - it only takes a minute. 
                 </div>
