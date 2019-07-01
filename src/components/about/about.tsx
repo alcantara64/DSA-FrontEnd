@@ -504,7 +504,7 @@ class about extends Component<{}, IAboutProps> {
 
                     <div className="custom-mid-background-area custom-mid-background">
 
-                        {/* <div className="row custom-testimonial-margin">
+                        <div className="row custom-testimonial-margin">
                             <div className="custom-mid-page-slider-photo-column">
                                 <img src={about_profile_pic} alt="" className="custom-mid-photo-area" />
 
@@ -527,8 +527,8 @@ class about extends Component<{}, IAboutProps> {
 
                                 <div className="custom-paragraph purple-text-color custom-margin">Nate McIntire, C&D AND FTP VIZ LEAD</div>
                             </div>
-                        </div> */}
-                        <TestiomonialCarousel/>
+                        </div>
+                        {/* <TestiomonialCarousel/> */}
 
                     </div>
 

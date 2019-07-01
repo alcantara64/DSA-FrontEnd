@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Auxi from '../../hoc/Auxi';
-import send from './../../asset/images/send-button.png';
+import send from './../../assets/images/send-button.png';
 import './services.css';
 
 const services = () => {
     return (
         <Auxi>
-            <div className="serives-container">
+            <div className="services-container">
                 <div className="custom-heading custom-paragraph">
                     Let's get you what you need ( a tutorial to talk to) - it only takes a minute. 
                 </div>
