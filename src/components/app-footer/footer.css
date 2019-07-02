@@ -119,6 +119,9 @@
       margin-right: 0%;
       margin-left: 2%;
     }
+    .custom-footer-data{
+      margin-left: 134px;
+    }
   }
 
   @media only screen and (max-width: 1537px){
