@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Auxi from '../../hoc/Auxi';
 import send from './../../assets/images/send-button.png';
 import './services.css';

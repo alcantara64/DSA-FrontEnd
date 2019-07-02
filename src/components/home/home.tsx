@@ -7,6 +7,7 @@ import group_3 from './../../assets/images/group-3.png';
 import group from './../../assets/images/Group-9.png';
 import './home.css';
 import Footer from '../app-footer/footer';
+import { Link } from 'react-router-dom';
 
 const home = () => {
     return (
@@ -17,9 +18,8 @@ const home = () => {
                             <div className="grid-1">
                             <div className="custom-H1 body-header">Data at ExxonMobil</div>
                             <div >
-                                <a href="../../container/Dashboard/dashboard.tsx">
                                     <img className="learn_illustration" src={Learn_Illustration} alt="learn"/>
-                                </a>
+
                             </div>
                             <div className=" coming-soon-learn"><img src={group_3} alt=""/></div>
                             <div className="write-up-container">
@@ -36,9 +36,7 @@ const home = () => {
                             <div className="grid-2">
                             <div className="body-header"></div>
                             <div className="community-container">
-                                <a href="../../container/Dashboard/dashboard.tsx">
                                     <img src={Community_Illustration} alt="learn" className="community-illustration"/>
-                                </a>
                             </div>
                             <div className="coming-soon-community"><img src={group_3} alt=""/></div>
                             <div className="write-up-container">
@@ -60,9 +58,7 @@ const home = () => {
                                 </div>
                                 </div>
                                 <div >
-                                <a href="../../container/Dashboard/dashboard.tsx">
                                     <img className="find-solutions"src={Find_Solutions_Illustration} alt="learn"/>
-                                </a>
                             </div>
                             <div className="  coming-soon-solution"><img src={group_3} alt=""/></div>
                             <div className="write-up-container solution">
@@ -78,11 +74,11 @@ const home = () => {
                 <div className=" middle-section">
                     <div className="custom-H2 ">Want to see what we've done for others?</div>
                     <div className="custom-paragraph success-stories">Check out the success stories from our teams and teams we've worked with in the past</div>
-                    <div>
+                    {/* <div>
                     <button className="em-c-btn em-c-btn--large custom-btn ">
                         <span className="em-c-btn__text custom-paragraph">See other Success Stories</span>
                     </button>
-                    </div>
+                    </div> */}
                 </div>
 
             <div className=" about-dsa">
@@ -97,12 +93,12 @@ const home = () => {
                                 Learn more about us here.
                             </div>
                         </div>
-                        <div className="about-container">
-                        <button className="em-c-btn em-c-btn--large large">
+                        <Link to={'/about'} className="about-container">
+                        <button  className="em-c-btn em-c-btn--large large">
                             
                         <span className="em-c-btn__text custom-H2 btn-text">About DS&A</span>
                         </button>
-                        </div>
+                        </Link>
                     </div>
                 </div>
                 <div className="em-l-grid__item second">

@@ -5,46 +5,26 @@ import About from '../../components/about/about';
 import Blog from '../../components/blog/blog';
 import { Switch, Route } from 'react-router';
 import Auxi from '../../hoc/Auxi';
-import axios from 'axios';
 import Page from '../../core/Models/Page';
 import BlogDetail from '../../components/blog/blogDetail/blogDetail';
 import Services from '../../components/services/services';
 
-
 class dashboard extends Component {
-
     pageData: Page;
-
     constructor(props: any){
         super(props);
-        this.pageData = {} as Page;        
-        //this.fetchPageData();
+        this.pageData = {} as Page;
+    }
+
+    componentDidMount(){
+  
     }
 
     state = {
-        pageData: {} as Page,
-        render: (blog: any) => console.log(blog)
+        pageData: {} as Page
     }
-
-    fetchPageData(): Promise<any>{
-        return axios.get<any, any>('http://bis.southcentralus.cloudapp.azure.com:8090/xom-dsa-backend').then(
-            (res) => {
-                this.pageData = res.data;
-                if(this.pageData){
-                    this.setState({
-                        pageData: this.pageData
-                    });
-                    console.log(this.state);
-                    console.log(this.state.pageData.archive.posts);
-                }
-            }
-        ).catch(err => {
-            console.log(err);
-        });
-    }
-
+    
     render() {
-
         return (
             <Auxi>
                 <Layout>
@@ -56,7 +36,6 @@ class dashboard extends Component {
                         <Route exact path='/blog/:id' component={BlogDetail} />    
                         <Route exact path='/services' component={Services} />                   
                     </Switch>
-
                 </Layout>
             </Auxi>
 

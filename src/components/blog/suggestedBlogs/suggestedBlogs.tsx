@@ -3,7 +3,7 @@ import Auxi from '../../../hoc/Auxi';
 import BlogTile from '../blogTile/blogTile'
 import BlogListProps from '../../../core/Props/blogListProps';
 
-export default class EditorPick extends Component<BlogListProps>{
+export default class SuggestedBlogs extends Component<BlogListProps>{
     render(){
 
         let list = null;
@@ -11,8 +11,8 @@ export default class EditorPick extends Component<BlogListProps>{
         if(this.props.blogList.length > 0){
             list = this.props.blogList.map(blog => {
                 return (
-                    <div className="em-l-grid__item">
-                    <BlogTile key={blog.id} blogPost={blog} type={'editorPick'}/>
+                    <div key={blog.id} className="em-l-grid__item">
+                    <BlogTile blogPost={blog} type={'editorPick'}/>
                     </div>
                 )
             })
@@ -24,7 +24,7 @@ export default class EditorPick extends Component<BlogListProps>{
         return (
             <Auxi>
                 <div className="custom-tile-background em-u-padding-top-half custom-link-bold">
-                        Editor's Pick
+                        {this.props.type}
                     </div>
 
 

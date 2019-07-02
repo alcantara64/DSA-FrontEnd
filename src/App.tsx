@@ -3,14 +3,15 @@ import './App.css';
 import Dashboard from './container/Dashboard/dashboard';
 import { UserAgentApplication, Configuration } from 'msal';
 import {Config} from './Config';
+import 'reflect-metadata';
+import { Provider } from "inversify-react";
+import { container } from "./core/services/ioc";
 
 class App extends Component<{}, IAppState>{
   configuration: Configuration = {} as Configuration;
   userAgentApplication: UserAgentApplication
 constructor(props: any){
   super(props);
-
-
 
     this.userAgentApplication = new UserAgentApplication({
       auth: {
@@ -104,7 +105,9 @@ async getUserProfile() {
     if(this.state.isAuthenticated){
     return (
       <div className="App page-background">
+            <Provider container={container}>
           <Dashboard  ></Dashboard>
+          </Provider>
       </div>
     )
     }else{

@@ -1,30 +1,32 @@
 import React, { Component } from 'react';
 import Auxi from '../../hoc/Auxi';
 import './blog.css';
-import axios from 'axios';
+import { AxiosResponse } from 'axios';
 import Page from '../../core/Models/Page';
-import PageDTO from '../../core/DTO/PageDTO';
-import EditorPick from './editorPick/editorPick';
+import SuggestedBlogs from './suggestedBlogs/suggestedBlogs';
 import RecentBlogs from './recentBlogs/recentBlogs';
 import PopularBlogs from './popularBlogs/popularBlogs';
-import {Config} from '../../Config';
+import { resolve } from "inversify-react";
+import { BlogDataService } from '../../core/services/data/BlogService/blog.data.service';
+import Post from '../../core/Models/Post';
+import { TYPES } from '../../core/services/ioc.types';
 
 class blog extends Component {
 
+    @resolve(TYPES.BlogService) private readonly blogService: BlogDataService = {} as BlogDataService;
     state = {
         pageDate: {} as Page,
         blogList: []
     }
 
     componentDidMount() {
-        axios.get(`${Config.baseUrl}`).then(
-            (res: PageDTO) => {
+            this.blogService.getAllBlogPost().then(
+            (res: AxiosResponse<Post[]>) => {
                 this.setState({
                     ...this.state,
                     pageDate: res.data,
                     blogList: res.data
                 })
-                console.log(this.state, "blog page");
             }
         ).catch(err => {
             console.log(err);
@@ -46,7 +48,7 @@ class blog extends Component {
                     <RecentBlogs blogList={this.state.blogList} type={'recent'}/>
                     <PopularBlogs blogList={this.state.blogList} type={'popular'} />
                     </div>
-                     <EditorPick blogList={this.state.blogList} type={'EditorPick'}/> 
+                     <SuggestedBlogs blogList={this.state.blogList} type={`Editor's Pick`}/> 
                 </div>
             </Auxi>
         )
