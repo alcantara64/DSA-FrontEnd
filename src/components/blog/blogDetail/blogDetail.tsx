@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import Auxi from '../../../hoc/Auxi';
 import arrow_icon from './../../../asset/images/arrow_icon.png';
-import {RouteComponentProps} from 'react-router-dom';
-import axios from 'axios';
+import {RouteComponentProps, Link} from 'react-router-dom';
 import './blogDetail.css';
 import Post from '../../../core/Models/Post';
 import PostDTO from '../../../core/DTO/PostDTO';
 import {Config} from '../../../Config';
+import { resolve } from 'inversify-react';
+import { TYPES } from '../../../core/services/ioc.types';
+import { BlogDataService } from '../../../core/services/data/BlogService/blog.data.service';
 
 export default class BlogDetail extends Component< IBlogDetails, IBlogDetailState> {
+
+    @resolve(TYPES.BlogService) private readonly blogServiceProvider: BlogDataService = {} as BlogDataService;
 
     constructor(props: IBlogDetails){
         super(props)
@@ -20,8 +24,12 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
         }
     }
 
+    goToBlogPage(){
+        this.props.history.push('/blog') ;
+    }
+
     componentDidMount(){
-        axios.get(`${Config.baseUrl}/post?id=${this.props.match.params.id}`).then(
+        this.blogServiceProvider.getBlogPost(this.props.match.params.id).then(
             (res: PostDTO) => {
                 if(res.data){
                     this.setState({
@@ -39,15 +47,14 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
     }
     
     render(){
-        console.log(Object.entries(this.state.postDetail).length, 'Object.entries(this.state.postDetail).length')
         if(Object.entries(this.state.postDetail).length >= 1 && this.state.postDetail.constructor === Object){
             return (
                 <Auxi>
                     <div className="custom-page-margin blog-details-container  ">
-                   <div className="back-button-margin" >
+                    <Link to={'/blog'} className="back-button-margin" >
                        <div className="inline"><img className="img-size" src={arrow_icon} alt=""/></div>
                        <div className="inline custom-link">BACK</div>
-                   </div>
+                   </Link>
                     <div className="success-story">
                     <div className="custom-success-image">
                         <img className="success-img" src={this.state.blogImageSrc} alt="" />

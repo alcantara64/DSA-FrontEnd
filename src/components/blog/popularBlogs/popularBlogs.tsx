@@ -18,7 +18,7 @@ export default class PopularBlogs extends Component<BlogListProps> {
             })
             blogList = this.props.blogList.map((blog, index) => {
                 return (
-                    <div className="em-l-linelength-container custom-blog-area-small">
+                    <div key={blog.id} className="em-l-linelength-container custom-blog-area-small">
                     <div className=" em-l em-l--two-column ">
                     <div className="em-l__main custom-blog-number-margin">
                         <div className="custom-number-digit">{index + 1}</div>
@@ -30,7 +30,7 @@ export default class PopularBlogs extends Component<BlogListProps> {
                             </div>
                         </div>
 
-                    <BlogTile key={blog.id} blogPost={blog} type={'popular'}/>
+                    <BlogTile  blogPost={blog} type={'popular'}/>
 
 
                     </div>

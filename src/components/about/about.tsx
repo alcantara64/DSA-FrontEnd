@@ -444,16 +444,14 @@ class about extends Component<{},IAboutProps> {
         </div>
 
 
-                            <form method="post" action="#" role="search" className="em-c-search-form em-js-header-search">
                                 <div className="em-c-search__body">
-                                    <input type="search" id="search" className="em-c-search__input custom-input-border" />
+                                    <input className="em-c-search__input custom-input-border" />
                                     <button className="em-c-btn custom-button-color em-c-btn--primary" aria-label="Search">
                                         <div className="em-c-btn__inner custom-button-width">
                                             <img src={send} alt="" />
                                         </div>
                                     </button>
                                 </div>
-                            </form>
 
                         </div>
                     </div>

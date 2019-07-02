@@ -11,8 +11,8 @@ export default class SuggestedBlogs extends Component<BlogListProps>{
         if(this.props.blogList.length > 0){
             list = this.props.blogList.map(blog => {
                 return (
-                    <div className="em-l-grid__item">
-                    <BlogTile key={blog.id} blogPost={blog} type={'editorPick'}/>
+                    <div key={blog.id} className="em-l-grid__item">
+                    <BlogTile blogPost={blog} type={'editorPick'}/>
                     </div>
                 )
             })

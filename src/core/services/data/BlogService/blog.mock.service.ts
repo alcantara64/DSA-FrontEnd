@@ -1,11 +1,11 @@
-import {BlogService} from "./blog.data.service";
+import {BlogDataService} from "./blog.data.service";
 import { AxiosResponse } from "axios";
 import Post from "../../../Models/Post";
 import axios from '../../axios.config';
 import {injectable} from 'inversify';
 
 @injectable()
-export class BlogMockService implements BlogService{
+export class BlogMockService implements BlogDataService{
 
 
     getAllBlogPost(): Promise<AxiosResponse<Post[]>> {
@@ -13,12 +13,13 @@ export class BlogMockService implements BlogService{
     }
     
     getBlogPost(postId: string): Promise<AxiosResponse<Post>> {
-        return axios.get<Post>(`/post/${postId}`);
+        return axios.get<Post>(`/post?id=${postId}`);
     }
 
     getPopularPost(blogId: string): Promise<AxiosResponse<Post>> {
         return axios.get<Post>(`/popular/${blogId}`);
     }
+
 
 
 }
