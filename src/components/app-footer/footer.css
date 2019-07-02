@@ -27,7 +27,7 @@
     background-color: rgba(255, 255, 255, 1);
     padding-top: 41px;
     padding-bottom: 50px;
-    
+    margin-left: -5%;    
    }
    .footer-description{
     margin-right: 22%;
@@ -125,7 +125,7 @@
       margin-left: 76%;
     }
     .custom-about-site-margin{
-      margin-left: -20%;
+      margin-left: -25%;
     }
     .em-l-grid--4up {
       margin-left: 0%;
@@ -134,9 +134,9 @@
   .custom-analytics{
     margin-left: 128px !important;
   }
-    .footer-container{
+    /* .footer-container{
       margin-left: 1%;
-     }
+     } */
      .footer-description{
        margin-right: 1%
      }

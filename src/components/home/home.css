@@ -210,6 +210,7 @@
   text-align: left;
   font-size: 30px !important;
   height: 76px;
+  margin-bottom: 12px !important;
 }
 .about-body {
   color: #eeeeee !important;
@@ -217,6 +218,7 @@
   width: 83%;
   text-align: left;
   font-size: 22px !important;
+  padding-bottom: 35px;
 }
 .large {
   width: 37%;
@@ -228,7 +230,7 @@
 .about-container {
   margin-top: 34px;
   position: relative;
-  right: 3%;
+  right: 22%;
   /* margin-right: 172px; */
 }
 .btn-text {
@@ -308,6 +310,7 @@
 }
 .custom-block-margin{
   margin-top: 12px !important;
+  margin-left: -83px;
 }
 .coming-soon-learn{
   position: absolute;
@@ -349,6 +352,12 @@
   .em-l-grid--1-to-3up {
     margin-left: -9px;
 
+}
+.about-img-container {
+  right: 199px;
+}
+.coming-soon-learn{
+  margin-left: -5px;
 }
 }
 
