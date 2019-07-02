@@ -12,7 +12,7 @@ import { BlogDataService } from '../../../core/services/data/BlogService/blog.da
 
 export default class BlogDetail extends Component< IBlogDetails, IBlogDetailState> {
 
-    @resolve(TYPES.BlogService) private readonly blogServiceProvider: BlogDataService = {} as BlogDataService;
+    @resolve(TYPES.BlogService) private readonly blogService: BlogDataService = {} as BlogDataService;
 
     constructor(props: IBlogDetails){
         super(props)
@@ -29,7 +29,7 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
     }
 
     componentDidMount(){
-        this.blogServiceProvider.getBlogPost(this.props.match.params.id).then(
+        this.blogService.getBlogPost(this.props.match.params.id).then(
             (res: PostDTO) => {
                 if(res.data){
                     this.setState({
