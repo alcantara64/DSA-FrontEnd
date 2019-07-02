@@ -100,13 +100,13 @@
 
   @media only screen and (max-width: 1921px){
     .custom-about-site-margin{
-      margin-left: -15%;
+      margin-left: 0%;
     }
     .em-l-grid--halves{
       margin-left: 10.1%;
     }
     .em-l-grid--4up{
-      margin-left: 10%;
+      margin-left: 10.5%;
       width: 74%;
     }
     .custom-logo-margin{
@@ -116,7 +116,8 @@
       margin-left: 321px !important;
     }
     .footer-description {
-      margin-right: -21%;
+      margin-right: 0%;
+      margin-left: 2%;
     }
   }
 
