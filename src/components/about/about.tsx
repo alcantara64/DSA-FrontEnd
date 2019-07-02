@@ -522,7 +522,7 @@ class about extends Component<{}, IAboutProps> {
                                 <div className="custom-about-regular-h3 custom-margin">We were able to level set from across the business and technical folks, and then walk out of a 1.5 day engagement with a working prototype of a visualization with mock data.</div>
 
 
-                                <div className="custom-paragraph purple-text-color custom-margin">Nate McIntire, C&D AND FTP VIZ LEAD</div>
+                                <div className="custom-paragraph purple-text-color custom-nate-margin">Nate McIntire, C&D AND FTP VIZ LEAD</div>
                             </div>
                         </div>
                         {/* <TestiomonialCarousel/> */}
