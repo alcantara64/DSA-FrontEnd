@@ -13,10 +13,16 @@
     background-color: #eee;
 }
 .analytics-container{
-    padding-top: 9px;
+    padding-top: 23px;
 }
 .custom-data-science-width{
     width: 863px;
+}
+.coperate-icon-padding{
+    padding-top: 25px;
+}
+.e2e-icon-padding{
+    padding-top: 48px;
 }
 .who-are-we{
     margin-bottom: 1rem !important;
@@ -102,7 +108,7 @@ margin-left: 5.5% !important;
    }
 
    .custom-search-button-margin{
-       margin-top: 50px !important;
+       margin-top: 44px !important;
    }
 
    /* .custom-factory-img{
@@ -239,6 +245,9 @@ margin-left: 5.5% !important;
 }
 .custom-button-width{
     width: 32px !important;
+}
+.em-c-search__body{
+    height: 44px !important;
 }
 
   @media screen and (max-width: 1921px){

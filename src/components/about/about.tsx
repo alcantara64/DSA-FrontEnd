@@ -478,7 +478,7 @@ class about extends Component<{}, IAboutProps> {
 
 
                             <div className="custom-secondary-tile-detail-area em-u-margin-top">
-                                <div>
+                                <div className="coperate-icon-padding">
                                     <img src={team_work} alt="" />
                                 </div>
                                 <div className="custom-factory-img"></div>
@@ -488,7 +488,7 @@ class about extends Component<{}, IAboutProps> {
 
 
                             <div className="custom-secondary-tile-detail-area em-u-margin-top">
-                                <div>
+                                <div className="e2e-icon-padding">
                                     <img src={process} alt="" />
                                 </div>
                                 <div className="custom-factory-img"> </div>
