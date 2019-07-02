@@ -101,7 +101,7 @@
 }
 .underline-solution {
   border-bottom: 8px solid rgba(215, 56, 114, 0.8);
-  width: 48%;
+  width: 40.2%;
   padding-top: 2px;
 }
 .middle-section {
@@ -344,6 +344,12 @@
     margin-left: 9.7%;
   }
  
+}
+@media screen and (max-width: 1537px){
+  .em-l-grid--1-to-3up {
+    margin-left: 0%;
+
+}
 }
 
 /* @media screen and (max-width: 1921px) {
