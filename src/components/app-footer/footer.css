@@ -50,7 +50,14 @@
   }
   .footer-text-padding{
     padding-bottom: 10px;
+    
   }
+  .custom-footer-data{
+    margin-left: 96px;
+  }
+  /* .custom-downstream-margin{
+    margin-left: -33px;
+  } */
 
   .footer-highlighted-emre-padding{
     padding-bottom: 38px;
@@ -78,6 +85,7 @@
     margin-left: 112px;
     margin-top: 42px;
     margin-bottom: 24px !important;
+    margin-top: 37px !important;
   }
 
   .custom-analytics-margin{

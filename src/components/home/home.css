@@ -4,7 +4,8 @@
 }
 
 .learn_illustration {
-  padding-left: 11%;
+  /* padding-left: 11%; */
+  margin-left: -13%;
 }
 .grid-1 {
   margin-left: 10%;
@@ -32,7 +33,7 @@
   font-family: "emprintsemibold";
   font-size: 46px;
   color: rgba(10, 48, 57, 1);
-  margin-left: 32%;
+  margin-left: -2%;
   margin-bottom: 12%;
 }
 .body-header-data {
@@ -52,7 +53,7 @@
 }
 .body-header-data__container {
   display: inline-block;
-  margin-right: 13%;
+  margin-right: -49%;
   margin-bottom: 9%;
   /* margin-left: 13px; */
 }
@@ -64,6 +65,9 @@
 .write-up-container {
   padding-bottom: 7%;
   padding-top: 5%;
+  margin-left: -79px;
+  width: 101%;
+
 }
 .learning-content {
   padding-top: 11px;
@@ -83,19 +87,22 @@
   font-size: 30px;
   color: rgba(10, 48, 57, 0.5);
   text-align: center;
-  margin-left: 39%;
+  margin-left: 48%;
 }
 .underline-learn {
   border-bottom: 8px solid rgba(215, 56, 114, 0.8);
   width: 28%;
+  padding-top: 2px;
 }
 .underline-community {
   border-bottom: 8px solid rgba(215, 56, 114, 0.8);
   width: 37%;
+  padding-top: 2px;
 }
 .underline-solution {
   border-bottom: 8px solid rgba(215, 56, 114, 0.8);
   width: 48%;
+  padding-top: 2px;
 }
 .middle-section {
   height: 214px;
@@ -183,9 +190,9 @@
   ) !important;
 }
 .about-dsa {
-  height: 27rem;
+  height: 27.8rem;
   background-color: rgba(122, 65, 131, 1);
-  margin-bottom: 33px;
+ 
 }
 .first {
   margin-top: 7%;
@@ -212,9 +219,12 @@
   font-size: 22px !important;
 }
 .large {
-  width: 43%;
+  width: 37%;
   right: 25px;
+  padding-bottom: 7px;
+  padding-top: 7px;
 }
+
 .about-container {
   margin-top: 34px;
   position: relative;
@@ -284,17 +294,52 @@
 .about-img-container {
   width: 844px;
   height: 325px;
-  margin-top: -35px;
+  margin-top: -43px;
   position: relative;
   right: 199px;
 }
 
 .find-solutions {
   height: 242px;
-  margin-right: 21%;
+  margin-right: -46%;
+}
+.community-illustration{
+  margin-right: -54px;
+}
+.custom-block-margin{
+  margin-top: 12px !important;
+}
+.coming-soon-learn{
+  position: absolute;
+  margin-top: -174px;
+  margin-left: -24px;
+}
+.coming-soon-community{
+  position: absolute;
+    margin-top: -178px;
+    margin-left: 91px;
+}
+.coming-soon-solution{
+  position: absolute;
+  margin-top: -184px;
+  margin-left: 166px;
+
+}
+.custom-community-margin{
+  margin-left: 54%;
+}
+.custom-community-body-margin{
+  margin-left: 34%;
+}
+.custom-find-solutions{
+  margin-left: 66%;
+}
+.custom-community-body-margin{
+  margin-left: 48%;
 }
 
-@media screen and (max-width: 1921px) {
+
+/* @media screen and (max-width: 1921px) {
   .coming-soon-learn{
     position: relative;
     bottom: 175px;
@@ -418,7 +463,7 @@
     margin-right: 7%;
   }
   .about-container {
-    right: 1%;
+    right: 7% !important;
   }
   .learning-header {
     margin-left: 40%;
@@ -514,4 +559,4 @@
     margin-left: 4%;
     width: 51% !important;
   }
-}
+} */
