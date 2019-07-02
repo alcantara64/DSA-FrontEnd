@@ -5,23 +5,16 @@ import About from '../../components/about/about';
 import Blog from '../../components/blog/blog';
 import { Switch, Route } from 'react-router';
 import Auxi from '../../hoc/Auxi';
-import Page from '../../core/Models/Page';
 import BlogDetail from '../../components/blog/blogDetail/blogDetail';
 import Services from '../../components/services/services';
 
 class dashboard extends Component {
-    pageData: Page;
     constructor(props: any){
         super(props);
-        this.pageData = {} as Page;
     }
 
     componentDidMount(){
   
-    }
-
-    state = {
-        pageData: {} as Page
     }
     
     render() {

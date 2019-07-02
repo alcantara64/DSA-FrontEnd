@@ -4,11 +4,11 @@ import arrow_icon from '../../../assets/images/arrow_icon.png';
 import {RouteComponentProps, Link} from 'react-router-dom';
 import './blogDetail.css';
 import Post from '../../../core/Models/Post';
-import PostDTO from '../../../core/DTO/PostDTO';
 import {Config} from '../../../Config';
 import { resolve } from 'inversify-react';
 import { TYPES } from '../../../core/services/ioc.types';
 import { BlogDataService } from '../../../core/services/data/BlogService/blog.data.service';
+import PostDTO from '../../../core/DTO/PostDTO';
 
 export default class BlogDetail extends Component< IBlogDetails, IBlogDetailState> {
 

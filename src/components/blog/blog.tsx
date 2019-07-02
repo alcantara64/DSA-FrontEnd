@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Auxi from '../../hoc/Auxi';
 import './blog.css';
 import { AxiosResponse } from 'axios';
-import Page from '../../core/Models/Page';
 import SuggestedBlogs from './suggestedBlogs/suggestedBlogs';
 import RecentBlogs from './recentBlogs/recentBlogs';
 import PopularBlogs from './popularBlogs/popularBlogs';
@@ -15,7 +14,6 @@ class blog extends Component {
 
     @resolve(TYPES.BlogService) private readonly blogService: BlogDataService = {} as BlogDataService;
     state = {
-        pageDate: {} as Page,
         blogList: []
     }
 
@@ -24,7 +22,6 @@ class blog extends Component {
             (res: AxiosResponse<Post[]>) => {
                 this.setState({
                     ...this.state,
-                    pageDate: res.data,
                     blogList: res.data
                 })
             }
