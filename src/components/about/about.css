@@ -13,10 +13,16 @@
     background-color: #eee;
 }
 .analytics-container{
-    padding-top: 9px;
+    padding-top: 23px;
 }
 .custom-data-science-width{
     width: 863px;
+}
+.coperate-icon-padding{
+    padding-top: 25px;
+}
+.e2e-icon-padding{
+    padding-top: 48px;
 }
 .who-are-we{
     margin-bottom: 1rem !important;
@@ -51,7 +57,7 @@ margin-left: 5.5% !important;
 
 .custom-secondary-area{
     background-color: rgba(215, 56, 114, 0.1);
-    height: 898px;
+    height: 925px;
     max-width: 273px !important;
     min-width: 17rem !important;
     margin-left: 60px !important;
@@ -102,7 +108,7 @@ margin-left: 5.5% !important;
    }
 
    .custom-search-button-margin{
-       margin-top: 50px !important;
+       margin-top: 44px !important;
    }
 
    /* .custom-factory-img{
@@ -133,7 +139,7 @@ margin-left: 5.5% !important;
 
    .custom-mid-page-slider-details-column{
     padding-right: 20% !important;
-    width: 1051px !important;
+    width: 1204px !important;
     left: 140px !important;
     top: 442px !important;
     float: left;
@@ -153,13 +159,17 @@ margin-left: 5.5% !important;
 
    .custom-mid-background-area{
        padding-top: 32px !important;
-       margin-top: 32px !important;
-    height: 344px;
+       margin-top: 58px !important;
+    height: 335px;
     background-color: rgba(122, 65, 131, 0.1) ;
+    margin-left: -53px;
    }
 
    .custom-margin{
-       margin-top: 32px !important;
+       margin-top: 26px !important;
+   }
+   .custom-nate-margin{
+    padding-top: 33px;
    }
 
    .custom-about-regular-h3{
@@ -170,7 +180,7 @@ margin-left: 5.5% !important;
    }
 
    .custom-mid-page-header-margin{
-    margin-top: 13px;
+    margin-top: 3px;
 
    }
    .custom-enterprise-container{
@@ -193,7 +203,7 @@ margin-left: 5.5% !important;
     border-bottom: 8px solid rgba(215, 56, 114, 0.5);
    }
    .active-card{
-    border-bottom: 8px solid rgba(215, 56, 114, 1);
+    border-bottom: 8px solid rgba(215, 56, 114);
    }
    .custom-tile-margin-center{
        margin-left: 0% !important;
@@ -240,6 +250,9 @@ margin-left: 5.5% !important;
 .custom-button-width{
     width: 32px !important;
 }
+.em-c-search__body{
+    height: 44px !important;
+}
 
   @media screen and (max-width: 1921px){
   .custom-mid-section-area {
@@ -268,7 +281,7 @@ margin-left: 5.5% !important;
     .data-science-items{
         margin-left: 32px !important;
         width: 40% !important;
-        margin-bottom: 0rem!important;
+        margin-bottom: -1rem!important;
     }
     .mark-image{
         position: relative;
