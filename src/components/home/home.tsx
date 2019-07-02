@@ -40,10 +40,10 @@ const home = () => {
                                     <img src={Community_Illustration} alt="learn" className="community-illustration"/>
                                 </a>
                             </div>
-                            <div className="  coming-soon-community"><img src={group_3} alt=""/></div>
+                            <div className="coming-soon-community"><img src={group_3} alt=""/></div>
                             <div className="write-up-container">
-                            <div className="learning-header underline-community">a.Community</div>
-                            <div className="learning-content learn-content">Connect with the ExxonMobil data community. Find meetups, training, and other global and related communities.</div>
+                            <div className="custom-community-margin learning-header underline-community">a.Community</div>
+                            <div className="custom-community-body-margin learning-content learn-content">Connect with the ExxonMobil data community. Find meetups, training, and other global and related communities.</div>
                             </div>
                             </div>
                         </div>
@@ -66,8 +66,8 @@ const home = () => {
                             </div>
                             <div className="  coming-soon-solution"><img src={group_3} alt=""/></div>
                             <div className="write-up-container solution">
-                            <div className="learning-header underline-solution solution-header">Find Solutions</div>
-                            <div className="learning-content learn-content">Lets's direct you to the tool, tutorial, or person that will get you what you need through our services portal.</div>
+                            <div className="custom-find-solutions learning-header underline-solution solution-header">Find Solutions</div>
+                            <div className="custom-community-body-margin learning-content learn-content">Lets's direct you to the tool, tutorial, or person that will get you what you need through our services portal.</div>
                             </div>
                             </div>
                         </div>

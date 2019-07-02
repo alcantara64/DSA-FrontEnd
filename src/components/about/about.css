@@ -58,7 +58,7 @@ margin-left: 5.5% !important;
 }
 
 .custom-line-spacing{
-    margin-top: 17px !important;
+    margin-top: 7px !important;
     padding-bottom: 8px !important;
 }
 
@@ -302,6 +302,7 @@ margin-left: 5.5% !important;
     }
     .custom-engage-services{
         margin-left: -28px;
+        margin-top: -3px;
     }
     .custom-have{
         margin-left: -32px;
