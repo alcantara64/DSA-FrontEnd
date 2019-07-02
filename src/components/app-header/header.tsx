@@ -15,7 +15,7 @@ class header extends Component<any>  {
             <div className="em-c-header__body">
               <div className="em-c-header__title-container">
                 <h2 className="em-c-header__title">                  
-                <Link to="/" className=" em-u-clickable custom-heading-5 em-c-header__title-link custom-text-color-black">Data</Link>
+                <Link to="/" className=" em-u-clickable custom-heading-5  custom-text-color-black">Data</Link>
                 </h2>
 
               </div>

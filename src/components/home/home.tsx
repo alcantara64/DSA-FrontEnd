@@ -1,10 +1,10 @@
 import React from 'react';
 import Auxi from '../../hoc/Auxi';
-import Learn_Illustration from './../../asset/images/Learn_Illustration.png';
-import Community_Illustration from './../../asset/images/a.Community_Illustration.png';
-import Find_Solutions_Illustration from './../../asset/images/Find_Solutions_Illustration.png';
-import group_3 from './../../asset/images/group-3.png';
-import group from './../../asset/images/Group-9.png';
+import Learn_Illustration from './../../assets/images/Learn_Illustration.png';
+import Community_Illustration from './../../assets/images/a.Community_Illustration.png';
+import Find_Solutions_Illustration from './../../assets/images/Find_Solutions_Illustration.png';
+import group_3 from './../../assets/images/group-3.png';
+import group from './../../assets/images/Group-9.png';
 import './home.css';
 import Footer from '../app-footer/footer';
 import { Link } from 'react-router-dom';

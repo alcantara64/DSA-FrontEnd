@@ -7,6 +7,7 @@ import { Switch, Route } from 'react-router';
 import Auxi from '../../hoc/Auxi';
 import Page from '../../core/Models/Page';
 import BlogDetail from '../../components/blog/blogDetail/blogDetail';
+import Services from '../../components/services/services';
 
 class dashboard extends Component {
     pageData: Page;
@@ -32,7 +33,8 @@ class dashboard extends Component {
                         <Route exact path='/' component={Home} />
                         <Route path='/about' component={About} />
                         <Route exact path='/blog' component={Blog} /> 
-                        <Route exact path='/blog/:id' component={BlogDetail} />                       
+                        <Route exact path='/blog/:id' component={BlogDetail} />    
+                        <Route exact path='/services' component={Services} />                   
                     </Switch>
                 </Layout>
             </Auxi>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Auxi from '../../../hoc/Auxi';
-import arrow_icon from './../../../asset/images/arrow_icon.png';
+import arrow_icon from '../../../assets/images/arrow_icon.png';
 import {RouteComponentProps, Link} from 'react-router-dom';
 import './blogDetail.css';
 import Post from '../../../core/Models/Post';
@@ -50,7 +50,7 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
         if(Object.entries(this.state.postDetail).length >= 1 && this.state.postDetail.constructor === Object){
             return (
                 <Auxi>
-                    <div className="custom-page-margin blog-details-container  ">
+                    <div className="blog-details-container  ">
                     <Link to={'/blog'} className="back-button-margin" >
                        <div className="inline"><img className="img-size" src={arrow_icon} alt=""/></div>
                        <div className="inline custom-link">BACK</div>
