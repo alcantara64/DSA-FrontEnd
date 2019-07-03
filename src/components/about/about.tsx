@@ -440,18 +440,22 @@ class about extends Component<{}, IAboutProps> {
                             </div>
 
                             <div className="custom-input custom-have em-l-grid__item em-u-width-100 custom-search-button-margin em-u-text-align-left">
-                                <div className="custom-paragraph em-u-margin-bottom">Have another question you don’t see here? Send it our way.
-        </div>
+                                <div>
+                                <div className="custom-send-inline custom-paragraph em-u-margin-bottom">Have another question you don’t see here? 
+                            </div>
+                            <div className="custom-send-inline custom-paragraph">
+                            <a href="mailto:alicia.d.wilkin@exxonmobil.com?subject=DSA Portal Questions">Send it our way.</a>
+                            </div>
+                            </div>
 
-
-                                <div className="em-c-search__body">
+                                {/* <div className="em-c-search__body">
                                     <input className="em-c-search__input custom-input-border" />
                                     <button className="em-c-btn custom-button-color em-c-btn--primary" aria-label="Search">
                                         <div className="em-c-btn__inner custom-button-width">
                                             <img src={send} alt="" />
                                         </div>
                                     </button>
-                                </div>
+                                </div> */}
 
                             </div>
                         </div>

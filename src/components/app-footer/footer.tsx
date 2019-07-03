@@ -17,9 +17,8 @@ const footer = () => {
             <div className="about-site custom-about-site-margin custom-paragraph">
             Question about the site?
             </div>
-            <div className="about-site ">
-            <Link to="/" className="custom-link em-u-clickable">
-            Contact the webmaster</Link>
+            <div className="about-site ">  
+            <a className="custom-link em-u-clickable" href="mailto:alicia.d.wilkin@exxonmobil.com?subject=DSA Portal Questions">Contact the webmaster</a>
             </div >
             <div className=" custom-analytics-margin em-l-grid em-l-grid--1-2-1 em-l-grid--break-fast em-u-text-align-left">
         <div className="custom-analytics em-l-grid__item em-u-padding-none">

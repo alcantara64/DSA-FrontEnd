@@ -35,14 +35,14 @@ const home = () => {
                         <div className="fpo-block fpo-block--dark solution-block-container">
                             <div className="grid-2">
                             <div className="body-header"></div>
-                            <div className="community-container">
+                            <a  href="goto/acommunity" target="_blank" className="community-container">
+                               
                                     <img src={Community_Illustration} alt="learn" className="community-illustration"/>
-                            </div>
-                            <div className="coming-soon-community"><img src={group_3} alt=""/></div>
-                            <div className="write-up-container">
+                            </a>
+                            <a href="goto/acommunity" target="_blank" className="write-up-container">
                             <div className="custom-community-margin learning-header underline-community">a.Community</div>
                             <div className="custom-community-body-margin learning-content learn-content">Connect with the ExxonMobil data community. Find meetups, training, and other global and related communities.</div>
-                            </div>
+                            </a>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ const home = () => {
                             <div className="  coming-soon-solution"><img src={group_3} alt=""/></div>
                             <div className="write-up-container solution">
                             <div className="custom-find-solutions learning-header underline-solution solution-header">Find Solutions</div>
-                            <div className="custom-community-body-margin learning-content learn-content">Lets's direct you to the tool, tutorial, or person that will get you what you need through our services portal.</div>
+                            <div className="custom-find-soltion-body learning-content learn-content">Lets's direct you to the tool, tutorial, or person that will get you what you need through our services portal.</div>
                             </div>
                             </div>
                         </div>
