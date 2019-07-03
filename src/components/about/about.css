@@ -35,9 +35,7 @@ margin-left: 5.5% !important;
     margin-left: 12% !important;
 }
 
-.custom-paragraph-width{
-    max-width: 48% !important;
-}
+
 
 .custom-paragraph-margin{
     margin-left: 7% !important;
@@ -288,12 +286,13 @@ margin-left: 5.5% !important;
         right: 30px;
         top: 31px;
     }
+   
   }
   
 
-@media screen and (max-width: 1537px){
+@media screen and (max-width: 1537px) and (min-width: 1512px){
     .custom-page-margin-left {
-        margin-left: 66px !important;
+        margin-left: 0px !important;
     }
 
 
@@ -303,7 +302,7 @@ margin-left: 5.5% !important;
         margin-left: -65px;
     }
     .custom-page-align{
-        margin-left: -21px !important;
+        margin-left: -35px !important;
         width: 170% !important;
         max-width: 892px !important;
     }
@@ -311,10 +310,10 @@ margin-left: 5.5% !important;
         width: 100%;
     } 
     .custom-secondary-area{
-        margin-left: 90px !important;
+        margin-left: 217px !important;
     }
     .custom-engage-services{
-        margin-left: -28px;
+        margin-left: -34px;
         margin-top: -3px;
     }
     .custom-have{
@@ -322,27 +321,31 @@ margin-left: 5.5% !important;
     }
     .custom-mid-page-card-column {
         cursor: pointer;
-        width: 242px !important;
+        width: 273px !important;
     }
        .custom-exploratory{
         margin-right: 65px !important;
     }
        .custom-mid-background{
         left: -8%;
-        width: 111%;
+        width: 113%;
     }
     .custom-header-margin-left {
-        margin-left: 4% !important;
+        margin-left: 38px !important;
     }
     .custom-medium-tile-area{
-        margin-left: 5% !important;
+        margin-left: 2.8% !important;
+        max-width: 1486px !important;
     }
     .custom-mid-section-area {
         margin-left: 0% !important;
 
 }
 .custom-testimonial-margin{
-    margin-left: 9% !important;
+    margin-left: 12.7% !important;
+}
+.custom-paragraph-width{
+    max-width: 42% !important;
 }
 }
 
