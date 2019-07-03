@@ -126,7 +126,7 @@
 
   @media only screen and (max-width: 1537px){
     .exon-logo{
-      margin-left: 76%;
+      margin-left: 85%;
     }
     .custom-about-site-margin{
       margin-left: -25%;
@@ -149,6 +149,9 @@
   }
   .custom-logo-margin {
     margin-right: -36%;
+}
+.custom-chemical-margin{
+  margin-left: -35px;
 }
  
   }

@@ -4,5 +4,5 @@ export const Config = {
       "user.read"
     ],
     baseUrl: 'http://bis.southcentralus.cloudapp.azure.com:8090/xom-dsa-backend',
-    isProd: false
+    isProd: true
 }

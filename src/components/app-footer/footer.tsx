@@ -123,7 +123,7 @@ const footer = () => {
   </div>
   <div className="em-l-grid__item">
     <div className="fpo-block fpo-block--dark">
-    <div className="footer-text-padding footer-link-bottom-spacing custom-H5">Chemical</div>
+    <div className="custom-chemical-margin footer-text-padding footer-link-bottom-spacing custom-H5">Chemical</div>
     <div className=" footer-link-bottom-spacing">
       <a className="custom-footer-data custom-paragraph" href="https://mysite.na.xom.com/Person.aspx?accountname=UPSTREAMACCTS\kcfurma">Data, Analytics, and Systems</a>
     </div>
