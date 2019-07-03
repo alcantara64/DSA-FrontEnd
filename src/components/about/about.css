@@ -254,6 +254,10 @@ margin-left: 5.5% !important;
 .em-c-search__body{
     height: 44px !important;
 }
+.custom-send-inline{
+    display: inline-block !important;
+    margin-right: 2px !important;
+}
 
   @media screen and (max-width: 1921px){
   .custom-mid-section-area {

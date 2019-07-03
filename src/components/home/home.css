@@ -329,10 +329,13 @@
 
 }
 .custom-community-margin{
-  margin-left: 66%;
+  margin-left: 44%;
 }
 .custom-community-body-margin{
-  margin-left: 34%;
+  margin-left: 24% !important;
+}
+.custom-find-soltion-body{
+  margin-left: 232px !important;
 }
 .custom-find-solutions{
   margin-left: 70%;

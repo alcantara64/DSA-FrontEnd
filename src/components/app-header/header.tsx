@@ -67,12 +67,7 @@ class header extends Component<any>  {
 </li>
 
 
-<li className="custom-paragraph em-c-primary-nav__item ">
-<Link to="/" className="custom-paragraph em-u-clickable em-c-primary-nav__link ">
 
-  a.Community
-</Link>
-</li>
 
 <li className="custom-paragraph em-c-primary-nav__item ">
 <Link to="/" className=" custom-paragraph em-u-clickable em-c-primary-nav__link ">
@@ -87,8 +82,19 @@ class header extends Component<any>  {
   Blog
 </Link>
 </li>
+<li className="custom-paragraph em-c-primary-nav__item ">
+                      <Link to="/" className="custom-paragraph em-u-clickable em-c-primary-nav__link  ">
+                        <img src="https://emunity.blob.core.windows.net/unity/fpo_avatar.png" alt="Alt Text" className="custom-photo-icon em-c-avatar em-c-avatar" /> Hi, Jennifer
+        
+              </Link>
+                    </li>
                     </Auxi> :  ''}
-                   
+                    <li className="custom-paragraph em-c-primary-nav__item ">
+<a href="goto/acommunity" target="_blank" className="custom-paragraph em-u-clickable em-c-primary-nav__link ">
+
+  a.Community
+</a>
+</li>
 
                     <li className="custom-paragraph em-c-primary-nav__item ">
 
@@ -96,12 +102,7 @@ class header extends Component<any>  {
 
                     </li>
 
-                    <li className="custom-paragraph em-c-primary-nav__item ">
-                      <Link to="/" className="custom-paragraph em-u-clickable em-c-primary-nav__link  ">
-                        <img src="https://emunity.blob.core.windows.net/unity/fpo_avatar.png" alt="Alt Text" className="custom-photo-icon em-c-avatar em-c-avatar" /> Hi, Jennifer
-        
-              </Link>
-                    </li>
+                  
 
 
                   </ul>
