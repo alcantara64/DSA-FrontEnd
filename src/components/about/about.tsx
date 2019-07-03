@@ -408,7 +408,7 @@ class about extends Component<{}, IAboutProps> {
 
                                         </div>
 
-                                        <div className="column">
+                                        <div className="column tile">
                                             <div>
                                                 <img className="custom-quote-width" src={quote_img} alt="" />
 

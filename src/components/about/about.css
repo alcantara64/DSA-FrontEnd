@@ -76,9 +76,12 @@ margin-left: 5.5% !important;
     margin-left: 10.5px !important;
 
 }
+.tile{
+    margin-left: 12.5px !important;
+}
 
 .custom-right-tile-margin{
-    margin-right: 10.5px !important;
+    margin-right: 13.5px !important;
 
 }
 
@@ -185,7 +188,7 @@ margin-left: 5.5% !important;
     margin-bottom: -61px;
    }
    .custom-medium-tile-area{
-    max-width: 1285px !important;
+    max-width: 1458px !important;
     margin-left: 5.5% !important;
     margin-top: 64px !important;
    }
@@ -254,27 +257,29 @@ margin-left: 5.5% !important;
 
   @media screen and (max-width: 1921px){
   .custom-mid-section-area {
-    margin-left: 10% !important;
+    margin-left: 5.6% !important;
     }
     .custom-header-margin-left {
-        margin-left: 14.2% !important;
+        margin-left: 9.5% !important;
     }
     .custom-secondary-area{
         margin-left: 111px !important;
     }
     .custom-medium-tile-area{
-        margin-left: 14% !important;
-        max-width: 1400px !important;
-        
+        margin-left: 9.6% !important;
+       
+    }
+    .custom-main-area{
+        max-width: 1064px !important;
     }
     .custom-mid-page-card-column{
-        width: 244px !important;
+        width: 278px !important;
     }
     .custom-exploratory{
         margin-right: 277px !important;
     }
     .custom-testimonial-margin{
-        margin-left: 16% !important;
+        margin-left: 14.7% !important;
     }
     .data-science-items{
         margin-left: 32px !important;
@@ -286,7 +291,16 @@ margin-left: 5.5% !important;
         right: 30px;
         top: 31px;
     }
+<<<<<<< HEAD
    
+=======
+    .custom-margin-right-20{
+        margin-right: 12px !important;
+    }
+    .custom-mid-background{
+        width: 106%;
+    }
+>>>>>>> 36e201cef81bc8908ee6b6564cf859e5ecf2f0d0
   }
   
 

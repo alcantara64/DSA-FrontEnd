@@ -73,7 +73,7 @@
  
   .exon-logo{
     width: 10%;
-    margin-left: 59%;
+    margin-left: 66.5%;
     padding-top: 8px;
   }
   
@@ -100,7 +100,7 @@
 
   @media only screen and (max-width: 1921px){
     .custom-about-site-margin{
-      margin-left: 0%;
+      margin-left: -0%;
     }
     .em-l-grid--halves{
       margin-left: 10.1%;
@@ -118,6 +118,9 @@
     .footer-description {
       margin-right: 0%;
       margin-left: 2%;
+    }
+    .custom-footer-data{
+      margin-left: 134px;
     }
   }
 
