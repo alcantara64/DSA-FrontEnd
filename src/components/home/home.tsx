@@ -40,8 +40,8 @@ const home = () => {
                                     <img src={Community_Illustration} alt="learn" className="community-illustration"/>
                             </a>
                             <a href="goto/acommunity" target="_blank" className="write-up-container">
-                            <div className="custom-community-margin learning-header underline-community">a.Community</div>
-                            <div className="custom-community-body-margin learning-content learn-content">Connect with the ExxonMobil data community. Find meetups, training, and other global and related communities.</div>
+                            <div className="custom-community-margin learning-header-community underline-community">a.Community</div>
+                            <div className="custom-community-body-margin learning-content">Connect with the ExxonMobil data community. Find meetups, training, and other global and related communities.</div>
                             </a>
                             </div>
                         </div>

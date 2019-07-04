@@ -79,13 +79,26 @@
   color: rgba(10, 48, 57, 1);
   text-align: left;
   line-height: 22px;
+
+  
 }
+  
+
 .learning-header {
   height: 38px;
   width: 300px;
   font-family: "emprintsemibold";
   font-size: 30px;
   color: rgba(10, 48, 57, 0.5);
+  text-align: center;
+  margin-left: 42%;
+}
+
+.learning-header-community {
+  height: 38px;
+  width: 300px;
+  font-family: "emprintsemibold";
+  font-size: 30px;
   text-align: center;
   margin-left: 42%;
 }
