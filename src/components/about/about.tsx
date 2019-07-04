@@ -5,7 +5,6 @@ import Footer from '../app-footer/footer';
 import skycraper from './../../assets/images/skycraper.png';
 import quote_img from './../../assets/images/quote_img.png';
 import analytics from './../../assets/images/analytics.png';
-import about_profile_pic from './../../assets/images/about_profile_pic.png';
 import team_work from './../../assets/images/teamwork.png';
 import process from './../../assets/images/process.png';
 import planning from './../../assets/images/planning.png';

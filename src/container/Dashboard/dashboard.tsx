@@ -2,21 +2,16 @@ import React, { Component } from 'react';
 import Layout from '../../components/layout/layout';
 import Home from '../../components/home/home';
 import About from '../../components/about/about';
-import Blog from '../../components/blog/blog';
+// import BlogDetail from '../../components/blog/blogDetail/blogDetail';
+// import Services from '../../components/services/services';
+// import Blog from '../../components/blog/blog';
 import { Switch, Route } from 'react-router';
 import Auxi from '../../hoc/Auxi';
-import BlogDetail from '../../components/blog/blogDetail/blogDetail';
-import Services from '../../components/services/services';
 
 class dashboard extends Component {
     constructor(props: any){
         super(props);
     }
-
-    componentDidMount(){
-  
-    }
-    
     render() {
         return (
             <Auxi>

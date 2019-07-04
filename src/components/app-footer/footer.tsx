@@ -1,7 +1,6 @@
 import React from 'react';
 import Auxi from '../../hoc/Auxi';
 import './footer.css';
-import { Link } from 'react-router-dom';
 import logo  from '../../assets/images/exon-logo1.png';
 
 const footer = () => {
