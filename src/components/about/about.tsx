@@ -8,13 +8,13 @@ import analytics from './../../assets/images/analytics.png';
 import about_profile_pic from './../../assets/images/about_profile_pic.png';
 import team_work from './../../assets/images/teamwork.png';
 import process from './../../assets/images/process.png';
-import send from './../../assets/images/send-button1x.png';
 import planning from './../../assets/images/planning.png';
 import data_science from './../../assets/images/data-science.png';
 import chess from './../../assets/images/chess-piece.png';
 import customer from './../../assets/images/customer-outreach.png';
 import shape from './../../assets/images/Shape.png';
 import skycraper2 from './../../assets/images/skycraper2.png';
+import Carousel from './carousel/carousel';
 
 
 class about extends Component<{}, IAboutProps> {
@@ -448,15 +448,6 @@ class about extends Component<{}, IAboutProps> {
                             </div>
                             </div>
 
-                                {/* <div className="em-c-search__body">
-                                    <input className="em-c-search__input custom-input-border" />
-                                    <button className="em-c-btn custom-button-color em-c-btn--primary" aria-label="Search">
-                                        <div className="em-c-btn__inner custom-button-width">
-                                            <img src={send} alt="" />
-                                        </div>
-                                    </button>
-                                </div> */}
-
                             </div>
                         </div>
                         <div className="em-l__secondary em-u-text-align-left custom-secondary-area em-u-padding">
@@ -503,37 +494,10 @@ class about extends Component<{}, IAboutProps> {
                         </div>
                     </div>
 
+
                     <div className="custom-mid-background-area custom-mid-background">
-
-                        <div className="row custom-testimonial-margin">
-                            <div className="custom-mid-page-slider-photo-column">
-                                <img src={about_profile_pic} alt="" className="custom-mid-photo-area" />
-
-                            </div>
-
-
-                            <div className="custom-mid-page-slider-details-column purple-text-color">
-
-                                <div className="em-u-text-align-left">
-                                    <span className="dot dot-current"></span>
-                                    <span className="dot"></span>
-                                    <span className="dot"></span>
-                                    <span className="dot"></span>
-                                </div>
-
-                                <div className="custom-link purple-text-color no-text-transform custom-mid-page-header-margin">TESTIMONIALS</div>
-
-                                <div className="custom-about-regular-h3 custom-margin">We were able to level set from across the business and technical folks, and then walk out of a 1.5 day engagement with a working prototype of a visualization with mock data.</div>
-
-
-                                <div className="custom-paragraph purple-text-color custom-nate-margin">Nate McIntire, C&D AND FTP VIZ LEAD</div>
-                            </div>
-                        </div>
-                        {/* <TestiomonialCarousel/> */}
-
+                    <Carousel />
                     </div>
-
-
 
                     <div className="em-l-grid em-l-grid--5up custom-medium-tile-area">
                         <div className={`em-l-grid__item  custom-mid-page-card-column ${this.isEnterpriseClicked ? 'active-card' : 'custom-mid-page-card-column'} custom-margin-right-20`} onClick={() => this.onTileClickHandler('Enterprise Platforms')}>
