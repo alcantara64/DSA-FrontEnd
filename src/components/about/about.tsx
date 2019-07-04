@@ -443,8 +443,8 @@ class about extends Component<{}, IAboutProps> {
                                 <div>
                                 <div className="custom-send-inline custom-paragraph em-u-margin-bottom">Have another question you don’t see here? 
                             </div>
-                            <div className="custom-send-inline custom-paragraph">
-                            <a href="mailto:alicia.d.wilkin@exxonmobil.com?subject=DSA Portal Questions">Send it our way.</a>
+                            <div className="custom-send-inline">
+                            <a className="custom-link" href="mailto:alicia.d.wilkin@exxonmobil.com?subject=DSA Portal Questions">Send it our way.</a>
                             </div>
                             </div>
 
