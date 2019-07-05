@@ -9,9 +9,6 @@ import { Switch, Route } from 'react-router';
 import Auxi from '../../hoc/Auxi';
 
 class dashboard extends Component {
-    constructor(props: any){
-        super(props);
-    }
     render() {
         return (
             <Auxi>
