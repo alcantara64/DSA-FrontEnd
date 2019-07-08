@@ -15,18 +15,15 @@ class dashboard extends Component {
         return (
             <Auxi>
                 <Layout>
-
                     <Switch>
                         <Route exact path='/' component={Home} />
                         <Route path='/about' component={About} />
-                        <Route exact path='/blog' component={Blog} /> 
+                        {/* <Route exact path='/blog' component={Blog} /> 
                         <Route exact path='/blog/:id' component={BlogDetail} />    
-                        <Route exact path='/services' component={Services} />                   
+                        <Route exact path='/services' component={Services} />                    */}
                     </Switch>
                 </Layout>
             </Auxi>
-
-
         );
     }
 }
