@@ -35,7 +35,7 @@ const home = () => {
                         <div className="fpo-block fpo-block--dark solution-block-container">
                             <div className="grid-2">
                             <div className="body-header"></div>
-                            <a  href="goto/acommunity" target="_blank" className="community-container">
+                            <a  href="http://goto/acommunity" target="_blank" className="community-container">
                                
                                     <img src={Community_Illustration} alt="learn" className="community-illustration"/>
                             </a>

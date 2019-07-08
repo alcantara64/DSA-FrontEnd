@@ -76,7 +76,7 @@ class header extends Component<any>  {
                     </li>
                     </Auxi> :  ''}
                     <li className="custom-paragraph em-c-primary-nav__item ">
-<a href="goto/acommunity" target="_blank" className="custom-paragraph em-u-clickable em-c-primary-nav__link ">
+<a href="http://goto/acommunity" target="_blank" className="custom-paragraph em-u-clickable em-c-primary-nav__link ">
 
   a.Community
 </a>
