@@ -1,14 +1,15 @@
 
 .blog-details-container{
     width: 1440px !important;
-    margin-left: 16.5%;
+    margin-left: 2.5%;
 }
 .success-story{
     background-color: rgba(245, 245, 245, 1);
     top: 132px;
     left: 317px;
     height: 350px;
-    width: 1298px;
+    width: 1440px;
+    margin-top: 30px;
 }
 .custom-success-image{
     display: inline-block;
