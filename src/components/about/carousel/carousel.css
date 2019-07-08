@@ -1,0 +1,41 @@
+.carousel-dot {
+    position: absolute;
+    top: 1px;
+    width: 54% !important;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.carousel-dot li {
+    display: inline;
+}
+
+.carousel-dot li button {
+    background-color: #C1A7C5;
+    border: none;
+    color: transparent;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-dot li button, .carousel-dot li button:active, .carousel-dot li button:hover {
+    outline: none !important;
+}
+
+.carousel-dot .slick-active button, .carousel-dot .slick-active button:active{
+    background-color: rgba(122, 65, 131, 1) !important;
+    outline: none !important;
+}
+
+.carousel-dot li button:hover{
+    border: none !important;
+}

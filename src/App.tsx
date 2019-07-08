@@ -32,7 +32,6 @@ constructor(props: any){
     };
   
     if (user) {
-      // Enhance user object with data from Graph
       this.getUserProfile();
     }else{
       this.login();
