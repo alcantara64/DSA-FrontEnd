@@ -31,40 +31,26 @@ class header extends Component<any>  {
 
                   <ul className="em-c-primary-nav__list">
 
+                  <li className="em-c-primary-nav__item ">
+              <a href="#" className="custom-paragraph em-u-clickable em-c-primary-nav__link  em-c-primary-nav__link--has-children em-js-nav-dropdown-trigger">
+				
+              Quick Links
+							</a>
+              <ul className="em-c-primary-nav__sublist em-js-nav-dropdown em-u-text-align-left">
+                <li className="em-c-primary-nav__subitem">
+                <a  href="http://goto/python" target="_blank" rel="noopener noreferrer"   className="custom-paragraph em-c-primary-nav__sublink">Goto/python</a>
+              </li>
+                <li className="em-c-primary-nav__subitem">
+                <a  href="http://goto/pec" target="_blank" rel="noopener noreferrer"   className="custom-paragraph em-c-primary-nav__sublink">Goto/pec</a>
+
+                </li>
+                <li className="em-c-primary-nav__subitem">
+                <a  href="http://goto/DataDash" target="_blank" rel="noopener noreferrer"   className="custom-paragraph em-c-primary-nav__sublink">Goto/DataDash</a>
+                </li>
+              </ul>
+            </li>
                     {Config.isProd? <Auxi>
-                      <li className="em-c-primary-nav__item ">
-
-<Link to="/" className="custom-paragraph em-u-clickable em-c-primary-nav__link  em-c-primary-nav__link--has-children em-js-nav-dropdown-trigger">
-
-  Quick Links</Link>
-
-<ul className="em-c-primary-nav__sublist em-js-nav-dropdown ">
-  <li className="em-c-primary-nav__subitem">
-    <Link to="/" className="custom-paragraph em-u-clickable em-c-primary-nav__link  em-c-primary-nav__link--has-children em-js-nav-dropdown-trigger">
-
-      Subnav item
-      </Link>
-  </li>
-  <li className="em-c-primary-nav__subitem"> 
-  <Link to="/" className="custom-paragraph em-u-clickable em-c-primary-nav__link  em-c-primary-nav__link--has-children em-js-nav-dropdown-trigger">
-
-    Subnav item
-    </Link>
-  </li>
-  <li className="em-c-primary-nav__subitem"> 
-    <Link to="/" className="custom-paragraph em-u-clickable em-c-primary-nav__link  em-c-primary-nav__link--has-children em-js-nav-dropdown-trigger">
-
-    Subnav item
-    </Link>
-  </li>
-  <li className="em-c-primary-nav__subitem">   
-      <Link to="/" className="custom-paragraph em-u-clickable em-c-primary-nav__link  em-c-primary-nav__link--has-children em-js-nav-dropdown-trigger">
-
-    Subnav item
-      </Link>
-  </li>
-</ul>
-</li>
+                    
 
 
 
