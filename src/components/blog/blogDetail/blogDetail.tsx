@@ -9,6 +9,7 @@ import { resolve } from 'inversify-react';
 import { TYPES } from '../../../core/services/ioc.types';
 import { BlogDataService } from '../../../core/services/data/BlogService/blog.data.service';
 import PostDTO from '../../../core/DTO/PostDTO';
+import SuggestedBlogs from '../suggestedBlogs/suggestedBlogs';
 
 export default class BlogDetail extends Component< IBlogDetails, IBlogDetailState> {
 
@@ -17,6 +18,7 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
     constructor(props: IBlogDetails){
         super(props)
         this.state = {
+            blogListByCategory: [],
             postDetail: {} as Post,
             postImageSrc: '',
             blogImageSrc: '',
@@ -24,12 +26,20 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
         }
     }
 
+    componentWillReceiveProps(nextProps: IBlogDetails) {
+        if (nextProps.match.params.id !== this.props.match.params.id) {
+          const currentPostId = nextProps.match.params.id
+            this.getBlogDetail(currentPostId);
+        }
+      }
+
     goToBlogPage(){
         this.props.history.push('/blog') ;
     }
 
-    componentDidMount(){
-        this.blogService.getBlogPost(this.props.match.params.id).then(
+    getBlogDetail(id: string = ''){
+        let postId = id ? id: this.props.match.params.id;
+        this.blogService.getBlogPost(postId).then(
             (res: PostDTO) => {
                 if(res.data){
                     this.setState({
@@ -40,10 +50,28 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
                         authorImageSrc: res.data.authorImageUrl ? res.data.authorImageUrl.replace('~', `${Config.baseUrl}`): '',
 
                     })
+                    this.getBlogListByCategory(res.data.archiveId , res.data.categoryId)
                 }                
             },
             (err) => console.log(err)
         )
+    }
+
+    getBlogListByCategory(blogId: string, categoryId: string){
+        this.blogService.getBlogPostByCategory(blogId, categoryId).then(
+            (res) => {
+                this.setState({
+                    blogListByCategory: res.data
+                })
+            },
+            error => {
+console.log('error => ', error);
+            }
+        )
+    }
+
+    componentDidMount(){
+        this.getBlogDetail();
     }
     
     render(){
@@ -60,7 +88,7 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
                         <img className="success-img" src={this.state.blogImageSrc} alt="" />
                     </div>
                     <div className="custom-success-image custom-success-details">
-                    <div className="custom-link custom-uppercase custom-success-padding">{this.state.postDetail.category}</div>
+                    <div className="custom-link custom-uppercase custom-success-padding">{this.state.postDetail.categoryName}</div>
                         <div className="custom-H1 custom-ftp">{this.state.postDetail.title}</div>
                         <div className="custom-H5 custom-brief-overview">{this.state.postDetail.introText}</div>
                         <div className="custom-paragraph custom-read">{this.state.postDetail.timeRead} min read</div>
@@ -85,6 +113,7 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
                               <div className="custom-paragraph">{this.state.postDetail.authorDepartment}</div>
                           </div>
                       </div>
+                      <SuggestedBlogs blogList={this.state.blogListByCategory} type={'Related Artticle'} />
                       </div>
                     </div>
                 </Auxi>
@@ -99,6 +128,7 @@ interface IBlogDetails extends RouteComponentProps<{id: string}> {
 }
 
 interface IBlogDetailState{
+    blogListByCategory: Post[],
     postDetail: Post,
     postImageSrc: string,
     blogImageSrc: string,

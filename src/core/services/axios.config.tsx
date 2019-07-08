@@ -1,8 +1,8 @@
 import axios from 'axios';
+import { Config } from '../../Config';
 
 const instance = axios.create({
-    baseURL: 'http://bis.southcentralus.cloudapp.azure.com:8090/xom-dsa-backend',
-    timeout: 5000,
+    baseURL: Config.isProd ? 'http://bis.southcentralus.cloudapp.azure.com:8090/xom-dsa-backend': Config.mockUrl,
   });
 
   export default instance;

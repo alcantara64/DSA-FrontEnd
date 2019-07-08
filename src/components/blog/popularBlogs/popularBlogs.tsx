@@ -26,7 +26,7 @@ export default class PopularBlogs extends Component<BlogListProps> {
                     <div className="em-l__secondary em-u-text-align-left">
                         <div className="custom-margin-success-stories">
                             <div className="custom-font-success-stories ">
-                                {blog.category}
+                                {blog.categoryName}
                             </div>
                         </div>
 
