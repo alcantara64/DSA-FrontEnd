@@ -23,7 +23,7 @@ export default class SuggestedBlogs extends Component<BlogListProps>{
 
         return (
             <Auxi>
-                <div className="custom-tile-background em-u-padding-top-half custom-link-bold">
+                <div className="custom-tile-background  em-u-padding-top-half custom-link-bold">
                         {this.props.type}
                     </div>
 

@@ -71,6 +71,7 @@
 .custom-tile-background {
   height: 40px !important;
   background-color: rgba(245, 245, 245, 1) !important;
+  max-width: 99.7% !important;
 }
 
 .custom-link-bold {
@@ -150,15 +151,14 @@
     .custom-editor-blog-area{
         height: 325px !important;
         margin-right: 116px;
+        width: 93% !important;
     }
 
     .custom-recent-blog-area {
       max-width: 92% !important;
       margin-bottom: 6%;
     }
-    .custom-editor-blog-area {
-      width: 93% !important;
-    }
+    
     .custom-link-bold{
       width: 92% !important;
     }
@@ -185,17 +185,20 @@
     width: 91.2%;
   }
   .custom-link-bold{
+    max-width: 1426px !important;
       width: 115% !important;
   }
   .custom-page-margin {
-    margin-left: 8.5% !important; 
+    margin-left: 2.5% !important; 
+    width: 85% !important;
   }
   .custom-editor-blog-area {
-    width: 128% !important;
+    width: 1586px !important;
   }
   .custom-popular-area{
     margin-right: -280px;
   }
+  
 }
 
 @media screen and (max-width: 1370px) {

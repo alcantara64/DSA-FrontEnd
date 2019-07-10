@@ -113,7 +113,10 @@ console.log('error => ', error);
                               <div className="custom-paragraph">{this.state.postDetail.authorDepartment}</div>
                           </div>
                       </div>
-                      <SuggestedBlogs blogList={this.state.blogListByCategory} type={'Related Artticle'} />
+                      
+                      </div>
+                      <div>
+                      <SuggestedBlogs blogList={this.state.blogListByCategory} type={'Related Articles'} />
                       </div>
                     </div>
                 </Auxi>

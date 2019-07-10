@@ -1,4 +1,7 @@
-
+.em-u-padding-top-half{
+    margin-bottom: -22px !important;
+    margin-top: 48px !important;
+}
 .blog-details-container{
     width: 1440px !important;
     margin-left: 2.5%;
@@ -72,6 +75,7 @@
     margin-bottom: 2%;
     cursor: pointer;
 }
+
 
 
 
