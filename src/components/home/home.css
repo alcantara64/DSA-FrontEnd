@@ -6,6 +6,7 @@
 .learn_illustration {
   /* padding-left: 11%; */
   margin-left: -13%;
+  margin-bottom: 5px;
 }
 .grid-1 {
   margin-left: 10%;
@@ -65,7 +66,7 @@
 .write-up-container {
   padding-bottom: 7%;
   padding-top: 5%;
-  margin-left: -79px;
+  margin-left: -82px;
   width: 101%;
 
 }
@@ -315,7 +316,7 @@
 }
 
 .find-solutions {
-  height: 242px;
+  height: 231px;
   margin-right: -46%;
 }
 .community-illustration{
@@ -366,7 +367,7 @@
     margin-left: 200px;
   }
   .about-img-container{
-    right: 178px;
+    right: 168px;
   }
  
  
