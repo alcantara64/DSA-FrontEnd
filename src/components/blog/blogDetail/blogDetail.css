@@ -18,6 +18,9 @@
     display: inline-block;
     width: 50%; 
 }
+.custom-suggested-blog{
+    width: 108.3% !important;
+}
 .success-img{
     height: 22rem;
     padding-right: 10%;

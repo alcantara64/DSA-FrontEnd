@@ -115,7 +115,7 @@ console.log('error => ', error);
                       </div>
                       
                       </div>
-                      <div>
+                      <div className="custom-suggested-blog">
                       <SuggestedBlogs blogList={this.state.blogListByCategory} type={'Related Articles'} />
                       </div>
                     </div>
