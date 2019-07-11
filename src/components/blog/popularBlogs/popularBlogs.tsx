@@ -46,7 +46,7 @@ export default class PopularBlogs extends Component<BlogListProps> {
 
         return (
             <div className="em-l__secondary custom-popular-area">
-                <div className="fpo-block custom-popular-background-area custom-H4" >Popular</div>
+                <div className="fpo-block custom-popular-background-area custom-popular-padding custom-H4" >Popular</div>
                     {blogList}
             </div>
         )
