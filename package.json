@@ -1,6 +1,5 @@
 {
   "name": "xom-dsa-frontend",
-  "homepage": "C:/dsa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
