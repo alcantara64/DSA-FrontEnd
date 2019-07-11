@@ -8,14 +8,13 @@ const services = () => {
         <Auxi>
             <div className="services-container">
                 <div className="custom-heading custom-paragraph">
-                    Let's get you what you need ( a tutorial to talk to) - it only takes a minute. 
+                    Let's get you what you need (a tutorial to talk to) - it only takes a minute. 
                 </div>
                 <div className="flex-container">
-                <div className="custom-want-margin">
-                <div className="custom-inline custom-H2">
+                <div className="custom-want-margin custom-inline custom-H2">
                     I want to
                 </div>
-                </div>
+                
                 <div className="large-flex">
                     <div className="custom-btn-align">
                     <button className="custom-em-c-btn custom-button-font custom-link custom-button-margin em-c-btn" title="find data to use">find data to use</button>
@@ -34,7 +33,52 @@ const services = () => {
                     </div>
                     
                 </div>
+          
+
                 </div>
+
+                          {/* find data to use */}
+                          <div className="flex-container">
+                          <div className="custom-want-margin custom-inline custom-H2">
+                    Is it one of these?
+                 </div>
+                 <div>
+                 <div className="custom-btn-align">
+                    <button className="custom-em-c-btn custom-button-font custom-link custom-button-margin em-c-btn" title="find datasets and dashboards">find datasets and dashboards</button>
+                    </div>
+                    <div className="custom-btn-align">
+                    <button className="custom-em-c-btn custom-button-font custom-link em-c-btn custom-button-manage" title="access standard data used across the company">access standard data used across the company</button>
+                    </div>
+                    <div className="custom-btn-align">
+                    <button className="custom-em-c-btn custom-button-font custom-link em-c-btn custom-button-manage" title="learn why metadata is so important">learn why metadata is so important</button>
+                    </div>
+                 </div>
+                
+</div>
+                </div>
+
+                <div className="flex-container">
+                <div className="custom-want-margin custom-inline custom-H2">
+                    I'm in
+                </div>
+                
+                <div className="large-flex">
+                    <div className="custom-btn-align">
+                    <button className="custom-em-c-btn custom-button-font custom-link custom-button-margin em-c-btn" title="Upstream">Upstream</button>
+                    </div>
+                    <div className="custom-btn-align">
+                    <button className="custom-em-c-btn custom-button-font custom-link em-c-btn custom-button-manage" title="Downstream">Downstream</button>
+                    </div>
+                    <div className="custom-btn-align">
+                    <button className="custom-em-c-btn custom-button-font custom-link em-c-btn custom-button-build" title="Corporate">Corporate</button>
+                    </div>
+                    <div className="custom-btn-align">
+                    <button className="custom-em-c-btn custom-button-font custom-link em-c-btn custom-button-sign" title="Other">Other</button>
+                    </div>
+                   
+                    
+                </div>
+          
 
                 </div>
                 <div className="footer-fixed">
