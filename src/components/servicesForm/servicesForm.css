@@ -1,0 +1,43 @@
+.back-button-margin{
+    margin-right: 94.8%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+.img-size{
+    height: 20px;
+    margin-bottom: -5px;
+    margin-right: 10px;
+}
+.inline{
+    display: inline-block !important;
+}
+.services-form-container{
+    width: 1440px !important;
+    margin-left: 2.5%;
+    text-align: left;
+
+}
+.custom-services-form{
+    margin-top: 35px;
+
+}
+.custom-form{
+    width: 615px;
+    margin-top: 8px;
+}
+.custom-select{
+    width: 349px;
+    margin-top: -11px;
+    color: #76767E;
+}
+.custom-TFS{
+    margin-top: 46px;
+
+}
+.custom-project-box{
+    margin-top: 28px;
+}
+.custom-input{
+    width: 763px !important;
+    margin-top: -11px;
+}

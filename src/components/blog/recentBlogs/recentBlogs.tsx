@@ -36,7 +36,7 @@ export default class RecentBlogs extends Component<BlogListProps>{
 
 
         <div className="custom-full-archive em-l-linelength-container em-u-text-align-left custom-link-margin">
-            <Link to="/blog" className="custom-link ">
+            <Link to="/Archives" className="custom-link ">
                 See Full Archive of Article
             </Link>
         </div>

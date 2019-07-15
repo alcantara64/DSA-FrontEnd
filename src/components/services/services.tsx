@@ -2,6 +2,8 @@ import React from 'react';
 import Auxi from '../../hoc/Auxi';
 import send from './../../assets/images/send-button.png';
 import './services.css';
+import { Link } from 'react-router-dom';
+
 
 const services = () => {
     return (
@@ -82,9 +84,9 @@ const services = () => {
 
                 </div>
                 <div className="footer-fixed">
-                <div className="custom-link custom-margin-DSA">
+                <Link to={'/services/form'} className="custom-link custom-margin-DSA">
                     I'm a DS&A Contact and want to fill out an internal form. 
-                </div>
+                </Link>
                 <div className="custom-box-shadow">
                 
                     <div className=" custom-footer-margin custom-inline">

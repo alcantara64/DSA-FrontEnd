@@ -16,7 +16,7 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
     @resolve(TYPES.BlogService) private readonly blogService: BlogDataService = {} as BlogDataService;
 
     constructor(props: IBlogDetails){
-        super(props)
+        super(props) 
         this.state = {
             blogListByCategory: [],
             postDetail: {} as Post,
