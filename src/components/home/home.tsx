@@ -74,11 +74,11 @@ const home = () => {
                 <div className=" middle-section">
                     <div className="custom-H2 ">Want to see what we've done for others?</div>
                     <div className="custom-paragraph success-stories">Check out the success stories from our teams and teams we've worked with in the past</div>
-                    {/* <div>
-                    <button className="em-c-btn em-c-btn--large custom-btn ">
-                        <span className="em-c-btn__text custom-paragraph">See other Success Stories</span>
+                    <div>
+                    <button className="em-c-btn em-c-btn--large custom-btn "><Link to="/blog">
+                        <span className="em-c-btn__text custom-paragraph">See other Success Stories</span></Link>
                     </button>
-                    </div> */}
+                    </div>
                 </div>
 
             <div className=" about-dsa">

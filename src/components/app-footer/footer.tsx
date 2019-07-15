@@ -14,7 +14,7 @@ const footer = () => {
     <div className="fpo-block">
     <div className = "footer-description">
             <div className="about-site custom-about-site-margin custom-paragraph">
-            Question about the site?
+            Questions about the site?
             </div>
             <div className="about-site ">  
             <a className="custom-link em-u-clickable" href="mailto:alicia.d.wilkin@exxonmobil.com?subject=DSA Portal Questions">Contact the webmaster</a>

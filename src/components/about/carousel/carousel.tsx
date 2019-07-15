@@ -9,11 +9,11 @@ class Carousel extends Component {
       dots: true,
       dotsClass: 'carousel-dot',
       infinite: true,
-      speed: 500,
+      speed: 2000,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 3000
+      autoplaySpeed: 5000
     };
     return (
       <Slider {...settings}>
@@ -27,7 +27,7 @@ class Carousel extends Component {
 
           <div className="custom-mid-page-slider-details-column purple-text-color">
 
-            <div className="custom-link purple-text-color no-text-transform custom-mid-page-header-margin">TESTIMONIALS</div>
+            <div className="custom-link no-text-transform custom-mid-page-header-margin">TESTIMONIALS</div>
 
             <div className="custom-about-regular-h3 custom-margin">The academy is a place to learn all things Data and Analytics including courses and other resources like people and conferences. And helps to educate and increase competency across the company and learn topics related to data and analytics</div>
 
@@ -47,7 +47,7 @@ class Carousel extends Component {
 
           <div className="custom-mid-page-slider-details-column purple-text-color">
 
-            <div className="custom-link purple-text-color no-text-transform custom-mid-page-header-margin">TESTIMONIALS</div>
+            <div className="custom-link  no-text-transform custom-mid-page-header-margin">TESTIMONIALS</div>
 
             <div className="custom-about-regular-h3 custom-margin">We were able to level set from across the business and technical folks, and then walk out of a 1.5 day engagement with a working prototype of a visualization with mock data.</div>
 
@@ -67,7 +67,7 @@ class Carousel extends Component {
 
           <div className="custom-mid-page-slider-details-column purple-text-color">
 
-            <div className="custom-link purple-text-color no-text-transform custom-mid-page-header-margin">TESTIMONIALS</div>
+            <div className="custom-link  no-text-transform custom-mid-page-header-margin">TESTIMONIALS</div>
 
             <div className="custom-about-regular-h3 custom-margin">We were able to level set from This design thinking workshop with data is a lot of progress and an impressive team.</div>
 
@@ -88,7 +88,7 @@ class Carousel extends Component {
 
           <div className="custom-mid-page-slider-details-column purple-text-color">
 
-            <div className="custom-link purple-text-color no-text-transform custom-mid-page-header-margin">TESTIMONIALS</div>
+            <div className="custom-link no-text-transform custom-mid-page-header-margin">TESTIMONIALS</div>
 
             <div className="custom-about-regular-h3 custom-margin">We can save a lot of time just making a few small changes through data and analytics in this process.</div>
 
