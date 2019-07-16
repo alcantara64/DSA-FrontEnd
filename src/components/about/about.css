@@ -259,6 +259,23 @@ margin-left: 5.5% !important;
     margin-right: 2px !important;
 }
 
+@media screen and (min-width: 1930px){
+    .custom-header-margin-left{
+        margin-left: 20% !important;
+    }
+    .custom-main-area{
+        margin-left: 21.7% !important;
+    }
+    .custom-secondary-area{
+        margin-left: 11.2% !important;
+    }
+    .custom-medium-tile-area{
+        margin-left: 20.1% !important;
+    }
+    .custom-page-margin-left{
+        margin-left: 37px !important;
+    }
+}
   @media screen and (max-width: 1921px){
   .custom-mid-section-area {
     margin-left: 5.6% !important;
