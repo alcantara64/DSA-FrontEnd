@@ -22,7 +22,8 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
             postDetail: {} as Post,
             postImageSrc: '',
             blogImageSrc: '',
-            authorImageSrc: ''
+            authorImageSrc: '',
+            
         }
     }
 
@@ -73,7 +74,7 @@ console.log('error => ', error);
     componentDidMount(){
         this.getBlogDetail();
     }
-    
+   
     render(){
         if(Object.entries(this.state.postDetail).length >= 1 && this.state.postDetail.constructor === Object){
             return (
@@ -93,6 +94,7 @@ console.log('error => ', error);
                         <div className="custom-H5 custom-brief-overview">{this.state.postDetail.introText}</div>
                         <div className="custom-paragraph custom-read">{this.state.postDetail.timeRead} min read</div>
                         <div className="custom-H5">{this.state.postDetail.author} - {this.state.postDetail.published}</div>
+                     
                     </div>
                         
                     </div>
