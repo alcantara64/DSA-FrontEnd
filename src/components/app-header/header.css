@@ -6,11 +6,16 @@
 }
 
 
-
+.em-c-header{
+    height: 48px;
+}
 .em-c-header__body{
     padding: 0.5em 34px;
     width: 1440px !important;
     margin: auto !important;
+}
+.em-c-header--condensed .em-c-header__body {
+    padding: 0.8em 0;
 }
 
 /* .custom-header{

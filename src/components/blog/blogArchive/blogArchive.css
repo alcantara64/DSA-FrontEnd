@@ -83,3 +83,14 @@ width: 10px !important;
 margin: 0 4px !important;
 margin-top: 39px !important;
 }
+@media screen and (min-width: 1930px){
+    .blog-archives-container{
+        margin-left: 22%;
+    }
+   
+}
+@media screen and (max-width: 1920px){
+    .blog-archives-container{
+        margin-left: 12.1% !important;
+    }
+}

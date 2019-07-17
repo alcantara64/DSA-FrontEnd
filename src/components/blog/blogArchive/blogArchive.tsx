@@ -11,6 +11,7 @@ import './blogArchive.css';
 
 
 
+
 const blogArchive = () => {
     return (
         <div className="blog-archives-container">
@@ -18,6 +19,7 @@ const blogArchive = () => {
                 <div className="inline"><img className="img-size" src={arrow_icon} alt="" /></div>
                 <div className="inline custom-link">BACK</div>
             </Link>
+            
             <div className = "custom-blog-archive custom-H1">Blog Archive</div>
 <div className="custom-filter">
     <div className="custom-filter-technology"><img src={filter_technology} alt=""/><p>Filter by technology</p></div>
@@ -27,6 +29,7 @@ const blogArchive = () => {
     
     </div>
         <p>Jan 1, 1999 Jun 12, 2019</p>
+       
      </div>
 </div>
 <div className="custom-img">

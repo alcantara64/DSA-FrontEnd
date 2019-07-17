@@ -97,7 +97,15 @@
     margin-left: 112px;
     width: 113%
   }
-
+  @media only screen and (min-width:  1930px){
+    .footer-container{
+      margin-right: 13.9%;
+      margin-left: 17%
+    }
+    .custom-about-site-margin{
+      margin-left: -19%;
+    }
+  }
   @media only screen and (max-width: 1921px){
     .custom-about-site-margin{
       margin-left: -0%;

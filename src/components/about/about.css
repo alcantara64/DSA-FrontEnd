@@ -259,6 +259,42 @@ margin-left: 5.5% !important;
     margin-right: 2px !important;
 }
 
+@media screen and (min-width: 1930px){
+    .custom-header-margin-left{
+        margin-left: 20% !important;
+    }
+    .custom-main-area{
+        margin-left: 21.7% !important;
+    }
+    .custom-secondary-area{
+        margin-left: 11.2% !important;
+        width: 22.5625rem !important;
+        max-width: 289px !important;
+    }
+    .custom-medium-tile-area{
+        margin-left: 20.1% !important;
+        max-width: 1561px !important;
+    }
+    .custom-page-margin-left{
+        margin-left: 37px !important;
+    }
+    .custom-mid-background{
+        width: 103%;
+    }
+    .custom-testimonial-margin{
+        margin-left: 24.2% !important;
+        margin-top: 2%;
+    }
+    .carousel-dot{
+        margin-left: 6.4%;
+    }
+    .custom-mid-page-card-column{
+        width:277px !important;
+    }
+    .data-science-items{
+        width: 48% !important;
+    }
+}
   @media screen and (max-width: 1921px){
   .custom-mid-section-area {
     margin-left: 5.6% !important;
@@ -281,6 +317,8 @@ margin-left: 5.5% !important;
     }
     .custom-medium-tile-area{
         margin-left: 9.6% !important;
+        max-width: 1504px !important;
+        width: 82%;
        
     }
     .custom-main-area{
@@ -293,11 +331,12 @@ margin-left: 5.5% !important;
         margin-right: 277px !important;
     }
     .custom-testimonial-margin{
-        margin-left: 14.7% !important;    margin-top: 25px;
+        margin-left: 14.7% !important;   
+         margin-top: 25px;
     }
     .data-science-items{
         margin-left: 32px !important;
-        width: 40% !important;
+        width: 47% !important;
         margin-bottom: -1rem!important;
     }
     .mark-image{
