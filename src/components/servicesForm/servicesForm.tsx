@@ -47,7 +47,7 @@ const servicesForm = () => {
             </div>
             <div className="custom-paragraph custom-project-box">
                 <p>DS&A Resource</p>
-                <input className="custom-input" type="text" placeholder="Who's the DS&A Resource" />
+                <input className="custom-input" type="text" placeholder="Who's the DS&A Resource?" />
             </div>
             <div className="custom-paragraph custom-project-box">
                 <p>Primary Customer Contact:</p>
@@ -60,14 +60,54 @@ const servicesForm = () => {
             <div className="custom-paragraph custom-project-box">
                 Skills Needed (check all boxes that apply):
             </div>
-            <div>
-            <div>
-<div><img src={checkBox} alt=""/></div>
-<p className="custom-paragraph">
-    Analysis/Reporting/Visualization
-</p>
-            </div>
-            </div>
+                <div>
+                    <div className="custom-checkbox-div">
+
+
+                        <label className="custom-paragraph main">Analysis/Reporting/Visualization
+        <input type="checkbox" />
+                            <span className="geekmark"></span>
+                        </label>
+                        <label className="custom-paragraph main">Data Integration/Modeling
+        <input type="checkbox" />
+                            <span className="geekmark"></span>
+                        </label>
+                        <label className="custom-paragraph main-2">Enterprise Data
+        <input type="checkbox" />
+                            <span className="geekmark"></span>
+                        </label>
+                        <label className="custom-paragraph main">Business Application
+        <input type="checkbox" />
+                            <span className="geekmark"></span>
+                        </label>
+                        <label className="custom-paragraph main">Data Science
+        <input type="checkbox" />
+                            <span className="geekmark"></span>
+                        </label>
+                        <label className="custom-paragraph main-2">Platform
+        <input type="checkbox" />
+                            <span className="geekmark"></span>
+                        </label>
+                        <label className="custom-paragraph main">Business Data/Process
+        <input type="checkbox" />
+                            <span className="geekmark"></span>
+                        </label>
+                        <label className="custom-paragraph main">EMIT Core
+        <input type="checkbox" />
+                            <span className="geekmark"></span>
+                        </label>
+                        <label className="custom-paragraph main-2">Programming
+        <input type="checkbox" />
+                            <span className="geekmark"></span>
+                        </label>
+                    </div>
+
+                </div>
+                <div>
+                    <button className="custom-submit-TFS em-c-btn em-c-btn--large custom-btn ">
+                        <span className="em-c-btn__text custom-paragraph">Submit to TFS</span>
+                    </button>
+                    </div>
         </div>
     )
 }

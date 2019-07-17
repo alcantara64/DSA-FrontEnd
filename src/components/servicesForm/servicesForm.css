@@ -41,3 +41,84 @@
     width: 763px !important;
     margin-top: -11px;
 }
+.main { 
+    display: block; 
+    position: relative; 
+    padding-left: 40px; 
+    margin-bottom: 15px; 
+    cursor: pointer; 
+    font-size: 20px; 
+    font-weight: unset;
+    flex-basis: 39.5%;
+} 
+.main-2 { 
+    display: block; 
+    position: relative; 
+    padding-left: 40px; 
+    margin-bottom: 15px; 
+    cursor: pointer; 
+    font-size: 20px; 
+    font-weight: unset;
+    flex-basis: 21%;
+}
+  
+input[type=checkbox] { 
+    visibility: hidden; 
+} 
+
+.geekmark { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 20px; 
+    width: 20px; 
+    border: 1px solid black;
+} 
+  
+
+.geekmark:after { 
+    content: ""; 
+    position: absolute; 
+    display: none; 
+} 
+  
+.main input:checked ~ .geekmark:after { 
+    display: block; 
+} 
+  
+
+.main .geekmark:after { 
+    left: 6px;
+    bottom: 5px;
+    width: 3px;
+    height: 8px;
+    border: solid black;
+    border-width: 0 3px 2px 0;
+    transform: rotate(45deg);
+} 
+.main-2 input:checked ~ .geekmark:after { 
+    display: block; 
+} 
+  
+
+.main-2 .geekmark:after { 
+    left: 6px;
+    bottom: 5px;
+    width: 3px;
+    height: 8px;
+    border: solid black;
+    border-width: 0 3px 2px 0;
+    transform: rotate(45deg);
+} 
+.custom-checkbox-div{
+    display: flex;
+    width: 790px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+.custom-submit-TFS {
+    width: 19% !important;
+    margin-top: 47px !important;
+    margin-bottom: 132px !important;
+}
+  

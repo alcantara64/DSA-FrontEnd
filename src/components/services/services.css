@@ -60,7 +60,7 @@ margin-bottom: 12%;
 .custom-margin-DSA{
     text-align: left;
     margin-bottom: 1.5%;
-    margin-left: 8.5%;
+    margin-left: -57.5%;
 }
 .footer-fixed {
     position: fixed;
@@ -118,6 +118,8 @@ margin-bottom: 12%;
     display: flex;
     /* margin-left: -264px; */
 
+    
+
 @media (max-width: 1920px){
     .services-container{
         margin-left: 23.33%;
@@ -136,4 +138,48 @@ margin-bottom: 12%;
 }
 
 
+}
+.custom-margin-email{
+    margin-bottom: 30%;
+}
+.custom-options{
+    text-align: left;
+    margin-left: 2.7%;
+}
+.custom-margin-here{
+    margin-top: -23px !important;
+}
+.flex-container-here{
+    display: flex;
+margin-top: 2%;
+margin-bottom: 4.2%;
+}
+.custom-margin-goto{
+    margin-bottom: 5px;
+}
+.custom-datadash{
+    width: 1440px;
+    margin-bottom: 60px;
+
+}
+.custom-ali{
+    font-family: 'emprintSemibold' !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    color: #0A3039 !important;
+}
+.custom-margin-reach{
+    margin-bottom: 30px;
+}
+.custom-margin-ali{
+    margin-bottom: 3px;
+}
+.custom-margin-gsc{
+    margin-bottom: 6px;
+}
+.custom-margin-houston{
+    margin-bottom: 15px;
+}
+.custom-margin-connect{
+    margin-bottom: 18px;
 }
