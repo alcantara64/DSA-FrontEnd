@@ -78,7 +78,11 @@
     margin-bottom: 2%;
     cursor: pointer;
 }
-
+@media screen and (min-width: 1930px){
+    .blog-details-container{
+        margin-left: 22%;
+    }
+}
 @media screen and (max-width: 1537px){
     .blog-details-container{
         margin-left: 2.8%;
