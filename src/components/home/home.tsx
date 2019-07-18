@@ -61,7 +61,7 @@ const home = () => {
                                     <img className="find-solutions"src={Find_Solutions_Illustration} alt="learn"/>
                             </div>
                             <div className="  coming-soon-solution"><img src={group_3} alt=""/></div>
-                            <div className="write-up-container solution">
+                            <div className="write-up-solutions">
                             <div className="custom-find-solutions learning-header underline-solution solution-header">Find Solutions</div>
                             <div className="custom-find-soltion-body learning-content learn-content">Lets's direct you to the tool, tutorial, or person that will get you what you need through our services portal.</div>
                             </div>
