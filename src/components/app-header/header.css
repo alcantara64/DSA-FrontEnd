@@ -40,4 +40,8 @@
     height: 30px !important;
     width: 30px !important;
 }
-
+@media screen and (max-width: 1537px) {
+    .em-c-header--condensed .em-c-header__body {
+        padding: 0.5em 0;
+    }
+}

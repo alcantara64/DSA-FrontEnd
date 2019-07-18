@@ -320,7 +320,7 @@ margin-left: 5.5% !important;
     .custom-medium-tile-area{
         margin-left: 9.6% !important;
         max-width: 1504px !important;
-        width: 82%;
+        width: 100%;
        
     }
     .custom-main-area{
@@ -361,7 +361,11 @@ margin-left: 5.5% !important;
         padding-left: 140px;
     padding-right: 101px; 
     }
-
+    .data-science-items{
+        margin-left: 32px !important;
+        width: 45% !important;
+        margin-bottom: -1rem!important;
+    }
 
     .footer-divider{
         margin-top: 45px;
@@ -388,7 +392,7 @@ margin-left: 5.5% !important;
     }
     .custom-mid-page-card-column {
         cursor: pointer;
-        width: 278px !important;
+        width: 222px !important;
     }
        .custom-exploratory{
         margin-right: 65px !important;
@@ -401,7 +405,7 @@ margin-left: 5.5% !important;
         margin-left: 38px !important;
     }
     .custom-medium-tile-area{
-        margin-left: 2.8% !important;
+        margin-left: 3.5% !important;
         max-width: 1486px !important;
     }
     .custom-mid-section-area {
