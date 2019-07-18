@@ -27,8 +27,10 @@
     background-color: rgba(255, 255, 255, 1);
     padding-top: 41px;
     padding-bottom: 50px;
-    margin-left: -5%; 
-    width: 1159px;
+    width: 1440px;
+    padding-right: 140px;
+    padding-left: 140px;
+    margin: auto;
    }
    .footer-description{
     margin-right: 22%;
@@ -99,10 +101,7 @@
     width: 113%
   }
   @media only screen and (min-width:  1930px){
-    .footer-container{
-      margin-right: 13.9%;
-      margin-left: 17%
-    }
+
     .custom-about-site-margin{
       margin-left: -19%;
     }
@@ -114,9 +113,7 @@
     .em-l-grid--halves{
       margin-left: 10.1%;
     }
-    .footer-container{
-      margin-left: 19.8% !important;
-    }
+    
     .em-l-grid--4up{
       margin-left: -10.5%;
       width: 100%;
@@ -178,10 +175,7 @@
   }
 
   @media only screen and (max-width: 1370px){
-    .footer-container{
-      margin-left: 0%;
-    
-     }
+ 
      .custom-about-site-margin{
       margin-left: -11%;
     }
