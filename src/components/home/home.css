@@ -222,7 +222,7 @@
 }
 .second {
   width: 54% !important;
-  margin-top: 5%;
+  margin-top: 6.3%;
   margin-left: 9%;
 }
 .about-header {
@@ -385,12 +385,21 @@
   }
   .about-img-container{
     right: 168px;
+    width: 704px;
   }
   .body-header{
     margin-left: -2.3% !important;
   }
- 
- 
+ .body-header-data__container{
+  margin-left: 65px;
+  margin-right: 0px !important;
+ }
+ .second{
+  margin-left: 0.8%;
+ }
+ .first{
+  margin-left: 8.2%;
+ }
  
 }
 @media screen and (max-width: 1537px){
