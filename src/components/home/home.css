@@ -2,7 +2,7 @@
 
 .em-l-grid--1-to-3up {
   background-color: rgba(255, 255, 255, 1);
-  width: 1159px !important;
+  width: 1440px !important;
 }
 
 .learn_illustration {
@@ -378,7 +378,9 @@
     margin-left: 144px !important;
   }
   .em-l-grid--1-to-3up{
-    margin-left: 17.5%;
+    margin-left: 10%;
+    padding-right: 140px;
+    padding-left: 140px;
   }
   .em-l-grid--2up{
     margin-left: 200px;
