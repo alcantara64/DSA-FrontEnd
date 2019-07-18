@@ -2,7 +2,7 @@ import React from 'react';
 import Auxi from '../../hoc/Auxi';
 import Learn_Illustration from './../../assets/images/Learn_Illustration.png';
 import Community_Illustration from './../../assets/images/a.Community_Illustration.png';
-import Find_Solutions_Illustration from './../../assets/images/Find_Solutions_Illustration.png';
+import Illustration_Solutions from './../../assets/images/Illustration_Solutions.png';
 import group_3 from './../../assets/images/group-3.png';
 import group from './../../assets/images/Group-9.png';
 import './home.css';
@@ -58,7 +58,7 @@ const home = () => {
                                 </div>
                                 </div>
                                 <div >
-                                    <img className="find-solutions"src={Find_Solutions_Illustration} alt="learn"/>
+                                    <img className="find-solutions"src={Illustration_Solutions} alt="learn"/>
                             </div>
                             <div className="  coming-soon-solution"><img src={group_3} alt=""/></div>
                             <div className="write-up-solutions">
