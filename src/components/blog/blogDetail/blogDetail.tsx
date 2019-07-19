@@ -80,7 +80,7 @@ console.log('error => ', error);
             return (
                 <Auxi>
                     <div className="blog-details-container  ">
-                    <Link to={'/blog'} className="back-button-margin" >
+                    <Link to={'/blog'} className="back-button-margins" >
                        <div className="inline"><img className="img-size" src={arrow_icon} alt=""/></div>
                        <div className="inline custom-link">BACK</div>
                    </Link>

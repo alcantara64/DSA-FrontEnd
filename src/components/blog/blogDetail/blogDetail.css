@@ -21,7 +21,7 @@
     width: 50%; 
 }
 .custom-suggested-blog{
-    width: 78% !important;
+    width:100% !important;
 }
 .success-img{
     height: 22rem;
@@ -79,7 +79,7 @@
     margin-bottom: -5px;
     margin-right: 10px;
 }
-.back-button-margin{
+.back-button-margins{
     margin-right: 92.8%;
     margin-bottom: 2%;
     cursor: pointer;
