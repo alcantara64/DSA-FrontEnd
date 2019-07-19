@@ -11,9 +11,7 @@
 .custom-the-blog-padding{
   padding-bottom: 7px;
 }
-.custom-img-below{
-  height: 200px;
-}
+
 
 .custom-recent-background-area {
   height: 32px;
@@ -83,7 +81,7 @@
 .custom-tile-background {
   height: 40px !important;
   background-color: rgba(245, 245, 245, 1) !important;
-  max-width: 92% !important;
+  max-width: 100% !important;
 }
 
 .custom-link-bold {
@@ -169,7 +167,7 @@
     .custom-editor-blog-area{
         height: 325px !important;
         margin-right: 116px;
-        width: 93.2% !important;
+        width: 101.4% !important;
     }
 
     .custom-recent-blog-area {

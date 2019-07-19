@@ -15,6 +15,9 @@
   .custom-link-margin {
     margin-top: 45px !important;
   }
+  .custom-img-below{
+    height: 200px;
+  }
 
   .custom-full-archive {
     font-size: 16px !important;

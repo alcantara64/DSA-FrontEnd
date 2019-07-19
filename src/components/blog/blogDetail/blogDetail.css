@@ -20,7 +20,7 @@
     width: 50%; 
 }
 .custom-suggested-blog{
-    width: 108.3% !important;
+    width: 78% !important;
 }
 .success-img{
     height: 22rem;
@@ -31,6 +31,10 @@
     text-align: left;
     position: relative;
     bottom: 75px;
+    right: 50px;
+}
+.custom-details-img-padding{
+    padding-top: 22px;
 }
 .custom-uppercase{
     text-transform: uppercase;
