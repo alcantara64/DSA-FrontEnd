@@ -3,13 +3,16 @@
 }
 
 .custom-page-margin {
-  margin-left: 12.3% !important;
-  width: 1440px;
-  padding-left: 139px;
-  padding-right: 43px;
+  margin: auto;
+  width: 1440px !important;
+  padding-left: 140px;
+  padding-right: 140px;
 }
 .custom-the-blog-padding{
   padding-bottom: 7px;
+}
+.custom-img-below{
+  height: 200px;
 }
 
 .custom-recent-background-area {
@@ -32,7 +35,7 @@
 }
 
 .custom-recent-blog-area {
-  height: 995px !important;
+  height: 941px !important;
   max-width: 100% !important;
  
 }
@@ -170,7 +173,6 @@
     }
 
     .custom-recent-blog-area {
-      max-width: 92% !important;
       margin-bottom: 6%;
     }
     
@@ -189,7 +191,6 @@
   
 @media screen and (max-width: 1537px) {
   .custom-recent-blog-area {
-    max-width: 90% !important;
     margin-bottom: 6%;
 
   }
