@@ -344,7 +344,7 @@
 
   }
   .carousel-dot{
-      margin-left: 108px !important;
+      width: 50% !important;
   }
   .custom-paragraph-width{
       width: 52%;
@@ -412,7 +412,7 @@
     max-width: 52% !important;
   }
   .carousel-dot{
-    width: 40% !important;
+    width: 49% !important;
   }
 }
 
