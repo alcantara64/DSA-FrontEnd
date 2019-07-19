@@ -3,9 +3,10 @@
     margin-top: 48px !important;
 }
 .blog-details-container{
-      margin-left: 12.3% !important;
-  padding-left: 139px;
-  padding-right: 43px;
+    width: 1440px;
+    padding-right: 140px;
+    padding-left: 140px;
+    margin: auto;
 }
 .success-story{
     background-color: rgba(245, 245, 245, 1);
@@ -92,9 +93,12 @@
     }
 }
 @media screen and (max-width: 1537px){
-    .blog-details-container{
-        margin-left: 2.8%;
-    }
+  .back-button-margin{
+      margin-right: 92.8%;
+  }
+  .custom-suggested-blog{
+      width: 87.3% !important;
+  }
 }
 
 
