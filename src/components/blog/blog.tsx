@@ -33,7 +33,7 @@ class blog extends Component {
     render() {
         return (
             <Auxi>
-                <div className="custom-blog-area custom-page-margin">
+                <div className=" custom-page-margin">
                     <div className="em-l-linelength-container em-u-text-align-left em-u-margin-top-double em-u-margin-bottom-double">
 
                         <div className="custom-the-blog-padding custom-H1">The Blog</div>

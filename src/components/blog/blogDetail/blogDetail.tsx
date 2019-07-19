@@ -102,13 +102,13 @@ console.log('error => ', error);
                     <div className="custom-paragraph custom-text-area">
                         {this.state.postDetail.topPost}
                       <div>
-                          <img src={this.state.postImageSrc} alt=""/>
+                          <img className="custom-details-img-padding" src={this.state.postImageSrc} alt=""/>
                       </div>
                       <div className="custom-text-bottom-area">
                       {this.state.postDetail.bottomPost}
                       </div>
                       <div className="em-u-margin-top-double">
-                          <div className="custom-profile-pic"><img className="custom-details-img-padding" src={this.state.authorImageSrc} alt=""/></div>
+                          <div className="custom-profile-pic"><img src={this.state.authorImageSrc} alt=""/></div>
                           <div className="custom-profile-pic">
                               <div className="custom-link custom-author-font">AUTHOR</div>
                               <div className="custom-author-padding custom-H3">{this.state.postDetail.author}</div>
