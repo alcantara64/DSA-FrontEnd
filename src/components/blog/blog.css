@@ -121,15 +121,15 @@
 
 .custom-number-digit {
   font-family: "emprintSemibold";
-  margin-left: -43px;
-
-  font-size: 74px !important;
+  /* margin-left: -80px; */
+  margin-top: -34px;
+  font-size: 49px !important;
   line-height: 72px !important;
   color: #0a3039 !important;
 }
 
 .custom-margin-success-stories {
-  margin-bottom: 12px;
+  margin-bottom: -5px;
 }
 
 .custom-vanessa-padding {
