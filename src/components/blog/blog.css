@@ -30,7 +30,7 @@
 }
 
 .custom-recent-blog-area {
-  height: 941px !important;
+  height: auto;
   max-width: 100% !important;
  
 }
