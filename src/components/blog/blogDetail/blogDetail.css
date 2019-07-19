@@ -3,15 +3,16 @@
     margin-top: 48px !important;
 }
 .blog-details-container{
-    width: 1440px !important;
-    margin-left: 12.3%;
+      margin-left: 12.3% !important;
+  padding-left: 139px;
+  padding-right: 43px;
 }
 .success-story{
     background-color: rgba(245, 245, 245, 1);
     top: 132px;
     left: 317px;
     height: 350px;
-    width: 1440px;
+    width: 1160px;
     margin-top: 30px;
 }
 .custom-success-image{
@@ -23,7 +24,7 @@
 }
 .success-img{
     height: 22rem;
-    padding-right: 10%;
+    padding-right: 19%;
 }
 .custom-success-details{
     padding-right: 45px;

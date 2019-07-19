@@ -143,6 +143,7 @@
 .custom-mid-photo-area {
   height: 160px;
   width: 160px;
+  border-radius: 50%;
 }
 
 .no-text-transform {

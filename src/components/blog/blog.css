@@ -3,7 +3,10 @@
 }
 
 .custom-page-margin {
-  margin-left: 7% !important;
+  margin-left: 12.3% !important;
+  width: 1440px;
+  padding-left: 139px;
+  padding-right: 43px;
 }
 .custom-the-blog-padding{
   padding-bottom: 7px;
@@ -40,7 +43,7 @@
 }
 
 .custom-popular-area {
-  width: 414px !important;
+  width: 390px !important;
 }
 
 .custom-rec-blog-detail-area {
@@ -159,10 +162,7 @@
   }
 }
 @media screen and (max-width: 1920px) {
-  .custom-page-margin {
-    margin-left: 12.3% !important;
-    width: 82% !important;
-  }
+  
     .custom-editor-blog-area{
         height: 325px !important;
         margin-right: 116px;
