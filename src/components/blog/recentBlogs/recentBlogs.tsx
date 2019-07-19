@@ -12,7 +12,9 @@ export default class RecentBlogs extends Component<BlogListProps>{
         <div className="custom-recent-background-area custom-H4 ">Recent Stories</div>
 
         <div className="em-u-margin-top-double em-u-margin-bottom-double">
+            <div className = "upper-image">
         <BlogTile key={this.props.blogList[2].id} blogPost={this.props.blogList[2]} type={'recent'}/>
+        </div>
         </div>
 
 

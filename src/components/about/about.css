@@ -229,6 +229,7 @@
 
 .custom-mid-background {
   position: relative;
+  width: 165%;
 }
 .custom-quote-width {
   width: 19px !important;
@@ -338,7 +339,7 @@
     margin-right: 12px !important;
   }
   .custom-mid-background {
-    width: 165%;
+   
     right: 28%;
 
   }
@@ -355,17 +356,15 @@
 }
 
 @media screen and (max-width: 1537px) and (min-width: 1512px) {
-  .custom-page-margin-left {
-    margin-left: 0px !important;
-    padding-left: 140px;
-    padding-right: 101px;
-  }
+
   .data-science-items {
     margin-left: 32px !important;
     width: 45% !important;
     margin-bottom: -1rem !important;
   }
-
+  .custom-width{
+    margin-left: -2px;
+  }
   .footer-divider {
     margin-top: 45px;
     width: 105%;
@@ -380,7 +379,7 @@
     width: 100%;
   }
   .custom-secondary-area {
-    margin-left: 76px !important;
+    margin-right: -40px;
   }
   .custom-engage-services {
     margin-left: -34px;
@@ -391,30 +390,29 @@
   }
   .custom-mid-page-card-column {
     cursor: pointer;
-    width: 222px !important;
+    width: 222.4px !important;
   }
   .custom-exploratory {
     margin-right: 65px !important;
   }
   .custom-mid-background {
-    left: -8.6%;
-    width: 130%;
+    right: 16.2%;
   }
-  .custom-header-margin-left {
-    margin-left: 38px !important;
-  }
+ 
   .custom-medium-tile-area {
-    margin-left: 3.5% !important;
     max-width: 1486px !important;
   }
   .custom-mid-section-area {
-    margin-left: 0% !important;
+    margin-left: 3.1% !important;
   }
   .custom-testimonial-margin {
     margin-left: 12.7% !important;
   }
   .custom-paragraph-width {
     max-width: 52% !important;
+  }
+  .carousel-dot{
+    width: 40% !important;
   }
 }
 

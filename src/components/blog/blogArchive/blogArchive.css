@@ -13,7 +13,9 @@
 }
 .blog-archives-container{
     width: 1440px !important;
-    margin-left: 2.5%;
+    margin: auto;
+    padding-right: 140px;
+    padding-left: 140px;
 }
 .custom-blog-archive{
     margin-left: -82.2%;
@@ -90,7 +92,5 @@ margin-top: 39px !important;
    
 }
 @media screen and (max-width: 1920px){
-    .blog-archives-container{
-        margin-left: 12.1% !important;
-    }
+   
 }
