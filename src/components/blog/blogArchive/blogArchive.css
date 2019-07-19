@@ -94,3 +94,8 @@ margin-top: 39px !important;
 @media screen and (max-width: 1920px){
    
 }
+@media screen and (max-width: 1536px){
+    .custom-blog-archive{
+        margin-left:   -78.2%;
+    }
+}
