@@ -45,7 +45,7 @@ class blog extends Component {
                     <RecentBlogs blogList={this.state.blogList} type={'recent'}/>
                     <PopularBlogs blogList={this.state.blogList} type={'popular'} />
                     </div>
-                     <SuggestedBlogs blogList={this.state.blogList} type={`Editor's Pick`}/> 
+                     <SuggestedBlogs blogList={this.state.blogList} type={`Editor's Picks`}/> 
                 </div>
             </Auxi>
         )

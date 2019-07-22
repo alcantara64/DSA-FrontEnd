@@ -344,7 +344,7 @@ class about extends Component<{}, IAboutProps> {
 
                     <div className="em-u-text-align-left custom-header-margin-left custom-line-spacing">
                         <div className="custom-H1 custom-width">Data powers everything we do.</div>
-                        <div className="custom-paragraph custom-paragraph-width">We accelerate high-value, actionable insights through the delivery of scalable, enterprise data platforms, data science and analytics solutions.</div>
+                        <div className="custom-text-margin custom-paragraph custom-paragraph-width">We accelerate high-value, actionable insights through the delivery of scalable, enterprise data platforms, data science and analytics solutions.</div>
                     </div>
 
                     <div className="em-l em-l--two-column custom-mid-section-area">

@@ -24,9 +24,9 @@
 }
 .custom-filter{
     display: flex;
-    margin-top: 3%;
+    margin-top: 2%;
     text-align: left;
-    margin-bottom: 68px;
+    margin-bottom: 42px;
 }
 .custom-filter-technology{
     flex-basis: 21%;
@@ -85,6 +85,12 @@ width: 10px !important;
 margin: 0 4px !important;
 margin-top: 39px !important;
 }
+.custom-slider-date{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 @media screen and (min-width: 1930px){
     .blog-archives-container{
         margin-left: 22%;

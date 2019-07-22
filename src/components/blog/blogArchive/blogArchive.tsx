@@ -5,8 +5,10 @@ import pagination_arrow from '../../../assets/images/pagination_arrow.png';
 import pagination_arrow_right from '../../../assets/images/pagination_arrow_right.png';
 import filter_technology from '../../../assets/images/filter_technology.png';
 import filter_location from '../../../assets/images/filter_location.png';
+import slider from '../../../assets/images/slider.png';
 import { Link } from 'react-router-dom';
 import './blogArchive.css';
+
 // import Slider from 'react-input-slider';
 
 
@@ -22,15 +24,19 @@ const blogArchive = () => {
             
             <div className = "custom-blog-archive custom-H1">Blog Archive</div>
 <div className="custom-filter">
-    <div className="custom-filter-technology"><img src={filter_technology} alt=""/><p>Filter by technology</p></div>
-    <div className="custom-filter-location"><img src={filter_location} alt=""/> <p>Filter by location</p> </div>
-    <div>
-    <div>
+    <div className="custom-link custom-filter-technology"><img src={filter_technology} alt=""/><p>Filter by technology</p></div>
+    <div className="custom-link custom-filter-location"><img src={filter_location} alt=""/> <p>Filter by location</p> </div>
     
-    </div>
-        <p>Jan 1, 1999 Jun 12, 2019</p>
-       
+    <div>
+    <div className="custom-slider-date">
+
+        <p>Jan 1, 1999   </p>
+        <p>Jun 12, 2019</p>
+        </div>
+
+       <img src={slider} alt=""/>
      </div>
+
 </div>
 <div className="custom-img">
     <div className="custom-flex-width">
@@ -132,7 +138,6 @@ const blogArchive = () => {
 </div>
 
 
-
 <ol className="em-c-pagination" role="navigation" aria-labelledby="pagination-label">
   <li className="em-c-pagination__item">
     <a className="em-c-pagination__link  em-is-disabled" href="#">
@@ -141,6 +146,7 @@ const blogArchive = () => {
     </a>
   </li>
   <li className="em-c-pagination__item">
+      
     <a className="active em-c-pagination__link  em-is-current" href="#">
 			1
 		</a>
@@ -167,7 +173,9 @@ const blogArchive = () => {
     </a>
   </li>
 </ol>
+
         </div>
+    
     )
 }
 

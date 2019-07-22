@@ -1,6 +1,10 @@
 .custom-about-height {
   height: 2152px !important;
 }
+.custom-text-margin{
+  margin-top: 4px;
+
+}
 .custom-padding-bottom {
   padding-bottom: 9px;
 }

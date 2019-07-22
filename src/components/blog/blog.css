@@ -21,7 +21,7 @@
 .custom-popular-background-area {
   height: 32px;
   background-color: rgba(245, 245, 245, 1);
-  color: rgba(215, 56, 114, 1) !important;
+  /* color: rgba(215, 56, 114, 1) !important; */
   text-align: center;
   padding: 0.5% !important;
 }
@@ -187,7 +187,7 @@
 @media screen and (max-width: 1537px) {
   .custom-recent-blog-area {
     margin-bottom: 6%;
-    max-width: 87.1% !important;
+    max-width: 75.7% !important;
 
   }
   .em-l-grid--3up .em-l-grid__item {
@@ -198,14 +198,11 @@
   }
   .custom-link-bold{
     max-width: 1426px !important;
-      width: 115% !important;
+      width: 100% !important;
   }
-  .custom-page-margin {
-    margin-left: 2.5% !important; 
-    width: 85% !important;
-  }
+  
   .custom-editor-blog-area {
-    width: 128% !important;
+    width: 111.5% !important;
   }
   .custom-popular-area{
     margin-right: -280px;
