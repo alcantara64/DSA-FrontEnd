@@ -250,39 +250,49 @@
 }
 
 @media screen and (min-width: 1930px) {
-  .custom-header-margin-left {
-    margin-left: 20% !important;
+ 
+  .custom-main-area{
+    margin-left: 0px !important;
   }
-  .custom-main-area {
-    margin-left: 21.7% !important;
+  .custom-page-align{
+    width: 119%;
+    position: relative;
+    right: 1%;
   }
+
   .custom-secondary-area {
-    margin-left: 11.2% !important;
+    margin-left: 14.2% !important;
     width: 22.5625rem !important;
     max-width: 289px !important;
   }
   .custom-medium-tile-area {
-    margin-left: 20.1% !important;
+    margin-left: 0% !important;
     max-width: 1561px !important;
+    width: 107%;
   }
-  .custom-page-margin-left {
-    margin-left: 37px !important;
-  }
+ 
   .custom-mid-background {
-    width: 103%;
+    width: 221%;
+    right: 56%;
+  }
+  .carousel-dot{
+    margin-left: 35.6% !important;
   }
   .custom-testimonial-margin {
-    margin-left: 24.2% !important;
+    margin-left: 28.2% !important;
     margin-top: 2%;
   }
-  .carousel-dot {
-    margin-left: 6.4%;
-  }
   .custom-mid-page-card-column {
-    width: 277px !important;
+    width: 220px !important;
   }
   .data-science-items {
     width: 48% !important;
+  }
+  .custom-header-margin-left{
+    margin-left: 0px !important;
+  }
+  .em-u-margin-bottom-double{
+    margin-bottom: 0px !important;
   }
 }
 @media screen and (max-width: 1920px) {
