@@ -195,6 +195,9 @@ right: -118px;
     }
 }
 @media screen and (max-width: 1537px){
+    .custom-footer-margin{
+        margin-left: 11.8%;
+    }
    
 }
 
