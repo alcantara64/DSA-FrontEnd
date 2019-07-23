@@ -1,118 +1,115 @@
-.custom-about-height{
-    height: 2152px !important;
-    
+.custom-about-height {
+  height: 2152px !important;
 }
-.custom-padding-bottom{
-    padding-bottom: 9px;
-}
-.footer-divider{
-    height: 4px;
-    width: 103%;
-    margin-left: -52px;
-    margin-top: 64px;
-    background-color: #eee;
-}
-.analytics-container{
-    padding-top: 18px;
-}
-.custom-data-science-width{
-    width: 863px;
-}
-.coperate-icon-padding{
-    padding-top: 15px;
-}
-.e2e-icon-padding{
-    padding-top: 33px;
-}
-.who-are-we{
-    margin-bottom: 1rem !important;
-}
-.custom-header-margin-left{
-margin-left: 5.5% !important;
-}
-
-.custom-testimonial-margin{
-    margin-left: 12% !important;
-}
-
-
-
-.custom-paragraph-margin{
-    margin-left: 7% !important;
-}
-
-.custom-mid-section-area{
-    margin-top: 14px !important;
-    height: 898px;
-    width: 91%;
-}
-
-.custom-main-area{
-    max-width: 923px !important;
-    margin-left: 68px !important;
+.custom-text-margin{
+  margin-top: 4px;
 
 }
-
-.custom-secondary-area{
-    background-color: rgba(215, 56, 114, 0.1);
-    height: 904px;
-    max-width: 273px !important;
-    min-width: 17rem !important;
-    margin-left: 60px !important;
+.custom-padding-bottom {
+  padding-bottom: 9px;
+}
+.footer-divider {
+  height: 4px;
+  width: 103%;
+  margin-left: -52px;
+  margin-top: 64px;
+  background-color: #eee;
+}
+.analytics-container {
+  padding-top: 18px;
+}
+.custom-data-science-width {
+  width: 863px;
+}
+.coperate-icon-padding {
+  padding-top: 15px;
+}
+.e2e-icon-padding {
+  padding-top: 33px;
+}
+.who-are-we {
+  margin-bottom: 1rem !important;
+}
+.custom-header-margin-left {
+  margin-left: 5.5% !important;
 }
 
-.custom-line-spacing{
-    margin-top: 7px !important;
-    padding-bottom: 8px !important;
+.custom-testimonial-margin {
+  margin-left: 12% !important;
+}
+
+.custom-paragraph-margin {
+  margin-left: 7% !important;
+}
+
+.custom-mid-section-area {
+  margin-top: 14px !important;
+  height: 898px;
+  width: 91%;
+}
+
+.custom-main-area {
+  max-width: 923px !important;
+  margin-left: 68px !important;
+}
+
+.custom-secondary-area {
+  background-color: rgba(215, 56, 114, 0.1);
+  height: 904px;
+  max-width: 273px !important;
+  min-width: 17rem !important;
+  margin-left: 60px !important;
+}
+
+.custom-line-spacing {
+  margin-top: 7px !important;
+  padding-bottom: 8px !important;
 }
 
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.custom-left-tile-margin{
-    margin-left: 10.5px !important;
-
+.custom-left-tile-margin {
+  margin-left: 10.5px !important;
 }
-.tile{
-    margin-left: 12.5px !important;
-}
-
-.custom-right-tile-margin{
-    margin-right: 13.5px !important;
-
+.tile {
+  margin-left: 12.5px !important;
 }
 
-.custom-small-tile-underline{
-    height: 3px;
-    background-color: rgba(215, 56, 114, 1) !important;
+.custom-right-tile-margin {
+  margin-right: 13.5px !important;
+}
+
+.custom-small-tile-underline {
+  height: 3.5px;
+  background-color: rgba(215, 56, 114, 1) !important;
 }
 
 .column {
-    float: left;
-    top: 442px;
-    left: 140px;
-    height: 181px;
-    width: 274px;
-   }
+  float: left;
+  top: 442px;
+  left: 140px;
+  height: 181px;
+  width: 274px;
+}
 
-   .custom-button-color{
-       background-color: rgba(122, 65, 131, 1) !important;
-       background-image: none !important
-   }
+.custom-button-color {
+  background-color: rgba(122, 65, 131, 1) !important;
+  background-image: none !important;
+}
 
-   .custom-secondary-tile-detail-area{
-    height: 182px !important;
+.custom-secondary-tile-detail-area {
+  height: 182px !important;
+}
 
-   }
+.custom-search-button-margin {
+  margin-top: 44px !important;
+}
 
-   .custom-search-button-margin{
-       margin-top: 44px !important;
-   }
-
-   /* .custom-factory-img{
+/* .custom-factory-img{
     height: 64px;
     width: 64px;
     margin-top: 20px;
@@ -124,300 +121,320 @@ margin-left: 5.5% !important;
     
    } */
 
-   .custom-mid-page-slider-photo-column{
-    padding-top: 60px !important;
-    margin-right: 32px;
-    float: left;
-    top: 442px;
-    left: 140px;
-    height: 250px;
-    width: 161px;
-   }
+.custom-mid-page-slider-photo-column {
+  padding-top: 60px !important;
+  margin-right: 32px;
+  float: left;
+  top: 442px;
+  left: 140px;
+  height: 250px;
+  width: 161px;
+}
 
-   .purple-text-color{
-       color: rgba(122, 65, 131, 1) !important;
-   }
+.purple-text-color {
+  color: rgba(122, 65, 131, 1) !important;
+}
 
-   .custom-mid-page-slider-details-column{
+.custom-mid-page-slider-details-column {
+  padding-right: 20% !important;
+  width: 1204px !important;
+  left: 140px !important;
+  top: 442px !important;
+  float: left;
+  text-align: left !important;
+}
+
+.custom-mid-photo-area {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+}
+
+.no-text-transform {
+  text-transform: none !important;
+  padding-top: 7px;
+}
+
+.custom-mid-background-area {
+  padding-top: 32px !important;
+  margin-top: 38px !important;
+  height: 335px;
+  background-color: rgba(122, 65, 131, 0.1);
+  margin-left: -53px;
+}
+
+.custom-margin {
+  margin-top: 26px !important;
+}
+.custom-nate-margin {
+  padding-top: 33px;
+}
+
+.custom-about-regular-h3 {
+  font-family: "emprintRegular";
+  font-size: 24.4px !important;
+  line-height: 30px !important;
+}
+
+.custom-mid-page-header-margin {
+  margin-top: 4px;
+}
+.custom-enterprise-container {
+  margin-bottom: -61px;
+}
+.custom-medium-tile-area {
+  max-width: 1458px !important;
+  margin-left: 5.5% !important;
+  margin-top: 64px !important;
+}
+
+.custom-mid-page-card-column {
+  cursor: pointer;
+  top: 442px;
+  left: 140px;
+  height: 262px;
+  padding-top: 2% !important;
+  width: 222px !important;
+  background-color: rgba(245, 245, 245, 1);
+  border-bottom: 8px solid rgba(215, 56, 114, 0.3);
+}
+.active-card {
+  border-bottom: 8px solid rgba(215, 56, 114, 1);
+}
+.custom-tile-margin-center {
+  margin-left: 0% !important;
+  margin-bottom: 0% !important;
+}
+.mark-image {
+  width: 16px;
+}
+.custom-margin-right-20 {
+  margin-right: 19px !important;
+}
+
+.dot {
+  margin: 4px !important;
+  height: 20px;
+  width: 20px;
+  background-color: rgba(122, 65, 131, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-current {
+  background-color: rgba(122, 65, 131, 1);
+}
+
+.custom-page-margin-left {
+  width: 1440px;
+  padding-left: 140px;
+  padding-right: 140px;
+  margin: auto;
+}
+
+.custom-mid-background {
+  position: relative;
+  width: 165%;
+}
+.custom-quote-width {
+  width: 19px !important;
+}
+
+.custom-input-border {
+  border: 2px solid #7a4183 !important;
+}
+.custom-button-width {
+  width: 32px !important;
+}
+.em-c-search__body {
+  height: 44px !important;
+}
+.custom-send-inline {
+  display: inline-block !important;
+  margin-right: 2px !important;
+}
+
+@media screen and (min-width: 1930px) {
+ 
+  .custom-main-area{
+    margin-left: 0px !important;
+  }
+  .custom-page-align{
+    width: 119%;
+    position: relative;
+    right: 1%;
+  }
+
+  .custom-secondary-area {
+    margin-left: 14.2% !important;
+    width: 22.5625rem !important;
+    max-width: 289px !important;
+  }
+  .custom-medium-tile-area {
+    margin-left: 0% !important;
+    max-width: 1561px !important;
+    width: 107%;
+  }
+ 
+  .custom-mid-background {
+    width: 221%;
+    right: 56%;
+  }
+  .carousel-dot{
+    margin-left: 35.6% !important;
+  }
+  .custom-testimonial-margin {
+    margin-left: 28.2% !important;
+    margin-top: 2%;
+  }
+  .custom-mid-page-card-column {
+    width: 220px !important;
+  }
+  .data-science-items {
+    width: 48% !important;
+  }
+  .custom-header-margin-left{
+    margin-left: 0px !important;
+  }
+  .em-u-margin-bottom-double{
+    margin-bottom: 0px !important;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .custom-mid-section-area {
+    position: relative;
+    right: 6.6%;
+    width: 106.6%;
+  }
+  .custom-mid-page-slider-details-column {
     padding-right: 20% !important;
     width: 1204px !important;
     left: 140px !important;
     top: 442px !important;
     float: left;
     text-align: left !important;
-   }
-
-   .custom-mid-photo-area{
-    height: 160px;
-    width: 160px;
-   }
-
-   .no-text-transform{
-       text-transform: none !important;
-       padding-top: 7px;
-       
-   }
-
-   .custom-mid-background-area{
-       padding-top: 32px !important;
-       margin-top: 38px !important;
-    height: 335px;
-    background-color: rgba(122, 65, 131, 0.1) ;
-    margin-left: -53px;
-   }
-
-   .custom-margin{
-       margin-top: 26px !important;
-   }
-   .custom-nate-margin{
-    padding-top: 33px;
-   }
-
-   .custom-about-regular-h3{
-       
-  font-family: 'emprintRegular';
-  font-size: 24.4px !important;
-  line-height: 30px !important;
-   }
-
-   .custom-mid-page-header-margin{
-    margin-top: 3px;
-
-   }
-   .custom-enterprise-container{
-    margin-bottom: -61px;
-   }
-   .custom-medium-tile-area{
-    max-width: 1458px !important;
-    margin-left: 5.5% !important;
-    margin-top: 64px !important;
-   }
-
-   .custom-mid-page-card-column{
-       cursor: pointer;
-    top: 442px;
-    left: 140px;
-    height: 262px;
-    padding-top: 2% !important;
-    width: 222px !important;
-    background-color: rgba(245, 245, 245, 1);
-    border-bottom: 8px solid rgba(215, 56, 114, 0.3);
-   }
-   .active-card{
-    border-bottom: 8px solid rgba(215, 56, 114, 1);
-   }
-   .custom-tile-margin-center{
-       margin-left: 0% !important;
-       margin-bottom: 0% !important;
-   }
-   .mark-image{
-       width: 16px;
-   }
-   .custom-margin-right-20{
-       margin-right: 19px !important;
-   }
-
-   .dot {
-       margin: 4px !important;
-    height: 20px;
-    width: 20px;
-    background-color:rgba(122, 65, 131, 0.5);
-    border-radius: 50%;
-    display: inline-block;
-  }
-  .dot-current{
-    background-color:rgba(122, 65, 131, 1);
+    margin-left: 6px;
   }
 
-  .custom-page-margin-left{
-    margin-left: 54px !important;
-    margin-bottom: 99px !important;
+  .custom-header-margin-left {
+    margin-left: 0% !important;
   }
-
-  .custom-mid-background{
+  .custom-secondary-area {
+    margin-left: 0px !important;
+  }
+  .custom-medium-tile-area {
+    margin-left: 0% !important;
+    max-width: 1504px !important;
+    width: 102%;
+  }
+  .custom-main-area {
+    max-width: 1064px !important;
+  }
+  .custom-mid-page-card-column {
+    width: 222.6px !important;
+  }
+  .custom-exploratory {
+    margin-right: 277px !important;
+  }
+  .custom-testimonial-margin {
+    margin-left: 19.8% !important;
+    margin-top: 25px;
+  }
+  .data-science-items {
+    margin-left: 32px !important;
+    width: 47% !important;
+    margin-bottom: -1rem !important;
+  }
+  .mark-image {
     position: relative;
-    left: -3%;
-    width: 104%;
+    right: 30px;
+    top: 31px;
   }
-  .custom-quote-width{
-    width: 19px !important;
+  .custom-margin-right-20 {
+    margin-right: 12px !important;
+  }
+  .custom-mid-background {
+   
+    right: 28%;
 
   }
-  
+  .carousel-dot{
+      width: 63% !important;
+  }
+  .custom-paragraph-width{
+      width: 52%;
+  }
+  .custom-page-align{
+    width: 99%;
+  }
 
-.custom-input-border{
-    border :2px solid #7A4183 !important;
-}
-.custom-button-width{
-    width: 32px !important;
-}
-.em-c-search__body{
-    height: 44px !important;
-}
-.custom-send-inline{
-    display: inline-block !important;
-    margin-right: 2px !important;
 }
 
-@media screen and (min-width: 1930px){
-    .custom-header-margin-left{
-        margin-left: 20% !important;
-    }
-    .custom-main-area{
-        margin-left: 21.7% !important;
-    }
-    .custom-secondary-area{
-        margin-left: 11.2% !important;
-        width: 22.5625rem !important;
-        max-width: 289px !important;
-    }
-    .custom-medium-tile-area{
-        margin-left: 20.1% !important;
-        max-width: 1561px !important;
-    }
-    .custom-page-margin-left{
-        margin-left: 37px !important;
-    }
-    .custom-mid-background{
-        width: 103%;
-    }
-    .custom-testimonial-margin{
-        margin-left: 24.2% !important;
-        margin-top: 2%;
-    }
-    .carousel-dot{
-        margin-left: 6.4%;
-    }
-    .custom-mid-page-card-column{
-        width:277px !important;
-    }
-    .data-science-items{
-        width: 48% !important;
-    }
-}
-  @media screen and (max-width: 1921px){
+@media screen and (max-width: 1537px) and (min-width: 1512px) {
+
+  .data-science-items {
+    margin-left: 32px !important;
+    width: 45% !important;
+    margin-bottom: -1rem !important;
+  }
+  .custom-width{
+    margin-left: -2px;
+  }
+  .footer-divider {
+    margin-top: 45px;
+    width: 105%;
+    margin-left: -65px;
+  }
+  .custom-page-align {
+    margin-left: -35px !important;
+    width: 170% !important;
+    max-width: 892px !important;
+  }
   .custom-mid-section-area {
-    margin-left: 5.6% !important;
-    }
-    .custom-mid-page-slider-details-column{
-        padding-right: 20% !important;
-        width: 1204px !important;
-        left: 140px !important;
-        top: 442px !important;
-        float: left;
-        text-align: left !important;
-        margin-left: 6px;
-       }
-    
-    .custom-header-margin-left {
-        margin-left: 9.5% !important;
-    }
-    .custom-secondary-area{
-        margin-left: 111px !important;
-    }
-    .custom-medium-tile-area{
-        margin-left: 9.6% !important;
-        max-width: 1504px !important;
-        width: 82%;
-       
-    }
-    .custom-main-area{
-        max-width: 1064px !important;
-    }
-    .custom-mid-page-card-column{
-        width: 278px !important;
-    }
-    .custom-exploratory{
-        margin-right: 277px !important;
-    }
-    .custom-testimonial-margin{
-        margin-left: 14.7% !important;   
-         margin-top: 25px;
-    }
-    .data-science-items{
-        margin-left: 32px !important;
-        width: 47% !important;
-        margin-bottom: -1rem!important;
-    }
-    .mark-image{
-        position: relative;
-        right: 30px;
-        top: 31px;
-    }
-    .custom-margin-right-20{
-        margin-right: 12px !important;
-    }
-    .custom-mid-background{
-        width: 106%;
-    }
+    width: 100%;
   }
-  
-
-@media screen and (max-width: 1537px) and (min-width: 1512px){
-    .custom-page-margin-left {
-        margin-left: 0px !important;
-    }
-
-
-    .footer-divider{
-        margin-top: 45px;
-        width: 105%;
-        margin-left: -65px;
-    }
-    .custom-page-align{
-        margin-left: -35px !important;
-        width: 170% !important;
-        max-width: 892px !important;
-    }
-    .custom-mid-section-area{
-        width: 100%;
-    } 
-    .custom-secondary-area{
-        margin-left: 76px !important;
-    }
-    .custom-engage-services{
-        margin-left: -34px;
-        margin-top: -3px;
-    }
-    .custom-have{
-        margin-left: -32px;
-    }
-    .custom-mid-page-card-column {
-        cursor: pointer;
-        width: 278px !important;
-    }
-       .custom-exploratory{
-        margin-right: 65px !important;
-    }
-       .custom-mid-background{
-        left: -8%;
-        width: 113%;
-    }
-    .custom-header-margin-left {
-        margin-left: 38px !important;
-    }
-    .custom-medium-tile-area{
-        margin-left: 2.8% !important;
-        max-width: 1486px !important;
-    }
-    .custom-mid-section-area {
-        margin-left: 0% !important;
-
-}
-.custom-testimonial-margin{
+  .custom-secondary-area {
+    margin-right: -40px;
+  }
+  .custom-engage-services {
+    margin-left: -34px;
+    margin-top: -3px;
+  }
+  .custom-have {
+    margin-left: -32px;
+  }
+  .custom-mid-page-card-column {
+    cursor: pointer;
+    width: 222.4px !important;
+  }
+  .custom-exploratory {
+    margin-right: 65px !important;
+  }
+  .custom-mid-background {
+    right: 16.2%;
+  }
+ 
+  .custom-medium-tile-area {
+    max-width: 1486px !important;
+  }
+  .custom-mid-section-area {
+    margin-left: 3.1% !important;
+  }
+  .custom-testimonial-margin {
     margin-left: 12.7% !important;
-}
-.custom-paragraph-width{
-    max-width: 42% !important;
-}
+  }
+  .custom-paragraph-width {
+    max-width: 52% !important;
+  }
+  .carousel-dot{
+    width: 49% !important;
+  }
 }
 
-@media screen and (max-width: 1367px){
-    .custom-mid-page-card-column {
-        width: 214px !important;
-        
-}
-.custom-mid-section-area{
+@media screen and (max-width: 1367px) {
+  .custom-mid-page-card-column {
+    width: 214px !important;
+  }
+  .custom-mid-section-area {
     width: 89% !important;
-}
+  }
 }

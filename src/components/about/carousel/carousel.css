@@ -1,16 +1,16 @@
 .carousel-dot {
     position: absolute;
     top: 1px;
-    width: 54% !important;
+   
     margin: 0;
     list-style: none;
     text-align: center;
-    margin-left: 5px;
+    margin-left: 24px;
 }
 
 .carousel-dot li {
     display: inline;
-    margin-left: 2px;
+    margin-left: 3px;
     
 }
 

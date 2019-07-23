@@ -3,6 +3,9 @@
     width: 764px !important;
     margin-right: 21px !important;
   }
+  .upper-image{
+    height: 264px;
+  }
 
   .custom-recent-background-area {
     height: 32px;
@@ -13,7 +16,10 @@
   }
 
   .custom-link-margin {
-    margin-top: 84px !important;
+    margin-top: 45px !important;
+  }
+  .custom-img-below{
+    height: 200px;
   }
 
   .custom-full-archive {

@@ -2,7 +2,7 @@ import React from 'react';
 import Auxi from '../../hoc/Auxi';
 import Learn_Illustration from './../../assets/images/Learn_Illustration.png';
 import Community_Illustration from './../../assets/images/a.Community_Illustration.png';
-import Find_Solutions_Illustration from './../../assets/images/Find_Solutions_Illustration.png';
+import Illustration_Solutions from './../../assets/images/Illustration_Solutions.png';
 import group_3 from './../../assets/images/group-3.png';
 import group from './../../assets/images/Group-9.png';
 import './home.css';
@@ -13,7 +13,7 @@ const home = () => {
     return (
         <Auxi className="">
                 <div className="em-l-grid em-l-grid--1-to-3up ">
-                    <div className="em-l-grid__item">
+                    <div className="em-l-grid__item custom-margin-left">
                         <div className="fpo-block">
                             <div className="grid-1">
                             <div className="custom-H1 body-header">Data at ExxonMobil</div>
@@ -30,7 +30,7 @@ const home = () => {
                         </div>
                     </div>
 
-                    <div className="em-l-grid__item">
+                    <div className="em-l-grid__item custom-padding">
 
                         <div className="fpo-block fpo-block--dark solution-block-container">
                             <div className="grid-2">
@@ -58,10 +58,10 @@ const home = () => {
                                 </div>
                                 </div>
                                 <div >
-                                    <img className="find-solutions"src={Find_Solutions_Illustration} alt="learn"/>
+                                    <img className="find-solutions"src={Illustration_Solutions} alt="learn"/>
                             </div>
                             <div className="  coming-soon-solution"><img src={group_3} alt=""/></div>
-                            <div className="write-up-container solution">
+                            <div className="write-up-solutions">
                             <div className="custom-find-solutions learning-header underline-solution solution-header">Find Solutions</div>
                             <div className="custom-find-soltion-body learning-content learn-content">Lets's direct you to the tool, tutorial, or person that will get you what you need through our services portal.</div>
                             </div>

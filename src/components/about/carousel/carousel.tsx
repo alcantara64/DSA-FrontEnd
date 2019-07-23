@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import about_profile_pic from '../../../assets/images/about_profile_pic.png';
+import anna_brost from '../../../assets/images/anna_brost.jpg';
+import jeremy_janicki from '../../../assets/images/jeremy_janicki.jpg';
+import nate_mcintire from '../../../assets/images/nate_mcintire.jpg';
+import nick_smith from '../../../assets/images/nick_smith.jpg';
 import './carousel.css';
 
 class Carousel extends Component {
@@ -20,7 +24,7 @@ class Carousel extends Component {
 
         <div className="row custom-testimonial-margin">
           <div className="custom-mid-page-slider-photo-column">
-            <img src={about_profile_pic} alt="" className="custom-mid-photo-area" />
+            <img src={anna_brost} alt="" className="custom-mid-photo-area" />
 
           </div>
 
@@ -40,7 +44,7 @@ class Carousel extends Component {
 
         <div className="row custom-testimonial-margin">
           <div className="custom-mid-page-slider-photo-column">
-            <img src={about_profile_pic} alt="" className="custom-mid-photo-area" />
+            <img src={nate_mcintire} alt="" className="custom-mid-photo-area" />
 
           </div>
 
@@ -60,7 +64,7 @@ class Carousel extends Component {
 
         <div className="row custom-testimonial-margin">
           <div className="custom-mid-page-slider-photo-column">
-            <img src={about_profile_pic} alt="" className="custom-mid-photo-area" />
+            <img src={nick_smith} alt="" className="custom-mid-photo-area" />
 
           </div>
 
@@ -81,7 +85,7 @@ class Carousel extends Component {
 
         <div className="row custom-testimonial-margin">
           <div className="custom-mid-page-slider-photo-column">
-            <img src={about_profile_pic} alt="" className="custom-mid-photo-area" />
+            <img src={jeremy_janicki} alt="" className="custom-mid-photo-area" />
 
           </div>
 

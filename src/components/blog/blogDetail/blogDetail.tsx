@@ -80,7 +80,7 @@ console.log('error => ', error);
             return (
                 <Auxi>
                     <div className="blog-details-container  ">
-                    <Link to={'/blog'} className="back-button-margin" >
+                    <Link to={'/blog'} className="back-button-margins" >
                        <div className="inline"><img className="img-size" src={arrow_icon} alt=""/></div>
                        <div className="inline custom-link">BACK</div>
                    </Link>
@@ -102,7 +102,7 @@ console.log('error => ', error);
                     <div className="custom-paragraph custom-text-area">
                         {this.state.postDetail.topPost}
                       <div>
-                          <img src={this.state.postImageSrc} alt=""/>
+                          <img className="custom-details-img-padding" src={this.state.postImageSrc} alt=""/>
                       </div>
                       <div className="custom-text-bottom-area">
                       {this.state.postDetail.bottomPost}

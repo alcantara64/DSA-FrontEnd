@@ -14,7 +14,7 @@ class blogTile extends Component<BlogTileProps>{
 
 
            let showImage = (this.props.type && this.props.type !== 'popular') ? 
-           <img src={imageSRC} alt="" className="custom-rec-blog-detail-small-area em-u-width-100" /> : ''
+           <img src={imageSRC} alt="" className=" em-u-width-100 custom-img-below" /> : ''
            return (
             <Link className="custom-H3 em-u-margin-top-double" to={`/blog/${this.props.blogPost.id}`}>
                 {showImage}
