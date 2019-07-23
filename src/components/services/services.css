@@ -15,6 +15,40 @@ display: flex;
 margin-top: 2%;
 margin-bottom: 12%;
 }
+.custom-dropdown-style{
+    top: 2px;
+    position: relative;
+    left: 3px;
+    height: 10px;
+
+}
+.custom-goto{
+    display: flex;
+}
+.custom-share-image{
+    height: 14px;
+width: 14px;
+position: relative;
+top: -28px;
+right: -118px;
+}
+
+.custom-img-height{
+    height: 45px
+}
+.custom-dropdown-style-right{
+    top: 2px;
+    position: relative;
+    left: 3px;
+    height: 10px;
+    margin-right: 5px;
+}
+.custom-flex-number{
+    display: flex;
+}
+.custom-flex-basis{
+    flex-basis: 77px
+}
 
 .custom-rec-buttom{
     text-align: left !important;
@@ -163,9 +197,32 @@ margin-bottom: 4.2%;
     margin-bottom: 5px;
 }
 .custom-datadash{
-    width: 1440px;
+    width: 1136px;
     margin-bottom: 60px;
-
+    margin-left: 5.2%;
+    margin-top: -21px;
+}
+.custom-number2{
+    height: 37px;
+width: 37px;
+}
+.custom-number2-flex{
+display: flex;
+}
+.custom-number2-flexbasis{
+    flex-basis: 5.3%;
+    margin-left: 77px !important;
+}
+.custom-ali-margin{
+    margin-left: 10.8%;
+    margin-top: -38px;
+}
+.custom-div-margin{
+    margin-left: 5.3%;
+}
+.custom-image2-size{
+    height: 59px;
+    width: 59px;
 }
 .custom-ali{
     font-family: 'emprintSemibold' !important;

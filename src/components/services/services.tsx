@@ -8,6 +8,11 @@ import { Link } from 'react-router-dom';
 import { RecommendationDataService } from '../../core/services/data/RecommendationService/recommendation.data.service';
 import Recommendation from '../../core/Models/Recommendation';
 import { AxiosResponse } from 'axios';
+import dropdown from '../../assets/images/dropdown.png';
+import one from '../../assets/images/one.png';
+import number_2 from '../../assets/images/number_2.png';
+import number2_profile from '../../assets/images/number2_profile.png';
+import share from '../../assets/images/share.png';
 import ServiceOptions from './serviceoptions/serviceOptions';
 
 class services extends Component<{}, IServiceState> {
@@ -81,6 +86,47 @@ class services extends Component<{}, IServiceState> {
 
                         </div>
 
+{/* <div className="custom-options">
+                <div className="custom-H1">Here are your options.</div>
+                <div className="flex-container-here">
+                <div className="custom-paragraph custom-margin-here">I want to <span className="custom-link">find data to use</span> <img className="custom-dropdown-style" src={dropdown} alt=""/> , specially <span  className="custom-link">find datasets and dashboards. <img className="custom-dropdown-style-right" src={dropdown} alt=""/></span>  I'm in <span  className="custom-link">Upstream <img className="custom-dropdown-style-right" src={dropdown} alt=""/></span> .</div>
+                </div>
+                <div className="custom-flex-number">
+                    <div className="custom-flex-basis">
+                        <img className="custom-img-height" src={one} alt=""/>
+                    </div>
+                    <div className="">
+                     <div className= "custom-margin-goto custom-link">Goto/DataDash</div>
+                     <img className="custom-share-image" src={share} alt=""/>
+                    </div>
+
+                
+                </div>
+                <div className="custom-datadash custom-paragraph">DataDash is a corporate data catalog tool that allows you to search and find datasets and dashboards across the corporation. 
+                     You can explore recently added datasets, customize your business line you search within, gain access to How To's and success stories, and more.
+                </div>
+                <div className="custom-number2-flex">   
+                    <div className="custom-number2-flexbasis">
+                        <img className="custom-number2" src={number_2} alt=""/></div>      
+                           <div className= "custom-paragraph">
+                    Reach out to these contacts for guidance:
+                </div>
+                </div>
+                <div className="custom-div-margin">
+                <div className="custom-number2-flex">
+                    <div className="custom-number2-flexbasis"><img className=" custom-image2-size" src={number2_profile} alt=""/></div>
+                    <div className= "custom-margin-ali custom-ali">Ali Wilkin</div>
+
+                </div>
+
+                <div className="custom-ali-margin">
+                <div className= "custom-margin-gsc custom-paragraph">GSC EMIT DATA SC&AN STGY&SVC MGIT</div>
+                <div className= "custom-margin-houston custom-paragraph">Houston</div>
+                <div className= "custom-margin-connect custom-paragraph">Ali can connect you with the people you need to talk to.</div>
+                <div className="custom-link custom-margin-email">Email, IM, or Skype Call</div>
+                </div>
+                </div>
+            </div> */}
 
                         <div className="footer-fixed">
                             <Link to={'/services/form'} className="custom-link custom-margin-DSA">
