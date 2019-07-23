@@ -79,7 +79,7 @@ class services extends Component<{}, IServiceState> {
                             })}
                             {this.state.showRecommendatonButton ? 
                             <div className="custom-rec-buttom">
-                                <button className="em-c-btn em-c-btn--large custom-btn "><Link to="/blog">
+                                <button className="em-c-btn em-c-btn--large custom-btn "><Link to="/services">
                                     <span className="em-c-btn__text custom-paragraph">Get Recommendations</span></Link>
                                 </button>
                             </div> : ''}
