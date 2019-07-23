@@ -2,7 +2,7 @@
     width: 1440px !important;
     margin-left: 8.5%;
     margin-top: 9%;
-    height: 900px;
+    height: 700px;
 }
 
 .custom-heading{
@@ -14,6 +14,11 @@
 display: flex;
 margin-top: 2%;
 margin-bottom: 12%;
+}
+
+.custom-rec-buttom{
+    text-align: left !important;
+    margin-top: 200px !important;
 }
 
 .large-flex {

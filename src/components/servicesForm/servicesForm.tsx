@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import arrow_icon from '../../assets/images/arrow_icon.png';
-import checkBox from '../../assets/images/checkBox.png';
 import './servicesForm.css';
 
 
