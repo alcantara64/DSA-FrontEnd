@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Auxi from '../../hoc/Auxi';
-import send from './../../assets/images/send-button.png';
+import send from './../../assets/images/send-button1x.png';
 import { resolve } from "inversify-react";
 import { TYPES } from '../../core/services/ioc.types';
 import './services.css';

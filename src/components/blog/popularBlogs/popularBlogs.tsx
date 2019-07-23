@@ -16,7 +16,7 @@ export default class PopularBlogs extends Component<BlogListProps> {
                   return 0;
 
             })
-            blogList = this.props.blogList.map((blog, index) => {
+            blogList = this.props.blogList.slice(0,5).map((blog, index) => {
                 return (
                     <div key={blog.id} className="em-l-linelength-container custom-blog-area-small">
                     <div className=" em-l em-l--two-column ">

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import QuestionOption from "../../../core/Models/QuestionOption";
 import Auxi from '../../../hoc/Auxi';
+import information from '../../../assets/images/information.png';
+import informationWhite from '../../../assets/images/information_white.png';
 
 export default class ServiceOptions extends Component<IServiceOptionsProps, IServiceOptionsState>{
 
@@ -35,15 +37,16 @@ export default class ServiceOptions extends Component<IServiceOptionsProps, ISer
     
     render() {
         return (
-            <Auxi>
-                <div className="custom-want-margin custom-H2">
+            <Auxi >
+                <div className="custom-want-margin custom-H2 ">
                     {this.props.label}
                 </div>
-                <div className="large-flex">
-                    {this.state.showLabel ? <div onClick={() => this.showSelectedOptions(this.state.optionValue.id)} >{this.state.optionValue.description}</div> : this.props.options.map((option, index) => {
+                <div className="large-flex custom-btn-container">
+                    {this.state.showLabel ? <div className="custom--btn-options" onClick={() => this.showSelectedOptions(this.state.optionValue.id)} >{this.state.optionValue.description}<img className="information-white-icon" src={informationWhite} alt=""/></div> : this.props.options.map((option, index) => {
                         return (
                             <div key={option.id} className="custom-btn-align">
-                                <button onClick={() => this.showSelectedOptions(option.id)} >{option.description}</button>
+                                <button className="custom-service-btn" onClick={() => this.showSelectedOptions(option.id)} >{option.description} <img className="information-icon" src={information} alt=""/></button>
+                               
                             </div>
                         );
                     })}

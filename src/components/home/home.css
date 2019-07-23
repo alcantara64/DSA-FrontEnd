@@ -407,7 +407,7 @@
 @media screen and (max-width: 1920px) {
   .coming-soon-solution{
     margin-left: 47px !important;
-    margin-top: -172px
+    margin-top: -166px !important;
   }
   .custom-margin-left{
     margin-left: -3.5% !important;
