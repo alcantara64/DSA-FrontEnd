@@ -97,6 +97,7 @@ right: -118px;
     text-align: left;
     margin-bottom: 1.5%;
     position: relative;
+    bottom: 24px
 }
 .footer-fixed {
     position: fixed;
@@ -197,6 +198,9 @@ right: -118px;
 @media screen and (max-width: 1537px){
     .custom-footer-margin{
         margin-left: 11.8%;
+    }
+    .custom-margin-DSA {
+        right: 25.5%;
     }
    
 }
