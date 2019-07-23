@@ -29,7 +29,7 @@
     margin-bottom: 42px;
 }
 .custom-filter-technology{
-    flex-basis: 21%;
+    flex-basis: 31%;
     display: flex;
     align-items: center;
 
@@ -49,6 +49,23 @@
     text-align: left;
     margin-bottom: 20px;
 
+}
+.custom-ftp-margin{
+    margin-bottom: 1px;
+}
+.custom-dropdown-size{
+    margin-top: 5px;
+    margin-left: 8px;
+
+}
+.custom-link-filter{
+    font-family: 'emprintSemibold' !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    color: #D73872 !important;
+}
+.custom-image-margin-bottom{
+    margin-top: 9px;
 }
 .custom-flex-width img{
 height: 200px;
