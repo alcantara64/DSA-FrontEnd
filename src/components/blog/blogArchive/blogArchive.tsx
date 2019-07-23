@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import arrow_icon from '../../../assets/images/arrow_icon.png';
 import blog_image from '../../../assets/images/blog_image.png';
 import pagination_arrow from '../../../assets/images/pagination_arrow.png';
