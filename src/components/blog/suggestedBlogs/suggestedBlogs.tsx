@@ -9,7 +9,7 @@ export default class SuggestedBlogs extends Component<BlogListProps>{
         let list = null;
 
         if(this.props.blogList.length > 0){
-            list = this.props.blogList.map(blog => {
+            list = this.props.blogList.slice(0,3).map(blog => {
                 return (
                     <div key={blog.id} className="em-l-grid__item">
                     <BlogTile blogPost={blog} type={'editorPick'}/>
