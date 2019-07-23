@@ -42,7 +42,7 @@ const blogArchive = () => {
         <p>Jun 12, 2019</p>
         </div>
 
-       <img src={slider} alt=""/>
+       <img className="slider-img" src={slider} alt=""/>
      </div>
 
 </div>
