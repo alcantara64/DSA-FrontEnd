@@ -70,11 +70,11 @@ async login() {
     await this.getUserProfile();
   }
   catch(err) {
-    var errParts = err.split('|');
+    var errParts = err;
     this.setState({
       isAuthenticated: false,
       user: {},
-      error: { message: errParts[1], debug: errParts[0] }
+      error: { message: errParts, debug: errParts }
     });
   }
 }
