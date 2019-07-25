@@ -28,11 +28,11 @@ const userInfo = (props:any) => {
             
             <button className="dashboard-btn">Data at ExxonMobil</button>   
            
-            <button className="dashboard-btn">Python</button>   
+            <button className="dashboard-btn">Artificial Intelligence</button>   
             
             <button className="dashboard-btn">Python</button>   
            
-            <button className="dashboard-btn">Python</button>  
+            <button className="dashboard-btn">Machine Learning</button>  
             </div> 
 <div className="custom-add-tag">
     <img src={add_tag} alt=""/>
@@ -42,6 +42,7 @@ const userInfo = (props:any) => {
 
 
         </div>
+        <div className="footer-divider"></div>
                 <Footer />
                 </Auxi>
 

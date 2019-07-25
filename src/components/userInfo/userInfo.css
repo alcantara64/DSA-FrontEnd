@@ -3,7 +3,7 @@
     padding-left: 140px;
     padding-right: 140px;
     text-align: left;
-    margin-left: 40px;
+    margin: auto;
 }
 .custom-user-image{
     height: 119px;
@@ -20,6 +20,7 @@ width: 119px;
 }
 .custom-add-tag{
     display: flex;
+    margin-top: 13px;
 }
 .custom-tag-margin{
     margin-left: 6px;
@@ -45,8 +46,17 @@ padding-bottom: 4px;
 }
 .dashboard-btn-container{
     display: inline-block;
-    width: 50%;
+    width: 60%;
+    margin-top: 9px;
+    margin-left: -4px;
 }
+.footer-divider {
+    height: 4px;
+    width: 103%;
+    margin-left: -52px;
+    margin-top: 126px;
+    background-color: #eee;
+  }
 
 
 
