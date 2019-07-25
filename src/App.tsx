@@ -97,12 +97,14 @@ async getUserProfile() {
 
     if (accessToken) {
       // Get the user's profile from Graph
-      var user = await getUserDetails(accessToken);
+      
+      var user =  this.userAgentApplication.getAccount(); //await getUserDetails(accessToken);
       this.setState({
         isAuthenticated: true,
         user: {},
-        email: user.mail || user.userPrincipalName,
-        displayName: user.displayName,
+        displayName:user.name,
+        // email: user.mail || user.userPrincipalName,
+        // displayName: user.displayName,
         error: {}
       });
     }
