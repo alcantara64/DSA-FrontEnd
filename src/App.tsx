@@ -6,6 +6,7 @@ import {Config} from './Config';
 import 'reflect-metadata';
 import { Provider } from "inversify-react";
 import { container } from "./core/services/ioc";
+import { getUserDetails } from './GraphService';
 
 class App extends Component<{}, IAppState>{
   configuration: Configuration = {} as Configuration;
@@ -22,12 +23,15 @@ constructor(props: any){
         storeAuthStateInCookie: true
     }
     });
-    if(Config.isProd){
+   // if(Config.isProd){
     var user = this.userAgentApplication.getAccount();
-  
+    let firstName = user.name.split(" ")[0];
+    console.log(firstName, ' first name')
     this.state = {
       isAuthenticated: (user !== null),
+      displayName : firstName,
       user: {},
+      email : '',
       error: {}
     };
   
@@ -36,13 +40,15 @@ constructor(props: any){
     }else{
       this.login();
     }
-  }else{
-    this.state = {
-      isAuthenticated: true,
-      user: {},
-      error: {}
-    };
-  }
+  // }else{
+  //   this.state = {
+  //     isAuthenticated: true,
+  //     user: {},
+  //     error: {},
+  //     email: null,
+  //     displayName:null,
+  //   };
+  // }
   
 }
 
@@ -77,35 +83,51 @@ async getUserProfile() {
     // will just return the cached token. Otherwise, it will
     // make a request to the Azure OAuth endpoint to get a token
 
-    var accessToken = await this.userAgentApplication.acquireTokenSilent({
-        scopes: Config.scopes
-      });
+    let accessToken = await this.userAgentApplication.acquireTokenSilent({
+      scopes: Config.scopes
+    });
 
     if (accessToken) {
-      // TEMPORARY: Display the token in the error flash
+      // Get the user's profile from Graph
+      var user = await getUserDetails(accessToken);
       this.setState({
         isAuthenticated: true,
-        error: { message: "Access token:", debug: accessToken.accessToken }
+        user: {},
+        email: user.mail || user.userPrincipalName,
+        displayName: user.displayName,
+        error: {}
       });
-      console.log(this.state);
     }
   }
   catch(err) {
-    console.log(err);
+    var error = {};
+    if (typeof(err) === 'string') {
+      var errParts = err.split('|');
+      error = errParts.length > 1 ?
+        { message: errParts[1], debug: errParts[0] } :
+        { message: err };
+    } else {
+      error = {
+        message: err.message,
+        debug: JSON.stringify(err)
+      };
+    }
+
     this.setState({
       isAuthenticated: false,
       user: {},
-      error: err
+      error: error
     });
   }
 }
 
   render(){
     if(this.state.isAuthenticated){
+      console.log(this.state,"State in App")
     return (
       <div className="App page-background">
             <Provider container={container}>
-          <Dashboard  ></Dashboard>
+          <Dashboard {...this.state} ></Dashboard>
           </Provider>
       </div>
     )
@@ -122,7 +144,9 @@ async getUserProfile() {
 interface IAppState {
   isAuthenticated: boolean,
   user: {},
-  error: {}
+  error: {},
+  displayName : string,
+  email : string,
 }
 
 export default App;

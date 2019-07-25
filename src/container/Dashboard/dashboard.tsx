@@ -10,13 +10,21 @@ import { Switch, Route } from 'react-router';
 import Auxi from '../../hoc/Auxi';
 import servicesForm from '../../components/servicesForm/servicesForm';
 
-class dashboard extends Component {
+class dashboard extends Component<IdashboardProps> {
 
+componentDidUpdate(prevProps: any, PrevState:any){
+if(prevProps.displayName != this.props.displayName){
+this.setState({
+    ...this.state,
 
+    
+})
+}
+}
     render() {
         return (
             <Auxi>
-                <Layout>
+                <Layout {...this.props} >
                     <Switch>
                         <Route exact path='/' component={Home} />
                         <Route path='/about' component={About} />
@@ -33,3 +41,10 @@ class dashboard extends Component {
 }
 
 export default dashboard
+
+interface IdashboardProps{
+    isAuthenticated : boolean;
+    user? : Object;
+    displayName: string;
+    email: string;
+}

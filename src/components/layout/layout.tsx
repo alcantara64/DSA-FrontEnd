@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Header from '../app-header/header';
 import './layout.css';
 
-const layout = (props: any) => (
+class layout extends Component<Ilayout>{
+
+
+
+render() {
+
+return (
 <div >
-    <Header></Header>
+    <Header displayName ={this.props.displayName}  {...this.props}></Header>
     <main className=" page-background">
-        {props.children}
+        {this.props.children}
     </main>
 </div>
 )
-
+}
+}
 export default layout;
+
+interface Ilayout {
+    displayName : string;
+
+}
