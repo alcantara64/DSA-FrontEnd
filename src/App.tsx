@@ -25,7 +25,9 @@ constructor(props: any){
     });
    // if(Config.isProd){
     var user = this.userAgentApplication.getAccount();
-    let firstName = user.name.split(" ")[0];
+    let firstName = ''
+    if(user)firstName = user.name.split(" ")[0];
+   
     console.log(firstName, ' first name')
     this.state = {
       isAuthenticated: (user !== null),
