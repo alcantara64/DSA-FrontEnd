@@ -85,7 +85,8 @@ class header extends Component<IheaderProps>  {
 
                     </li>
                     {Config.isProd ? <li className="custom-paragraph em-c-primary-nav__item ">
-                      <Link to="/" className="custom-paragraph em-u-clickable em-c-primary-nav__link  ">
+                      <Link to="/userInfo" className="custom-paragraph em-u-clickable em-c-primary-nav__link  ">
+                       
                         <img src="https://emunity.blob.core.windows.net/unity/fpo_avatar.png" alt="Alt Text" className="custom-photo-icon em-c-avatar em-c-avatar" /> Hi, {this.props.displayName.split(" ")[0]}
         
               </Link>
