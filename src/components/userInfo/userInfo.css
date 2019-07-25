@@ -29,7 +29,24 @@ width: 119px;
     margin-bottom: 6px;
 }
 
+button {
+height: 28px;
+border-radius: 15px;
+background-color: #D73872;
+color: white;
+border-style: none;
+margin: 5px;
+padding-left: 15px;
+padding-right: 15px;
+text-align: center;
+padding-bottom: 4px;
 
+
+}
+.dashboard-btn-container{
+    display: inline-block;
+    width: 50%;
+}
 
 
 

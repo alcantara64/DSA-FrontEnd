@@ -9,30 +9,30 @@ import Footer from '../app-footer/footer';
 import './userInfo.css';
 
 
-const userInfo = () => {
+const userInfo = (props:any) => {
     return (
         <Auxi className="">
         <div className="custom-user-container">
             <div><img className="custom-user-image" src={user_profile} alt="" /> </div>
-            <div className="custom-welcome-margin custom-H2">Welcome, Jennifer</div>
+            <div className="custom-welcome-margin custom-H2">Welcome, {props.displayName}</div>
             <div className="custom-interest-margin custom-text-size">Interests</div>
             <div className="custom-paragraph">
             We’ll use your choices to recommend different courses and resources to you.
             </div>  
-            <div> 
-            <button>Python</button>    </div>  
-            <div>
-            <button>Machine Learning</button>   </div>
-            <div>
-            <button>Artificial Intelligence</button>   </div>
-            <div>
-            <button>Data at ExxonMobil</button>   </div>
-            <div>
-            <button>Python</button>   </div>
-            <div>
-            <button>Python</button>   </div>
-            <div>
-            <button>Python</button>  
+            <div className="dashboard-btn-container  "> 
+            <button className="dashboard-btn">Python</button>    
+            
+            <button className="dashboard-btn ">Machine Learning</button>   
+            
+            <button className="dashboard-btn">Artificial Intelligence</button>  
+            
+            <button className="dashboard-btn">Data at ExxonMobil</button>   
+           
+            <button className="dashboard-btn">Python</button>   
+            
+            <button className="dashboard-btn">Python</button>   
+           
+            <button className="dashboard-btn">Python</button>  
             </div> 
 <div className="custom-add-tag">
     <img src={add_tag} alt=""/>
