@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Dashboard from './container/Dashboard/dashboard';
 import { UserAgentApplication, Configuration } from 'msal';
-import {Config} from './Config';
+import { Config } from './Config';
 import 'reflect-metadata';
 import { Provider } from "inversify-react";
 import { container } from "./core/services/ioc";
@@ -10,8 +10,8 @@ import { container } from "./core/services/ioc";
 class App extends Component<{}, IAppState>{
   configuration: Configuration = {} as Configuration;
   userAgentApplication: UserAgentApplication
-constructor(props: any){
-  super(props);
+  constructor(props: any) {
+    super(props);
 
     this.userAgentApplication = new UserAgentApplication({
       auth: {
@@ -20,101 +20,101 @@ constructor(props: any){
       cache: {
         cacheLocation: "localStorage",
         storeAuthStateInCookie: true
-    }
+      }
     });
-    if(Config.isProd){
-    var user = this.userAgentApplication.getAccount();
-  
-    this.state = {
-      isAuthenticated: (user !== null),
-      user: {},
-      error: {}
-    };
-  
-    if (user) {
-      this.getUserProfile();
-    }else{
-      this.login();
-    }
-  }else{
-    this.state = {
-      isAuthenticated: true,
-      user: {},
-      error: {}
-    };
-  }
-  
-}
+    if (Config.isProd) {
+      var user = this.userAgentApplication.getAccount();
 
-async login() {
-  try {
-    await this.userAgentApplication.loginPopup(
+      this.state = {
+        isAuthenticated: (user !== null),
+        user: {},
+        error: {}
+      };
+
+      if (user) {
+        this.getUserProfile();
+      } else {
+        this.login();
+      }
+    } else {
+      this.state = {
+        isAuthenticated: true,
+        user: {},
+        error: {}
+      };
+    }
+
+  }
+
+  async login() {
+    try {
+      await this.userAgentApplication.loginPopup(
         {
           scopes: Config.scopes,
           prompt: "select_account"
+        });
+      await this.getUserProfile();
+    }
+    catch (err) {
+      var errParts = err.split('|');
+      this.setState({
+        isAuthenticated: false,
+        user: {},
+        error: { message: errParts[1], debug: errParts[0] }
       });
-    await this.getUserProfile();
+    }
   }
-  catch(err) {
-    var errParts = err.split('|');
-    this.setState({
-      isAuthenticated: false,
-      user: {},
-      error: { message: errParts[1], debug: errParts[0] }
-    });
+
+  logout() {
+    this.userAgentApplication.logout();
   }
-}
-
-logout() {
-  this.userAgentApplication.logout();
-}
 
 
-async getUserProfile() {
-  try {
-    // Get the access token silently
-    // If the cache contains a non-expired token, this function
-    // will just return the cached token. Otherwise, it will
-    // make a request to the Azure OAuth endpoint to get a token
+  async getUserProfile() {
+    try {
+      // Get the access token silently
+      // If the cache contains a non-expired token, this function
+      // will just return the cached token. Otherwise, it will
+      // make a request to the Azure OAuth endpoint to get a token
 
-    var accessToken = await this.userAgentApplication.acquireTokenSilent({
+      var accessToken = await this.userAgentApplication.acquireTokenSilent({
         scopes: Config.scopes
       });
 
-    if (accessToken) {
-      // TEMPORARY: Display the token in the error flash
+      if (accessToken) {
+        // TEMPORARY: Display the token in the error flash
+        this.setState({
+          isAuthenticated: true,
+          error: { message: "Access token:", debug: accessToken.accessToken }
+        });
+        console.log(this.state);
+      }
+    }
+    catch (err) {
+      console.log(err);
       this.setState({
-        isAuthenticated: true,
-        error: { message: "Access token:", debug: accessToken.accessToken }
+        isAuthenticated: false,
+        user: {},
+        error: err
       });
-      console.log(this.state);
     }
   }
-  catch(err) {
-    console.log(err);
-    this.setState({
-      isAuthenticated: false,
-      user: {},
-      error: err
-    });
-  }
-}
 
-  render(){
-    if(this.state.isAuthenticated){
-    return (
-      <div className="App page-background">
-            <Provider container={container}>
-          <Dashboard  ></Dashboard>
-          </Provider>
-      </div>
-    )
-    }else{
+  render() {
+    if (this.state.isAuthenticated) {
       return (
         <div className="App page-background">
-            <p> Login </p>
+          <Provider container={container}>
+            <Dashboard  ></Dashboard>
+          </Provider>
         </div>
-      ) 
+      )
+    } else {
+      return (
+        <div className="App page-background">
+          <p> Login </p>
+        </div>
+      )
     }
   }
 }

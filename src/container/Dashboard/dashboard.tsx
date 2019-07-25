@@ -9,6 +9,7 @@ import Blog from '../../components/blog/blog';
 import { Switch, Route } from 'react-router';
 import Auxi from '../../hoc/Auxi';
 import servicesForm from '../../components/servicesForm/servicesForm';
+import userInfo from '../../components/userInfo/userInfo';
 
 class dashboard extends Component {
 
@@ -24,7 +25,9 @@ class dashboard extends Component {
                         <Route exact path='/blog/:id' component={BlogDetail} />    
                         <Route exact path='/services' component={Services} />   
                         <Route exact path='/archives' component={BlogArchive} />     
-                        <Route exact path='/services/form' component={servicesForm} />             
+                        <Route exact path='/services/form' component={servicesForm} />  
+                        <Route exact path='/userInfo' component={userInfo} />             
+           
                     </Switch>
                 </Layout>
             </Auxi>

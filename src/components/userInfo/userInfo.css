@@ -1,0 +1,47 @@
+.custom-user-container{
+    width: 1440px;
+    padding-left: 140px;
+    padding-right: 140px;
+    text-align: left;
+    margin-left: 40px;
+}
+.custom-user-image{
+    height: 119px;
+width: 119px;
+}
+.custom-welcome-margin{
+    margin-top: 15px;
+}
+.custom-text-size{
+    font-family: 'emprintSemibold';
+  font-size: 22px !important;
+  line-height: 22px !important;
+  color: #0A3039 !important;
+}
+.custom-add-tag{
+    display: flex;
+}
+.custom-tag-margin{
+    margin-left: 6px;
+}
+.custom-interest-margin{
+    margin-top: 27px;
+    margin-bottom: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
