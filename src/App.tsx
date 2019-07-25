@@ -25,21 +25,27 @@ constructor(props: any){
     });
    // if(Config.isProd){
     var user = this.userAgentApplication.getAccount();
-    let firstName = ''
-    if(user)firstName = user.name.split(" ")[0];
-   
-    console.log(firstName, ' first name')
+  
+    if(user){
+  
+
     this.state = {
       isAuthenticated: (user !== null),
-      displayName : firstName,
+      displayName : user.name,
       user: {},
       email : '',
       error: {}
     };
   
-    if (user) {
-      this.getUserProfile();
+   
     }else{
+      this.state = {
+      isAuthenticated: false,
+      displayName : '',
+      user: {},
+      email : '',
+      error: {}
+    };
       this.login();
     }
   // }else{
