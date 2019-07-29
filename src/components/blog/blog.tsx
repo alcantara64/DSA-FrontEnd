@@ -8,6 +8,8 @@ import PopularBlogs from './popularBlogs/popularBlogs';
 import { resolve } from "inversify-react";
 import { BlogDataService } from '../../core/services/data/BlogService/blog.data.service';
 import Post from '../../core/Models/Post';
+import icon_spinner from '../../assets/images/icon_spinner.svg';
+
 import { TYPES } from '../../core/services/ioc.types';
 
 class blog extends Component {
@@ -18,7 +20,7 @@ class blog extends Component {
     }
 
     componentDidMount() {
-            this.blogService.getAllBlogPost().then(
+        this.blogService.getAllBlogPost().then(
             (res: AxiosResponse<Post[]>) => {
                 this.setState({
                     ...this.state,
@@ -42,10 +44,16 @@ class blog extends Component {
 
 
                     <div className="em-l em-l--two-column custom-recent-blog-area">
-                    <RecentBlogs blogList={this.state.blogList} type={'recent'}/>
-                    <PopularBlogs blogList={this.state.blogList} type={'popular'} />
+                        <RecentBlogs blogList={this.state.blogList} type={'recent'} />
+                        <PopularBlogs blogList={this.state.blogList} type={'popular'} />
                     </div>
-                     <SuggestedBlogs blogList={this.state.blogList} type={`Editor's Picks`}/> 
+                    <SuggestedBlogs blogList={this.state.blogList} type={`Editor's Picks`} />
+                    {
+                        !this.state.blogList ? 
+                    <div className="em-c-loader ">
+                        <img src={icon_spinner} alt="Loading" />
+                    </div> : ''
+                    }
                 </div>
             </Auxi>
         )

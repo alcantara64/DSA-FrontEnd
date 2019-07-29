@@ -30,7 +30,7 @@ width: 119px;
     margin-bottom: 6px;
 }
 
-button {
+.user-button {
 height: 28px;
 border-radius: 15px;
 background-color: #D73872;

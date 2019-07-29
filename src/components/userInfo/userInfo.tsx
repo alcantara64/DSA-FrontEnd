@@ -19,20 +19,20 @@ const userInfo = (props:any) => {
             <div className="custom-paragraph">
             We’ll use your choices to recommend different courses and resources to you.
             </div>  
-            <div className="dashboard-btn-container  "> 
-            <button className="dashboard-btn">Python</button>    
+            <div className=" dashboard-btn-container  "> 
+            <button className="user-button dashboard-btn">Python</button>    
             
-            <button className="dashboard-btn ">Machine Learning</button>   
+            <button className="user-button dashboard-btn ">Machine Learning</button>   
             
-            <button className="dashboard-btn">Artificial Intelligence</button>  
+            <button className="user-button dashboard-btn">Artificial Intelligence</button>  
             
-            <button className="dashboard-btn">Data at ExxonMobil</button>   
+            <button className="user-button dashboard-btn">Data at ExxonMobil</button>   
            
-            <button className="dashboard-btn">Artificial Intelligence</button>   
+            <button className="user-button dashboard-btn">Artificial Intelligence</button>   
             
-            <button className="dashboard-btn">Python</button>   
+            <button className="user-button dashboard-btn">Python</button>   
            
-            <button className="dashboard-btn">Machine Learning</button>  
+            <button className="user-button dashboard-btn">Machine Learning</button>  
             </div> 
 <div className="custom-add-tag">
     <img src={add_tag} alt=""/>

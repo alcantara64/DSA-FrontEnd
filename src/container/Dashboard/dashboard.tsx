@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Layout from '../../components/layout/layout';
 import Home from '../../components/home/home';
 import About from '../../components/about/about';
+import recommendation from '../../components/recommendation/recommendation';
 import BlogDetail from '../../components/blog/blogDetail/blogDetail';
 import BlogArchive from '../../components/blog/blogArchive/blogArchive';
 import Services from '../../components/services/services';
@@ -35,7 +36,8 @@ this.setState({
                         <Route exact path='/archives' component={BlogArchive} />     
                         <Route exact path='/services/form' component={servicesForm} />  
                         <Route exact path='/userInfo'   render={(props) => <UserInfo {...props} isAuthed={true} displayName={this.props.displayName} />}/>             
-           
+                        <Route exact path='/recommendation' component={recommendation} />  
+
                     </Switch>
                 </Layout>
             </Auxi>

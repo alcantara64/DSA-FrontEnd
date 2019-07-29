@@ -1,0 +1,36 @@
+.recommendation-container{
+    width: 1440px !important;
+    padding-top: 93px;
+    padding-right: 140px;
+    padding-left: 140px;
+    margin: auto;
+    height: auto;
+    text-align: left;
+}
+.custom-tile-area{
+    background-color: rgba(245, 245, 245, 1);
+    margin-right: 17px;
+}
+.custom-tile-inner{
+    margin: 16px
+}
+.custom-header{
+    margin-top: 8px;
+    margin-bottom: 7px;
+}
+.custom-timer{
+    margin-top: 10px;
+}
+.em-l-grid--3up{
+    margin-bottom: 30px;
+}
+.custom-dispaly{
+    display: flex;
+    justify-content: space-between;
+}
+.custom-like-bottom{
+    position: relative;
+    bottom: 3px;
+    height: 16px;
+    width: 18px;
+}
