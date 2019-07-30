@@ -15,7 +15,7 @@ import UserInfo from '../../components/userInfo/userInfo';
 class dashboard extends Component<IdashboardProps> {
 
 componentDidUpdate(prevProps: any, PrevState:any){
-if(prevProps.displayName != this.props.displayName){
+if(prevProps.displayName !== this.props.displayName){
 this.setState({
     ...this.state,
 
