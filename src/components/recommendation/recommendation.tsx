@@ -78,8 +78,8 @@ const recommendation = () => {
         You have your data, but what are you trying to say with it? Develop the skills to design compelling visualizations and iterate through a dashboard. See some fun examples and practical tips.
         </div>
         <div><img className="custom-timer" src={timer} alt=""/></div>
-        <div>
-        <div><img src={rating} alt=""/></div>
+        <div className="custom-rating">
+        <div><img  className="custom-rating-padding" src={rating} alt=""/></div>
         <div className="custom-paragraph">(0)</div>
         </div>
 
@@ -100,8 +100,11 @@ const recommendation = () => {
         <div className="custom-H3 custom-header">Introduction to Tableau</div>
         <div className="custom-paragraph">
         Ready to start leveraging Tableau at ExxonMobil? This material provides a quick overview and links to additional resources to get you started.        </div>
-    <div><img className="custom-timer" src={timer} alt=""/></div>
-    <div><img src={rating} alt=""/></div>
+    <div><img className="custom-rating custom-timer" src={timer} alt=""/></div>
+    <div className="custom-rating">
+    <div className="custom-rating-padding"><img src={rating} alt=""/></div>
+    <div className="custom-paragraph">(0)</div>
+    </div>
     </div>
     </div>
   </div>
@@ -122,8 +125,10 @@ const recommendation = () => {
         
         Data and analytics courses at your fingertips - so you can learn on your own time and at your own pace.    </div>
         <div className="custom-timer"><img src={timer} alt=""/></div>
-        <div><img src={rating} alt=""/></div>
-
+        <div className="custom-rating">
+        <div><img  className="custom-rating-padding" src={rating} alt=""/></div>
+        <div className="custom-paragraph">(0)</div>
+        </div>
 
     </div>
     </div>

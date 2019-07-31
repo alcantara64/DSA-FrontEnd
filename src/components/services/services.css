@@ -93,6 +93,9 @@ right: -118px;
 .custom-btn-container{
     display: inline-block;
 }
+.custom-btn-contain{
+    margin-left: 27%;
+}
 .custom-margin-DSA{
     text-align: left;
     margin-bottom: 1.5%;

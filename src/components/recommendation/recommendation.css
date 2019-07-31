@@ -92,3 +92,11 @@
   .custom-text-margin{
     margin-bottom: 17px;
   }
+  .custom-rating{
+    display: flex;
+    margin-top: 6px;
+    margin-left: -4px;
+  }
+  .custom-rating-padding{
+      padding-right: 10px;
+  }
