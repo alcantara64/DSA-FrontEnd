@@ -8,7 +8,7 @@ import { BlogDataService } from "./blog.data.service";
 export class BlogWebService implements BlogDataService {
 
   getAllBlogPost(): Promise<AxiosResponse<Post[]>> {
-    return axios.get<Post[]>('/');
+    return axios.get<Post[]>('/blogarchive');
   }
 
   getBlogPost(postId: string): Promise<AxiosResponse<Post>> {

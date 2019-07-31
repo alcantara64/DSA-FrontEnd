@@ -6,11 +6,10 @@ import { TYPES } from '../../core/services/ioc.types';
 import './services.css';
 import { Link } from 'react-router-dom';
 import { RecommendationDataService } from '../../core/services/data/RecommendationService/recommendation.data.service';
-import axios,{ AxiosResponse } from 'axios';
+import { AxiosResponse } from 'axios';
 import ServiceOptions from './serviceoptions/serviceOptions';
 import Option from '../../core/Models/Option';
 import ServiceOptionList from '../../core/Models/ServiceOptionList';
-import { optional } from 'inversify';
 
 class services extends Component<{}, IServiceState> {
 
@@ -22,17 +21,17 @@ class services extends Component<{}, IServiceState> {
     }
 
     componentDidMount() {
-        axios.get<Option[]>('https://api.myjson.com/bins/qx6x5').then(
+        this.recommendationService.getAllOptions().then(
             (res: AxiosResponse<Option[]>) => {
                 let alloptions = res.data
                 let _serviceOptions : ServiceOptionList[] = [];
-                let serviceOptions = alloptions.map((opt) => {
+                alloptions.map((opt) => {
                     let serviceOption = {} as ServiceOptionList;
 
                     if(!opt.isFirstOption){
-                        let prev = alloptions.find(c=>c.optionCode == opt.parentOptionCode);
-                        let exist = _serviceOptions.find(c=>c.labelName == prev!.nextOptionQuestionText);
-                        if(exist == null || exist == undefined){
+                        let prev = alloptions.find(c=>c.optionCode === opt.parentOptionCode);
+                        let exist = _serviceOptions.find(c=>c.labelName === prev!.nextOptionQuestionText);
+                        if(exist === null || exist === undefined){
                             serviceOption.showLabel = false;
                             serviceOption.options = [];
                             serviceOption.labelName = prev!.nextOptionQuestionText;
@@ -40,8 +39,8 @@ class services extends Component<{}, IServiceState> {
                         }
                     }
                     else if(opt.isFirstOption){
-                        let exist = _serviceOptions.find(c=>c.labelName == opt.firstOptionQuestionText);
-                        if(exist == null || exist == undefined){
+                        let exist = _serviceOptions.find(c=>c.labelName === opt.firstOptionQuestionText);
+                        if(exist === null || exist === undefined){
                             var optionViewModel = {} as Option;
                             optionViewModel.optionCode = opt.optionCode;
                             optionViewModel.optionText = opt.optionText;
@@ -55,7 +54,7 @@ class services extends Component<{}, IServiceState> {
                             var optionViewModel = {} as Option;
                             optionViewModel.optionCode = opt.optionCode;
                             optionViewModel.optionText = opt.optionText;
-                            var index = _serviceOptions.findIndex(c=>c.labelName == exist!.labelName);
+                            var index = _serviceOptions.findIndex(c=>c.labelName === exist!.labelName);
                             _serviceOptions[index].options.push(optionViewModel);
                         }
                     }
@@ -64,9 +63,8 @@ class services extends Component<{}, IServiceState> {
 
                     return serviceOption;   
                 })
-                var sortorder = 1
                 _serviceOptions.forEach((obj, i) =>{
-                    if(obj.sortOrder == 0)
+                    if(obj.sortOrder === 0)
                     _serviceOptions[i].sortOrder = i +  1
                 });
                 this.setState({
@@ -88,7 +86,7 @@ class services extends Component<{}, IServiceState> {
             //get latest option list
             let allOptions = [...this.state.optionList];
             let latestServiceOption = [...this.state.filteredServiceOptionList]
-            let currentOption = latestServiceOption.find(a => a.labelName == labelName);
+            let currentOption = latestServiceOption.find(a => a.labelName === labelName);
 
             if(SelectMode){
                 latestServiceOption.forEach((opt, i) => {
@@ -105,9 +103,8 @@ class services extends Component<{}, IServiceState> {
             
              if (typeof option !== 'undefined') {
                 
-                let nextIndex = latestServiceOption.findIndex(c => c.labelName == option!.nextOptionQuestionText);
+                let nextIndex = latestServiceOption.findIndex(c => c.labelName === option!.nextOptionQuestionText);
                 //get max sortOrder and update new
-                let maxSortOrder = 0;
                 let nextOptions = filteredServiceListOption.map((opt) => {
                     var optionViewModel = {} as Option;
                     optionViewModel.optionCode = opt.optionCode;

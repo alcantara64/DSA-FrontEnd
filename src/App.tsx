@@ -6,7 +6,7 @@ import {Config} from './Config';
 import 'reflect-metadata';
 import { Provider } from "inversify-react";
 import { container } from "./core/services/ioc";
-import { getUserDetails } from './GraphService';
+
 
 class App extends Component<{}, IAppState>{
   configuration: Configuration = {} as Configuration;

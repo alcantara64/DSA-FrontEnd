@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import QuestionOption from "../../../core/Models/QuestionOption";
 import Auxi from '../../../hoc/Auxi';
 import information from '../../../assets/images/information.png';
 import informationWhite from '../../../assets/images/information_white.png';
