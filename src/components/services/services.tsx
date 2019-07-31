@@ -6,7 +6,6 @@ import { TYPES } from '../../core/services/ioc.types';
 import './services.css';
 import { Link } from 'react-router-dom';
 import { RecommendationDataService } from '../../core/services/data/RecommendationService/recommendation.data.service';
-import Recommendation from '../../core/Models/Recommendation';
 import axios,{ AxiosResponse } from 'axios';
 import ServiceOptions from './serviceoptions/serviceOptions';
 import Option from '../../core/Models/Option';
@@ -30,12 +29,13 @@ class services extends Component<{}, IServiceState> {
                 serviceOption.showLabel = true;
                 serviceOption.options = filteredList;
                 serviceOption.labelName = filteredList[0].firstOptionQuestionText;
+                serviceOption.sortOrder = 1;
                 let firstServiceList: ServiceOptionList[] = [];
                 firstServiceList.push(serviceOption);
 
                 this.setState({
                     ...this.state,
-                    optionList: res.data,
+                    optionList: alloptions,
                     filteredOptionList: filteredList,
                     filteredServiceOptionList: firstServiceList
                 });
@@ -46,28 +46,53 @@ class services extends Component<{}, IServiceState> {
         });
     }
 
-    onOptionSelectedHandler(nextLabelId: number) {
+    onOptionSelectedHandler(optionCode: string) {
         var showRecommendationLabel = false;
         if (this.state) {
-            let allOptions = [...this.state.optionList]
-            let nextLabelOptionList = allOptions.find((opt) => opt.nextOptionCode === nextLabelId.toString());
-            if (typeof nextLabelOptionList !== 'undefined') {
-                let latestFilterList = [...this.state.filteredOptionList];
 
-                // nextLabelOptionList.showLabel = !nextLabelOptionList.showLabel;
-                // var currentnum = nextLabelOptionList.sortOrder;
-                // let allOptionList = allOptions.filter(o => o.sortOrder > currentnum)
-                // allOptionList.forEach(option => {
-                //     option.showLabel = false;
-                // });
+            //get latest option list
+            let allOptions = [...this.state.optionList];
+
+            //get selected option
+            let option = allOptions.find((opt) => opt.optionCode === optionCode);
+
+            //get latest service option List
+            let latestServiceOption = [...this.state.filteredServiceOptionList]
+            if (typeof option !== 'undefined') {
+
+                //get max sortOrder and update new
+                let maxSortOrder = 0;
+                latestServiceOption.forEach((opt) => {
+                    maxSortOrder = (opt.sortOrder > maxSortOrder) ? opt.sortOrder : maxSortOrder;
+                })
+
+                let optText = option.firstOptionQuestionText;
+                
+                let c = latestServiceOption.find((c) => c.labelName === optText);
+
+                if(typeof c !== 'undefined'){
+                    
+                }else{}
+
+
+                //push new service option 
+                var filteredServiceListOption = allOptions.filter((opt) => opt.parentOptionCode === optionCode)
+                let serviceOption = {} as ServiceOptionList;
+                serviceOption.showLabel = true;
+                serviceOption.options = filteredServiceListOption;
+                serviceOption.labelName = option.nextOptionQuestionText;
+                serviceOption.sortOrder = maxSortOrder + 1
+                latestServiceOption.push(serviceOption);
+
             } else {
                 showRecommendationLabel = true;
             }
             this.setState({
                 ...this.state,
+                filteredServiceOptionList: latestServiceOption,
                 showRecommendatonButton: showRecommendationLabel
             })
-
+            console.log(this.state);
         }
     }
 
@@ -82,7 +107,7 @@ class services extends Component<{}, IServiceState> {
                     </div>
                             {this.state.filteredServiceOptionList.map((opt) => {
                                 if (opt.showLabel) {
-                                    return <ServiceOptions key={opt.labelName} options={opt.options} method={this.onOptionSelectedHandler}></ServiceOptions>
+                                    return <ServiceOptions key={opt.labelName} label={opt.labelName} options={opt.options} method={this.onOptionSelectedHandler}></ServiceOptions>
                                 }
                                 else { return '' }
                             })}
