@@ -43,9 +43,9 @@ export default class ServiceOptions extends Component<IServiceOptionsProps, ISer
                     {this.props.label}
                 </div>
 
-                {this.state.showLabel? <div className="custom--btn-options" onClick={() => this.showSelectedOptions(this.state.optionText, this.props.label)} >{this.state.optionText}<img className="information-white-icon" src={informationWhite} alt=""/></div>
+                {this.state.showLabel? <div className="large-flex custom--btn-options custom-btn-container" onClick={() => this.showSelectedOptions(this.state.optionText, this.props.label)} >{this.state.optionText}<img className="information-white-icon" src={informationWhite} alt=""/></div>
                 : this.props.options.map((opt) => {
-                    return (<div className="custom-btn-align">
+                    return (<div className="custom-btn-contain large-flex custom-btn-align">
                     <button key={opt.optionCode} className="custom-service-btn" 
                     onClick={() => this.showSelectedOptions(opt.optionText, this.props.label)} >{opt.optionText} 
                     <img className="information-icon" src={information} alt=""/>

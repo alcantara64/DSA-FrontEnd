@@ -2,6 +2,9 @@ import { Container } from 'inversify';
 import {BlogMockService} from './data/BlogService/blog.mock.service';
 import {BlogWebService} from './data/BlogService/blog.web.service';
 import {BlogDataService} from './data/BlogService/blog.data.service';
+import {InterestDataService} from './data/InterestService/Interest.data.service';
+import {InterestWebService} from './data/InterestService/Interest.web.service';
+import {InterestMockService} from './data/InterestService/interest.mock.service';
 import { TYPES } from './ioc.types';
 import { Config } from '../../Config';
 import { RecommendationDataService } from './data/RecommendationService/recommendation.data.service';
@@ -11,7 +14,9 @@ export const container = new Container();
 if(Config.isProd){
     container.bind<BlogDataService>(TYPES.BlogService).to(BlogWebService);
     container.bind<RecommendationDataService>(TYPES.RecommendationService).to(RecommendationMockService);
+    container.bind<InterestDataService>(TYPES.InterestService).to(InterestWebService);
 }else{
     container.bind<BlogDataService>(TYPES.BlogService).to(BlogMockService);
     container.bind<RecommendationDataService>(TYPES.RecommendationService).to(RecommendationMockService);
+    container.bind<InterestDataService>(TYPES.InterestService).to(InterestMockService);
 }
