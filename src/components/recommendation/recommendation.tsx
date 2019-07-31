@@ -5,9 +5,9 @@ import one from '../../assets/images/one.png';
 import number_2 from '../../assets/images/number_2.png';
 import number2_profile from '../../assets/images/number2_profile.png';
 import timer from '../../assets/images/timer.png';
+import rating from '../../assets/images/rating.png';
 import calender_img from '../../assets/images/calender_img.png'
 import location_icon from '../../assets/images/location_icon.png'
-
 import like_button from '../../assets/images/like_button.png';
 import share from '../../assets/images/share.png';
 import icon_spinner from '../../assets/images/icon_spinner.svg';
@@ -78,6 +78,10 @@ const recommendation = () => {
         You have your data, but what are you trying to say with it? Develop the skills to design compelling visualizations and iterate through a dashboard. See some fun examples and practical tips.
         </div>
         <div><img className="custom-timer" src={timer} alt=""/></div>
+        <div>
+        <div><img src={rating} alt=""/></div>
+        <div className="custom-paragraph">(0)</div>
+        </div>
 
     </div>
   </div>
@@ -97,6 +101,7 @@ const recommendation = () => {
         <div className="custom-paragraph">
         Ready to start leveraging Tableau at ExxonMobil? This material provides a quick overview and links to additional resources to get you started.        </div>
     <div><img className="custom-timer" src={timer} alt=""/></div>
+    <div><img src={rating} alt=""/></div>
     </div>
     </div>
   </div>
@@ -117,6 +122,8 @@ const recommendation = () => {
         
         Data and analytics courses at your fingertips - so you can learn on your own time and at your own pace.    </div>
         <div className="custom-timer"><img src={timer} alt=""/></div>
+        <div><img src={rating} alt=""/></div>
+
 
     </div>
     </div>
@@ -173,13 +180,30 @@ GO TO EVENTX
 </div>
 </div>
     </div>
+    <div >
+        <div className="custom-carrer-flex">
+            <div className="custom-one-margin"><img src={one} alt=""/></div>
+            <div className="custom-paragraph">Browse <span className="custom-link">Career Connect</span> <img className="custom-connect" src={share} alt=""/> for the technology you're interested in. ExxonMobil has thousands of free classes available for you to use.  </div>
+        </div>
+        <div className="custom-check">
+            <div><img  className="custom-number2" src={number_2} alt=""/></div>
+            <div className="custom-websites-margin">
+                <div className="custom-text-margin custom-paragraph">Check out these other external websites for great tutorials.</div>
+                <div className="custom-text-margin custom-paragraph">Khan Academy <img className="custom-connect" src={share} alt=""/></div>
+                <div className="custom-text-margin custom-paragraph">Udemy <img className="custom-connect" src={share} alt=""/></div>
+                <div className="custom-paragraph">Pluralsight <img className="custom-connect" src={share} alt=""/></div>
+
+
+            </div>
+        </div>
+    </div>
 
     <div className="custom-text-align">
-        <div>Thanks!</div>
-        <div>
+        <div  className="custom-paragraph">Thanks!</div>
+        <div  className="custom-paragraph">
             We're getting you personalized results.
         </div>
-        <div>One momemt please...</div>
+        <div  className="custom-paragraph">One momemt please...</div>
         <img src={icon_spinner} alt=""/>
     </div>
 
