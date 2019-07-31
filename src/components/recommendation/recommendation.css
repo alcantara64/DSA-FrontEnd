@@ -71,3 +71,32 @@
   .custom-text-align{
       text-align: center;
   }
+  .custom-connect{
+    height: 14px;
+    width: 14px;
+    margin-left: 5px;
+  }
+  .custom-one-margin{
+    margin-right: 26px;
+  }
+  .custom-carrer-flex{
+      display: flex;
+  }
+  .custom-check{
+    display: flex;
+    margin-top: 58px;
+  }
+  .custom-websites-margin{
+    margin-left :52px;
+  }
+  .custom-text-margin{
+    margin-bottom: 17px;
+  }
+  .custom-rating{
+    display: flex;
+    margin-top: 6px;
+    margin-left: -4px;
+  }
+  .custom-rating-padding{
+      padding-right: 10px;
+  }

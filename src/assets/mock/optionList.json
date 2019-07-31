@@ -1,0 +1,524 @@
+{"data": [
+{
+"optionCode": "O1",
+"parentOptionCode": "",
+"nextOptionCode": "Q2",
+"optionText": "find data to use",
+"isFirstOption": true,
+"firstOptionQuestionText": "I want to",
+"nextOptionQuestionText": "Is it one of these?"
+},
+{
+"optionCode": "O2",
+"parentOptionCode": "",
+"nextOptionCode": "Q2",
+"optionText": "manage my data",
+"isFirstOption": true,
+"firstOptionQuestionText": "I want to",
+"nextOptionQuestionText": "Is it one of these?"
+},
+{
+"optionCode": "O3",
+"parentOptionCode": "",
+"nextOptionCode": "Q2",
+"optionText": "build something with my data",
+"isFirstOption": true,
+"firstOptionQuestionText": "I want to",
+"nextOptionQuestionText": "Is it one of these?"
+},
+{
+"optionCode": "O4",
+"parentOptionCode": "",
+"nextOptionCode": "Q4",
+"optionText": "sign up for a session with an expert",
+"isFirstOption": true,
+"firstOptionQuestionText": "I want to",
+"nextOptionQuestionText": "For"
+},
+{
+"optionCode": "O5",
+"parentOptionCode": "",
+"nextOptionCode": "Q2",
+"optionText": "learn how to use a technology or tool",
+"isFirstOption": true,
+"firstOptionQuestionText": "I want to",
+"nextOptionQuestionText": "Is it one of these?"
+},
+{
+"optionCode": "O6",
+"parentOptionCode": "O1",
+"nextOptionCode": "Q3",
+"optionText": "find datasets and dashboards",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": "I'm in"
+},
+{
+"optionCode": "O7",
+"parentOptionCode": "O1",
+"nextOptionCode": "Q3",
+"optionText": "access standard data used across the company",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": "I'm in"
+},
+{
+"optionCode": "O8",
+"parentOptionCode": "O1",
+"nextOptionCode": "Q3",
+"optionText": "learn why metadata is so important",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": "I'm in"
+},
+{
+"optionCode": "O9",
+"parentOptionCode": "O2",
+"nextOptionCode": "Q3",
+"optionText": "govern your data",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": "I'm in"
+},
+{
+"optionCode": "O10",
+"parentOptionCode": "O2",
+"nextOptionCode": "Q3",
+"optionText": "assess data quality",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": "I'm in"
+},
+{
+"optionCode": "O11",
+"parentOptionCode": "O2",
+"nextOptionCode": "Q3",
+"optionText": "organize your data",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": "I'm in"
+},
+{
+"optionCode": "O12",
+"parentOptionCode": "O3",
+"nextOptionCode": "Q3",
+"optionText": "gather, organize and visualize data",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": "I'm in"
+},
+{
+"optionCode": "O13",
+"parentOptionCode": "O3",
+"nextOptionCode": "Q3",
+"optionText": "explore data science services",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": "I'm in"
+},
+{
+"optionCode": "O14",
+"parentOptionCode": "O3",
+"nextOptionCode": "Q3",
+"optionText": "hire a data engineer",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": "I'm in"
+},
+{
+"optionCode": "O15",
+"parentOptionCode": "O4",
+"nextOptionCode": "",
+"optionText": "Tableau",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O16",
+"parentOptionCode": "O4",
+"nextOptionCode": "",
+"optionText": "JMP",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O17",
+"parentOptionCode": "O4",
+"nextOptionCode": "",
+"optionText": "Python",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O18",
+"parentOptionCode": "O5",
+"nextOptionCode": "",
+"optionText": "Python",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O19",
+"parentOptionCode": "O5",
+"nextOptionCode": "",
+"optionText": "JMP",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O20",
+"parentOptionCode": "O5",
+"nextOptionCode": "",
+"optionText": "Tableau",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O21",
+"parentOptionCode": "O5",
+"nextOptionCode": "",
+"optionText": "Azure",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O22",
+"parentOptionCode": "O5",
+"nextOptionCode": "",
+"optionText": "Nope, none of these",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O23",
+"parentOptionCode": "O6",
+"nextOptionCode": "",
+"optionText": "Upstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O24",
+"parentOptionCode": "O6",
+"nextOptionCode": "",
+"optionText": "Downstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O25",
+"parentOptionCode": "O6",
+"nextOptionCode": "",
+"optionText": "Corporate",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O26",
+"parentOptionCode": "O6",
+"nextOptionCode": "",
+"optionText": "Other",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O27",
+"parentOptionCode": "O7",
+"nextOptionCode": "",
+"optionText": "Upstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O28",
+"parentOptionCode": "O7",
+"nextOptionCode": "",
+"optionText": "Downstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O29",
+"parentOptionCode": "O7",
+"nextOptionCode": "",
+"optionText": "Corporate",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O30",
+"parentOptionCode": "O7",
+"nextOptionCode": "",
+"optionText": "Other",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O31",
+"parentOptionCode": "O8",
+"nextOptionCode": "",
+"optionText": "Upstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O32",
+"parentOptionCode": "O8",
+"nextOptionCode": "",
+"optionText": "Downstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O33",
+"parentOptionCode": "O8",
+"nextOptionCode": "",
+"optionText": "Corporate",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O34",
+"parentOptionCode": "O8",
+"nextOptionCode": "",
+"optionText": "Other",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O35",
+"parentOptionCode": "O9",
+"nextOptionCode": "",
+"optionText": "Upstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O36",
+"parentOptionCode": "O9",
+"nextOptionCode": "",
+"optionText": "Downstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O37",
+"parentOptionCode": "O9",
+"nextOptionCode": "",
+"optionText": "Corporate",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O38",
+"parentOptionCode": "O9",
+"nextOptionCode": "",
+"optionText": "Other",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O39",
+"parentOptionCode": "O10",
+"nextOptionCode": "",
+"optionText": "Upstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O40",
+"parentOptionCode": "O10",
+"nextOptionCode": "",
+"optionText": "Downstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O41",
+"parentOptionCode": "O10",
+"nextOptionCode": "",
+"optionText": "Corporate",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O42",
+"parentOptionCode": "O10",
+"nextOptionCode": "",
+"optionText": "Other",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O43",
+"parentOptionCode": "O11",
+"nextOptionCode": "",
+"optionText": "Upstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O44",
+"parentOptionCode": "O11",
+"nextOptionCode": "",
+"optionText": "Downstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O45",
+"parentOptionCode": "O11",
+"nextOptionCode": "",
+"optionText": "Corporate",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O46",
+"parentOptionCode": "O11",
+"nextOptionCode": "",
+"optionText": "Other",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O47",
+"parentOptionCode": "O12",
+"nextOptionCode": "",
+"optionText": "Upstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O48",
+"parentOptionCode": "O12",
+"nextOptionCode": "",
+"optionText": "Downstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O49",
+"parentOptionCode": "O12",
+"nextOptionCode": "",
+"optionText": "Corporate",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O50",
+"parentOptionCode": "O12",
+"nextOptionCode": "",
+"optionText": "Other",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O51",
+"parentOptionCode": "O13",
+"nextOptionCode": "",
+"optionText": "Upstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O52",
+"parentOptionCode": "O13",
+"nextOptionCode": "",
+"optionText": "Downstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O53",
+"parentOptionCode": "O13",
+"nextOptionCode": "",
+"optionText": "Corporate",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O54",
+"parentOptionCode": "O13",
+"nextOptionCode": "",
+"optionText": "Other",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O55",
+"parentOptionCode": "O14",
+"nextOptionCode": "",
+"optionText": "Upstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O56",
+"parentOptionCode": "O14",
+"nextOptionCode": "",
+"optionText": "Downstream",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O57",
+"parentOptionCode": "O14",
+"nextOptionCode": "",
+"optionText": "Corporate",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+},
+{
+"optionCode": "O58",
+"parentOptionCode": "O14",
+"nextOptionCode": "",
+"optionText": "Other",
+"isFirstOption": false,
+"firstOptionQuestionText": null,
+"nextOptionQuestionText": null
+}
+]}

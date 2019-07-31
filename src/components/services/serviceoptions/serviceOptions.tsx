@@ -17,7 +17,7 @@ export default class ServiceOptions extends Component<IServiceOptionsProps, ISer
         this.showSelectedOptions = this.showSelectedOptions.bind(this);
     }
 
-    showSelectedOptions(optionText: string) {
+    showSelectedOptions(optionText: string, labelText: string) {
         if(optionText && !this.state.showLabel){
                this.setState({
                    ...this.state,
@@ -32,7 +32,8 @@ export default class ServiceOptions extends Component<IServiceOptionsProps, ISer
         }
         if(optionText){
            let nextQuestionId = this.props.options.filter(x => x.optionText === optionText);
-           this.props.method(nextQuestionId[0].optionCode)
+           var _showLabel = {...this.state}.showLabel
+           this.props.method(nextQuestionId[0].optionCode, labelText, _showLabel)
         }
    }
     
@@ -40,14 +41,14 @@ export default class ServiceOptions extends Component<IServiceOptionsProps, ISer
         return (
             <Auxi >
                <div className="custom-want-margin custom-H2 ">
-                    {this.props.options[0].firstOptionQuestionText}
+                    {this.props.label}
                 </div>
 
-                {this.state.showLabel? <div className="custom--btn-options" onClick={() => this.showSelectedOptions(this.state.optionText)} >{this.state.optionText}<img className="information-white-icon" src={informationWhite} alt=""/></div>
+                {this.state.showLabel? <div className="large-flex custom--btn-options custom-btn-container" onClick={() => this.showSelectedOptions(this.state.optionText, this.props.label)} >{this.state.optionText}<img className="information-white-icon" src={informationWhite} alt=""/></div>
                 : this.props.options.map((opt) => {
-                    return (<div className="custom-btn-align">
+                    return (<div className="custom-btn-contain large-flex custom-btn-align">
                     <button key={opt.optionCode} className="custom-service-btn" 
-                    onClick={() => this.showSelectedOptions(opt.optionText)} >{opt.optionText} 
+                    onClick={() => this.showSelectedOptions(opt.optionText, this.props.label)} >{opt.optionText} 
                     <img className="information-icon" src={information} alt=""/>
                     </button>
                    
@@ -64,6 +65,7 @@ export interface IServiceOptionsState {
 }
 
 export interface IServiceOptionsProps {
+    label: string,
     options: Option[],
     method: any
 }
