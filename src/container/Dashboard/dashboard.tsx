@@ -35,7 +35,7 @@ this.setState({
                         <Route exact path='/services' component={Services} />   
                         <Route exact path='/archives' component={BlogArchive} />     
                         <Route exact path='/services/form' component={servicesForm} />  
-                        <Route exact path='/userInfo'   render={(props) => <UserInfo {...props} isAuthed={true} displayName={this.props.displayName} />}/>             
+                        <Route exact path='/userInfo'   render={(props) => <UserInfo {...props} isAuthed={true} displayName={this.props.displayName} userName={this.props.userName} />}/>             
                         <Route exact path='/recommendation' component={recommendation} />  
 
                     </Switch>
@@ -51,5 +51,6 @@ interface IdashboardProps{
     isAuthenticated : boolean;
     user? : Object;
     displayName: string;
-    email: string;
+    email?: string;
+    userName :string;
 }
