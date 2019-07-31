@@ -1,8 +1,8 @@
 import { AxiosResponse } from "axios";
 import { injectable } from 'inversify';
-import Recommendation from "../../../Models/Recommendation";
+import Option from "../../../Models/Option";
 
 @injectable()
 export abstract class RecommendationDataService {
-  abstract getAllOptions(): Promise<AxiosResponse<Recommendation[]>>;
+  abstract getAllOptions(): Promise<AxiosResponse<Option[]>>;
 }

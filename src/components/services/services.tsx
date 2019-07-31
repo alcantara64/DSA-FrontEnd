@@ -7,8 +7,10 @@ import './services.css';
 import { Link } from 'react-router-dom';
 import { RecommendationDataService } from '../../core/services/data/RecommendationService/recommendation.data.service';
 import Recommendation from '../../core/Models/Recommendation';
-import { AxiosResponse } from 'axios';
+import axios,{ AxiosResponse } from 'axios';
 import ServiceOptions from './serviceoptions/serviceOptions';
+import Option from '../../core/Models/Option';
+import ServiceOptionList from '../../core/Models/ServiceOptionList';
 
 class services extends Component<{}, IServiceState> {
 
@@ -20,12 +22,22 @@ class services extends Component<{}, IServiceState> {
     }
 
     componentDidMount() {
-        this.recommendationService.getAllOptions().then(
-            (res: AxiosResponse<Recommendation[]>) => {
-                res.data[0].showLabel = true
+        axios.get<Option[]>('https://api.myjson.com/bins/qx6x5').then(
+            (res: AxiosResponse<Option[]>) => {
+                let alloptions = res.data
+                let filteredList = alloptions.filter(x => x.isFirstOption);
+                let serviceOption = {} as ServiceOptionList;
+                serviceOption.showLabel = true;
+                serviceOption.options = filteredList;
+                serviceOption.labelName = filteredList[0].firstOptionQuestionText;
+                let firstServiceList: ServiceOptionList[] = [];
+                firstServiceList.push(serviceOption);
+
                 this.setState({
                     ...this.state,
-                    allOptionList: res.data
+                    optionList: res.data,
+                    filteredOptionList: filteredList,
+                    filteredServiceOptionList: firstServiceList
                 });
                 console.log(this.state)
             }
@@ -37,15 +49,17 @@ class services extends Component<{}, IServiceState> {
     onOptionSelectedHandler(nextLabelId: number) {
         var showRecommendationLabel = false;
         if (this.state) {
-            let allOptions = [...this.state.allOptionList]
-            let nextLabelOptionList = allOptions.find((opt) => opt.id === nextLabelId);
+            let allOptions = [...this.state.optionList]
+            let nextLabelOptionList = allOptions.find((opt) => opt.nextOptionCode === nextLabelId.toString());
             if (typeof nextLabelOptionList !== 'undefined') {
-                nextLabelOptionList.showLabel = !nextLabelOptionList.showLabel;
-                var currentnum = nextLabelOptionList.sortOrder;
-                let allOptionList = allOptions.filter(o => o.sortOrder > currentnum)
-                allOptionList.forEach(option => {
-                    option.showLabel = false;
-                });
+                let latestFilterList = [...this.state.filteredOptionList];
+
+                // nextLabelOptionList.showLabel = !nextLabelOptionList.showLabel;
+                // var currentnum = nextLabelOptionList.sortOrder;
+                // let allOptionList = allOptions.filter(o => o.sortOrder > currentnum)
+                // allOptionList.forEach(option => {
+                //     option.showLabel = false;
+                // });
             } else {
                 showRecommendationLabel = true;
             }
@@ -59,16 +73,16 @@ class services extends Component<{}, IServiceState> {
 
     render() {
         if (this.state) {
-            if (this.state.allOptionList.length > 0) {
+            if (this.state.optionList.length > 0) {
                 return (
                     <Auxi>
                         <div className="services-container">
                             <div className="custom-heading custom-paragraph">
                                 Let's get you what you need (a tutorial to talk to) - it only takes a minute.
                     </div>
-                            {this.state.allOptionList.map((opt) => {
+                            {this.state.filteredServiceOptionList.map((opt) => {
                                 if (opt.showLabel) {
-                                    return <ServiceOptions key={opt.id} label={opt.name} options={opt.questions} method={this.onOptionSelectedHandler}></ServiceOptions>
+                                    return <ServiceOptions key={opt.labelName} options={opt.options} method={this.onOptionSelectedHandler}></ServiceOptions>
                                 }
                                 else { return '' }
                             })}
@@ -120,9 +134,13 @@ class services extends Component<{}, IServiceState> {
 
 
 interface IServiceState {
-    allOptionList: Recommendation[];
     showRecommendatonButton: boolean;
     recommendationPostId: string
+
+    optionList: Option[];
+    filteredOptionList: Option[];
+    filteredServiceOptionList: ServiceOptionList[];
+
 }
 
 
