@@ -32,7 +32,8 @@ export default class ServiceOptions extends Component<IServiceOptionsProps, ISer
         }
         if(optionText){
            let nextQuestionId = this.props.options.filter(x => x.optionText === optionText);
-           this.props.method(nextQuestionId[0].optionCode, labelText)
+           var _showLabel = {...this.state}.showLabel
+           this.props.method(nextQuestionId[0].optionCode, labelText, _showLabel)
         }
    }
     
