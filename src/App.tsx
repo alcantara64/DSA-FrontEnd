@@ -23,7 +23,7 @@ constructor(props: any){
         storeAuthStateInCookie: true
     }
     });
-   // if(Config.isProd){
+    if(Config.isProd){
     var user = this.userAgentApplication.getAccount();
   
     if(user){
@@ -48,15 +48,15 @@ constructor(props: any){
     };
       this.login();
     }
-  // }else{
-  //   this.state = {
-  //     isAuthenticated: true,
-  //     user: {},
-  //     error: {},
-  //     email: null,
-  //     displayName:null,
-  //   };
-  // }
+  }else{
+    this.state = {
+      isAuthenticated: true,
+      user: {},
+      error: {},
+      email: '',
+      displayName:'',
+    };
+  }
   
 }
 
