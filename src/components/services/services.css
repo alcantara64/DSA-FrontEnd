@@ -1,6 +1,6 @@
 .services-container{
     width: 1440px !important;
-    padding-top: 93px;
+    /* padding-top: 93px; */
     padding-right: 140px;
     padding-left: 140px;
     margin: auto;
@@ -9,8 +9,15 @@
 
 .custom-heading{
     text-align: left;
-    /* margin-left: -8.5%; */
+    margin-top : 73px;
 }
+.back-button-margin{
+    margin-right: 92.8%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    position: relative;
+    right: 5px;
+  } 
 
 .flex-container {
 display: flex;
