@@ -37,6 +37,11 @@
 .custom-details-img-padding{
     padding-top: 22px;
 }
+.back-button-margins{
+    margin-right: 92.8%;
+    margin-bottom: 2%;
+    cursor: pointer;
+  }   
 .custom-uppercase{
     text-transform: uppercase;
 }
@@ -79,11 +84,7 @@
     margin-bottom: -5px;
     margin-right: 10px;
 }
-.back-button-margins{
-    margin-right: 92.8%;
-    margin-bottom: 2%;
-    cursor: pointer;
-}
+
 @media screen and (min-width: 1930px){
     .blog-details-container{
         margin-left: 22% ;
