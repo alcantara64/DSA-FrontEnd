@@ -7,6 +7,6 @@ import User from './../../../Models/User';
 export abstract class InterestDataService {
   abstract getAllInterest(): Promise<AxiosResponse<Interest[]>>;
   abstract getAllInterestByUser(userName: string): Promise<AxiosResponse<Interest[]>>;
-//   abstract getPopularPost(blogId: string): Promise<AxiosResponse<Post>>;
+  abstract postInterest(payload:any): Promise<AxiosResponse<Interest>>;
 //   abstract getBlogPostByCategory(blogId: string, category: string): Promise<AxiosResponse<Post[]>>;
 }

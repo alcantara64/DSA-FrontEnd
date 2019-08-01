@@ -69,7 +69,9 @@ button:focus{
     margin-top: 126px;
     background-color: #eee;
   }
-
+.custom-cursor{
+    cursor: pointer;
+}
 
 
 

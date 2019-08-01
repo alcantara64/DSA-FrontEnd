@@ -16,9 +16,9 @@ export class InterestMockService implements InterestDataService{
         return axios.get<Interest[]>(`/interests?id=${userName}`);
     }
 
-    // getPopularPost(blogId: string): Promise<AxiosResponse<Post>> {
-    //     return axios.get<Post>(`/popular/${blogId}`);
-    // }
+   postInterest(payload:any): Promise<AxiosResponse<Interest>>{
+       return axios.post<Interest>(`/userinterest/`,payload)
+   }
 
     // getBlogPostByCategory(blogId: string, category: string): Promise<AxiosResponse<Post[]>> {
     //     return axios.get<Post[]>(`/archive?id=${blogId}&category=${category}`);

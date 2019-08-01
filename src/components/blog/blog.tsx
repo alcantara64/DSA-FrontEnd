@@ -8,7 +8,7 @@ import PopularBlogs from './popularBlogs/popularBlogs';
 import { resolve } from "inversify-react";
 import { BlogDataService } from '../../core/services/data/BlogService/blog.data.service';
 import Post from '../../core/Models/Post';
-import icon_spinner from '../../assets/images/icon_spinner.svg';
+import Spinner  from '../../components/spinner/spinner'
 
 import { TYPES } from '../../core/services/ioc.types';
 
@@ -51,7 +51,7 @@ class blog extends Component {
                     {
                         this.state.blogList.length > 0 ? '' :
                     <div className="em-c-loader ">
-                        <img src={icon_spinner} alt="Loading" />
+                        <Spinner/>
                     </div>
                     }
                 </div>
