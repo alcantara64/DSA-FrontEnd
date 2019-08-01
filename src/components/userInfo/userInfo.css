@@ -43,6 +43,13 @@ padding-bottom: 4px;
 
 
 }
+
+button:focus{
+    border-style: none !important;
+    outline:none;
+}
+
+
 .dashboard-btn-container{
     display: inline-block;
     width: 50%;
