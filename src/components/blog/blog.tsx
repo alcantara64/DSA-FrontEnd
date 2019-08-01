@@ -49,10 +49,10 @@ class blog extends Component {
                     </div>
                     <SuggestedBlogs blogList={this.state.blogList} type={`Editor's Picks`} />
                     {
-                        this.state.blogList ? 
+                        this.state.blogList.length > 0 ? '' :
                     <div className="em-c-loader ">
                         <img src={icon_spinner} alt="Loading" />
-                    </div> : ''
+                    </div>
                     }
                 </div>
             </Auxi>
