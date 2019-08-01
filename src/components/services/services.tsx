@@ -103,6 +103,7 @@ class services extends Component<{}, IServiceState> {
             
              if (typeof option !== 'undefined') {
                 
+                if(option!.nextOptionQuestionText !== null){
                 let nextIndex = latestServiceOption.findIndex(c => c.labelName === option!.nextOptionQuestionText);
                 //get max sortOrder and update new
                 let nextOptions = filteredServiceListOption.map((opt) => {
@@ -116,10 +117,16 @@ class services extends Component<{}, IServiceState> {
                 latestServiceOption[nextIndex].options = nextOptions;
                 latestServiceOption[nextIndex].showLabel = true;
                 }
+            }else{
+                showRecommendationLabel = true;
+                this.setState({
+                    ...this.state,
+                    recommendationPostId: optionCode,
+                    showRecommendatonButton: showRecommendationLabel
+                })
+            }
                 
 
-            } else {
-                showRecommendationLabel = true;
             }
             }
             this.setState({
@@ -148,8 +155,10 @@ class services extends Component<{}, IServiceState> {
                             })}
                             {this.state.showRecommendatonButton ? 
                             <div className="custom-rec-buttom">
-                                <button className="em-c-btn em-c-btn--large custom-btn "><Link to="/services">
-                                    <span className="em-c-btn__text custom-paragraph">Get Recommendations</span></Link>
+                                <button className="em-c-btn em-c-btn--large custom-btn ">
+                                    <Link to={`/recommendation/${this.state.recommendationPostId}`}>
+                                    <span className="em-c-btn__text custom-paragraph">Get Recommendations</span>
+                                    </Link>
                                 </button>
                             </div> : ''}
 
@@ -198,7 +207,6 @@ interface IServiceState {
     recommendationPostId: string
 
     optionList: Option[];
-    filteredOptionList: Option[];
     filteredServiceOptionList: ServiceOptionList[];
 
 }

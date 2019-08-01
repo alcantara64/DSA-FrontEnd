@@ -7,11 +7,11 @@ import { InterestDataService } from "./Interest.data.service";
 @injectable()
 export class InterestWebService implements InterestDataService {
   getAllInterest(): Promise<AxiosResponse<Interest[]>> {
-    return axios.get<Interest[]>("http://localhost:53740/interests");
+    return axios.get<Interest[]>("/interests");
   }
 
   getAllInterestByUser(userName: string): Promise<AxiosResponse<Interest[]>> {
-    return axios.get<Interest[]>(`http://localhost:53740/user/jdoe/interest`);
+    return axios.get<Interest[]>(`/user/jdoe/interest`);
   }
 
   //   getPopularPost(blogId: string): Promise<AxiosResponse<Post>> {
