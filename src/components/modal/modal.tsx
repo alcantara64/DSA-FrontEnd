@@ -2,6 +2,21 @@ import React, { ReactNode, Component } from 'react';
 import  './modal.module.css';
 
  class  Modal extends Component<IModalProps> {
+   constructor(props:IModalProps){
+       super(props);
+       this.state ={
+          loading:false,
+          error : false,
+       }
+   }
+
+     getDerivedStateFromProps(nextProps:IModalProps) {
+    this.setState({
+    ...this.state,
+    loading : true,
+
+    });
+  }
 
    componentDidUpdate(prevProps:IModalProps, prevState:any){
      if(this.props.show != prevProps.show){
