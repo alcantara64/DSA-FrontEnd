@@ -3,7 +3,7 @@
     padding-left: 140px;
     padding-right: 140px;
     text-align: left;
-    margin-left: 40px;
+    margin: auto;
 }
 .custom-user-image{
     height: 119px;
@@ -20,6 +20,7 @@ width: 119px;
 }
 .custom-add-tag{
     display: flex;
+    margin-top: 13px;
 }
 .custom-tag-margin{
     margin-left: 6px;
@@ -29,7 +30,7 @@ width: 119px;
     margin-bottom: 6px;
 }
 
-button {
+.user-button {
 height: 28px;
 border-radius: 15px;
 background-color: #D73872;
@@ -42,6 +43,7 @@ text-align: center;
 padding-bottom: 4px;
 
 
+
 }
 
 button:focus{
@@ -52,8 +54,21 @@ button:focus{
 
 .dashboard-btn-container{
     display: inline-block;
-    width: 50%;
+    width: 60%;
+    margin-top: 9px;
+    margin-left: -4px;
 }
+
+button:focus{
+    outline: none;
+}
+.footer-divider {
+    height: 4px;
+    width: 103%;
+    margin-left: -52px;
+    margin-top: 126px;
+    background-color: #eee;
+  }
 
 
 

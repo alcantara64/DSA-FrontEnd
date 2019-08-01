@@ -4,7 +4,7 @@
 	<defs>
 	    <style type="text/css"><![CDATA[
 
-		circle { fill: #225896;  animation: pulse 1s infinite; } 
+		circle { fill: rgba(215, 56, 114, 1);  animation: pulse 1s infinite; } 
 
         #circle-2 { animation-delay: 0.2s; }
         #circle-3 { animation-delay: 0.4s; }

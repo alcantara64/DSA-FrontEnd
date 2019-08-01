@@ -6,7 +6,7 @@ import {Config} from './Config';
 import 'reflect-metadata';
 import { Provider } from "inversify-react";
 import { container } from "./core/services/ioc";
-import { getUserDetails } from './GraphService';
+
 
 class App extends Component<{}, IAppState>{
   configuration: Configuration = {} as Configuration;
@@ -28,12 +28,11 @@ constructor(props: any){
   
     if(user){
   
-
     this.state = {
       isAuthenticated: (user !== null),
       displayName : user.name,
       user: {},
-      email : '',
+      userName : user.userName,
       error: {}
     };
   
@@ -43,7 +42,7 @@ constructor(props: any){
       isAuthenticated: false,
       displayName : '',
       user: {},
-      email : '',
+      userName : '',
       error: {}
     };
       this.login();
@@ -53,7 +52,7 @@ constructor(props: any){
       isAuthenticated: true,
       user: {},
       error: {},
-      email: '',
+      userName: '',
       displayName:'',
     };
   }
@@ -99,11 +98,12 @@ async getUserProfile() {
       // Get the user's profile from Graph
       
       var user =  this.userAgentApplication.getAccount(); //await getUserDetails(accessToken);
+    
       this.setState({
         isAuthenticated: true,
         user: {},
         displayName:user.name,
-        // email: user.mail || user.userPrincipalName,
+        // userName: user.mail || user.userPrincipalName,
         // displayName: user.displayName,
         error: {}
       });
@@ -152,11 +152,11 @@ async getUserProfile() {
 }
 
 interface IAppState {
-  isAuthenticated: boolean,
-  user: {},
-  error: {},
-  displayName : string,
-  email : string,
+  isAuthenticated: boolean;
+  user: {};
+  error: {};
+  displayName : string;
+  userName : string;
 }
 
 export default App;

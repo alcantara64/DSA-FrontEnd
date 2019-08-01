@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import about_profile_pic from '../../../assets/images/about_profile_pic.png';
 import anna_brost from '../../../assets/images/anna_brost.jpg';
 import jeremy_janicki from '../../../assets/images/jeremy_janicki.jpg';
 import nate_mcintire from '../../../assets/images/nate_mcintire.jpg';

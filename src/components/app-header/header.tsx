@@ -3,6 +3,8 @@ import Auxi from '../../hoc/Auxi';
 import './header.css';
 import { Link } from 'react-router-dom';
 import {Config} from '../../Config';
+import user_profile from './../../assets/images/user_profile.png';
+
 
 class header extends Component<IheaderProps>  {
   componentDidMount(){
@@ -29,7 +31,7 @@ class header extends Component<IheaderProps>  {
                 </div>
               </button>
 
-              <div className="custom-header custom-header-margin em-c-header__nav-container em-js-nav-panel">
+              <div className=" custom-header-margin em-c-header__nav-container em-js-nav-panel">
                 <nav id="nav" className="em-c-primary-nav" role="navigation">
 
                   <ul className="em-c-primary-nav__list">
@@ -87,7 +89,7 @@ class header extends Component<IheaderProps>  {
                     {Config.isProd && this.props.displayName ? <li className="custom-paragraph em-c-primary-nav__item ">
                       <Link to="/userInfo" className="custom-paragraph em-u-clickable em-c-primary-nav__link  ">
                        
-                        <img src="https://emunity.blob.core.windows.net/unity/fpo_avatar.png" alt="Alt Text" className="custom-photo-icon em-c-avatar em-c-avatar" /> Hi, {this.props.displayName.split(" ")[0]}
+                        <img src={user_profile} alt="Alt Text" className="custom-photo-icon em-c-avatar em-c-avatar" /> Hi, {this.props.displayName.split(" ")[0]}
         
               </Link>
                     </li>: ''

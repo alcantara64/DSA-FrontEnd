@@ -27,6 +27,7 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
         }
     }
 
+
     componentWillReceiveProps(nextProps: IBlogDetails) {
         if (nextProps.match.params.id !== this.props.match.params.id) {
           const currentPostId = nextProps.match.params.id

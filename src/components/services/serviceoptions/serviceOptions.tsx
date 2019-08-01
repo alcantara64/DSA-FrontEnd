@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import QuestionOption from "../../../core/Models/QuestionOption";
 import Auxi from '../../../hoc/Auxi';
 import information from '../../../assets/images/information.png';
 import informationWhite from '../../../assets/images/information_white.png';
+import Option from '../../../core/Models/Option';
+
 
 export default class ServiceOptions extends Component<IServiceOptionsProps, IServiceOptionsState>{
 
@@ -10,47 +11,48 @@ export default class ServiceOptions extends Component<IServiceOptionsProps, ISer
         super(props)
         this.state = {
             showLabel: false,
-            optionValue: {} as QuestionOption
+            optionText: ''
         }
         this.showSelectedOptions = this.showSelectedOptions.bind(this);
     }
 
-    showSelectedOptions(nextLabelId: number) {
-        let labelValue = this.props.options.find(opt => opt.id === nextLabelId)
-        if(labelValue && !this.state.showLabel){
-                this.setState({
-                    ...this.state,
-                    showLabel: true,
-                    optionValue: labelValue
-                })
-        }else{
-            this.setState({
-                ...this.state,
-                showLabel: false,
-                optionValue: {} as QuestionOption
-            })
+    showSelectedOptions(optionText: string, labelText: string) {
+        if(optionText && !this.state.showLabel){
+               this.setState({
+                   ...this.state,
+                   showLabel: true,
+                   optionText: optionText
+               })
+       }else{
+           this.setState({
+               ...this.state,
+               showLabel: false
+           })
         }
-        if(labelValue){
-            this.props.method(labelValue.parentId)
+        if(optionText){
+           let nextQuestionId = this.props.options.filter(x => x.optionText === optionText);
+           var _showLabel = {...this.state}.showLabel
+           this.props.method(nextQuestionId[0].optionCode, labelText, _showLabel)
         }
-    }
+   }
     
     render() {
         return (
             <Auxi >
-                <div className="custom-want-margin custom-H2 ">
+               <div className="custom-want-margin custom-H2 ">
                     {this.props.label}
                 </div>
-                <div className="large-flex custom-btn-container">
-                    {this.state.showLabel ? <div className="custom--btn-options" onClick={() => this.showSelectedOptions(this.state.optionValue.id)} >{this.state.optionValue.description}<img className="information-white-icon" src={informationWhite} alt=""/></div> : this.props.options.map((option, index) => {
-                        return (
-                            <div key={option.id} className="custom-btn-align">
-                                <button className="custom-service-btn" onClick={() => this.showSelectedOptions(option.id)} >{option.description} <img className="information-icon" src={information} alt=""/></button>
-                               
-                            </div>
-                        );
-                    })}
-                </div>
+
+                {this.state.showLabel? <div className="large-flex custom--btn-options custom-btn-container" onClick={() => this.showSelectedOptions(this.state.optionText, this.props.label)} >{this.state.optionText}<img className="information-white-icon" src={informationWhite} alt=""/></div>
+                : this.props.options.map((opt) => {
+                    return (<div className="custom-btn-contain large-flex custom-btn-align">
+                    <button key={opt.optionCode} className="custom-service-btn" 
+                    onClick={() => this.showSelectedOptions(opt.optionText, this.props.label)} >{opt.optionText} 
+                    <img className="information-icon" src={information} alt=""/>
+                    </button>
+                   
+                </div>)
+                })}
             </Auxi>)
     }
 
@@ -58,11 +60,11 @@ export default class ServiceOptions extends Component<IServiceOptionsProps, ISer
 
 export interface IServiceOptionsState {
     showLabel: boolean,
-    optionValue: QuestionOption
+    optionText: string
 }
 
 export interface IServiceOptionsProps {
     label: string,
-    options: QuestionOption[],
+    options: Option[],
     method: any
 }
