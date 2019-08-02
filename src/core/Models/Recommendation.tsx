@@ -18,6 +18,7 @@ export default interface Recommendation {
     resourceCode:           string;
     resourceType: string;
     resourceTitle: string;
+    resourceIntroText: string;
     resourceDuration: string;
     resourceRating: string;
     eventCode: string;
