@@ -16,13 +16,13 @@ export default class Link extends Component<ILinkProps> {
                                 {/* <img className="custom-img-height" src={one} alt=""/> */}
                             </div>
                             <div className="">
-                                <div className="custom-margin-goto custom-link">{link.linkUrl}</div>
+                                <div className="custom-margin-goto custom-link">{link.linkUrl.slice(7)}</div>
                                 {/* <img className="custom-share-image" src={share} alt=""/> */}
                             </div>
 
 
                         </div>
-                        <div className="custom-datadash custom-paragraph">{link.linkText}
+                        <div className="custom-datadash custom-paragraph dash">{link.linkText}
                         </div>
                     </Auxi>
                 )

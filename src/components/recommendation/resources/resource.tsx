@@ -25,7 +25,7 @@ export default class Resource extends Component<IResourceProps> {
                             {/* <div><img className="custom-timer" src={timer} alt=""/></div> */}
                             <div className="custom-rating">
                                 {/* <div><img  className="custom-rating-padding" src={rating} alt=""/></div> */}
-                                <div className="custom-paragraph">(0)</div>
+                                <div className="custom-paragraph">{rsc.resourceIntroText}</div>
                             </div>
 
                         </div>

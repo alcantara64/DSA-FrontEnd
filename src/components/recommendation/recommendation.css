@@ -6,6 +6,9 @@
     height: auto;
     text-align: left;
 }
+.custom-paragraphs{
+    margin-left: 6%;
+}
 .custom-tile-area{
     background-color: rgba(245, 245, 245, 1);
     margin-right: 17px;
@@ -58,6 +61,12 @@
 .custom-eventx{
     padding-top: 16px;
 }
+.custom-flex-number{
+    height: 52px;
+}
+.custom-datadash{
+    margin-bottom: 63px !important;
+}
 .custom-goto{
     height: 14px;
     width: 14px;
@@ -98,4 +107,15 @@
   }
   .custom-rating-padding{
       padding-right: 10px;
+  }
+  .footer-fixed{
+      right: 0%;
+  }
+  .flex-container-here{
+    margin-left: 2px;
+  }
+  @media(max-width: 1920px){
+    .custom-margin-DSAS {
+        left: 20%;
+    }
   }

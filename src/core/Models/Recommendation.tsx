@@ -17,6 +17,7 @@ export default interface Recommendation {
     linkHeader:        string;
     resourceCode:           string;
     resourceType: string;
+    resourceIntroText: string;
     resourceTitle: string;
     resourceDuration: string;
     resourceRating: string;

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Recommendation from '../../../core/Models/Recommendation';
 import Auxi from '../../../hoc/Auxi';
-import './contact.css'
+import './contact.css';
+import user_profile from '../../../assets/images/user_profile.png';
+
 
 export default class Contact extends Component<IContactProps> {
 
@@ -16,6 +18,7 @@ export default class Contact extends Component<IContactProps> {
                             <div className="custom-number2-flexbasis">
                             
                             </div>
+                            <img src={user_profile} alt="Alt Text" className="user-ali em-c-avatar em-c-avatar" />
                             <div className="custom-margin-ali custom-ali">{contact.contactName}</div>
 
                         </div>
