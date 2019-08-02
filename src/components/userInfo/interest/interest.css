@@ -1,3 +1,6 @@
 input[type=checkbox] {
     visibility: visible !important;
 }
+.error{
+    color: red;
+}

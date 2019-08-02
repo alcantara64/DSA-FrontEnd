@@ -8,6 +8,7 @@ import { resolve } from "inversify-react";
 import { TYPES } from "../../../core/services/ioc.types";
 import Interest from "./../../../core/Models/Interest";
 import Auxi from "../../../hoc/Auxi";
+import Spinner from "../../spinner/spinner";
 
 class UserInterest extends Component<IInterestProps, IInterestState> {
   selectedInterest: any = [];
@@ -16,11 +17,12 @@ class UserInterest extends Component<IInterestProps, IInterestState> {
   constructor(props: any) {
     super(props);
     this.state = {
-      loading: false,
+      loading: true,
       interests: [],
       error: false,
       showModal: false,
-      selectedInterest: []
+      selectedInterest: [],
+      errorMessage : '',
     };
   }
 
@@ -30,26 +32,29 @@ class UserInterest extends Component<IInterestProps, IInterestState> {
       .then((res: AxiosResponse<Interest[]>) => {
         this.setState({
           ...this.state,
-          interests: res.data
+          error :false,
+          loading : false,
+          interests: res.data,
         });
         console.log("test", res.data);
       })
       .catch(err => {
+         this.setState({
+         ...this.state,
+         loading:false,
+         error : true,
+         errorMessage : "Error Loading interest(s)"
+       })
         console.log(err);
       });
   }
-  private closeModal() {
-    this.setState({
-      ...this.state,
-      showModal: false
-    });
-  }
+
 
   save() {
     console.log(this.selectedInterest, " in save");
     if (this.selectedInterest.length > 0) {
      this.interestService
-     .postInterest(this.selectedInterest)
+     .postInterest(this.props.userName,this.selectedInterest)
      .then(res =>{
        this.setState({
       ...this.state,
@@ -60,12 +65,19 @@ class UserInterest extends Component<IInterestProps, IInterestState> {
 
      .catch(err=>{
        console.log(err)
+       this.setState({
+         ...this.state,
+         error : true,
+         errorMessage : "Oops!! We could not save your interest at the moment. try again later"
+         
+       })
      })
     }
-  
+ 
   }
 
   closeModalHandler() {
+    console.log('closeModalHandler')
     this.setState({
       ...this.state,
       showModal: false
@@ -98,9 +110,23 @@ class UserInterest extends Component<IInterestProps, IInterestState> {
 
   render() {
    
+   if(this.state.loading){
+     return <Spinner/>
+   }
+   if(this.state.error){
+     return(
+     <Auxi>
+       <p className="error">{this.state.errorMessage}</p>
+     </Auxi>
+     )
+   }
+   if(this.state.interests.length > 0){
       return (
 
         <Auxi>
+          <ul className="em-c-option-list">
+                 
+                
           {this.state.interests.map(list => (
             <li
               className="em-c-option-list__item"
@@ -123,14 +149,15 @@ class UserInterest extends Component<IInterestProps, IInterestState> {
               </label>
             </li>
           ))}
+          </ul>
           <br/>
            <button onClick={this.save.bind(this)} className="em-c-btn em-c-btn--primary em-js-modal-confirm-trigger">
-          <span className="em-c-btn__text">save</span>
+          <span className="em-c-btn__text">save</span>   
         </button>
-  
+         
         </Auxi>
       );
-    
+   }
   }
 }
 export default UserInterest;
@@ -141,6 +168,7 @@ interface IInterestState {
   error: boolean;
   showModal: boolean;
   selectedInterest: any[];
+  errorMessage? : string; 
 }
 
 interface IInterestProps {

@@ -27,27 +27,32 @@ import  './modal.module.css';
    }
    render(){
    console.log(this.props, 'props in Modal')
-  let divStyle = {display :!this.props.show?'none':''}
+
+  if(this.props.show){
   return (
-  <div style={divStyle}  className="em-c-modal em-js-modal-only" id="">
+  <div   className="em-c-modal em-js-modal-only" id="">
           <div className="em-c-modal__window em-js-modal-window">
             <div className="em-c-modal__header">
               <h3 className="em-c-modal__title text-center">Interests</h3>
-              <button className="em-c-btn em-c-btn--bare em-c-modal__close-btn em-js-modal-close-trigger em-c-modal__close-btn">
+              {/* <button className="em-c-btn em-c-btn--bare ">
                 <span style={{color:'#0c69b0'}}
                   onClick={this.props.close}
                   className="em-c-btn__text custom-modal"
                 >
                   Close
                 </span>
-              </button>
+              </button> */}
+              <button className="em-c-btn em-c-btn--secondary em-js-modal-cancel-trigger em-c-btn__text custom-modal pullRight"  onClick={this.props.close}
+              
+              >
+          <span className="em-c-btn__text ">Cancel</span>
+        </button>
             </div>
 
             <div className="em-c-field em-c-field--checkbox em-is-valid">
               <div className="em-c-field__body">
-                <ul className="em-c-option-list">
-                  {this.props.children}
-                </ul>
+                 {this.props.children}
+                
               </div>
             </div>
 
@@ -57,6 +62,9 @@ import  './modal.module.css';
           </div>
         </div>
   )
+  }else{
+    return <div></div>
+  }
    }
 }
 export default Modal;

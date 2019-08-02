@@ -11,3 +11,11 @@
 .custom-modal{
    color: #0c69b0 !important;
 }
+
+.pullRight{
+  float: right !important;
+}
+
+.pullLeft{
+  float: left !important;
+}

@@ -14,8 +14,8 @@ export class InterestWebService implements InterestDataService {
     return axios.get<Interest[]>(`/user/${userName}/interest`);
   }
 
-   postInterest(payload:any): Promise<AxiosResponse<Interest>>{
-       return axios.post<Interest>(`/userinterest/`,payload)
+   postInterest(userName:string,payload:any): Promise<AxiosResponse<Interest>>{
+       return axios.post<Interest>(`${userName}/userinterest/`,payload)
    }
 
   //   getBlogPostByCategory(blogId: string, category: string): Promise<AxiosResponse<Post[]>> {
