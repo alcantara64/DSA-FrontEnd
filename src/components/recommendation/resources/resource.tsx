@@ -9,7 +9,7 @@ export default class Resource extends Component<IResourceProps> {
         if (this.props.resourceList.length > 0) {
             resources = this.props.resourceList.map((rsc) => {
                 return (
-                    <div className="active-card em-l-grid__item custom-tile-area">
+                    <div key={rsc.resourceCode} className="active-card em-l-grid__item custom-tile-area">
                         <div className="fpo-block custom-tile-inner">
                             <div className="custom-dispaly">
                                 <div className="custom-paragraph">

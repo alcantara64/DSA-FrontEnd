@@ -11,7 +11,7 @@ export default class Link extends Component<ILinkProps> {
             linkList = this.props.linkList.map((link) => {
                 return (
                     <Auxi>
-                        <div className="custom-flex-number">
+                        <div key={link.linkCode} className="custom-flex-number">
                             <div className="custom-flex-basis">
                                 {/* <img className="custom-img-height" src={one} alt=""/> */}
                             </div>

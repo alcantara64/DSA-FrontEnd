@@ -8,7 +8,7 @@ export default class Event extends Component<IEventProps> {
         if (this.props.eventList.length > 0) {
             eventList = this.props.eventList.map((event) => {
                 return (
-                    <div className="active-card-second em-l-grid__item custom-tile-area">
+                    <div key={event.eventCode} className="active-card-second em-l-grid__item custom-tile-area">
                         <div className="fpo-block custom-tile-inner">
                             <div className="custom-dispaly">
 

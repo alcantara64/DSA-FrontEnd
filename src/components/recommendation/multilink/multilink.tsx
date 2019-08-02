@@ -10,7 +10,7 @@ export default class Multilink extends Component<IMultilinkProps> {
 
             multilinkList = this.props.multilinkList.map((ml) => {
                 return (
-                    <div className="custom-text-margin custom-paragraph">{ml.linkText}
+                    <div key={ml.linkCode} className="custom-text-margin custom-paragraph">{ml.linkText}
                         {/* <img className="custom-connect" src={share} alt=""/> */}
                     </div>
                 )
