@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import Recommendation from '../../../core/Models/Recommendation';
+import like_button from '../../../assets/images/like_button.png';
+import timer from '../../../assets/images/timer.png';
+import rating from '../../../assets/images/rating.png';
 
 export default class Resource extends Component<IResourceProps> {
 
@@ -16,18 +19,20 @@ export default class Resource extends Component<IResourceProps> {
                                     {rsc.resourceType}
                                 </div>
                                 <div>
-                                    {/* <img className="custom-like-bottom" src={like_button} alt=""/> */}
+                                    <img className="custom-like-bottom" src={like_button} alt=""/>
                                 </div>
                             </div>
                             <div className="custom-H3 custom-header">{rsc.resourceTitle}</div>
                             <div className="custom-paragraph">
                             </div>
-                            {/* <div><img className="custom-timer" src={timer} alt=""/></div> */}
                             <div className="custom-rating">
-                                {/* <div><img  className="custom-rating-padding" src={rating} alt=""/></div> */}
                                 <div className="custom-paragraph">{rsc.resourceIntroText}</div>
                             </div>
-
+                            <div className="timer-rating-container">
+                            <div><img className="custom-timer" src={timer} alt=""/></div>
+                            <div ><img  className="custom-rating-padding" src={rating} alt=""/></div>
+                            </div>
+                           
                         </div>
                     </div>
                 )
@@ -40,10 +45,10 @@ export default class Resource extends Component<IResourceProps> {
 
         return (
             <div>
-                <div className="custom-paragraph">
+                <div className="custom-paragraph custom-subheader">
                     Check out some of these resources:
                 </div>
-                <div className="em-l-grid em-l-grid--3up ">
+                <div className="em-l-grid em-l-grid--3up resources-container">
                     {resources}
                 </div>
 
