@@ -87,8 +87,8 @@ export default class Recommendation extends Component<IRecommendationProps, IRec
 
                                  {this.state.LinkList.length > 0 ? <Links linkList={this.state.LinkList}></Links> : ''}
                                  {this.state.resourceList.length > 0 ? <Resource resourceList={this.state.resourceList}></Resource> : ''}
-                                 {this.state.contactList.length > 0 ? <Contact contactList={this.state.contactList}></Contact>: ''}          
                                  {this.state.eventList.length > 0 ? <Event eventList={this.state.eventList}></Event> : ''}
+                                 {this.state.contactList.length > 0 ? <Contact contactList={this.state.contactList}></Contact>: ''}          
                                  {this.state.multiLinkList.length > 0 ? <Multilink multilinkList={this.state.multiLinkList}></Multilink>: '' }
                                 
                     {this.state.recommendationList ? '' : <div className="custom-text-align">
@@ -96,7 +96,7 @@ export default class Recommendation extends Component<IRecommendationProps, IRec
                         <div  className="custom-paragraph">
                             We're getting you personalized results.
                         </div>
-                        <div  className="custom-paragraph">One momemt please...</div>
+                        <div  className="custom-paragraph">One moment please...</div>
                         <img src={icon_spinner} alt=""/>
                     </div> }
                     <div className="footer-fixed">
