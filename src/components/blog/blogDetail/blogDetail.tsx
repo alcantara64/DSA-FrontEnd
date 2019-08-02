@@ -27,6 +27,7 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
         }
     }
 
+
     componentWillReceiveProps(nextProps: IBlogDetails) {
         if (nextProps.match.params.id !== this.props.match.params.id) {
           const currentPostId = nextProps.match.params.id
@@ -51,15 +52,15 @@ export default class BlogDetail extends Component< IBlogDetails, IBlogDetailStat
                         authorImageSrc: res.data.authorImageUrl ? res.data.authorImageUrl.replace('~', `${Config.baseUrl}`): '',
 
                     })
-                    this.getBlogListByCategory(res.data.archiveId , res.data.categoryId)
+                    this.getBlogListByCategory(res.data.categoryId)
                 }                
             },
             (err) => console.log(err)
         )
     }
 
-    getBlogListByCategory(blogId: string, categoryId: string){
-        this.blogService.getBlogPostByCategory(blogId, categoryId).then(
+    getBlogListByCategory(categoryId: string){
+        this.blogService.getBlogPostByCategory(categoryId).then(
             (res) => {
                 this.setState({
                     blogListByCategory: res.data

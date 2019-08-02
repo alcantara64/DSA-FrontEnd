@@ -7,9 +7,10 @@ class blogTile extends Component<BlogTileProps>{
 
     render(){
         var imageSRC = '';
-        if(this.props.blogPost.postImageUrl){
+        if(this.props.blogPost.blogImageUrl){
             imageSRC = this.props.blogPost.blogImageUrl.replace("~", `${Config.baseUrl}`)
         }
+
        if(this.props.blogPost){
 
 

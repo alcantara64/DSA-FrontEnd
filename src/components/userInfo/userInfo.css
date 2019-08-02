@@ -45,6 +45,13 @@ padding-bottom: 4px;
 
 
 }
+
+button:focus{
+    border-style: none !important;
+    outline:none;
+}
+
+
 .dashboard-btn-container{
     display: inline-block;
     width: 60%;
@@ -62,7 +69,9 @@ button:focus{
     margin-top: 126px;
     background-color: #eee;
   }
-
+.custom-cursor{
+    cursor: pointer;
+}
 
 
 

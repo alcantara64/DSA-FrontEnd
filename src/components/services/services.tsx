@@ -4,13 +4,14 @@ import send from './../../assets/images/send-button1x.png';
 import { resolve } from "inversify-react";
 import { TYPES } from '../../core/services/ioc.types';
 import './services.css';
+import arrow_icon from '../../assets/images/arrow_icon.png';
 import { Link } from 'react-router-dom';
 import { RecommendationDataService } from '../../core/services/data/RecommendationService/recommendation.data.service';
-import axios,{ AxiosResponse } from 'axios';
+import { AxiosResponse } from 'axios';
 import ServiceOptions from './serviceoptions/serviceOptions';
 import Option from '../../core/Models/Option';
 import ServiceOptionList from '../../core/Models/ServiceOptionList';
-import { optional } from 'inversify';
+import icon_spinner from '../../assets/images/icon_spinner.svg';
 
 class services extends Component<{}, IServiceState> {
 
@@ -22,18 +23,17 @@ class services extends Component<{}, IServiceState> {
     }
 
     componentDidMount() {
-        axios.get<Option[]>('https://api.myjson.com/bins/qx6x5').then(
+        this.recommendationService.getAllOptions().then(
             (res: AxiosResponse<Option[]>) => {
                 let alloptions = res.data
-                //let filteredList = alloptions.filter(x => x.isFirstOption);
                 let _serviceOptions : ServiceOptionList[] = [];
-                let serviceOptions = alloptions.map((opt) => {
+                alloptions.map((opt) => {
                     let serviceOption = {} as ServiceOptionList;
 
                     if(!opt.isFirstOption){
-                        let prev = alloptions.find(c=>c.optionCode == opt.parentOptionCode);
-                        let exist = _serviceOptions.find(c=>c.labelName == prev!.nextOptionQuestionText);
-                        if(exist == null || exist == undefined){
+                        let prev = alloptions.find(c=>c.optionCode === opt.parentOptionCode);
+                        let exist = _serviceOptions.find(c=>c.labelName === prev!.nextOptionQuestionText);
+                        if(exist === null || exist === undefined){
                             serviceOption.showLabel = false;
                             serviceOption.options = [];
                             serviceOption.labelName = prev!.nextOptionQuestionText;
@@ -41,8 +41,8 @@ class services extends Component<{}, IServiceState> {
                         }
                     }
                     else if(opt.isFirstOption){
-                        let exist = _serviceOptions.find(c=>c.labelName == opt.firstOptionQuestionText);
-                        if(exist == null || exist == undefined){
+                        let exist = _serviceOptions.find(c=>c.labelName === opt.firstOptionQuestionText);
+                        if(exist === null || exist === undefined){
                             var optionViewModel = {} as Option;
                             optionViewModel.optionCode = opt.optionCode;
                             optionViewModel.optionText = opt.optionText;
@@ -56,7 +56,7 @@ class services extends Component<{}, IServiceState> {
                             var optionViewModel = {} as Option;
                             optionViewModel.optionCode = opt.optionCode;
                             optionViewModel.optionText = opt.optionText;
-                            var index = _serviceOptions.findIndex(c=>c.labelName == exist!.labelName);
+                            var index = _serviceOptions.findIndex(c=>c.labelName === exist!.labelName);
                             _serviceOptions[index].options.push(optionViewModel);
                         }
                     }
@@ -65,9 +65,8 @@ class services extends Component<{}, IServiceState> {
 
                     return serviceOption;   
                 })
-                var sortorder = 1
                 _serviceOptions.forEach((obj, i) =>{
-                    if(obj.sortOrder == 0)
+                    if(obj.sortOrder === 0)
                     _serviceOptions[i].sortOrder = i +  1
                 });
                 this.setState({
@@ -89,7 +88,7 @@ class services extends Component<{}, IServiceState> {
             //get latest option list
             let allOptions = [...this.state.optionList];
             let latestServiceOption = [...this.state.filteredServiceOptionList]
-            let currentOption = latestServiceOption.find(a => a.labelName == labelName);
+            let currentOption = latestServiceOption.find(a => a.labelName === labelName);
 
             if(SelectMode){
                 latestServiceOption.forEach((opt, i) => {
@@ -106,9 +105,9 @@ class services extends Component<{}, IServiceState> {
             
              if (typeof option !== 'undefined') {
                 
-                let nextIndex = latestServiceOption.findIndex(c => c.labelName == option!.nextOptionQuestionText);
+                if(option!.nextOptionQuestionText !== null){
+                let nextIndex = latestServiceOption.findIndex(c => c.labelName === option!.nextOptionQuestionText);
                 //get max sortOrder and update new
-                let maxSortOrder = 0;
                 let nextOptions = filteredServiceListOption.map((opt) => {
                     var optionViewModel = {} as Option;
                     optionViewModel.optionCode = opt.optionCode;
@@ -120,10 +119,16 @@ class services extends Component<{}, IServiceState> {
                 latestServiceOption[nextIndex].options = nextOptions;
                 latestServiceOption[nextIndex].showLabel = true;
                 }
+            }else{
+                showRecommendationLabel = true;
+                this.setState({
+                    ...this.state,
+                    recommendationPostId: optionCode,
+                    showRecommendatonButton: showRecommendationLabel
+                })
+            }
                 
 
-            } else {
-                showRecommendationLabel = true;
             }
             }
             this.setState({
@@ -140,7 +145,12 @@ class services extends Component<{}, IServiceState> {
             if (this.state.optionList.length > 0) {
                 return (
                     <Auxi>
+                    
                         <div className="services-container">
+                        <Link to={'/'} className="back-button-margin" >
+                       <div className="inline"><img className="img-size" src={arrow_icon} alt=""/></div>
+                       <div className="inline custom-link">BACK</div>
+                   </Link>
                             <div className="custom-heading custom-paragraph">
                                 Let's get you what you need (a tutorial to talk to) - it only takes a minute.
                     </div>
@@ -152,8 +162,10 @@ class services extends Component<{}, IServiceState> {
                             })}
                             {this.state.showRecommendatonButton ? 
                             <div className="custom-rec-buttom">
-                                <button className="em-c-btn em-c-btn--large custom-btn "><Link to="/services">
-                                    <span className="em-c-btn__text custom-paragraph">Get Recommendations</span></Link>
+                                <button className="em-c-btn em-c-btn--large custom-btn ">
+                                    <Link to={`/recommendation/${this.state.recommendationPostId}`}>
+                                    <span className="em-c-btn__text custom-paragraph">Get Recommendations</span>
+                                    </Link>
                                 </button>
                             </div> : ''}
 
@@ -190,8 +202,10 @@ class services extends Component<{}, IServiceState> {
             }
         } else {
             return (
-                //loaader sign
-                '')
+                <div className="em-c-loader ">
+                <img src={icon_spinner} alt="Loading" />
+            </div>
+            )
         }
     }
 }
@@ -202,7 +216,6 @@ interface IServiceState {
     recommendationPostId: string
 
     optionList: Option[];
-    filteredOptionList: Option[];
     filteredServiceOptionList: ServiceOptionList[];
 
 }

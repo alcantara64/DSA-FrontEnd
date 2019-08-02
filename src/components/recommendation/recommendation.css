@@ -1,18 +1,26 @@
 .recommendation-container{
     width: 1440px !important;
-    padding-top: 93px;
     padding-right: 140px;
     padding-left: 140px;
     margin: auto;
     height: auto;
     text-align: left;
 }
+.custom-paragraphs{
+    margin-left: 6%;
+}
 .custom-tile-area{
     background-color: rgba(245, 245, 245, 1);
-    margin-right: 17px;
+    margin-right: 14px;
+    margin-bottom: 29px;
+    width: 31.33333% !important;
 }
+
 .custom-tile-inner{
     margin: 16px
+}
+.custom-subheader{
+    margin-left: 6.8%;
 }
 .custom-header{
     margin-top: 8px;
@@ -59,6 +67,12 @@
 .custom-eventx{
     padding-top: 16px;
 }
+.custom-flex-number{
+    height: 52px;
+}
+.custom-datadash{
+    margin-bottom: 63px !important;
+}
 .custom-goto{
     height: 14px;
     width: 14px;
@@ -91,4 +105,34 @@
   }
   .custom-text-margin{
     margin-bottom: 17px;
+  }
+  .custom-rating{
+    display: flex;
+    margin-top: 6px;
+    margin-left: -4px;
+  }
+  .custom-rating-padding{
+      padding-right: 10px;
+  }
+ 
+  .footer-fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #ffffff;
+    padding-top: 10px;
+    right: 0%;
+}
+  .flex-container-here{
+    margin-left: 2px;
+  }
+  .resources-container{
+    margin-left: 6.8%;
+    width: 95.3%;
+  }
+  @media(max-width: 1920px){
+    .custom-margin-DSAS {
+        left: 20%;
+    }
   }

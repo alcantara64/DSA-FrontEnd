@@ -9,7 +9,7 @@ export class BlogMockService implements BlogDataService{
 
 
     getAllBlogPost(): Promise<AxiosResponse<Post[]>> {
-        return axios.get<Post[]>('/');
+        return axios.get<Post[]>('/blogarchive');
     }
     
     getBlogPost(postId: string): Promise<AxiosResponse<Post>> {
@@ -20,8 +20,8 @@ export class BlogMockService implements BlogDataService{
         return axios.get<Post>(`/popular/${blogId}`);
     }
 
-    getBlogPostByCategory(blogId: string, category: string): Promise<AxiosResponse<Post[]>> {
-        return axios.get<Post[]>(`/archive?id=${blogId}&category=${category}`);
+    getBlogPostByCategory(category: string): Promise<AxiosResponse<Post[]>> {
+        return axios.get<Post[]>(`/blogarchive?category=${category}`);
     }
 
 }

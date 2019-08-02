@@ -1,0 +1,82 @@
+
+.custom-div-margin{
+    margin-left: 0% !important;
+    margin-top: 25px;
+    float: left;
+    width: 40%;
+}
+
+.custom-number2-flex{
+    display: flex;
+    }
+
+.custom-span{
+    float:none;
+    width: 100%;
+}
+.custom-float-container{
+float:none;
+width: 100%;
+}
+.custom-number2-flex{
+    display: flex;
+    }
+ 
+.custom-paragraphz{
+    flex: 94.7%;
+}
+
+.custom-margin-email{
+    margin-bottom: 30%;
+}
+
+.custom-margin-connect{
+    margin-bottom: 18px;
+    width: 80%;
+}
+
+.custom-margin-gsc{
+    margin-bottom: 6px;
+}
+.custom-margin-houston{
+    margin-bottom: 15px;
+}
+
+.custom-ali-margin{
+    margin-top: 0 !important;
+    width: 63.3%;
+}
+
+.custom-image2-size{
+    height: 59px;
+    width: 59px;
+}
+.user-ali{
+    width: 30.6%;
+    /* position: relative; */
+    /* right: 96px; */
+    float:left;
+    margin-right: 5px;
+    margin-bottom: 50px;
+}
+
+.user-ali .em-c-avatar {
+    height: 59px;
+}
+.custom-margin-ali{
+    position: relative;
+    float:left;
+}
+
+.custom-ali{
+    font-family: 'emprintSemibold' !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    color: #0A3039 !important;
+    position: relative;
+    /* right: 85px; */
+}
+.custom-number2-flexbasiz{
+    flex-basis: 5.3% !important;
+    margin-left: 0 !important;
+}

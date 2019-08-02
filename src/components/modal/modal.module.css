@@ -1,0 +1,21 @@
+.text-center{
+  text-align: center !important;
+}
+
+.em-c-modal__close-btn {
+    margin: -.3rem -1.5rem .4rem auto;
+    color: #0c69b0 !important;
+    transition: color .15s ease;
+}
+
+.custom-modal{
+   color: #0c69b0 !important;
+}
+
+.pullRight{
+  float: right !important;
+}
+
+.pullLeft{
+  float: left !important;
+}
