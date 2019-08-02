@@ -54,8 +54,8 @@ export default class ServiceOptions extends Component<IServiceOptionsProps, ISer
 
                     })}
 
-                {this.props.label.toLowerCase() === 'is it one of these?' && this.state.showLabel ? <div className="custom-paragraph">if you don't see the option you wish you did, suggest it below</div> :
-                    this.props.label.toLowerCase() === 'for' && this.state.showLabel ? <div className="custom-paragraph">if you don't see the technology you wish you did, suggest it below or visit the Technology page to see if you can find a contact</div> : ''}
+                {this.props.label.toLowerCase() === 'is it one of these?' && !this.state.showLabel ? <div className="custom-paragraph">if you don't see the option you wish you did, suggest it below</div> :
+                    this.props.label.toLowerCase() === 'for' && !this.state.showLabel ? <div className="custom-paragraph">if you don't see the technology you wish you did, suggest it below or visit the Technology page to see if you can find a contact</div> : ''}
 
             </Auxi>)
     }

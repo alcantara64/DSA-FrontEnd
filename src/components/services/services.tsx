@@ -11,6 +11,7 @@ import { AxiosResponse } from 'axios';
 import ServiceOptions from './serviceoptions/serviceOptions';
 import Option from '../../core/Models/Option';
 import ServiceOptionList from '../../core/Models/ServiceOptionList';
+import icon_spinner from '../../assets/images/icon_spinner.svg';
 
 class services extends Component<{}, IServiceState> {
 
@@ -201,8 +202,10 @@ class services extends Component<{}, IServiceState> {
             }
         } else {
             return (
-                //loaader sign
-                '')
+                <div className="em-c-loader ">
+                <img src={icon_spinner} alt="Loading" />
+            </div>
+            )
         }
     }
 }
