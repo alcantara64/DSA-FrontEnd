@@ -22,14 +22,17 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
       loading: false,
       interests: [],
       error: false,
-      showModal: false
+      showModal: false,
+      selectedInterest :[],
     };
   }
 
   componentDidMount() {
     const { userName } = this.props;
-    if (userName) this.fetchUser(userName)
-
+    if (userName) {
+      this.fetchUser(userName);
+      this.fetchAllInterest(userName);
+    }
   }
 
 
@@ -52,7 +55,7 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
             </div>
           <div className=" dashboard-btn-container  ">
             {
-              this.state.interests.map((interest) => (<button key={interest.name} className="user-button dashboard-btn">{interest.name}</button>))
+              this.state.selectedInterest.map((interest) => (<button key={interest.name} className="user-button dashboard-btn">{interest.name}</button>))
 
 
             }
@@ -95,7 +98,7 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
       .then((res: AxiosResponse<Interest[]>) => {
         this.setState({
           ...this.state,
-          interests: res.data
+          selectedInterest: res.data
         });
         console.log("test", res.data);
       })
@@ -105,7 +108,7 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
   }
 
   private fetchAllInterest(username: string) {
-    this.interestService.getAllInterest()
+    this.interestService.getAllInterest(this.props.userName)
       .then((res: AxiosResponse<Interest[]>) => {
         this.setState({
           ...this.state,
@@ -126,6 +129,7 @@ interface IUserInfoState {
   loading: boolean;
   error: boolean;
   showModal: boolean;
+  selectedInterest :Interest[];
 }
 
 interface IUserInfoProps {
