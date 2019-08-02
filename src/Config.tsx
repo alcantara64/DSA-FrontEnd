@@ -3,8 +3,8 @@ export const Config = {
     scopes: [
      "User.ReadBasic.All"
     ],
-    // baseUrl: 'http://bis.southcentralus.cloudapp.azure.com:8090/xom-dsa-backend',
-    baseUrl: 'http://localhost:53739/',
+    baseUrl: 'http://bis.southcentralus.cloudapp.azure.com:8090/xom-dsa-backend',
+    // baseUrl: 'http://localhost:53739/',
 
     mockUrl: 'http://localhost:53739/',
     isProd: true
