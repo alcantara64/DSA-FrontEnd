@@ -1,24 +1,18 @@
 
 .custom-div-margin{
     margin-left: 5.3%;
+    margin-top: 25px;
 }
 
 .custom-number2-flex{
     display: flex;
     }
-    
-.custom-number2-flexbasis{
-    flex-basis: 5.3%;
-    margin-left: 77px !important;
-}
+
 
 .custom-number2-flex{
     display: flex;
     }
-    .custom-number2-flexbasis{
-        flex-basis: 5.3%;
-        margin-left: 77px !important;
-    }
+ 
 
 
 .custom-margin-email{
@@ -39,16 +33,23 @@
 .custom-ali-margin{
     margin-left: 13.8%;
     margin-top: -38px;
+    width: 106%;
 }
 
 .custom-image2-size{
     height: 59px;
     width: 59px;
 }
+.user-ali{
+    height: 59px;
+    position: relative;
+    right: 96px;
+}
 
 .custom-margin-ali{
-    margin-bottom: 3px;
-    margin-left: 17px;
+    margin-bottom: 50px;
+    position: relative;
+    right: 27px;
 }
 
 .custom-ali{
@@ -56,4 +57,10 @@
     font-size: 16px !important;
     line-height: 22px !important;
     color: #0A3039 !important;
+    position: relative;
+    right: 85px;
+}
+.custom-number2-flexbasis{
+    flex-basis: 0% !important;
+    margin-left: 71px !important;
 }
