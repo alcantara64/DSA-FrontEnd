@@ -72,7 +72,7 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
           openHander={this.openModal.bind(this)}
         >
 
-          <UserInterest showModal={this.state.showModal} {...this.props} />
+          <UserInterest showModal={this.state.showModal}  {...this.props} />
 
         </Modal>
 
