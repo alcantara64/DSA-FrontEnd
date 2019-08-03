@@ -69,11 +69,13 @@ button:focus{
     margin-top: 126px;
     background-color: #eee;
   }
-.custom-cursor{
+.customCursor{
     cursor: pointer;
 }
 
-
+input[type=checkbox] {
+    visibility: visible !important;
+}
 
 
 

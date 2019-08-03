@@ -28,7 +28,7 @@ class UserInterest extends Component<IInterestProps, IInterestState> {
 
   componentDidMount() {
     this.interestService
-      .getAllInterest()
+      .getAllInterest(this.props.userName)
       .then((res: AxiosResponse<Interest[]>) => {
         this.setState({
           ...this.state,
@@ -176,7 +176,7 @@ interface IInterestProps {
   showModal: boolean;
 }
 
-interface InterestPayLoad{
+export interface InterestPayLoad{
 userId: string;
 interestCode:string;
 

@@ -8,7 +8,7 @@ import {injectable} from 'inversify';
 export class InterestMockService implements InterestDataService{
 
 
-    getAllInterest(): Promise<AxiosResponse<Interest[]>> {
+    getAllInterest(userName:string): Promise<AxiosResponse<Interest[]>> {
         return axios.get<Interest[]>('/');
     }
     
