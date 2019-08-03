@@ -36,7 +36,7 @@ class UserInterest extends Component<IInterestProps, IInterestState> {
           loading : false,
           interests: res.data,
         });
-        console.log("test", res.data);
+        console.log("componentDidMount-All interest", res.data);
       })
       .catch(err => {
          this.setState({

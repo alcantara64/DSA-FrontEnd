@@ -3,9 +3,12 @@ import './App.css';
 import Dashboard from './container/Dashboard/dashboard';
 import { UserAgentApplication, Configuration } from 'msal';
 import {Config} from './Config';
+import {connect} from 'react-redux';
 import 'reflect-metadata';
 import { Provider } from "inversify-react";
 import { container } from "./core/services/ioc";
+
+
 
 
 class App extends Component<{}, IAppState>{
@@ -159,4 +162,8 @@ interface IAppState {
   userName : string;
 }
 
-export default App;
+const mapStateToProps= (state:any) =>({
+  authentication: state.authentication
+})
+
+export default connect(mapStateToProps)(App);
