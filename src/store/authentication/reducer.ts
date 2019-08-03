@@ -1,4 +1,4 @@
-import { AuthenticationState, AuthenticationAction } from "../actions/authentication";
+import { AuthenticationState, AuthenticationAction } from "./actions";
 
 const initialstate: AuthenticationState = {
   loading: false,
