@@ -20,7 +20,7 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
     super(props);
     this.state = {
       loading: false,
-      interests: [],
+      interests: [{userId:"", interestCode:'i1', name:"Ai " }, {userId:"", interestCode:'i2', name:"businness"}],
       error: false,
       showModal: false,
       userInterest: [],
@@ -47,8 +47,7 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
   }
 
   save() {
-    console.log(this.state.selectedInterest, " in save");
-
+   
     if (this.state.selectedInterest.length > 0) {
       this.interestService
         .postInterest(this.props.userName, this.state.selectedInterest)
@@ -78,21 +77,24 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
     const code = target.value;
     let newInterest:InterestPayLoad = {userId:this.props.userName,interestCode :code
     };
-
-    this.state.selectedInterest.forEach(x =>{
-      console.log(x.interestCode,"interest Code State")
-      console.log(code,"Code State")
-      if(x.interestCode != code){
-        this.setState({
+    
+    let existingInterest =  this.state.selectedInterest.find(x=>x.interestCode === code);
+    if(existingInterest){
+    let currentItem = this.state.selectedInterest.indexOf(existingInterest);
+     let updatedInterest = this.state.selectedInterest.splice(currentItem,1);
+      this.setState({
+          ...this.state,
+        selectedInterest:[...this.state.selectedInterest,...updatedInterest]
+        })
+    }else{
+     this.setState({
           ...this.state,
         selectedInterest:[...this.state.selectedInterest,newInterest]
         })
-      }
-    })
+    
    console.log(this.state.selectedInterest, "Selected interest")
-
   }
-
+  }
   render() {
     return (
       <Auxi className="">
@@ -123,6 +125,7 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
           show={this.state.showModal}
           close={this.closeModalHandler.bind(this)}
           openHander={this.openModal.bind(this)}
+          save = {this.save.bind(this)}
         >
 
           <ul className="em-c-option-list">
@@ -152,8 +155,8 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
             ))}
           </ul>
           <br />
-          <button onClick={this.save.bind(this)} className="em-c-btn em-c-btn--primary em-js-modal-confirm-trigger">
-            <span className="em-c-btn__text">save</span>
+          <button disabled={false} onClick={this.save.bind(this)} className="em-c-btn em-c-btn--primary em-js-modal-confirm-trigger">
+            <span  className="em-c-btn__text">save</span>
           </button>
 
 

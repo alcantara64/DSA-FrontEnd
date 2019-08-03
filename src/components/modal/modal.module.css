@@ -16,6 +16,16 @@
   float: right !important;
 }
 
+.modalDisplay{
+  display:block;
+  float:right;  
+  background-color:red;
+}
+
+.modalHeader{
+  display: inline-block !important;
+
+}
 .pullLeft{
   float: left !important;
 }
