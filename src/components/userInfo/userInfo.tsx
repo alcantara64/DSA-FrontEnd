@@ -83,14 +83,16 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
     };
 
     this.state.selectedInterest.forEach(x =>{
-      if(x.interestCode && x.interestCode != code){
+      console.log(x.interestCode,"interest Code State")
+      console.log(code,"Code State")
+      if(x.interestCode != code){
         this.setState({
           ...this.state,
         selectedInterest:[...this.state.selectedInterest,newInterest]
         })
       }
     })
-   console.log(newInterest, "Selected interest")
+   console.log(this.state.selectedInterest, "Selected interest")
 
   }
 
