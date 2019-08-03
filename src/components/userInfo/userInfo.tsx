@@ -24,11 +24,7 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
       error: false,
       showModal: false,
       userInterest: [],
-      selectedInterest: [{
-        userId: '',
-        interestCode :''
-      }
-      ],
+      selectedInterest: [],
       errorMessage: '',
     };
   }
@@ -52,6 +48,7 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
 
   save() {
     console.log(this.state.selectedInterest, " in save");
+
     if (this.state.selectedInterest.length > 0) {
       this.interestService
         .postInterest(this.props.userName, this.state.selectedInterest)
