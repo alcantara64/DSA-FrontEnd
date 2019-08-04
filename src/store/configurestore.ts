@@ -5,8 +5,11 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import monitorReducersEnhancer from './enhancers/monitorReducer';
 import loggerMiddleware from './midddleware/logger';
 import authenticationReducer from './authentication/reducer';
+import blogReducer from './blog/reducer';
+
 const reducers = combineReducers({
-   authentication : authenticationReducer
+   authentication : authenticationReducer,
+   blog : blogReducer
 })
 
 const configureStore = (preloadedState? : any) => {
