@@ -1,0 +1,22 @@
+[
+  {
+  "interestCode": "I1",
+  "name": "Python",
+  "isUserChecked": true
+  },
+  {
+  "interestCode": "I2",
+  "name": "Machine Learning",
+  "isUserChecked": false
+  },
+  {
+  "interestCode": "I3",
+  "name": "Artificial Intelligence",
+  "isUserChecked": false
+  },
+  {
+  "interestCode": "I4",
+  "name": "Data at ExxonMobil",
+  "isUserChecked": false
+  }
+  ]
