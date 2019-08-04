@@ -14,16 +14,13 @@ export default class Contact extends Component<IContactProps> {
             contactList = this.props.contactList.map((contact) => {
                 return (
                     <div key={contact.contactCode} className="custom-div-margin">
-                        <div className="custom-number2-flex">
-                            <div className="custom-number2-flexbasis">
+                            <div className="user-ali">
+                            <img src={user_profile} alt="Alt Text" className="em-c-avatar" /></div>
                             
-                            </div>
-                            <img src={user_profile} alt="Alt Text" className="user-ali em-c-avatar em-c-avatar" />
-                            <div className="custom-margin-ali custom-ali">{contact.contactName}</div>
-
-                        </div>
 
                         <div className="custom-ali-margin">
+                            <div className="custom-margin-ali custom-ali">{contact.contactName}</div>
+                        
                             <div className="custom-margin-gsc custom-paragraph">{contact.contactDepartment}</div>
                             <div className="custom-margin-houston custom-paragraph">{contact.contactLocation}</div>
                             <div className="custom-margin-connect custom-paragraph">{contact.contactDescription}</div>
@@ -40,11 +37,13 @@ export default class Contact extends Component<IContactProps> {
         return (
             <Auxi>
                 <div className="custom-number2-flex">
-                    <div className="custom-number2-flexbasis">
+                    <div className="custom-number2-flexbasiz">
+                    {this.props.contactList.length > 0 ? this.props.contactList[0].sequence : ''}
                     </div>
                     <div className="custom-paragraph">
-                        Reach out to these contacts for guidance:
-                {this.props.contactList.length > 0 ? this.props.contactList[0].sequence : ''}{contactList}
+                        <span className="custom-span">Reach out to these contacts for guidance:</span>
+                
+                <div className="custom-float-container">{contactList}</div>
                     </div>
                 </div>
             </Auxi>
