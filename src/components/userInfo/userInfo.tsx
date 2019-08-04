@@ -46,7 +46,7 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
       ],
       error: false,
       showModal: false,
-      userInterest: [],
+      userInterest: [{isUserChecked:false,interestCode:"i1",name:"Ai"}],
       selectedInterest: [],
       errorMessage: ""
     };
