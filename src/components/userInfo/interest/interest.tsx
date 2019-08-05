@@ -28,7 +28,7 @@ class UserInterest extends Component<IInterestProps, IInterestState> {
 
   componentDidMount() {
     this.interestService
-      .getAllInterest()
+      .getAllInterest(this.props.userName)
       .then((res: AxiosResponse<Interest[]>) => {
         this.setState({
           ...this.state,
@@ -90,12 +90,14 @@ class UserInterest extends Component<IInterestProps, IInterestState> {
 
   handleChange(e: any) {
    console.log(this.selectedInterest, "Before sELECTED interest");
-   let payload:InterestPayLoad = {userId: this.props.userName, interestCode: e.target.value }
+   let payload:InterestPayLoad = {userId: this.props.userName, interestCode: e.target.value };
+   e.target.checked = !e.target.checked
    if (this.selectedInterest.includes(payload)) {
      console.log(payload);
      let currentItem = this.selectedInterest.find(
-       (x: any) => x == payload
+       (x: any) => x === payload
      );
+     
      console.log(currentItem, "currentItem");
      let index = this.selectedInterest.indexOf(currentItem);
      console.log(index, "currentIndex");
@@ -128,6 +130,7 @@ class UserInterest extends Component<IInterestProps, IInterestState> {
                  
                 
           {this.state.interests.map(list => (
+            
             <li
               className="em-c-option-list__item"
               key={list.interestCode}
@@ -136,9 +139,11 @@ class UserInterest extends Component<IInterestProps, IInterestState> {
                 <input
                   id="check-1"
                   type="checkbox"
+                  checked = {list.isUserChecked?list.isUserChecked:false}
                   onChange={e => {
                     this.handleChange(e);
                   }}
+                  
                   name="checkname"
                   value={list.interestCode}
                   className="em-c-input-group__control em-js-checkbox-trigger"

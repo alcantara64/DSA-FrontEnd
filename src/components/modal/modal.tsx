@@ -19,7 +19,7 @@ import  './modal.module.css';
   }
 
    componentDidUpdate(prevProps:IModalProps, prevState:any){
-     if(this.props.show != prevProps.show){
+     if(this.props.show !== prevProps.show){
        this.setState({
          ...this.state,
        })

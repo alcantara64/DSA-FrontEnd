@@ -8,6 +8,6 @@ import Technology from "../../../Models/Technology";
 export class TechnologyWebService implements TechnologyDataService{
 
     getAllTechnologies(): Promise<AxiosResponse<Technology[]>> {
-            return axios.get<Technology[]>('/technology');
+            return axios.get<Technology[]>('/blogtechnology');
         }
 }

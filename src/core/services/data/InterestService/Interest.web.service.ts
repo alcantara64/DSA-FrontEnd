@@ -6,15 +6,15 @@ import { InterestDataService } from "./Interest.data.service";
 
 @injectable()
 export class InterestWebService implements InterestDataService {
-  getAllInterest(): Promise<AxiosResponse<Interest[]>> {
-    return axios.get<Interest[]>("/interests");
+  getAllInterest(userName:string): Promise<AxiosResponse<Interest[]>> {
+    return axios.get<Interest[]>(`user/${userName}/interest`);
   }
 
   getAllInterestByUser(userName: string): Promise<AxiosResponse<Interest[]>> {
-    return axios.get<Interest[]>(`/user/${userName}/interest`);
+    return axios.get<Interest[]>(`/user/${userName}/userinterest`);
   }
 
-   postInterest(userName:string,payload:any): Promise<AxiosResponse<Interest>>{
+  postInterest(userName:string,payload:any): Promise<AxiosResponse<Interest>>{
        return axios.post<Interest>(`${userName}/userinterest/`,payload)
    }
 

@@ -9,7 +9,7 @@ export class BlogMockService implements BlogDataService{
 
 
     getAllBlogPost(): Promise<AxiosResponse<Post[]>> {
-        return axios.get<Post[]>('/blogarchive');
+        return axios.get<Post[]>('blog.json');
     }
     
     getBlogPost(postId: string): Promise<AxiosResponse<Post>> {
@@ -22,6 +22,11 @@ export class BlogMockService implements BlogDataService{
 
     getBlogPostByCategory(category: string): Promise<AxiosResponse<Post[]>> {
         return axios.get<Post[]>(`/blogarchive?category=${category}`);
+    }
+
+    filterBlogs(location: string, technology: string): Promise<AxiosResponse<Post[]>> {
+        return axios.get<Post[]>(`/blogarchive`+(location != null)?`?location=${location}`: `?` + 
+        (technology != null && location != null) ?`&technology=${technology}`: (technology != null && location == null) ? `technology=${technology}`:``);
     }
 
 }
