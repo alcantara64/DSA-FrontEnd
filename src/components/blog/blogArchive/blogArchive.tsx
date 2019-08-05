@@ -39,6 +39,8 @@ class blogArchive extends Component<{}, IBlogArchiveState> {
         technologyList: [] as Technology[],
         locationList: [] as Location[],
         showSpinner: false,
+        selectedTechnology: '',
+        selectedLocation: ''
     }
     
 
@@ -72,14 +74,14 @@ class blogArchive extends Component<{}, IBlogArchiveState> {
 
         if(this.state.technologyList.length > 0){
             techList = this.state.technologyList.map((tech) => {
-                return <div key={tech.technologyCode} className="custom-link pointer">{tech.name}</div>
+                return <div key={tech.technologyCode} onClick={() => this.filterBlogList('technology', tech.technologyCode)} className="custom-link pointer">{tech.name}</div>
             })
         }else {techList = null}
 
 
         if(this.state.locationList.length > 0){
             locationList = this.state.locationList.map((loc) => {
-                return <div key={loc.locationCode} className="custom-link pointer">{loc.name}</div>
+                return <div key={loc.locationCode} onClick={() => this.filterBlogList('location', loc.locationCode)} className="custom-link pointer">{loc.name}</div>
             })
         }else {locationList = null}
 
@@ -98,7 +100,7 @@ class blogArchive extends Component<{}, IBlogArchiveState> {
                             <p onClick={() => this.toggleDropdown('technology')} className="pointer">Filter by technology</p>
                             <img onClick={() => this.toggleDropdown('technology')} className="custom-dropdown-size pointer" src={dropdown} alt="" />
                             {this.state.showTechnologyDropDown ? 
-                            <div className="custom-dropdown">
+                            <div className="custom-tech-dropdown">
                             {techList}</div> : ''}
                         </div>
                         <div className="custom-link-filter custom-filter-location"><img src={filter_location} alt="" />
@@ -111,7 +113,6 @@ class blogArchive extends Component<{}, IBlogArchiveState> {
 
                         <div>
                             <div className="custom-slider-date">
-
                                 <p>Jan 1, 1999   </p>
                                 <p>Jun 12, 2019</p>
                             </div>
@@ -198,6 +199,30 @@ class blogArchive extends Component<{}, IBlogArchiveState> {
         });
     }
 
+   async filterBlogList(type: string, value: string){
+        if(type === 'technology'){
+            await this.setState({
+                ...this.state,
+                selectedTechnology: value
+            })
+        }else if(type === 'location'){
+            await this.setState({
+                ...this.state,
+                selectedLocation: value
+            })
+        }
+        this.blogService.filterBlogs(this.state.selectedLocation, this.state.selectedTechnology).then(
+            (res) => {
+                this.setState({
+                    ...this.state,
+                    blogArchive: res.data
+                })
+            }
+        ).catch(err => {
+            console.log(err);
+        });
+    }
+
     getAllTechnology(){
         this.technologyService.getAllTechnologies().then(
             (res: AxiosResponse<Technology[]>) => {
@@ -210,7 +235,7 @@ class blogArchive extends Component<{}, IBlogArchiveState> {
         });
     }
 
-    
+
 }
 
 
@@ -224,4 +249,6 @@ interface IBlogArchiveState{
     technologyList: Technology[];
     locationList: Location[];
     showSpinner: boolean;
+    selectedTechnology: string;
+    selectedLocation: string;
 }

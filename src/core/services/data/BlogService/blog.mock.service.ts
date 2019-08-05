@@ -25,7 +25,8 @@ export class BlogMockService implements BlogDataService{
     }
 
     filterBlogs(location: string, technology: string): Promise<AxiosResponse<Post[]>> {
-        return axios.get<Post[]>(`/blogarchive?location=${location}&&technology=${technology}`);
+        return axios.get<Post[]>(`/blogarchive`+(location != null)?`?location=${location}`: `?` + 
+        (technology != null && location != null) ?`&technology=${technology}`: (technology != null && location == null) ? `technology=${technology}`:``);
     }
 
 }

@@ -6,5 +6,6 @@ export default interface Option{
     optionCode: string,
     optionText: string,
     parentOptionCode: string,
-    showLabel: boolean
+    showLabel: boolean,
+    helpText: string
 }
