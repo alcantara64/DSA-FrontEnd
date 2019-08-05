@@ -40,7 +40,7 @@ export default class Contact extends Component<IContactProps> {
                     <div className="custom-number2-flexbasiz">
                     {this.props.contactList.length > 0 ? this.props.contactList[0].sequence : ''}
                     </div>
-                    <div className="custom-paragraph">
+                    <div className="custom-paragraphz">
                         <span className="custom-span">Reach out to these contacts for guidance:</span>
                 
                 <div className="custom-float-container">{contactList}</div>

@@ -25,7 +25,7 @@ width: 100%;
     }
  
 .custom-paragraphz{
-    flex: 94.7%;
+    width: 100% !important;
 }
 
 .custom-margin-email{
@@ -68,6 +68,7 @@ width: 100%;
 .custom-margin-ali{
     position: relative;
     float:left;
+    width: 100%
 }
 
 .custom-ali{

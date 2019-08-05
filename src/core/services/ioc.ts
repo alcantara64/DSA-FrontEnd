@@ -15,6 +15,9 @@ import { TechnologyDataService } from './data/TechnologyService/technology.data.
 import { TechnologyMockService } from './data/TechnologyService/technology.mock.service';
 import { LocationWebService } from './data/LocationService/location.web.service';
 import { TechnologyWebService } from './data/TechnologyService/techology.web.service';
+import { UserWebService } from './data/UserService/user.web.service';
+import { UserDataService } from './data/UserService/user.data.service';
+import { UserMockService } from './data/UserService/user.mock.service';
 
 export const container = new Container();
 if(Config.isProd){
@@ -23,10 +26,12 @@ if(Config.isProd){
     container.bind<InterestDataService>(TYPES.InterestService).to(InterestWebService);
     container.bind<LocationDataService>(TYPES.LocationService).to(LocationWebService);
     container.bind<TechnologyDataService>(TYPES.TechnologyService).to(TechnologyWebService);
+    container.bind<UserDataService>(TYPES.UserService).to(UserMockService);
 }else{
     container.bind<BlogDataService>(TYPES.BlogService).to(BlogMockService);
     container.bind<RecommendationDataService>(TYPES.RecommendationService).to(RecommendationMockService);
     container.bind<InterestDataService>(TYPES.InterestService).to(InterestMockService);
     container.bind<LocationDataService>(TYPES.LocationService).to(LocationMockService);
     container.bind<TechnologyDataService>(TYPES.TechnologyService).to(TechnologyMockService);
+    container.bind<UserDataService>(TYPES.UserService).to(UserWebService);
 }
