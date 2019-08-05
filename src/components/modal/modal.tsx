@@ -1,5 +1,5 @@
 import React, { ReactNode, Component } from 'react';
-import  './modal.module.css';
+import  './modal.css';
 
  class  Modal extends Component<IModalProps> {
    constructor(props:IModalProps){
@@ -23,7 +23,7 @@ import  './modal.module.css';
             <div className="em-c-field em-c-field--checkbox em-is-valid">
               <div className="em-c-field__body">
                  {this.props.children}
-                <button onClick={this.props.close} className="em-c-btn em-c-btn--secondary em-js-modal-cancel-trigger em-c-btn__text custom-modal pullRight modalDisplay" ><span className="em-c-btn__text ">Close</span></button>
+                <button onClick={this.props.close} className="em-c-btn em-c-btn--secondary em-js-modal-cancel-trigger em-c-btn__text custom-modal modalCloseButton" ><span className="em-c-btn__text ">Close</span></button>
               </div>
              
             </div>

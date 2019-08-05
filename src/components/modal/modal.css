@@ -29,3 +29,12 @@
 .pullLeft{
   float: left !important;
 }
+
+.modalCloseButton{
+  background-color: #D73872;
+  margin-left : 5px;
+  outline: none;
+}
+button.modalCloseButton:hover{
+  background-color: rgb(231, 106, 152)
+}

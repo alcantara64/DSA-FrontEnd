@@ -76,7 +76,11 @@ button:focus{
 input[type=checkbox] {
     visibility: visible !important;
 }
-
+.modalCloseButton{
+    background-color: #D73872;
+    margin-left : 5px;
+    outline: none;
+}
 
 
 
