@@ -22,33 +22,14 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
     super(props);
     this.state = {
       loading: true,
-      interests: [
-        {
-          interestCode: "I1",
-          name: "Python",
-          isUserChecked: true
-        },
-        {
-          interestCode: "I2",
-          name: "Machine Learning",
-          isUserChecked: true
-        },
-        {
-          interestCode: "I3",
-          name: "Artificial Intelligence",
-          isUserChecked: false
-        },
-        {
-          interestCode: "I4",
-          name: "Data at ExxonMobil",
-          isUserChecked: false
-        }
-      ],
+      interests: [],
       error: false,
       showModal: false,
-      userInterest: [{isUserChecked:false,interestCode:"i1",name:"Ai"}],
+      userInterest: [],
       selectedInterest: [],
-      errorMessage: ""
+      errorMessage: "",
+      isTouched : false,
+      isSaved : false,
     };
   }
 
@@ -67,6 +48,13 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
     }
   }
 
+  componentDidUpdate(prevProps:IUserInfoProps,prevState:IUserInfoState){
+  if(this.state.isSaved){
+    this.fetchUser(this.props.userName);
+    this.fetchAllInterest(this.props.userName);
+  }
+  }
+
   closeModalHandler() {
     this.setState({
       ...this.state,
@@ -77,7 +65,7 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
   save() {
     console.log("Selected Item In save", this.selectedInterest);
     
-    if (this.selectedInterest.length > 0) {
+    if (this.state.isTouched) {
       var payLoad:any =[]
       this.selectedInterest.forEach(interest=>{
       let newPayload = {userId:this.props.userName, interestCode:interest}
@@ -89,7 +77,8 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
         .then(res => {
           this.setState({
             ...this.state,
-            showModal: false
+            showModal: false,
+            isSaved :true,
           });
         })
         .catch(err => {
@@ -97,6 +86,7 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
           this.setState({
             ...this.state,
             showModal :false,
+            isSaved : false,
             error: true,
             errorMessage:
               "Oops!! We could not save your interest at the moment. try again later"
@@ -119,8 +109,13 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
     } else {
       this.selectedInterest.push(code);
     }
+    this.setState({
+      ...this.state,
+      isSaved : false,
+      isTouched : true
+    })
 
-    console.log(this.state.selectedInterest, " After sELECTED interest");
+    console.log(this.state.selectedInterest, " After SELECTED interest");
   }
   render() {
     if(this.state.loading){
@@ -216,7 +211,9 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
         this.setState({
           ...this.state,
           userInterest: res.data,
-          loading : false
+          loading : false,
+          isTouched : false,
+          isSaved : false,
         });
         console.log("getAllInterestByUser", res.data);
       })
@@ -241,6 +238,8 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
           loading : false,
           error : false,
           errorMessage : '',
+          isTouched : false,
+          isSaved :false,
         });
         console.log("fetchAllInterest", res.data);
       })
@@ -259,6 +258,8 @@ interface IUserInfoState {
   userInterest: Interest[];
   selectedInterest: Interest[];
   errorMessage: string;
+  isTouched : boolean;
+  isSaved : boolean;
 }
 
 interface IUserInfoProps {
