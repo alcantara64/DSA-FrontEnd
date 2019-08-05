@@ -1,7 +1,7 @@
 
 export default interface Interest {
-        isUserChecked : boolean
+   isUserChecked : boolean
         interestCode: string,
         name: string,
-        isUserChecked : boolean,
+        
 }

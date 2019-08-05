@@ -9,25 +9,6 @@ import  './modal.css';
           error : false,
        }
    }
-<<<<<<< HEAD
-=======
-
-     getDerivedStateFromProps(nextProps:IModalProps) {
-    this.setState({
-    ...this.state,
-    loading : true,
-
-    });
-  }
-
-   componentDidUpdate(prevProps:IModalProps, prevState:any){
-     if(this.props.show !== prevProps.show){
-       this.setState({
-         ...this.state,
-       })
-     }
-   }
->>>>>>> afa0ac53648e138168fc627b22a9dff51bbd5871
    render(){
 
   if(this.props.show){

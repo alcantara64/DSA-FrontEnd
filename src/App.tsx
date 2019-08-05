@@ -1,12 +1,9 @@
 import React, {Component} from 'react';
 import './App.css';
 import Dashboard from './container/Dashboard/dashboard';
-<<<<<<< HEAD
 import { UserAgentApplication, Configuration } from 'msal';
 import {Config} from './Config';
 import {connect} from 'react-redux';
-=======
->>>>>>> afa0ac53648e138168fc627b22a9dff51bbd5871
 import 'reflect-metadata';
 import { Provider, resolve } from "inversify-react";
 import { container } from "./core/services/ioc";
