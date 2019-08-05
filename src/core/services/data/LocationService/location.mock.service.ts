@@ -8,6 +8,6 @@ import Location from "../../../Models/Location";
 export class LocationMockService implements LocationDataService{
 
     getAllLocations(): Promise<AxiosResponse<Location[]>> {
-            return axios.get<Location[]>('/location');
+            return axios.get<Location[]>('/bloglocation');
         }
 }

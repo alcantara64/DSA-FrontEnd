@@ -95,7 +95,7 @@ class UserInterest extends Component<IInterestProps, IInterestState> {
    if (this.selectedInterest.includes(payload)) {
      console.log(payload);
      let currentItem = this.selectedInterest.find(
-       (x: any) => x == payload
+       (x: any) => x === payload
      );
      
      console.log(currentItem, "currentItem");

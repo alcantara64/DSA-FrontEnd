@@ -23,4 +23,8 @@ export class BlogWebService implements BlogDataService {
     return axios.get<Post[]>(`/blogarchive?category=${category}`);
   }
 
+  filterBlogs(location: string, technology: string): Promise<AxiosResponse<Post[]>> {
+    return axios.get<Post[]>(`/blogarchive?location=${location}&&technology=${technology}`);
+}
+
 }

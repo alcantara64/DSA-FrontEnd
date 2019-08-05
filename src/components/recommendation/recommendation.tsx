@@ -13,7 +13,6 @@ import Event from './event/event';
 import Links from './link/link';
 import Multilink from './multilink/multilink';
 import Resource from './resources/resource';
-import { Link } from 'react-router-dom';
 import send from './../../assets/images/send-button1x.png';
 
 
