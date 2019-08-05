@@ -5,7 +5,8 @@ export const Config = {
     ],
     baseUrl: 'http://bis.southcentralus.cloudapp.azure.com:8090/xom-dsa-backend',
     // baseUrl: 'http://localhost:53739/',
-
+    authUrl: 'https://ticket.na.xom.com',
+    authMockUrl: 'http://localhost:3000/',
     mockUrl: 'http://localhost:53739/',
     isProd: true
 }

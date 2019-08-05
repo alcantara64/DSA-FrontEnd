@@ -45,7 +45,8 @@ export default class ServiceOptions extends Component<IServiceOptionsProps, ISer
 
                 {this.state.showLabel ? <div className="large-flex custom--btn-options custom-btn-container" onClick={() => this.showSelectedOptions(this.state.optionText, this.props.label)} >{this.state.optionText}<img className="information-white-icon" src={informationWhite} alt="" /></div>
                     : this.props.options.map((opt) => {
-                        return (<div key={opt.optionCode} className="custom-btn-contain large-flex custom-btn-align">
+                        return (
+                        <div key={opt.optionCode} className="custom-btn-contain large-flex custom-btn-align">
                             <button className="custom-service-btn"
                                 onClick={() => this.showSelectedOptions(opt.optionText, this.props.label)} >{opt.optionText}
                                 <img className="information-icon" src={information} alt="" />
@@ -54,9 +55,7 @@ export default class ServiceOptions extends Component<IServiceOptionsProps, ISer
 
                     })}
 
-                {this.props.label.toLowerCase() === 'is it one of these?' && !this.state.showLabel ? <div className="custom-paragraph">if you don't see the option you wish you did, suggest it below</div> :
-                    this.props.label.toLowerCase() === 'for' && !this.state.showLabel ? <div className="custom-paragraph">if you don't see the technology you wish you did, suggest it below or visit the Technology page to see if you can find a contact</div> : ''}
-
+                {!this.state.showLabel ?  <div>{this.props.options[0].helpText}</div> : <div></div> }
             </Auxi>)
     }
 

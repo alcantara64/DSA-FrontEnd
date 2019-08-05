@@ -8,4 +8,5 @@ export abstract class BlogDataService {
   abstract getBlogPost(postId: string): Promise<AxiosResponse<Post>>;
   abstract getPopularPost(blogId: string): Promise<AxiosResponse<Post>>;
   abstract getBlogPostByCategory(category: string): Promise<AxiosResponse<Post[]>>;
+  abstract filterBlogs(location?: string, technology?: string): Promise<AxiosResponse<Post[]>>;
 }

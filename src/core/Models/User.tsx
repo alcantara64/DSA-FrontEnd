@@ -1,4 +1,32 @@
 export default interface User {
-    email: string;
-    displayName: string
+    Person_ID:               string;
+    Login_ID:                string;
+    First_Name:              string;
+    Last_Name:               string;
+    Middle_Initial:          string;
+    Full_Name:               string;
+    Support_Staff:           boolean;
+    Client_Type:             string;
+    License_Type:            string;
+    Email_Address:           string;
+    Business_Phone:          string;
+    Mobile_Phone:            string;
+    Company:                 string;
+    Organization:            string;
+    Department:              string;
+    Job_Title:               string;
+    Site_Region:             string;
+    Site_Group:              string;
+    City:                    string;
+    Site:                    string;
+    Desk:                    string;
+    Corporate_ID:            string;
+    Affiliate:               string;
+    Cost_Center_Code:        string;
+    Employee_Classification: string;
+    Sensitivity:             string;
+    DOAG:                    number;
+    VIP:                     boolean;
+    Work_Relationship_ID:    number;
+    Work_Relationship:       string;
 }

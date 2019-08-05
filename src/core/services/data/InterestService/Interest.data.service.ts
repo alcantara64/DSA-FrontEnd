@@ -1,7 +1,6 @@
 import { AxiosResponse } from "axios";
 import Interest from "../../../Models/Interest";
 import { injectable } from 'inversify';
-import User from './../../../Models/User';
 
 @injectable()
 export abstract class InterestDataService {

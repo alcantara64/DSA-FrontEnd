@@ -138,11 +138,11 @@ class userInfo extends Component<IUserInfoProps, IUserInfoState> {
             to you.
           </div>
           <div className=" dashboard-btn-container  ">
-            {this.state.userInterest.map(interest => (
-              <button key={interest.name} className="user-button dashboard-btn">
-                {interest.name}
-              </button>
-            ))}
+            {
+              this.state.selectedInterest.map((interest) => (<button key={interest.name} className="user-button dashboard-btn">{interest.name}</button>))
+
+
+            }
           </div>
           <div className="custom-add-tag customCursor">
             <img src={add_tag} alt="" />

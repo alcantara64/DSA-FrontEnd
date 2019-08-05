@@ -22,13 +22,14 @@ class blog extends Component {
     componentDidMount() {
         this.blogService.getAllBlogPost().then(
             (res: AxiosResponse<Post[]>) => {
+                console.log(res, "response from Blog")
                 this.setState({
                     ...this.state,
                     blogList: res.data
                 })
             }
         ).catch(err => {
-            console.log(err);
+            console.log(err,"error in blog");
         });
     }
 

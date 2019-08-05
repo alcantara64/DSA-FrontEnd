@@ -37,3 +37,4 @@ class blogTile extends Component<BlogTileProps>{
 }
 
 export default blogTile;
+
