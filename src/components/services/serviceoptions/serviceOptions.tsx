@@ -55,7 +55,7 @@ export default class ServiceOptions extends Component<IServiceOptionsProps, ISer
 
                     })}
 
-                    <div>{this.props.options[0].helpText}</div>
+                {!this.state.showLabel ?  <div>{this.props.options[0].helpText}</div> : <div></div> }
             </Auxi>)
     }
 

@@ -46,7 +46,7 @@ class services extends Component<{}, IServiceState> {
                             var optionViewModel = {} as Option;
                             optionViewModel.optionCode = opt.optionCode;
                             optionViewModel.optionText = opt.optionText;
-                            optionViewModel.helpText = opt.helpText;
+                            optionViewModel.helpText = "";
 
                             serviceOption.showLabel = true;
                             serviceOption.options = [];
@@ -57,7 +57,7 @@ class services extends Component<{}, IServiceState> {
                             var optionViewModel = {} as Option;
                             optionViewModel.optionCode = opt.optionCode;
                             optionViewModel.optionText = opt.optionText;
-                            optionViewModel.helpText = opt.helpText;
+                            optionViewModel.helpText = "";
                             var index = _serviceOptions.findIndex(c=>c.labelName === exist!.labelName);
                             _serviceOptions[index].options.push(optionViewModel);
                         }
@@ -114,7 +114,7 @@ class services extends Component<{}, IServiceState> {
                     var optionViewModel = {} as Option;
                     optionViewModel.optionCode = opt.optionCode;
                     optionViewModel.optionText = opt.optionText;
-                    optionViewModel.helpText = opt.helpText;
+                    optionViewModel.helpText = option!.helpText;
 
                     return optionViewModel;
                 })
