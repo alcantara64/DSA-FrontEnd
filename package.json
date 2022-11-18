@@ -29,7 +29,7 @@
     "react-redux": "^7.1.0",
     "react-paginate": "^6.3.0",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "react-simple-range": "^1.6.0",
     "react-slick": "^0.24.0",
     "reactrangeslider": "^3.0.6",
